@@ -1,4 +1,3 @@
-import type { ReactNode } from "react"
 import shape from "../assets/images/Vector.png"
 import img_1 from "../assets/images/1.png"
 import img_2 from "../assets/images/2.png"

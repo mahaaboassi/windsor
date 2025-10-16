@@ -1,5 +1,3 @@
-import img_1 from "../assets/images/doctor.png"
-
 
 const Ready = ()=>{
 
