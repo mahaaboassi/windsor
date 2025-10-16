@@ -1,4 +1,4 @@
-import { HtmlHTMLAttributes, useEffect, useRef, useState, type ReactNode } from "react"
+import { useEffect, useRef, useState, type ReactNode } from "react"
 import type React from "react"
 import { NavLink } from "react-router-dom"
 
