@@ -1,0 +1,20 @@
+.dynamic-pages span{
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    /* color: var(--grey_1); */
+}
+.dynamic-pages h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--main); 
+}
+.dynamic-pages p{
+    font-size: 1rem;
+}
+.dynamic-pages .content-heading{
+    line-height: 2.4rem;
+}
+.dynamic-pages .title{
+    font-size: var(--font-size-s);
+    font-weight: 500;
+}

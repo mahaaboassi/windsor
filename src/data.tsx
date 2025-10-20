@@ -7,8 +7,8 @@ export const aboutData = {
     sections : [ {
         img: "",
         hint: "Our Vision",
-        title: "A perfect Smile",
-        desc_1 : <div>
+        title: "A Perfect Smile",
+        desc_1 : <div className="flex flex-col gap-2">
             <p>Our state-of-the-art facilities will make you feel at ease as we work to restore your teeth. The modern technology in our practice allows us to deliver world-class dental services that are comfortable and efficient for patients. We use modern techniques like rotary endodontics, guided implant surgery, CT scan, and intraoral scanner on-site at your convenience.</p>
             <p>We provide comprehensive dental care services, from routine check-ups and cleanings to more complex procedures like implants, root canals and crowns. Additionally, our dental team will take the time to get to know you before beginning the treatment in order to guarantee that all of your dental needs are met.</p>
         </div>
