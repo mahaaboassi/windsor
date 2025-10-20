@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // images
 import banner_2 from "../assets/images/banner_2.png"
@@ -47,7 +46,7 @@ const HeroForDynamicPages = ({hint,title,desc,link,label}:Item) => {
       </div>
       <div className="absolute bottom-0 right-5 flex gap-2 z-50">
         <div className="flex gap-2 text-sm">
-            <Link className="text-[var(--main)]" to={"/"}><strong>Home</strong></Link>
+            <Link className="text-[var(--main)]" to={link}><strong>Home</strong></Link>
             <div className="text-zinc-500">/</div>
             <div className="text-zinc-500">{label}</div>
         </div>

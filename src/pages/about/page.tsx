@@ -9,7 +9,7 @@ const About = ()=>{
     return(<div className="flex flex-col gap-10 md:gap-20 dynamic-pages">
         <HeroForDynamicPages hint="Get to Know" title="Windsor Dental Care"
                             desc="We’re a dental practice that offers all aspects of dentistry, from preventive care and fillings to teeth whitening and wisdom teeth removal. Our team is dedicated to providing quality dental care in a relaxed and comfortable atmosphere."
-                            link="" label="About"
+                            link="/" label="About"
         />
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-5 container-layout">
             <div className="flex flex-col gap-5 md:gap-10">
