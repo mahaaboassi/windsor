@@ -19,7 +19,7 @@ const About = ()=>{
                 </div>
                 <div>{aboutData.sections[0].desc_1}</div>
             </div>
-            <div><img className="h-[500px]" src={img_1} alt="Image" /></div>
+            <div><img className="" src={img_1} alt="Image" /></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 container-layout">
             <div><img src={img_2} alt="Image" /></div>
