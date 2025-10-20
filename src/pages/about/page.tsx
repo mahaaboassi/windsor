@@ -11,7 +11,7 @@ const About = ()=>{
                             desc="We’re a dental practice that offers all aspects of dentistry, from preventive care and fillings to teeth whitening and wisdom teeth removal. Our team is dedicated to providing quality dental care in a relaxed and comfortable atmosphere."
                             link="/" label="About"
         />
-        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-5 container-layout">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 container-layout">
             <div className="flex flex-col gap-5 md:gap-10">
                 <div className="content-heading">
                     <span>{aboutData.sections[0].hint}</span>
@@ -21,7 +21,7 @@ const About = ()=>{
             </div>
             <div><img className="" src={img_1} alt="Image" /></div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 container-layout">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 container-layout">
             <div><img src={img_2} alt="Image" /></div>
             <div className="flex flex-col gap-5 md:gap-10">
                 <div className="content-heading">
@@ -29,7 +29,7 @@ const About = ()=>{
                     <h2 className="uppercase">{aboutData.sections[1].title}</h2>
                 </div>
                 <div>{aboutData.sections[1].desc_1}</div>
-                <div className="grid rid-cols-2 xs:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 xs:grid-cols-2 gap-3">
                     {
                         aboutData.sections[1].service?.map((e,idx)=>(
                             <div key={`${e.title}_${idx}`} className="flex gap-3 items-center">
