@@ -5,7 +5,7 @@ import FixedComponent from "../components/fixedComponent"
 
 const Layout = ()=>{
   return (<div>
-    <FixedComponent/>
+        <FixedComponent/>
         <Navbar/>
         <Outlet/>
         <Footer/>

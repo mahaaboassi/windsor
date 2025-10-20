@@ -30,13 +30,13 @@ const Gallery = ()=>{
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.8, ease: "easeInOut" }}
-                    className="grid rid-cols-1 md:grid-cols-2 gap-5 md:gap-10"
+                    className="grid rid-cols-1 md:grid-cols-2 gap-5 md:gap-16 lg:gap-30"
                     >
                         <motion.img
                             key={`${dataIndex}_before`}
                             src={data[dataIndex].before}
                             alt="Before"
-                            className="container-layout-border-img h-[200px] xs:h-[250px] md:h-[300px] lg:h-[400px] object-cover w-full"
+                            className="container-layout-border-img h-[200px] xs:h-[250px] md:h-[300px]  object-cover w-full"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
@@ -46,7 +46,7 @@ const Gallery = ()=>{
                             key={`${dataIndex}_after`}
                             src={data[dataIndex].after}
                             alt="After"
-                            className="container-layout-border-img h-[200px] xs:h-[250px] md:h-[300px] lg:h-[400px] object-cover w-full"
+                            className="container-layout-border-img h-[200px] xs:h-[250px] md:h-[300px] object-cover w-full"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}

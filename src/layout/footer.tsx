@@ -66,7 +66,7 @@ const quickLinks: QuickLink[] = [
 ];
 const Footer = () => {
   return (
-    <footer className="container-layout flex flex-col gap-5  !pt-20 !pb-10">
+    <footer className="container-layout flex flex-col gap-5  !mt-20 !pb-10">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         <div className="relative lg:pr-20 flex flex-col gap-3 md:gap-4">
           <div className="element-shape !w-full h-[100px] absolute md:-left-[3rem] lg:-left-[6rem] right-0 flex items-center container-layout-left ">
@@ -120,7 +120,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="flex flex-col gap-3 justify-between">
+        <div className="flex flex-col gap-3 justify-between pt-9 contact-footer">
           <ul className="flex-col flex gap-2">
             {infoData.map((e,idx)=>(<li className="break-all" key={e.value+"_"+idx} >
               {e.link ? <Link className="flex gap-4 items-center" target="_blank" to={e.link}>

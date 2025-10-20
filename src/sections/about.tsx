@@ -24,8 +24,8 @@ const About: React.FC =()=>{
     return(<div id="about" className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 container-layout">
         <div className="flex flex-col gap-4 md:gap-10 relative">
             <div className="absolute top-0 left-0 animate-moveAround"><img src={shape} alt="Shape" /></div>
-            <h2>SHORT STORY ABOUT OUR COMPANY <span>WINDSOR</span></h2>
-            <p>Lorem ipsum dolor sit ametc onsectetur adipiscing elitsed do eiusmod tempor incidunt rarut labore etfa.Lorem ipsum dolor sit ametc onsectetur .</p>
+            <h2>ABOUT US AT<span> WINDSOR DENTAL CARE</span></h2>
+            <p>Welcome to Windsor Dental Care — where advanced technology meets compassionate care. We’re dedicated to making every smile healthy, beautiful, and affordable.</p>
             <motion.div
                 ref={ref}
                 className="grid grid-cols-2 gap-3 md:gap-5 relative z-10"

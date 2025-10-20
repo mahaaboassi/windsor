@@ -14,27 +14,27 @@ type ItemContact = {
 const data: ItemContact[] = [{
         img: img_1,
         name: "GENERAL DENTISTRY",
-        desc: "Our goal is to enhance your smile's health through a comprehensive range of general dentistry services.",
+        desc: "Comprehensive care to maintain your oral health and prevent future dental issues.",
     },{
         img: img_2,
         name: "RESTORATIVE DENTISTRY",
-        desc: "Our goal is to enhance your smile's health through a comprehensive range of general dentistry services.",
+        desc: "Restore the function and appearance of damaged or missing teeth with expert treatments.",
     },{
         img: img_3,
         name: "DENTAL IMPLANTS",
-        desc: "Our goal is to enhance your smile's health through a comprehensive range of general dentistry services.",
+        desc: "Permanent, natural-looking replacements to bring back your confident smile.",
     },{
         img: img_4,
         name: "COSMETIC DENTISTRY",
-        desc: "Our goal is to enhance your smile's health through a comprehensive range of general dentistry services.",
+        desc: "Enhance your smile’s beauty with advanced whitening, veneers, and aesthetic treatments.",
     },{
         img: img_5,
         name: "EMERGENCY DENTIST",
-        desc: "Our goal is to enhance your smile's health through a comprehensive range of general dentistry services.",
+        desc: "Fast, reliable care for tooth pain, injuries, or unexpected dental emergencies.",
     },{
         img: img_6,
         name: "ORTHODONTIST",
-        desc: "Our goal is to enhance your smile's health through a comprehensive range of general dentistry services.",
+        desc: "Straighten your teeth and perfect your bite with modern braces or clear aligners.",
     },]
 const tooth = <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
 <g clip-path="url(#clip0_1339_2075)">

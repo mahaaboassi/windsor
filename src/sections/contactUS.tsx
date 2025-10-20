@@ -3,12 +3,12 @@ import img from "../assets/images/tooth.png"
 
 const Contact = ()=>{
     return(<div className="flex flex-col-reverse gap-5 lg:grid lg:grid-cols-2 container-layout">
-        <form className="flex flex-col !w-full rounded-xl gap-8 p-10 bg-[var(--main)]   ">
-                <div className="grid grid-cols-2 gap-8">
+        <form className="flex flex-col !w-full rounded-xl gap-2 md:gap-8 p-6 md:p-10 bg-[var(--main)]   ">
+                <div className="grid grid-cols-1 xs:grid-cols-2 gap-2 md:gap-8">
                     <div><input className="w-full" placeholder="First Name" /></div>
                     <div><input className="w-full" placeholder="Last Name" /></div>
                 </div>
-                <div className="grid grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 xs:grid-cols-2 gap-2 md:gap-8">
                     <div><input className="w-full" placeholder="Email" /></div>
                     <div><input className="w-full" placeholder="Phone" /></div>
                 </div>

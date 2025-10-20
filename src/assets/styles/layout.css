@@ -7,6 +7,9 @@
 .container-layout-right{
     padding-right: 6rem;
 }
+.menu-icon,.first-nav button{
+  display: none;
+}
 nav{
     position: fixed;
     left: 0;
@@ -34,7 +37,7 @@ nav{
     justify-content: end;
 }
 .first-nav{
-    background-color: rgba(255, 255, 255, 0.504);
+    background-color: rgba(255, 255, 255, 0.76);
     font-size: var(--font-size-xs);
     font-weight: 600;
 }
@@ -42,8 +45,8 @@ nav{
     background-color: var(--light);
 }
 nav ul{
-    font-size: var(--font-size-l);
-    font-weight: 600;
+    font-size: var(--font-size-s);
+    font-weight: 500;
     text-transform: uppercase;
 }
 /* Fixed Component */
@@ -148,16 +151,26 @@ nav ul{
 }
 
 /* Footer */
+footer{
+  background-color: rgba(128, 128, 128, 0.063);
+}
 footer h2{
   color: var(--main);
   font-size: var(--font-size-xl);
   font-weight: 600;
+}
+footer {
+  font-size: var(--font-size-s);
+  font-weight: 500;
 }
 footer a{
   font-weight: 500;
   font-size: var(--font-size-s);
   color: var(--dark);
   transition: 0.3s;
+}
+.contact-footer, .contact-footer a{
+  font-size: var(--font-size-xs);
 }
 footer a:hover{
   color: var(--main);
@@ -203,9 +216,7 @@ footer .element-shape svg{
   nav ul{
     font-size: var(--font-size-s);
   }
-  .contact-nav div:nth-child(1), .contact-nav div:nth-child(3){
-    display: none;
-  }
+
   /* heading */
   .heading h2, .sub-heading h2, #about h2, .ready h2{
     font-size: 1.8rem !important;
@@ -229,6 +240,15 @@ footer .element-shape svg{
   }
   .container-layout-right{
     padding-right: 3rem;
+  }
+  
+}
+@media (max-width:1020px) {
+  .contact-nav-item, .second-nav button {
+    display: none;
+  }
+  .first-nav button{
+    display: flex;
   }
   
 }
@@ -283,7 +303,11 @@ footer .element-shape svg{
     width: 20px;
   }
 }
-@media (max-width:600px) {
+@media (max-width:850px) {
+
+  .menu-icon{
+    display: flex;
+  }
   nav ul{
     display: none;
   }

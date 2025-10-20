@@ -1,36 +1,40 @@
 import { useEffect, useRef, useState, type ReactNode } from "react"
 import type React from "react"
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 type ItemMenu = {
     name: string,
     link: string
 }
-const menu: ItemMenu[] = [{name: 'Home', link: '/'}, {name: 'Services', link: '/'},{name: 'About', link: '/'}, {name: 'Contact', link: '/'}]
+const menu: ItemMenu[] = [{name: 'Home', link: '/'}, {name: 'Services', link: '/'},{name: 'About', link: '/about'}, {name: 'Contact', link: '/'}]
 type ItemContact = {
     svg: ReactNode,
     name: string,
-    value: string
+    value: string,
+    link: string
 }
 const contact: ItemContact[] = [{
         svg: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path fillRule="evenodd" clip-rule="evenodd" d="M12 0C14.3734 0 16.6934 0.703788 18.6668 2.02236C20.6402 3.34094 22.1783 5.21508 23.0865 7.4078C23.9948 9.60051 24.2324 12.0133 23.7694 14.3411C23.3064 16.6689 22.1635 18.807 20.4853 20.4853C18.807 22.1635 16.6689 23.3064 14.3411 23.7694C12.0133 24.2324 9.60051 23.9948 7.4078 23.0865C5.21508 22.1783 3.34094 20.6402 2.02236 18.6668C0.703788 16.6934 0 14.3734 0 12C0 8.8174 1.26428 5.76515 3.51472 3.51472C5.76515 1.26428 8.8174 0 12 0ZM10.3359 5.96094H11.8027C11.9321 5.96145 12.056 6.01306 12.1474 6.10452C12.2389 6.19598 12.2905 6.31988 12.291 6.44922V12.1094H17.4492C17.5786 12.1099 17.7025 12.1615 17.7939 12.253C17.8854 12.3444 17.937 12.4683 17.9375 12.5977V14.0625C17.937 14.1918 17.8854 14.3157 17.7939 14.4072C17.7025 14.4987 17.5786 14.5503 17.4492 14.5508H9.8457V6.44531C9.84622 6.31563 9.8981 6.19144 9.98998 6.09993C10.0819 6.00841 10.2063 5.95703 10.3359 5.95703V5.96094Z" fill="#A6CE38"/>
             </svg>,
         name: "",
-        value: "Mon-Fri 9:00 am - 6:00 pm"
+        value: "Mon-Fri 9:00 am - 6:00 pm",
+        link: ""
     },{
         svg: <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
             <path d="M4.67383 2C4.78171 2 4.86793 2.02244 4.91895 2.04492L4.93262 2.05078L4.94531 2.05664C4.97805 2.07057 4.99285 2.08055 4.99609 2.08301L5.00195 2.08887L5.01562 2.1084L8.03613 6.03223L8.04102 6.03711L8.04492 6.04297C8.13564 6.1591 8.19772 6.25489 8.24219 6.33008C8.17894 6.40636 8.09002 6.50359 7.9668 6.61719L7.95215 6.63086L7.93848 6.64355L6.94922 7.5918C6.39899 8.11305 6.12412 8.79785 6.12402 9.51562C6.12402 9.81741 6.16932 10.0792 6.2334 10.3154L6.26465 10.4326L6.31055 10.5459C6.34839 10.6389 6.38616 10.721 6.40039 10.752L6.4502 10.8887L6.5459 11.0508C6.88424 11.6225 7.39577 12.2574 8.00488 12.9209L8.02051 12.9365C8.6279 13.5834 9.28284 14.2509 9.99707 14.9219L10.0244 14.9473C10.7441 15.5983 11.4603 16.2214 12.2031 16.8027L12.2061 16.8047C12.9442 17.3804 13.6254 17.8308 14.2383 18.1299L14.3291 18.1738L14.4238 18.209V18.208C14.429 18.2102 14.4354 18.214 14.4443 18.2178C14.4766 18.2314 14.5432 18.2596 14.6152 18.2881L14.6553 18.3037L14.6963 18.3184C15.0754 18.4494 15.4171 18.4756 15.6758 18.4756C16.3994 18.4755 17.0464 18.2141 17.5537 17.751L17.5547 17.752L18.5449 16.8516L18.5547 16.8428C18.7943 16.6219 18.9428 16.5309 19.0029 16.502L19.0596 16.4756L19.0908 16.457C19.1052 16.4611 19.125 16.4664 19.1494 16.4756C19.2438 16.5112 19.3676 16.5683 19.5293 16.6611L19.7041 16.7666L23.9805 19.5654L23.9902 19.5723L23.9971 19.5762C23.9984 19.5836 24 19.5891 24 19.5957C24 19.7004 23.976 19.8332 23.8945 19.9922C23.7627 20.2494 23.5944 20.4904 23.3643 20.7246C22.912 21.184 22.4489 21.4834 21.9473 21.6729L21.9365 21.6768C21.3955 21.8845 20.7936 22 20.1152 22C19.078 22 17.9069 21.7753 16.6016 21.2627C15.2508 20.7322 13.8809 20.0096 12.5059 19.0869C11.0974 18.1384 9.76134 17.0882 8.48438 15.9238C7.21712 14.7445 6.07804 13.5143 5.06543 12.2334H5.06641C4.19828 11.121 3.49844 10.035 2.96973 8.9834L2.75391 8.53516C2.22606 7.37792 2.00004 6.35523 2 5.44824C2 4.89097 2.10632 4.38367 2.30371 3.92871L2.30859 3.91699C2.49118 3.4894 2.79423 3.05866 3.27832 2.6377L3.29395 2.62305L3.30957 2.60938C3.82821 2.13882 4.275 2.00004 4.67383 2Z" stroke="#A6CE38" stroke-width="4" stroke-miterlimit="10"/>
             </svg>,
         name: "",
-        value: "(02) 4571 2720"
+        value: "(02) 4571 2720",
+        link: "tel:0245712720"
     },{
         svg: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
             <path d="M16.0007 14.81L28.7807 6.6C28.2669 6.21461 27.643 6.0043 27.0007 6H5.0007C4.35844 6.0043 3.73451 6.21461 3.2207 6.6L16.0007 14.81Z" fill="#A6CE38"/>
             <path d="M16.54 16.8403L16.37 16.9203H16.29C16.1979 16.9614 16.1001 16.9884 16 17.0003C15.917 17.0107 15.833 17.0107 15.75 17.0003H15.67L15.5 16.9203L2.1 8.26025C2.03598 8.50179 2.00238 8.75039 2 9.00025V23.0003C2 23.7959 2.31607 24.559 2.87868 25.1216C3.44129 25.6842 4.20435 26.0003 5 26.0003H27C27.7956 26.0003 28.5587 25.6842 29.1213 25.1216C29.6839 24.559 30 23.7959 30 23.0003V9.00025C29.9976 8.75039 29.964 8.50179 29.9 8.26025L16.54 16.8403Z" fill="#A6CE38"/>
             </svg>,
         name: "",
-        value: "reception@windsordentalcare.com.au"
+        value: "reception@windsordentalcare.com.au",
+        link: "mailto:reception@windsordentalcare.com.au"
     }]
 const Navbar: React.FC = () => {
     const [ isOpen, setIsOpen ] = useState<Boolean>(false)
@@ -81,14 +85,24 @@ const Navbar: React.FC = () => {
         <div className="w-full ">
             <div className="first-nav gap-5 contact-nav container-layout-right">
                 {contact.map((item, index) => (
-                    <div key={index}  className="flex gap-1 items-center">
-                        <span>{item.svg}</span>
-                        <div>{item.value}</div>
-                    </div>
+                    item.link == ""?<div key={index}  className="flex gap-1 items-center contact-nav-item">
+                            <span>{item.svg}</span>
+                            <div>{item.value}</div>
+                        </div>:<Link to={item.link}>
+                        <div key={index}  className="flex gap-1 items-center contact-nav-item">
+                            <span>{item.svg}</span>
+                            <div>{item.value}</div>
+                        </div>
+                    </Link>
                 ))}
+                <div>
+                    <button className="btn !py-2 lg:!py-3 !text-xs md:!text-sm flex">
+                        BOOK <span className=" hidden xs:flex">&nbsp;AN APPOINTMENT</span>
+                    </button>
+                </div>
             </div>
             <div className="second-nav container-layout-right">
-                <div onClick={()=>setIsOpen(!isOpen)} className="cursor-pointer flex mid:hidden">
+                <div onClick={()=>setIsOpen(!isOpen)} className="cursor-pointer menu-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="41" height="26" viewBox="0 0 71 56" fill="none">
                         <g clipPath="url(#clip0_1598_1335)">
                         <path fillRule="evenodd" clipRule="evenodd" d="M71 0V11.586H19.1829V0H71ZM12.2089 44.414V56H0V44.414H12.2089ZM12.2089 22.207V33.793H0V22.207H12.2089ZM12.2089 0V11.586H0V0H12.2089ZM71 44.414V56H19.1829V44.414H71ZM71 22.207V33.793H19.1829V22.207H71Z" fill="#A6CE38"/>
@@ -100,12 +114,15 @@ const Navbar: React.FC = () => {
                         </defs>
                     </svg>
                 </div>
-                <ul className={`flex gap-5 ${isOpen?"open":""}`}>
+                <ul className={`flex items-center gap-3 lg:gap-5 ${isOpen?"open":""}`}>
                     {menu.map((item, index) => (
                         <NavLink key={index} to={item.link} className="nav-item">
                             {item.name}
                         </NavLink>
                     ))}
+                    <li>
+                        <button className="btn !py-2 lg:!py-3 !text-xs md:!text-sm">BOOK AN APPOINTMENT</button>
+                    </li>
                 </ul> 
             </div>
         </div>
