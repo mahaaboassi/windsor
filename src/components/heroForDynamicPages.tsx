@@ -10,9 +10,10 @@ type Item = {
   desc:string,
   link:string,
   label:string,
+  subLabel:string,
 }
 
-const HeroForDynamicPages = ({hint,title,desc,link,label}:Item) => {
+const HeroForDynamicPages = ({hint,title,desc,link,label,subLabel}:Item) => {
   return (
     <section className="hero container-layout flex flex-col gap-5 overflow-hidden relative">
       {/* Animated Background */}
@@ -46,9 +47,9 @@ const HeroForDynamicPages = ({hint,title,desc,link,label}:Item) => {
       </div>
       <div className="absolute bottom-0 right-5 flex gap-2 z-50">
         <div className="flex gap-2 text-sm">
-            <Link className="text-[var(--main)]" to={link}><strong>Home</strong></Link>
+            <Link className="text-[var(--main)]" to={link}><strong>{label}</strong></Link>
             <div className="text-zinc-500">/</div>
-            <div className="text-zinc-500">{label}</div>
+            <div className="text-zinc-500">{subLabel}</div>
         </div>
       </div>
     </section>

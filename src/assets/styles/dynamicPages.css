@@ -12,7 +12,7 @@
     font-size: 1rem;
 }
 .dynamic-pages .content-heading{
-    line-height: 2.4rem;
+    line-height: 3rem;
 }
 .dynamic-pages .title{
     font-size: var(--font-size-s);
@@ -32,7 +32,7 @@
 }
 @media (max-width:600px) {
     .dynamic-pages h2{
-        font-size: 2rem; 
+        font-size: 1.8rem; 
     }
     .dynamic-pages p{
         font-size: 0.8rem;
@@ -43,10 +43,11 @@
 }
 @media (max-width:400px) {
     .dynamic-pages span{
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-s);
+    line-height: 0.5rem;
     }
     .dynamic-pages h2{
-        font-size: 1.8rem; 
+        font-size: 1.5rem; 
     }
     .dynamic-pages .content-heading{
         line-height: 1.8rem;

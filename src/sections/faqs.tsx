@@ -125,9 +125,9 @@ const FAQs = () => {
             <div key={idx} className="border-b border-[var(--light)] last:border-0">
               <button
                 onClick={() => toggleAccordion(idx)}
-                className="w-full bg-[var(--main)] cursor-pointer rounded text-left p-4 flex justify-between items-center gap-2 font-semibold text-[var(--light)]"
+                className="w-full flex gap-2 bg-[var(--main)] cursor-pointer rounded text-left p-4 flex justify-between items-center gap-2 font-semibold text-[var(--light)]"
               >
-                {item.question}
+                <div className="w-full">{item.question}</div>
                 <span className="text-xl text-[var(--main)] flex justify-center items-center w-[25px] h-[25px] rounded-full bg-[var(--light)]">{activeIndex === idx ? "−" : "+"}</span>
               </button>
 
