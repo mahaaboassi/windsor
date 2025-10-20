@@ -279,3 +279,10 @@
         line-height: 2.1rem;
     } 
 }
+@media (max-width:400px) {
+    .hero{
+        height: 500px;
+        padding-top: 150px;
+    }
+    
+}

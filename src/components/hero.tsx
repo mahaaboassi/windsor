@@ -1,10 +1,15 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+// images
 import banner from "../assets/images/banner.png"
 import banner_1 from "../assets/images/banner_1.png"
 import banner_2 from "../assets/images/banner_2.png"
+import banner_sm from "../assets/images/banner_sm_1.png"
+import banner_sm_1 from "../assets/images/banner_sm_2.png"
+import banner_sm_2 from "../assets/images/banner_sm_3.png"
 
 const banners = [banner,banner_1,banner_2];
+const banners_sm = [banner_sm, banner_sm_1, banner_sm_2];
 
 const Hero = () => {
   const [bannerIndex, setBannerIndex] = useState(0);
@@ -23,7 +28,7 @@ const Hero = () => {
         <motion.div
           key={bannerIndex}
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${banners[bannerIndex]})` }}
+          style={{ backgroundImage: `url(${window.innerWidth<900 ? banners_sm[bannerIndex] :banners[bannerIndex] })` }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0.5 }}
