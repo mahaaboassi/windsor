@@ -342,6 +342,11 @@ footer .element-shape svg{
     }
   }
 }
+@media (max-width:768px) {
+  nav ul.open{
+    top: 84px;
+  }
+}
 @media (max-width: 500px) {
   nav svg.logo{
     width: 80px;
