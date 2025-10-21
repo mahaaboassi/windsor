@@ -19,6 +19,13 @@ nav{
     z-index: 100;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.circle-service{
+  opacity: 0;
+  transition: 0.3s;
+}
+.link-service:hover .circle-service{
+  opacity: 1;
+}
 .element-shape{
     height: 100px;
     width: 400px;
@@ -45,9 +52,10 @@ nav{
     background-color: var(--light);
 }
 nav ul{
-    font-size: var(--font-size-s);
+    font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
+    color: rgb(55, 55, 55);
 }
 /* Fixed Component */
 .icon{
@@ -149,7 +157,9 @@ nav ul{
 .btn:hover span{
     transform: translateX(2px);
 }
-
+.menu-fixed{
+ background-color: rgba(128, 128, 128, 0.986);
+}
 /* Footer */
 footer{
   background-color: rgba(128, 128, 128, 0.063);
@@ -218,7 +228,7 @@ footer .element-shape svg{
   }
 
   /* heading */
-  .heading h2, .sub-heading h2, #about h2, .ready h2{
+  .heading h2, .sub-heading h2, #about h2, .ready h3{
     font-size: 1.8rem !important;
     line-height: 2rem !important;
   }
@@ -276,7 +286,7 @@ footer .element-shape svg{
     height: 85px;
   }
     /* heading */
-  .heading h2, .sub-heading h2, #about h2, .ready h2{
+  .heading h2, .sub-heading h2, #about h2, .ready h3{
     font-size: 1.5rem !important;
     line-height: 1.7rem !important;
   }
@@ -320,7 +330,7 @@ footer .element-shape svg{
     left: 0;
     right: 0;
     padding: 20px;
-    top: 85px;
+    top: 90px;
     animation: openMenu 0.3s forwards linear;
     overflow: hidden;
   }
@@ -328,7 +338,7 @@ footer .element-shape svg{
     from{
         height: 0;
     }to{
-       height: 200px;
+       height: 350px;
     }
   }
 }
@@ -341,7 +351,7 @@ footer .element-shape svg{
     height: 85px;
   }
   /* heading */
-  .heading h2, .sub-heading h2, #about h2, .ready h2{
+  .heading h2, .sub-heading h2, #about h2, .ready h3{
     font-size: 1.3rem !important;
     line-height: 1.5rem !important;
   }

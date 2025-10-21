@@ -2,11 +2,10 @@ import HeroForDynamicPages from "../../components/heroForDynamicPages"
 // Images
 import img_1 from "../../assets/images/img.png"
 import img_2 from "../../assets/images/about.png"
-import { aboutData, services } from "../../data"
+import { categories } from "../../data"
 import { useParams } from "react-router-dom"
 import { useEffect, useState, type ReactNode } from "react"
-import FAQs from "../../sections/faqs"
-
+import Ready from "../../sections/ready"
 
 type Service = {
     icon: string;
@@ -27,31 +26,39 @@ type Hero = {
     hint: string;
     title: string;
     desc: string;
-    category: string;
-    link: string;
-    label: string;
     subLabel: string;
 };
-
+type Services = {
+    id: number;
+    link: string,
+    hero: Hero;
+    sections: Section[];
+}
 type Item = {
     id: number;
     link: string;
-    hero: Hero;
-    sections: Section[];
+    category : string;
+    services : Services[],
+    first_sections : Section,
+    second_section : Section
 };
 
 const Service = ()=>{
     const { category, link} = useParams()
-    const [ data, setData ] = useState<Item | undefined>(undefined)
+    const [ data, setData ] = useState<Services | undefined>(undefined)
+      const [cat, setCat] = useState<Item | undefined>(undefined);
     useEffect(()=>{
-        setData(services.find(e=> e.link == `${category}/${link}`))
-        console.log(link);
-        
-    },[link])
+        if (!category || !link) return;
+        window.scrollTo({top:0})
+        const catValue = categories.find(e => e.link === `/${category}`);
+        const service = catValue?.services.find(e => e.link === `${category}/${link}`);
+        setCat(catValue)
+        setData(service);
+    },[link,category])
     return(<div className="flex flex-col gap-10 md:gap-20 dynamic-pages">
         <HeroForDynamicPages hint={data?.hero?.hint ?? ""} title={data?.hero?.title ?? ""}
                             desc={data?.hero?.desc ?? ""}
-                            link={data?.hero?.link ?? ""} label={data?.hero?.label ?? ""} subLabel={data?.hero?.subLabel ?? ""}
+                            link={cat?.link ?? ""} label={cat?.category ?? ""} subLabel={data?.hero?.subLabel ?? ""}
         />
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 container-layout">
             <div className="flex flex-col gap-5 md:gap-10">
@@ -61,11 +68,13 @@ const Service = ()=>{
                 </div>
                 <div>{data?.sections[0].desc_1}</div>
             </div>
-            <div><img className="" src={img_1} alt="Image" /></div>
+            <div className="relative">
+                <div className="sticky top-30"><img src={img_2} alt="Image" /></div>
+            </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 container-layout">
             <div className="relative">
-                <div className="sticky top-30"><img src={img_2} alt="Image" /></div>
+                <div className="sticky top-30"><img src={img_1} alt="Image" /></div>
             </div>
             <div className="flex flex-col gap-5 md:gap-10">
                 <div className="content-heading">
@@ -90,7 +99,7 @@ const Service = ()=>{
             </div>
             
         </div>
-        <FAQs/>
+        <Ready/>
     </div>)
 }
 export default Service

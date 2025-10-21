@@ -215,7 +215,7 @@
 }
 
 /* ready */
-.ready h2{
+.ready h3{
     font-size: var(--font-size-xxl);
     font-weight: 700;
     color: var(--light);

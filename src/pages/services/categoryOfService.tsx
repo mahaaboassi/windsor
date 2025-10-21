@@ -2,50 +2,98 @@ import HeroForDynamicPages from "../../components/heroForDynamicPages"
 // Images
 import img_1 from "../../assets/images/img.png"
 import img_2 from "../../assets/images/about.png"
-import { aboutData } from "../../data"
-import Team from "../../sections/team"
+import { categories } from "../../data"
+import { useParams } from "react-router-dom"
+import { useEffect, useState, type ReactNode } from "react"
+import Ready from "../../sections/ready"
+
+
+type Service = {
+    icon: string;
+    link?: string;
+    title: string;
+    desc: string;
+};
+
+type Section = {
+    img: string;
+    hint: string;
+    title: string;
+    desc_1: ReactNode;
+    service?: Partial<Service>[];
+};
+
+type Hero = {
+    hint: string;
+    title: string;
+    desc: string;
+    subLabel: string;
+};
+type Services = {
+    id: number;
+    link: string,
+    hero: Hero;
+    sections: Section[];
+}
+type Item = {
+    id: number;
+    link: string;
+    category : string;
+    services : Services[],
+    first_sections : Section,
+    second_section : Section
+
+};
 
 const CategoryOfService = ()=>{
+    
+    const { category} = useParams()
+    const [ data, setData ] = useState<Services[] | undefined>(undefined)
+    const [cat, setCat] = useState<Item | undefined>(undefined);
+    useEffect(()=>{
+        if (!category) return;
+        window.scrollTo({top:0})
+        const catValue = categories.find(e => e.link === `/${category}`);
+        
+        setCat(catValue)
+        setData(catValue?.services);
+    },[category])
     return(<div className="flex flex-col gap-10 md:gap-20 dynamic-pages">
-        <HeroForDynamicPages hint="Get to Know" title="Windsor Dental Care"
-                            desc="We’re a dental practice that offers all aspects of dentistry, from preventive care and fillings to teeth whitening and wisdom teeth removal. Our team is dedicated to providing quality dental care in a relaxed and comfortable atmosphere."
-                            link="/" label="About" subLabel=""
+        <HeroForDynamicPages hint={cat?.category ?? ""} title={"In Windsor"}
+                            desc={""}
+                            link={"/"} label={"Home"} subLabel={cat?.category ??  ""}
         />
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 container-layout">
             <div className="flex flex-col gap-5 md:gap-10">
                 <div className="content-heading">
-                    <span>{aboutData.sections[0].hint}</span>
-                    <h2 className="uppercase">{aboutData.sections[0].title}</h2>
+                    <span>{cat?.first_sections.hint}</span>
+                    <h2 className="uppercase">{cat?.first_sections.title}</h2>
                 </div>
-                <div>{aboutData.sections[0].desc_1}</div>
+                <div>{cat?.first_sections.desc_1}</div>
             </div>
-            <div><img className="" src={img_1} alt="Image" /></div>
+            <div className="relative">
+                <div className="sticky top-30"><img src={img_2} alt="Image" /></div>
+            </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 container-layout">
-            <div><img src={img_2} alt="Image" /></div>
+            <div className="relative">
+                <div className="sticky top-30"><img src={img_1} alt="Image" /></div>
+            </div>
             <div className="flex flex-col gap-5 md:gap-10">
                 <div className="content-heading">
-                    <span>{aboutData.sections[1].hint}</span>
-                    <h2 className="uppercase">{aboutData.sections[1].title}</h2>
+                    <span>{cat?.second_section.hint}</span>
+                    <h2 className="uppercase">{cat?.second_section.title}</h2>
                 </div>
-                <div>{aboutData.sections[1].desc_1}</div>
-                <div className="grid grid-cols-1 xs:grid-cols-2 gap-3">
+                <div>{cat?.second_section.desc_1}</div>
+                <div className="flex flex-col gap-3">
                     {
-                        aboutData.sections[1].service?.map((e,idx)=>(
-                            <div key={`${e.title}_${idx}`} className="flex gap-3 items-center">
-                                <div className="w-[45px] h-[45px] border border-[2px] border-[var(--grey_2)] rounded-full bg-[var(--main)] flex justify-center items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 38 38" fill="none">
-                                    <g clip-path="url(#clip0_1339_2075)">
-                                    <path d="M18.4621 2.46498C20.7711 0.897743 24.1577 -0.0566473 27.3929 0.00314226C30.4329 0.0584476 33.3682 1.00238 35.2267 3.15779C35.8397 3.86779 36.3295 4.68691 36.7207 5.60991C37.1051 6.51647 37.3938 7.51645 37.6098 8.60686C38.0306 10.7346 38.0922 13.1053 37.8852 15.5492C37.6566 18.2419 37.1029 21.0296 36.3474 23.682C35.7981 25.6095 34.1683 30.4046 32.0694 33.8478C30.6897 36.1101 29.0709 37.823 27.3186 37.9351C26.4651 37.9904 25.6821 37.6623 24.9659 36.9673C24.338 36.3567 23.7613 35.4471 23.2336 34.2506L23.2188 34.2215L22.5352 32.4778C22.4395 32.2327 22.3215 31.9068 22.1931 31.5526C21.534 29.732 20.5662 27.0587 19.1679 26.7186C17.9975 26.4346 17.0624 28.7522 16.4864 30.1782C16.4166 30.3516 16.3513 30.513 16.2311 30.7925C16.168 30.9383 16.0285 31.285 15.8719 31.6752C14.9375 33.998 13.3559 37.9306 11.1041 37.9987C10.3263 38.0226 9.56403 37.681 8.81739 36.9912C8.16352 36.3866 7.50595 35.495 6.8454 34.3313C6.41493 33.5817 5.95997 32.7028 5.49387 31.7237C5.04856 30.7858 4.59434 29.7522 4.14458 28.6461C3.31927 26.614 2.32845 23.9937 1.52911 21.1881C0.720867 18.3481 0.0966873 15.2876 0.0091092 12.3848C-0.0450705 10.5709 0.141219 8.81014 0.600633 7.21376C1.03927 5.69062 1.72653 4.31696 2.68989 3.18544C4.58024 0.967996 7.0688 0.0741424 9.68055 0.018837C12.7087 -0.0446894 15.8956 1.03376 18.4621 2.46498ZM3.61317 11.7421C3.9286 9.9028 4.57356 8.19207 5.63266 6.77132C6.59973 5.47463 7.90153 4.42981 9.59817 3.76241L10.1385 5.15476C8.712 5.71603 7.62247 6.58747 6.81794 7.66667C5.91173 8.88189 5.35509 10.3736 5.07751 11.9939L3.61317 11.7421ZM32.203 14.9438H32.131C32.131 14.3459 31.9091 13.8242 31.466 13.3781C31.0229 12.9319 30.5049 12.7092 29.9118 12.7092V12.6359C30.5049 12.6359 31.0229 12.4125 31.466 11.9655C31.9091 11.5171 32.131 10.9955 32.131 10.4005H32.203C32.203 10.9977 32.4249 11.5194 32.868 11.9655C33.3111 12.4117 33.8291 12.6352 34.4229 12.6352V12.7077C33.8291 12.7077 33.3111 12.9311 32.868 13.3773C32.4249 13.8242 32.203 14.3459 32.203 14.9438ZM26.9884 16.5424H26.9297C26.9297 16.0671 26.7531 15.6501 26.3998 15.2951C26.0473 14.9393 25.6346 14.7607 25.1611 14.7607V14.7024C25.6331 14.7024 26.0473 14.5238 26.3998 14.1688C26.7531 13.8115 26.9297 13.3968 26.9297 12.9222H26.9884C26.9884 13.3975 27.165 13.8145 27.5183 14.1695C27.8708 14.5253 28.2835 14.7039 28.757 14.7039V14.7622C28.285 14.7622 27.8708 14.9408 27.5183 15.2958C27.1643 15.6501 26.9884 16.0656 26.9884 16.5424ZM28.2813 11.2511H28.1684C28.1684 10.3213 27.8226 9.50669 27.1316 8.81089C26.4399 8.11434 25.6331 7.76682 24.7076 7.76682V7.65322C25.6316 7.65322 26.4399 7.30494 27.1316 6.60765C27.8226 5.9096 28.1684 5.09647 28.1684 4.16823H28.2813C28.2813 5.09871 28.6271 5.91334 29.3181 6.60914C30.0091 7.30494 30.8166 7.65322 31.7413 7.65322V7.76682C30.8173 7.76682 30.0091 8.11509 29.3181 8.81089C28.6271 9.50669 28.2813 10.3213 28.2813 11.2511ZM19.7483 3.40816C21.2238 4.47316 21.7174 4.98436 22.5842 6.12036C21.4234 5.73995 19.9932 5.11141 18.8391 4.42832C18.6002 4.28632 18.3686 4.1361 18.1289 3.99559C15.6923 2.56363 12.6003 1.4493 9.7095 1.51059C7.4963 1.55767 5.39591 2.30429 3.81727 4.15627C2.99493 5.12188 2.40489 6.3072 2.02415 7.6293C1.60852 9.07247 1.44079 10.6786 1.49052 12.3437C1.5729 15.0918 2.1763 18.0312 2.95856 20.7785C3.75048 23.5602 4.71532 26.1147 5.5154 28.0848C5.94735 29.1476 6.39044 30.1543 6.83055 31.0803C7.27067 32.0062 7.70856 32.8493 8.12864 33.5825L8.13161 33.5884C8.71497 34.6168 9.27903 35.3896 9.82231 35.8918C10.275 36.3096 10.6899 36.5189 11.0632 36.5077C12.3406 36.4688 13.695 33.1019 14.4951 31.1131C14.6146 30.8149 14.7215 30.5504 14.8714 30.2014C14.9018 30.1318 15.0006 29.8867 15.1097 29.6162C15.8682 27.7365 17.1017 24.682 19.5168 25.268C21.6877 25.7956 22.818 28.9174 23.5877 31.0436C23.702 31.359 23.8066 31.649 23.9179 31.9338L24.6015 33.6774L24.6 33.6781C25.0431 34.6766 25.5077 35.418 25.9946 35.8911C26.3983 36.2834 26.8088 36.4703 27.2259 36.4441C28.4052 36.3679 29.6565 34.9501 30.8025 33.0698C32.8145 29.7701 34.3865 25.1372 34.9179 23.2725C35.649 20.7068 36.1841 18.017 36.4038 15.4266C36.5997 13.1135 36.544 10.8833 36.1514 8.89908C35.9533 7.89761 35.6942 6.99329 35.3558 6.19435C35.0233 5.41186 34.6136 4.72353 34.1052 4.1346C32.5518 2.33344 30.0209 1.54272 27.3699 1.49414C24.6304 1.44407 21.7916 2.17873 19.7483 3.40816Z" fill="white"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_1339_2075">
-                                    <rect width="38" height="38" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                    </svg>
+                        cat?.second_section.service?.map((e,idx)=>(
+                            <div key={`${e.title}_${idx}`} className="flex gap-3">
+                                <div className="w-[20px] h-[20px] border border-[2px] border-[var(--grey_2)] rounded-full bg-[var(--main)] flex justify-center items-center"></div>
+                                <div className="flex flex-col gap-1 w-full">
+                                    <div className="title">{e.title}</div>
+                                    <p>{e.desc}</p>
                                 </div>
-                                <div className="title">{e.title}</div>
                             </div>
                         ))
                     }
@@ -54,7 +102,7 @@ const CategoryOfService = ()=>{
             </div>
             
         </div>
-        <Team/>
+        <Ready/>
     </div>)
 }
 export default CategoryOfService

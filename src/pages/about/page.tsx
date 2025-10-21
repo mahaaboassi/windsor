@@ -4,6 +4,7 @@ import img_1 from "../../assets/images/img.png"
 import img_2 from "../../assets/images/about.png"
 import { aboutData } from "../../data"
 import Team from "../../sections/team"
+import Ready from "../../sections/ready"
 
 const About = ()=>{
     return(<div className="flex flex-col gap-10 md:gap-20 dynamic-pages">
@@ -55,6 +56,7 @@ const About = ()=>{
             
         </div>
         <Team/>
+        <Ready/>
     </div>)
 }
 export default About

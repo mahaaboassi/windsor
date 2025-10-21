@@ -8,7 +8,7 @@
     font-weight: 700;
     color: var(--main); 
 }
-.dynamic-pages p{
+.dynamic-pages p,.dynamic-pages ul{
     font-size: 1rem;
 }
 .dynamic-pages .content-heading{
@@ -34,7 +34,7 @@
     .dynamic-pages h2{
         font-size: 1.8rem; 
     }
-    .dynamic-pages p{
+    .dynamic-pages p, .dynamic-pages ul{
         font-size: 0.8rem;
     }
     .dynamic-pages .content-heading{

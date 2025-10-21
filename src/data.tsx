@@ -41,16 +41,17 @@ export const aboutData = {
         }]
     }]
 }
-export const services = [{
+export const categories = [{
+    id: 1,
+    category: "General Dentistry",
+    link: "/general-dentistry",
+    services : [{
     id: 1,
     link: "general-dentistry/root-canal-therapy",
     hero:{
         hint: "Root Canal Therapy",
         title: "in Windsor",
         desc: "Your smile should experience the highest level of comfort! Windsor Dental Care's skilled dental team provides root canal therapy in our contemporary clinic, outfitted with cutting-edge technology. We are committed to making your visit as calm and soothing as possible.",
-        category: "General Dentistry",
-        link: "/general-dentistry",
-        label: "General Dentistry",
         subLabel: "Root Canal Therapy"
     },
     sections : [ {
@@ -94,9 +95,6 @@ export const services = [{
         hint: "Wisdom Teeth Removal",
         title: "in Windsor",
         desc: "Extracting a wisdom tooth doesn't have to involve discomfort. At Windsor Dental Care, we ensure a soothing and tranquil setting for the dental attention you require.",
-        category: "General Dentistry",
-        link: "/general-dentistry",
-        label: "General Dentistry",
         subLabel: "Wisdom Teeth Removal"
     },
     sections : [ {
@@ -142,9 +140,6 @@ export const services = [{
         hint: "Gum Disease Treatment",
         title: "in Windsor",
         desc: "Are you in search of a nearby dental clinic to address your gum concerns? Our dedicated team is here to provide proactive care for your gums, ensuring their well-being and preventing future complications.",
-        category: "General Dentistry",
-        link: "/general-dentistry",
-        label: "General Dentistry",
         subLabel: "Gum Disease Treatment"
     },
     sections : [ {
@@ -189,9 +184,6 @@ export const services = [{
         hint: "Children's Dentistry",
         title: "in Windsor",
         desc: "We're here to elevate your child's dental care experience. Allow our team to work their magic and enhance their smile like never before!",
-        category: "General Dentistry",
-        link: "/general-dentistry",
-        label: "General Dentistry",
         subLabel: "Children's Dentistry"
     },
     sections : [ {
@@ -235,9 +227,6 @@ export const services = [{
         hint: "Mouthguards",
         title: "in Windsor",
         desc: "Don't let dental mishaps disrupt your life. Safeguard your smile with our tailor-made mouthguards now!",
-        category: "General Dentistry",
-        link: "/general-dentistry",
-        label: "General Dentistry",
         subLabel: "Mouthguards"
     },
     sections : [ {
@@ -280,9 +269,6 @@ export const services = [{
         hint: "Snoring and Sleep Apnea",
         title: "in Windsor",
         desc: "Are you struggling to achieve a restful night's sleep? Snoring can be a nuisance, affecting not just you but also your partner. Windsor Dental Care is ready to assist you in minimizing snoring and symptoms of sleep apnea.",
-        category: "General Dentistry",
-        link: "/general-dentistry",
-        label: "General Dentistry",
         subLabel: "Snoring and Sleep Apnea"
     },
     sections : [ {
@@ -326,9 +312,6 @@ export const services = [{
         hint: "Scale and Clean",
         title: "in Windsor",
         desc: "Taking good care of your teeth is crucial. Getting your teeth professionally cleaned can aid in preserving your oral health and reduce the chances of developing gum disease and tooth decay.",
-        category: "General Dentistry",
-        link: "/general-dentistry",
-        label: "General Dentistry",
         subLabel: "Scale and Clean"
     },
     sections : [ {
@@ -365,16 +348,71 @@ export const services = [{
             desc: "Tooth decay occurs when bacteria in the mouth produce acids that erode the tooth's surface or enamel, leading to not just cavities but also potentially severe outcomes like tooth loss. The scale and clean procedure can aid in preventing or reducing the risk of tooth decay."
         }]
     }]
+    },],
+    first_sections : {
+        img: "",
+        hint: "Enhancing Family Smiles with Our Comprehensive",
+        title: "General Dentistry Services Windsor",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Choosing the right dentist can be challenging, especially when trying to figure out what criteria are most important.</p>
+            <p>You likely have numerous questions about dental services and are searching for a dentist with a solid background in general dentistry who also creates a welcoming and comfortable atmosphere.</p>
+            <p>At Windsor Dental Care, we take pride in offering a diverse range of dental services, delivered by our team of seasoned and certified dentists. Our comprehensive dental care caters to patients across all age groups, encompassing preventive measures, orthodontic solutions, and restorative procedures. We tailor treatment plans to meet the individual needs of each patient, ensuring optimal oral health. Utilizing advanced technology and state-of-the-art equipment, we strive to offer outstanding dental care. Windsor Dental Care is dedicated to delivering exceptional dental services to our patients, and we eagerly anticipate the opportunity to care for you.</p>
+        </div>
+    },
+    second_section: {
+        img: "",
+        hint: "Our Range Of",
+        title: "General Dental Services",
+        desc_1 : <div>
+            <p>At Windsor Dental Care, we tailor our general dentistry offerings to support our patients in sustaining healthy teeth and gums throughout their lives. Additionally, we prioritise creating a relaxed and inviting atmosphere, ensuring you're comfortable and at peace throughout your appointment.</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Comprehensive Examination & Scaling",
+            desc: "Professional dental cleanings offer an excellent method to maintain the whiteness and health of your teeth. Our dentists specialise in eliminating plaque from areas between teeth and gums that regular brushing might miss, helping to avert gum disease and tooth decay."
+        },{
+            icon: "",
+            title: "Periodontal Disease Management",
+            desc: "The dentist will perform a comprehensive cleaning beneath the gum line to eliminate plaque, which can lead to bleeding gums, infections, foul breath, and potential tooth loss. Special dental tools and techniques, such as scaling and root planing, may be employed by our dentist for this purpose."
+        },{
+            icon: "",
+            title: "Pediatric Dental Care",
+            desc: "Our dental staff is dedicated to guiding our young patients towards a future of vibrant, healthy smiles. We provide preventive care and early intervention strategies tailored to the evolving growth and developmental stages of children and adolescents."
+        },{
+            icon: "",
+            title: "Sleep Disordered Breathing Solutions",
+            desc: "Snoring, a widespread issue, can arise from various causes. Dental devices are frequently employed to manage snoring and sleep apnea. The dentists at Windsor Dental Care are equipped to assess your situation and recommend the most appropriate dental solution based on the severity of your condition."
+        },{
+            icon: "",
+            title: "Dental Protective Gear",
+            desc: "If you find yourself grinding or clenching your teeth during sleep, engage in contact sports, or worry about enamel erosion, Windsor Dental Care has a solution. We provide tailor-made mouth guards crafted from premium materials to ensure your teeth receive the utmost protection."
+        },{
+            icon: "",
+            title: "Endodontic Treatment",
+            desc: "Should you have a tooth suffering from significant decay or infection, obtaining prompt treatment is crucial. Root canal therapy can be a vital procedure to preserve a tooth compromised by decay or trauma."
+        },{
+            icon: "",
+            title: "Extraction of Wisdom Teeth",
+            link: "/services/wisdom-teeth-removal",
+            desc: "Should you be experiencing discomfort due to an impacted wisdom tooth, our dentist might recommend its extraction. This procedure is typically safe and yields effective results. The healing process is often brief, with many patients experiencing minimal to no discomfort post-operation."
+        },{
+            icon: "",
+            title: "Dental Tooth Removal",
+            desc: "Experiencing toothache necessitates prompt action to prevent the issue from escalating. Depending on your specific situation, tooth removal can be a straightforward process performed in our office, utilizing either local anesthesia for your comfort."
+        }]
+    }
+
 },{
-    id: 8,
+    id: 2,
+    category: "Cosmetic Dentistry",
+    link: "/cosmetic-dentistry",
+    services : [{
+    id: 1,
     link: "cosmetic-dentistry/teeth-whitening",
     hero:{
         hint: "Teeth Whitening",
         title: "in Windsor",
         desc: "Elevate your smile with our teeth whitening service and experience the joy of possessing a whiter, more radiant set of teeth.",
-        category: "Cosmetic Dentistry",
-        link: "/cosmetic-dentistry",
-        label: "Cosmetic Dentistry",
         subLabel: "Teeth Whitening"
     },
     sections : [ {
@@ -412,15 +450,12 @@ export const services = [{
         }]
     }]
 },{
-    id: 9,
+    id: 2,
     link: "cosmetic-dentistry/dental-veneers",
     hero:{
         hint: "Dental Veneers",
         title: "in Windsor",
         desc: "Picture enhancing your smile with dental veneers. If you're on the hunt for a way to achieve a fresh, beautiful set of teeth, the moment is now!",
-        category: "Cosmetic Dentistry",
-        link: "/cosmetic-dentistry",
-        label: "Cosmetic Dentistry",
         subLabel: "Dental Veneers"
     },
     sections : [ {
@@ -459,15 +494,12 @@ export const services = [{
         }]
     }]
 },{
-    id: 10,
+    id: 3,
     link: "cosmetic-dentistry/clear-aligners",
     hero:{
         hint: "Clear Aligners",
         title: "in Windsor",
         desc: "At Windsor Dental Care, we understand the importance of a beautiful smile. It's not just about aesthetics; it's about feeling confident and happy in your own skin. That's why we're proud to offer our patients the latest in orthodontic treatment with our state-of-the-art clear aligners.",
-        category: "Cosmetic Dentistry",
-        link: "/cosmetic-dentistry",
-        label: "Cosmetic Dentistry",
         subLabel: "Clear Aligners"
     },
     sections : [ {
@@ -507,15 +539,12 @@ export const services = [{
         }]
     }]
 },{
-    id: 11,
+    id: 4,
     link: "cosmetic-dentistry/smile-makeovers",
     hero:{
         hint: "Smile Makeovers",
         title: "in Windsor",
         desc: "A smile transformation can grant you a radiant and self-assured new appearance. If you're in pursuit of a fast and cutting-edge method to revamp your smile, consider a visit to Windsor Dental Care",
-        category: "Cosmetic Dentistry",
-        link: "/cosmetic-dentistry",
-        label: "Cosmetic Dentistry",
         subLabel: "Smile Makeovers"
     },
     sections : [ {
@@ -552,16 +581,57 @@ export const services = [{
             desc: "A smile makeover offers a powerful solution for enhancing the look of your smile. It can address issues with misaligned, short, or teeth of varying lengths, creating a more uniform appearance and giving you a set of neat, pearly whites."
         }]
     }]
+},],
+    first_sections : {
+        img: "",
+        hint: "Achieve A Brighter",
+        title: "Straighter Smile With Cosmetic Dentistry Windsor",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Many individuals are self-aware about their smiles due to cosmetic dental issues that require attention.</p>
+            <p>Common cosmetic dental problems, including chips, gaps between teeth, and discoloration, affect numerous people. We recognize the challenge in feeling confident when your appearance doesn't meet your expectations. A radiant smile can significantly alter your self-perception and boost your confidence across various settings.</p>
+            <p>With cosmetic dental solutions, you can enhance your smile by improving the color, alignment, and shape of your teeth, as well as by repairing or replacing those that are missing. For example, smile makeover procedures can achieve better alignment and improve the overall look of your teeth. Veneers, on the other hand, can reshape your teeth or cover deep stains that other whitening methods cannot address. Windsor Dental Care is committed to helping you attain the smile of your dreams. Leveraging the latest in cosmetic dentistry technology, we can solve most aesthetic dental concerns.</p>
+        </div>
+    },
+    second_section: {
+        img: "",
+        hint: "Cosmetic Dental Services",
+        title: "We Offer",
+        desc_1 : <div>
+            <p>You desire a smile that's radiant, white, and stunning. Let us assist you in reaching that objective through our cosmetic dental offerings.</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Teeth Whitening",
+            link: "/services/teeth-whitening/",
+            desc: "Teeth whitening is a popular procedure in cosmetic dentistry aimed at eliminating stains and discoloration from teeth. Various techniques are employed to lighten teeth, all of which utilize active substances to dissolve the stains."
+        },{
+            icon: "",
+            title: "Veneers",
+            link: "/services/clear-aligners/",
+            desc: "Dental veneers are ultra-thin, tooth-colored coverings designed to fit over the front of your teeth. This approach enhances the look of teeth that are chipped, stained, worn, misaligned, or have minor spaces between them."
+        },{
+            icon: "",
+            title: "Clear Aligners",
+            link: "/services/clear-aligners/",
+            desc: "Clear aligners are virtually invisible, removable trays made from a transparent, plastic material. Each set of aligners is custom-made to fit the patient's teeth, based on 3D imaging or dental impressions. As you progress through the series of aligners, each one slightly adjusts your teeth, leading to a straighter smile over time."
+        },{
+            icon: "",
+            title: "Smile Makeovers",
+            link: "/services/smile-makeovers/",
+            desc: "A smile makeover involves a series of procedures aimed at tackling multiple aesthetic issues, potentially leading to a dramatic transformation in your teeth's appearance."
+        }]
+    }
 },{
-    id: 12,
+    id: 3,
+    category: "Restorative Dentist",
+    link: "/restorative-dentist",
+    services : [{
+    id: 1,
     link: "restorative-dentist/dental-fillings",
     hero:{
         hint: "Dental Fillings",
         title: "in Windsor",
         desc: "Cavities are filled with bacteria that pose a threat to your teeth and gums. Maintaining a healthy smile is crucial for both your looks and oral functionality; neglecting it can result in numerous dental issues. Prevent these complications by scheduling a tooth filling appointment at Windsor Dental Care.",
-        category: "Restorative Dentist",
-        link: "/restorative-dentist",
-        label: "Restorative Dentist",
         subLabel: "Dental Fillings"
     },
     sections : [ {
@@ -600,15 +670,12 @@ export const services = [{
         }]
     }]
 },{
-    id: 13,
+    id: 2,
     link: "restorative-dentist/dentures",
     hero:{
         hint: "Dentures",
         title: "in Windsor",
         desc: "Why contend with the challenges of missing teeth when you can enjoy a full and attractive smile? We provide dentures as a solution for those seeking to replace missing teeth!",
-        category: "Restorative Dentist",
-        link: "/restorative-dentist",
-        label: "Restorative Dentist",
         subLabel: "Dentures"
     },
     sections : [ {
@@ -647,15 +714,12 @@ export const services = [{
         }]
     }]
 },{
-    id: 14,
+    id: 3,
     link: "restorative-dentist/crown",
     hero:{
         hint: "Crown",
         title: "in Windsor",
         desc: "Discover a new level of dental crown technology with Windsor Dental Care. They're excited to offer cutting-edge dental crown solutions designed to rejuvenate your smile.",
-        category: "Restorative Dentist",
-        link: "/restorative-dentist",
-        label: "Restorative Dentist",
         subLabel: "Crown"
     },
     sections : [ {
@@ -691,15 +755,12 @@ export const services = [{
         }]
     }]
 },{
-    id: 15,
+    id: 4,
     link: "restorative-dentist/bridges",
     hero:{
         hint: "Dental Bridges",
         title: "in Windsor",
         desc: "The absence of teeth can cause discomfort and self-consciousness. At Windsor Dental Care located in Windsor, we provide dental bridges as a solution to fill the gaps left by missing teeth, restoring your smile and boosting your confidence.",
-        category: "Restorative Dentist",
-        link: "/restorative-dentist",
-        label: "Restorative Dentist",
         subLabel: "Dental Bridges"
     },
     sections : [ {
@@ -732,16 +793,62 @@ export const services = [{
             desc: "Dental bridges consist of artificial teeth that are permanently bonded to the patient's natural teeth. As a result, patients are relieved from the concern of having to remove and clean the bridge, unlike the maintenance required for removable dentures."
         }]
     }]
+},],
+    first_sections : {
+        img: "",
+        hint: "Enjoy Eating",
+        title: "Restorative Dentist Windsor",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Even if you're pressed for time, a dental emergency isn't something to overlook. Oral health issues, like cavities, only deteriorate with neglect.</p>
+            <p>A missing tooth, for example, can disrupt your bite, setting the stage for additional dental complications. Moreover, untreated cavities can cause severe pain and potentially lead to grave health concerns.</p>
+            <p>Should your teeth sustain trauma or damage from dental accidents, restorative dentistry may be necessary. Issues such as decay, cavities, tooth loss, or other oral damage can arise from such incidents. Windsor Dental Care is here to provide swift and effective restorative dentistry services to address your oral health needs.</p>
+        </div>
+    },
+    second_section: {
+        img: "",
+        hint: "Our Restorative",
+        title: "Dental Treatments Windsor",
+        desc_1 : <div>
+            <p>Windsor Dental Care offers an extensive array of restorative dental solutions, including everything from tooth fillings to dental bridges. Rediscover the pleasure of eating your favourite foods without the concern of damaged or absent teeth!</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Tooth Fillings",
+            link:"/services/dental-fillings/",
+            desc: "Dental fillings are employed by dentists to repair teeth affected by decay, wear, or cracks. Our dentist will excise the decayed section or cavity and then fill the space with a substance like metal, plastic, or glass to reinforce the tooth."
+        },{
+            icon: "",
+            title: "Crowns",
+            link:"/services/crown/",
+            desc: "Dental crowns are custom-made caps placed over a damaged or decayed tooth to restore its shape, size, strength, and appearance."
+        },{
+            icon: "",
+            title: "Dental Bridges",
+            link:"/services/bridges/",
+            desc: "A dental bridge is a superior choice for individuals missing teeth, especially those in the front. It restores the functionality of the lost tooth by filling the space left behind. Consult with our dentist to see if a dental bridge could be advantageous for you."
+        },{
+            icon: "",
+            title: "Dental Implants",
+            link:"/services/dental-implants/",
+            desc: "Dental implants offer a durable replacement for lost teeth, mimicking natural tooth function and appearance. Anchored into the jawbone, they provide a stable base for artificial teeth, preserving bone structure and supporting facial integrity. Ideal for those seeking a permanent solution to tooth loss, implants enhance oral health, comfort, and confidence."
+        },{
+            icon: "",
+            title: "Dentures",
+            link:"/services/dentures/",
+            desc: "Being without natural teeth can significantly impact your looks and well-being. For those who have lost their teeth, dentures offer a solution to regain an attractive smile. These removable dental devices are designed to substitute for absent teeth."
+        }]
+    }
 },{
-    id: 16,
+    id: 4,
+    category: "Dental Implants",
+    link: "/dental-implants",
+    services : [{
+    id: 1,
     link: "dental-implants/single-dental-implants",
     hero:{
         hint: "Single Dental Implants",
         title: "in Windsor",
         desc: "Windsor Dental Care is founded on the principle that everyone should have a smile they're proud of. If you're in search of a dental solution for missing teeth, our dedicated team is here to assist you in attaining the smile you've always desired.",
-        category: "Dental Implants",
-        link: "/dental-implants",
-        label: "Dental Implants",
         subLabel: "Single Dental Implants"
     },
     sections : [ {
@@ -771,15 +878,12 @@ export const services = [{
         }]
     }]
 },{
-    id: 17,
+    id: 2,
     link: "dental-implants/multiple-implants",
     hero:{
         hint: "Multiple Implants",
         title: "in Windsor",
         desc: "Restore your smile with multiple dental implants, offering a natural, comfortable, and long-lasting solution for missing teeth.",
-        category: "Dental Implants",
-        link: "/dental-implants",
-        label: "Dental Implants",
         subLabel: "Multiple Implants"
     },
     sections : [ {
@@ -814,15 +918,12 @@ export const services = [{
         }]
     }]
 },{
-    id: 18,
+    id: 3,
     link: "dental-implants/implant-supported-dentures",
     hero:{
         hint: "Implant Supported Dentures",
         title: "in Windsor",
         desc: "In the quest to replace missing teeth, the goal is always to find an option that mimics natural teeth as closely as possible. Implant-supported dentures offer a more stable and comfortable alternative to traditional dentures, providing a sensation akin to having your natural teeth restored.",
-        category: "Dental Implants",
-        link: "/dental-implants",
-        label: "Dental Implants",
         subLabel: "Implant Supported Dentures"
     },
     sections : [ {
@@ -856,15 +957,12 @@ export const services = [{
         }]
     }]
 },{
-    id: 19,
+    id: 4,
     link: "dental-implants/implant-supported-bridge",
     hero:{
         hint: "Implant Supported Bridge",
         title: "in Windsor",
         desc: "Replacing your missing teeth with a durable, efficient, and aesthetically pleasing dental bridge is now within reach. At Windsor Dental Care, we provide implant-supported bridges, offering a stable and enduring solution for your tooth replacement needs.",
-        category: "Dental Implants",
-        link: "/dental-implants",
-        label: "Dental Implants",
         subLabel: "Implant Supported Bridge"
     },
     sections : [ {
@@ -897,16 +995,58 @@ export const services = [{
             desc: "An implant-supported bridge is secured to your jawbone through dental implants, offering a firm and supportive foundation. This method is highly durable for tooth replacement, allowing patients to engage in their daily activities without concern for the instability of partial dentures."
         }]
     }]
+},],
+    first_sections : {
+        img: "",
+        hint: "Dental Implants Windsor:",
+        title: "A Natural-Looking Solution for Missing Teeth",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Even a single missing tooth can significantly impact your overall quality of life.</p>
+            <p>Dental implant surgery stands out as a highly effective solution for replacing missing teeth. This technique involves substituting tooth roots with titanium posts and fitting artificial teeth that both appear and function similarly to natural teeth.</p>
+            <p>At Windsor Dental Care, we specialise in dental implant surgery to enhance your oral health. The absence of teeth can lead to challenges in eating and speaking, contribute to jawbone loss which can alter facial contours, and cause the adjacent teeth to shift — potentially heightening the risk of tooth decay, gum disease, and other oral health issues. We provide dental implants as a durable solution for missing teeth, aiming to restore both the functionality and aesthetics of your smile. If you're dealing with tooth loss, dental implants might be the ideal replacement solution for you. Reach out to us to arrange a consultation, where we can assess your specific needs and devise a tailored treatment plan just for you.</p>
+            <p>If you're in search of a reliable solution for replacing missing teeth, you've found the right destination.</p>
+        </div>
+    },
+    second_section: {
+        img: "",
+        hint: "Dental Implant Services",
+        title: "We Offer",
+        desc_1 : <div>
+            <p>Dental implants represent the most lifelike option for replacing missing teeth. Windsor Dental Care provides a diverse range of dental implant solutions.</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Several Dental Implants",
+            desc: "Opting for multiple dental implants to replace several missing teeth is a superb decision. This durable tooth replacement solution ensures a natural-looking and comfortable smile, boosting your confidence."
+        },{
+            icon: "",
+            title: "Bridge Supported by Implants",
+            desc: "In contrast to conventional dental bridges that rely on natural teeth for support, implant-supported bridges are secured to titanium posts that are embedded in the jawbone. If you're missing teeth and prefer not to opt for dentures or traditional bridges, choosing an implant-supported bridge might be the ideal solution for you."
+        },{
+            icon: "",
+            title: "All-on-X Implant Solution",
+            desc: "All-on-x dental implants offer a permanent solution for replacing an entire arch of missing teeth with dentures that are securely anchored to the jawbone. This provides a sturdy base for the artificial teeth, restoring your smile and enabling you to eat and speak confidently."
+        },{
+            icon: "",
+            title: "Dentures Supported by Implants",
+            desc: "Implant-supported dentures function similarly to removable overdentures; however, rather than relying on natural teeth for support, they are anchored by implants. This option is ideal if you have lost all your teeth and wish to avoid the inconvenience of dentures that do not stay in place."
+        },{
+            icon: "",
+            title: "Individual Dental Implants",
+            desc: "For those missing a single tooth, there's no superior dental solution than an implant. We provide individual dental implants designed to replace any lost tooth, restoring the beauty of your smile."
+        }]
+    }
 },{
-    id: 20,
+    id: 5,
+    category: "Emergency Dentist",
+    link: "/emergency-dentist",
+    services : [{
+    id: 1,
     link: "emergency-dentist/toothache",
     hero:{
         hint: "Immediate Toothache Relief",
         title: "in Windsor",
         desc: "No need to endure toothache pain any longer. Come to Windsor Dental Care in Windsor, and we'll have you smiling again in no time.",
-        category: "Emergency Dentist",
-        link: "/emergency-dentist",
-        label: "Emergency Dentist",
         subLabel: "Toothache"
     },
     sections : [ {
@@ -940,15 +1080,12 @@ export const services = [{
         }]
     }]
 },{
-    id: 21,
+    id: 2,
     link: "emergency-dentist/chipped-tooth",
     hero:{
         hint: "Restore Chipped Tooth",
         title: "in Windsor",
         desc: "Is your tooth chipped? Come to our Windsor clinic for a consultation. We're here to save your tooth and bring back your smile.",
-        category: "Emergency Dentist",
-        link: "/emergency-dentist",
-        label: "Emergency Dentist",
         subLabel: "Chipped Tooth"
     },
     sections : [ {
@@ -986,15 +1123,12 @@ export const services = [{
         }]
     }]
 },{
-    id: 22,
+    id: 3,
     link: "emergency-dentist/abscess",
     hero:{
         hint: "Immediate Pain Relief For Abscess",
         title: "in Windsor",
         desc: "Should you find yourself in a dental crisis requiring immediate attention for a dental abscess, Windsor Dental Care stands ready to assist. We offer emergency dental care to patients experiencing pain and in urgent need of relief.",
-        category: "Emergency Dentist",
-        link: "/emergency-dentist",
-        label: "Emergency Dentist",
         subLabel: "Abscess"
     },
     sections : [ {
@@ -1032,15 +1166,12 @@ export const services = [{
         }]
     }]
 },{
-    id: 22,
+    id: 4,
     link: "emergency-dentist/lost-fillings-or-crowns",
     hero:{
         hint: "Restore Lost Dental Fillings & Crowns",
         title: "in Windsor",
         desc: "Experiencing the loss of a filling or crown can be both aggravating and disruptive. Often, there's a temptation to postpone fixing it and not treat it as a priority. Nonetheless, it is advisable to address and replace any dislodged restorations promptly.",
-        category: "Emergency Dentist",
-        link: "/emergency-dentist",
-        label: "Emergency Dentist",
         subLabel: "Lost Fillings & Crowns"
     },
     sections : [ {
@@ -1078,15 +1209,12 @@ export const services = [{
         }]
     }]
 },{
-    id: 22,
+    id: 5,
     link: "emergency-dentist/tooth-extractions",
     hero:{
         hint: "Tooth Extractions",
         title: "in Windsor",
         desc: "Tooth removal is a frequently performed dental procedure that often worries patients. However, for individuals facing serious dental problems, extraction remains a valuable option. Windsor Dental Care provides gentle and painless tooth removal services, aiming to enhance patients' overall oral health.",
-        category: "Emergency Dentist",
-        link: "/emergency-dentist",
-        label: "Emergency Dentist",
         subLabel: "Tooth Extractions"
     },
     sections : [ {
@@ -1118,4 +1246,44 @@ export const services = [{
             desc: "Removing a tooth can boost your dental health and protect the rest of your teeth. Extracting a troublesome tooth prevents the spread of dental issues to adjacent teeth. This not only betters your oral hygiene but also saves you both time and expenses in the long run."
         }]
     }]
+}],
+    first_sections : {
+        img: "",
+        hint: "Rapid and Dependable",
+        title: "Emergency Dental Services Windsor",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Dental emergencies can be both extremely painful and cause significant stress. In some cases, they may even pose a risk to your life.</p>
+            <p>Such emergencies can strike unexpectedly, leaving you in distress and uncertain of the next steps. Whether you're dealing with a severe toothache, a fractured tooth, or a lost filling, it's critical to seek prompt treatment to prevent additional harm and receive the necessary dental attention.</p>
+            <p>Windsor Dental Care stands ready to support you in these urgent situations. We provide top-tier emergency dental services to ensure you receive swift and effective treatment. Our team is adept at managing a wide range of dental emergencies, offering peace of mind that you're in capable hands. If you find yourself facing a dental crisis, don't hesitate to reach out to Windsor Dental Care. Our dedicated dentists are here to deliver the essential care you need to swiftly return to your daily activities.</p>
+        </div>
+    },
+    second_section: {
+        img: "",
+        hint: "Emergency Dental Services",
+        title: "We Offer",
+        desc_1 : <div>
+            <p>If you encounter an urgent issue with your mouth or teeth that demands prompt medical intervention, Windsor Dental Care is here to alleviate your pain and discomfort. Our clinic delivers exceptional care for dental emergencies, covering a range of services.</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Dental Pain",
+            link: "/services/toothache/",
+            desc: "No need to endure a toothache any longer. Windsor Dental Care offers Premier dental care to relieve your discomfort."
+        },{
+            icon: "",
+            title: "Cracked Tooth",
+            link: "/services/chipped-tooth/",
+            desc: "Immediate attention can quickly mend a chipped tooth. Thanks to the high-quality services provided by Windsor Dental Care, your teeth can be restored to their normal state, allowing you to showcase your radiant smile once more."
+        },{
+            icon: "",
+            title: "Dental Abscess",
+            link: "/services/abscess/",
+            desc: "A dental abscess can lead to severe toothache and potentially disseminate infection beyond the oral cavity. Windsor Dental Care employs proven methods to eliminate the abscess from your tooth, halting the spread of infection and alleviating pain."
+        },{
+            icon: "",
+            title: "Missing Fillings or Crowns",
+            link: "/services/lost-fillings-or-crowns/",
+            desc: "The loss of a filling or crown can result in not only cosmetic issues but also unexpected dental discomfort. Schedule a visit to Windsor Dental Care, where our adept dentist will restore your fillings or crowns, ensuring your smile is as radiant as ever."
+        }]
+    }
 }]

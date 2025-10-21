@@ -4,7 +4,7 @@ const Ready = ()=>{
     return(<div className="container-layout ready">
         <div className="relative overflow-hidden bg-[var(--main)] rounded-xl">
             <div className="relative z-1 flex flex-col justify-center items-center gap-3 py-10">
-                <h2 >Ready to Smile Confidence?</h2>
+                <h3>Ready to Smile Confidence?</h3>
                 <p>Discover your brightest smile with care that makes you feel comfortable, confident, and radiant every day. Because when you smile, the world smiles with you.</p>
                 <button className="btn flex justify-center items-center gap-2 !bg-[var(--light)] !text-[var(--main)]">
                     BOOK AN APPOINTMENT
