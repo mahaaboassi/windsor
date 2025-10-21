@@ -53,10 +53,10 @@ const HeroForDynamicPages = ({hint,title,desc,link,label,subLabel,type}:Item) =>
         </button>}
       </div>
       <div className="absolute bottom-0 right-5 flex gap-2 z-50">
-        <div className="flex gap-2 text-sm">
+        <div className="flex gap-2 text-md items-center">
             <Link className="text-[var(--main)]" to={link}><strong>{label}</strong></Link>
-            <div className="text-zinc-500">/</div>
-            <div className="text-zinc-500">{subLabel}</div>
+            <div className="text-black">/</div>
+            <div className="text-black text-sm">{subLabel}</div>
         </div>
       </div>
     </section>
