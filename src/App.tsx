@@ -7,7 +7,6 @@ import Service from './pages/services/page'
 import CategoryOfService from './pages/services/categoryOfService'
 import ContactPage from './pages/contact/page'
 import Terms from './pages/terms/page'
-import Privacy from './pages/privacy/page'
 
 function App() {
   

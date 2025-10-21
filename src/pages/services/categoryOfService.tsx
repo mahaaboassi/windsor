@@ -48,7 +48,7 @@ type Item = {
 const CategoryOfService = ()=>{
     
     const { category} = useParams()
-    const [ data, setData ] = useState<Services[] | undefined>(undefined)
+    // const [ data, setData ] = useState<Services[] | undefined>(undefined)
     const [cat, setCat] = useState<Item | undefined>(undefined);
     useEffect(()=>{
         if (!category) return;
@@ -56,7 +56,7 @@ const CategoryOfService = ()=>{
         const catValue = categories.find(e => e.link === `/${category}`);
         
         setCat(catValue)
-        setData(catValue?.services);
+        // setData(catValue?.services);
     },[category])
     return(<div className="flex flex-col gap-10 md:gap-20 dynamic-pages">
         <HeroForDynamicPages hint={cat?.category ?? ""} title={"In Windsor"}
