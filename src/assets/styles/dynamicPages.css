@@ -1,58 +1,15 @@
-.dynamic-pages span{
-    font-size: var(--font-size-xl);
-    font-weight: 600;
-    /* color: var(--grey_1); */
-}
-.dynamic-pages h2{
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--main); 
-}
-.dynamic-pages p,.dynamic-pages ul{
-    font-size: 1rem;
-}
-.dynamic-pages .content-heading{
-    line-height: 3rem;
-}
-.dynamic-pages .title{
-    font-size: var(--font-size-s);
+.dynamic-pages .desc{
+    font-size: var(--font-size-xs);
+    color: var(--grey_1);
     font-weight: 500;
 }
-@media (max-width:1200px) {
+.dynamic-pages .option p{
+    font-size: var(--font-size-xxs);
+    color: var(--grey_1);
+    font-weight: 500;
+}
+.dynamic-pages .option .title{
+    color: rgb(42, 41, 41);
+    font-weight: 600;
+}
 
-    .dynamic-pages h2{
-        font-size: 2.5rem; 
-    }
-}
-@media (max-width:900px) {
-    
-}
-@media (max-width:768px) {
-    
-}
-@media (max-width:600px) {
-    .dynamic-pages h2{
-        font-size: 1.8rem; 
-    }
-    .dynamic-pages p, .dynamic-pages ul{
-        font-size: 0.8rem;
-    }
-    .dynamic-pages .content-heading{
-        line-height: 2rem;
-    }
-}
-@media (max-width:400px) {
-    .dynamic-pages span{
-    font-size: var(--font-size-s);
-    line-height: 0.5rem;
-    }
-    .dynamic-pages h2{
-        font-size: 1.5rem; 
-    }
-    .dynamic-pages .content-heading{
-        line-height: 1.8rem;
-    }
-}
-@media (max-width:500px) {
-    
-}

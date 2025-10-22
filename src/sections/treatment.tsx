@@ -5,6 +5,7 @@ import img_3 from "../assets/images/3.png"
 import img_4 from "../assets/images/4.png"
 import img_5 from "../assets/images/5.png"
 import img_6 from "../assets/images/6.png"
+import Heading from "../components/heading"
 
 type ItemContact = {
     img: string,
@@ -49,10 +50,9 @@ const tooth = <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" vie
 const Treatment = ()=>{
     return(<div className="container-layout flex flex-col gap-10 items-center relative">
         <div className="absolute top-0 z-1 right-10 animate-moveAround"><img src={shape} alt="Shape" /></div>
-        <div className="heading flex flex-col gap-5">
-            <h2>OUR DENTAL TREATMENTS</h2>
-            <p>Windsor Dental Care is your destination for exceptional dental services in the McGraths Hill, Mulgrave, Bligh Park, South Windsor, Richmond, Hobartville, Clarendon, Wilberforce, Freemans Reach, and Pitt Town areas.</p>
-        </div>
+        <Heading isCenter={true} hint="Comprehensive Care" title="OUR DENTAL TREATMENTS"
+                 desc="Windsor Dental Care is your destination for exceptional dental services in the McGraths Hill, Mulgrave, Bligh Park, South Windsor, Richmond, Hobartville, Clarendon, Wilberforce, Freemans Reach, and Pitt Town areas."
+        />
         <div className="grid grid-cols-1  xs:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 relative z-2">
             {data.map((e,idx)=>(<div className={`treatment-card h-fit flex flex-col gap-10 p-4 lg:p-8 relative h-fit ${(idx == 1 || idx == 4)?"lg:mt-15":""}`} key={`Treatments_${e.name}_${idx}`}>
                 <div className={`icon-tooth`}>

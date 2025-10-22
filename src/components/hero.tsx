@@ -43,7 +43,7 @@ const Hero = () => {
           <h1>WINDSOR DENTAL</h1>
           <h2>TAKE CARE OF YOUR SMILE</h2>
         </div>
-        <p>We Design Smiles That Speak for Themselves</p>
+        <p>We design smiles that speak for themselves</p>
         <button className="btn flex justify-center items-center gap-2 mt-4">
           BOOK AN APPOINTMENT
           <span>

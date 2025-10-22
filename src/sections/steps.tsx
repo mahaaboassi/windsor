@@ -1,5 +1,5 @@
 import type { ReactNode } from "react"
-import shape from "../assets/images/Vector.png"
+import Heading from "../components/heading"
 
 type ItemContact = {
     svg: ReactNode,
@@ -50,25 +50,26 @@ const data: ItemContact[] = [{
     }]
 const Steps = ()=>{
     return(<div className="container-layout flex flex-col gap-10 items-center">
-        <div className="heading relative">
-            <div className="absolute -top-10 left-0 animate-moveAround"><img src={shape} alt="Shape" /></div>
-            <h2>MAKE SCHEDULE EASIER AND SIMPLER FOR PATIENTS</h2>
-        </div>
+        <Heading hint="Simple Scheduling" title="MAKE SCHEDULE EASIER AND SIMPLER FOR PATIENTS"
+                desc="Enjoy a smooth and stress-free dental experience from booking your visit to receiving quality care. Our team ensures every step is simple, quick, and comfortable for you"
+                isCenter={true}
+                withShape={true}        
+        />
         <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-5 steps">
-            {data.map((e,idx)=>(<div className={`steps-card flex flex-col gap-1 lg:gap-2 p-3 md:p-5 ${idx == 0 ? "bg-[var(--main)]" : "bg-[var(--light)]"}`} key={`Steps_${e.name}_${idx}`}>
-                <div className={`num flex justify-center lg:flex hidden items-center ${idx == 0 ? "bg-[var(--light)] text-[var(--main)]" : "bg-[var(--main)] text-[var(--light)]"}`}>
+            {data.map((e,idx)=>(<div className={`steps-card flex flex-col gap-1 lg:gap-2 p-3 md:p-5 `} key={`Steps_${e.name}_${idx}`}>
+                <div className={`num flex justify-center lg:flex hidden items-center`}>
                     <div>{idx+1}</div>
                 </div>
                 <div className="lg:flex hidden justify-center">{e.svg}</div>
                 <div className="justify-between flex lg:hidden">
-                    <div className={`num flex justify-center items-center ${idx == 0 ? "bg-[var(--light)] text-[var(--main)]" : "bg-[var(--main)] text-[var(--light)]"}`}>
+                    <div className={`num flex justify-center items-center`}>
                         <div>{idx+1}</div>
                     </div>
                     <div className="flex justify-center">{e.svg}</div>
                 </div>
-                <h3 className={`flex justify-center ${idx == 0 ? "text-[var(--light)]" : "text-[var(--dark)]"}`}>{e.name}</h3>
-                <p className={`flex justify-center text-center ${idx == 0 ? "text-[var(--light)]" : "text-[var(--grey_1)]"}`}>{e.desc}</p>
-                <div className={`w-1/4 h-[3px] rounded m-auto  ${idx == 0 ? "bg-[var(--light)]" : "bg-[var(--grey_1)]"}`}></div>
+                <h3 className={`flex justify-center`}>{e.name}</h3>
+                <p className={`flex justify-center text-center`}>{e.desc}</p>
+                <div className={`w-1/4 h-[3px] rounded m-auto line-card`}></div>
             </div>))}
 
         </div>

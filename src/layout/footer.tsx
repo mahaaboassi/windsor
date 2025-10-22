@@ -95,7 +95,7 @@ const Footer = () => {
                 <path d="M82.4247 57.886C81.6562 57.886 80.9645 57.7323 80.3497 57.3865C79.7733 57.0407 79.3122 56.618 78.9663 56.0416C78.6205 55.4652 78.4668 54.812 78.4668 54.0434C78.4668 53.3133 78.6205 52.6217 78.9663 52.0837C79.2737 51.5073 79.7349 51.0462 80.2728 50.7388C80.8492 50.393 81.464 50.2393 82.1557 50.2393C82.8474 50.2393 83.5006 50.393 84.0386 50.7388C84.5765 51.0462 85.0376 51.5073 85.3451 52.0837C85.6525 52.6601 85.8062 53.3133 85.8062 54.0819C85.8062 54.1203 85.8062 54.1971 85.8062 54.2356C85.8062 54.274 85.8062 54.3508 85.8062 54.3893H79.2353V53.6207H85.2298L84.8455 53.9282C84.8455 53.3902 84.7302 52.8907 84.4997 52.468C84.2691 52.0453 83.9617 51.6994 83.539 51.4689C83.1548 51.2383 82.6552 51.1231 82.1557 51.1231C81.6562 51.1231 81.1566 51.2383 80.7724 51.4689C80.3497 51.6994 80.0423 52.0453 79.8117 52.468C79.5812 52.8907 79.4659 53.3902 79.4659 53.9282V54.0819C79.4659 54.6583 79.5812 55.1578 79.8501 55.5805C80.1191 56.0032 80.4649 56.349 80.9261 56.5796C81.3872 56.8101 81.8867 56.9638 82.4631 56.9638C82.9242 56.9638 83.3469 56.887 83.7312 56.7333C84.1154 56.5795 84.4613 56.3106 84.7687 56.0032L85.3451 56.6564C84.9992 57.0407 84.5765 57.3481 84.077 57.5786C83.5775 57.7708 83.0395 57.886 82.4247 57.886Z" fill="white"/>
                 </svg>
           </div>
-          <p className="pt-[100px] md:pt-[120px] text-sm">Providing complete dental services—from routine check-ups to advanced treatments—in a modern, comfortable, and caring environment. Your smile and comfort are our top priorities</p>
+          <p className="pt-[100px] md:pt-[120px] text-sm">Providing complete dental services from routine check-ups to advanced treatments in a modern, comfortable, and caring environment. Your smile and comfort are our top priorities</p>
           <div className="">
             {/* Social Media */}
             <ul className="flex gap-2 ">
@@ -142,10 +142,10 @@ const Footer = () => {
             <div className="flex flex-col gap-3 justify-between pt-9 contact-footer">
               <ul className="flex-col flex gap-2">
                 {infoData.map((e,idx)=>(<li className="break-all" key={e.value+"_"+idx} >
-                  {e.link ? <Link className="flex gap-4 items-center" target="_blank" to={e.link}>
+                  {e.link ? <Link className="flex gap-4" target="_blank" to={e.link}>
                     <div>{e.icon}</div>
                     <div>{e.value}</div>
-                  </Link> : <div className="flex gap-4 items-center">
+                  </Link> : <div className="flex gap-4">
                     <div>{e.icon}</div>
                     <div>{e.value}</div>
                   </div>}
@@ -161,7 +161,7 @@ const Footer = () => {
 
       <div className="w-full h-[3px] bg-[var(--main)]" ></div>
       <div className=" text-start flex flex-col gap-3 md:text-center md:flex-row justify-between final-line-footer">
-        <div className="flex justify-center md:justify-start">© 2025, All Rights Reserved , Powered by  <Link to="https://arizglobal.com" target="_blank" >Ariz Global</Link></div>
+        <div className="flex justify-center md:justify-start">© 2025, All Rights Reserved, Powered by &nbsp;<Link to="https://arizglobal.com" target="_blank" >Ariz Global</Link></div>
         <div className="flex gap-4 flex justify-center md:justify-start">
           <Link to="/terms-and-conditions">Terms and Conditions </Link>
           {/* <Link to="/privacy-policy">Privacy Policy </Link> */}

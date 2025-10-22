@@ -9,6 +9,7 @@ import img_4 from "../assets/images/logo_4.png"
 import img_5 from "../assets/images/logo_5.png"
 import img_6 from "../assets/images/logo_6.png"
 import img from "../assets/images/FAQs.png"
+import Heading from "../components/heading"
 
 type ItemContact = {
   question: string
@@ -110,16 +111,16 @@ const FAQs = () => {
   }
 
   return (
-    <div className="relative grid grid-cols-1 lg:grid-cols-2 container-layout">
+    <div className="relative grid grid-cols-1 lg:grid-cols-2 container-layout faqs">
       <div className="hidden md:flex">
         <img src={img}  alt="Dentist" className="object-contain" />
       </div>
 
       <div className="flex flex-col gap-5">
-        <div className="sub-heading">
-          <h2 className="">FREQUENTLY ASKED QUESTIONS</h2>
-          <p>Find answers to the most common questions about our services, treatments, and patient care at Windsor Dental Care</p>
-        </div>
+        <Heading hint="Ask Away" desc="Find answers to the most common questions about our services, treatments, and patient care at Windsor Dental Care"
+                  title="FREQUENTLY ASKED QUESTIONS" isfullDescriptionWidth={true}
+        />
+
         <div className="">
           {data.map((item, idx) => (
             <div key={idx} className="border-b border-[var(--light)] last:border-0">
@@ -127,7 +128,7 @@ const FAQs = () => {
                 onClick={() => toggleAccordion(idx)}
                 className="w-full flex gap-2 bg-[var(--main)] cursor-pointer rounded text-left p-4 flex justify-between items-center gap-2 font-semibold text-[var(--light)]"
               >
-                <div className="w-full">{item.question}</div>
+                <div className="w-full text-sm xs:text-base md:text-[1rem]">{item.question}</div>
                 <span className="text-xl text-[var(--main)] flex justify-center items-center w-[25px] h-[25px] rounded-full bg-[var(--light)]">{activeIndex === idx ? "−" : "+"}</span>
               </button>
 
@@ -143,7 +144,7 @@ const FAQs = () => {
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="overflow-hidden shadow"
                   >
-                    <div ref={ref} className="p-4 text-sm">
+                    <div ref={ref} className="p-4 text-xs xs:text-sm ">
                       {item.answer}
                     </div>
                   </motion.div>

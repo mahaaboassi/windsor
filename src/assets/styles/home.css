@@ -46,22 +46,14 @@
     border-radius: 50%;
 }
 .fill-circle{
-    background-color: var(--main);
-    border: 2px solid var(--main);
+    background-color: var(--second);
+    border: 2px solid var(--second);
 }
 .outline-circle{
     background-color: unset;
-    border: 2px solid var(--main);
+    border: 2px solid var(--second);
 }
 /* About */
-#about h2{
-    font-size: var(--font-size-3xl);
-    font-weight: 700;
-    line-height: 3.2rem;
-}
-#about h2 span{
-    color: var(--main);
-}
 .card-metrics{
     background: linear-gradient(to bottom, var(--grey_1), var(--grey_2));
     border-radius: 10px;
@@ -79,12 +71,9 @@
 }
 .steps-card{
     border: 2px solid var(--main);
-    color: var(--light);
     border-radius: 20px;
-}
-.steps-card svg{
-    width: 90px;
-    height: auto;
+    background-color: var(--light);
+    transition: 0.3s;
 }
 .steps-card .num{
     width: 30px;
@@ -92,12 +81,50 @@
     border-radius: 50%;
     font-weight: 700;
     font-size: var(--font-size-xs);
+    background-color: var(--main);
+    color: var(--light);
 }
+.steps-card svg{
+    width: 90px;
+    height: auto;
+}
+.steps-card p{
+    color: var(--grey_1);
+    transition: 0.3s;
+}
+.steps-card svg path{
+    fill: var(--main);
+    transition: 0.3s;
+}
+
+.line-card{
+    background: var(--grey_1);
+    transition: 0.3s;
+}
+.steps-card:hover{
+    background-color: var(--main);
+    color: var(--light);
+}
+.steps-card:hover p{
+    color: var(--light);
+    transition: 0.3s;
+}
+.steps-card:hover svg path{
+    fill: var(--light);
+}
+.steps-card:hover .line-card{
+    background-color: var(--light);
+}
+.steps-card:hover .num{
+    background-color: var(--light);
+    color: var(--main);
+}
+
 /* Treatment */
 .treatment-card{
     border-radius: 20px;
     overflow: hidden;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transition: transform 0.4s ease, box-shadow 0.2s ease;
 }
 .treatment-card h3{
     font-size: var(--font-size-s);
@@ -117,6 +144,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.treatment-card:hover{
+    box-shadow: var(--shadow-box);
 }
 .treatment-card:hover .icon-tooth{
     background-color: var(--light);
@@ -172,7 +202,7 @@
 .gallery .container-layout-border-img{
     border-radius: 10px;
     overflow: hidden;
-    border: 1px solid var(--light)
+    /* border: 1px solid var(--light) */
 }
 .gallery .container-layout-border-img img{
     object-fit: cover;

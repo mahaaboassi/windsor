@@ -6,6 +6,7 @@ import { categories } from "../../data"
 import { useParams } from "react-router-dom"
 import { useEffect, useState, type ReactNode } from "react"
 import Ready from "../../sections/ready"
+import Heading from "../../components/heading"
 
 
 type Service = {
@@ -64,12 +65,9 @@ const CategoryOfService = ()=>{
                             link={"/"} label={"Home"} subLabel={cat?.category ??  ""}
         />
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 container-layout">
-            <div className="flex flex-col gap-5 md:gap-10">
-                <div className="content-heading">
-                    <span>{cat?.first_sections.hint}</span>
-                    <h2 className="uppercase">{cat?.first_sections.title}</h2>
-                </div>
-                <div>{cat?.first_sections.desc_1}</div>
+            <div className="flex flex-col gap-5">
+                <Heading hint={cat?.first_sections.hint ?? ""} title={cat?.first_sections.title ?? ""} desc=""/>
+                <div className="desc">{cat?.first_sections.desc_1}</div>
             </div>
             <div className="relative">
                 <div className="sticky top-30"><img src={img_2} alt="Image" /></div>
@@ -80,17 +78,14 @@ const CategoryOfService = ()=>{
                 <div className="sticky top-30"><img src={img_1} alt="Image" /></div>
             </div>
             <div className="flex flex-col gap-5 md:gap-10">
-                <div className="content-heading">
-                    <span>{cat?.second_section.hint}</span>
-                    <h2 className="uppercase">{cat?.second_section.title}</h2>
-                </div>
-                <div>{cat?.second_section.desc_1}</div>
+                <Heading hint={cat?.second_section.hint ?? ""} title={cat?.second_section.title ?? ""} desc=""/>
+                <div className="desc">{cat?.second_section.desc_1}</div>
                 <div className="flex flex-col gap-3">
                     {
                         cat?.second_section.service?.map((e,idx)=>(
                             <div key={`${e.title}_${idx}`} className="flex gap-3">
                                 <div className="w-[20px] h-[20px] border border-[2px] border-[var(--grey_2)] rounded-full bg-[var(--main)] flex justify-center items-center"></div>
-                                <div className="flex flex-col gap-1 w-full">
+                                <div className="flex flex-col gap-1 w-full option">
                                     <div className="title">{e.title}</div>
                                     <p>{e.desc}</p>
                                 </div>

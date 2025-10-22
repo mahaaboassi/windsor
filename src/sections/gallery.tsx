@@ -5,6 +5,7 @@ import img_1 from "../assets/images/before.png"
 import img_2 from "../assets/images/before_2.png"
 import img_3 from "../assets/images/after.png"
 import img_4 from "../assets/images/after_2.png"
+import Heading from "../components/heading";
 
 const data = [{before : img_1, after: img_3},
               {before : img_2, after: img_4}]
@@ -19,9 +20,10 @@ const Gallery = ()=>{
       }, []);
     return(<div className="container-layout gallery bg-[var(--main)]  relative overflow-hidden">
         <div className="flex flex-col gap-5 md:gap-10 py-10 items-center relative z-1 ">
-            <div className="heading">
-                <h2 >BEFORE AND AFTER PHOTOS RESTORATION</h2>
-            </div>
+            <Heading hint="Smile Transformation" desc="See the amazing results of our dental treatments. Our before-and-after photos showcase real patient transformations and the power of expert dental care." 
+                    title="BEFORE AND AFTER PHOTOS RESTORATION"
+                    isCenter={true} isWhite={true}
+            />
             <div className="w-full">
                 <AnimatePresence mode="popLayout">
                     <motion.div
@@ -57,7 +59,7 @@ const Gallery = ()=>{
                 
             </div>
             <div className="flex gap-2 justify-center">
-                {[...Array(data.length)].map((_,idx)=>(<div onClick={()=>setDataIndex(idx)} key={`Circle_${idx}`} className={`circle cursor-pointer ${idx==dataIndex ? "fill-circle !bg-[var(--light)]" : "outline-circle !border-[var(--light)]"}`}></div>))}
+                {[...Array(data.length)].map((_,idx)=>(<div onClick={()=>setDataIndex(idx)} key={`Circle_${idx}`} className={`circle cursor-pointer ${idx==dataIndex ? "fill-circle !bg-[var(--second)]" : "outline-circle !border-[var(--second)]"}`}></div>))}
             </div>
         </div>
         <div className="absolute hidden md:flex top-0 right-0">

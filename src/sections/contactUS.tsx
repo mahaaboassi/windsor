@@ -1,4 +1,5 @@
 import img from "../assets/images/tooth.png"
+import Heading from "../components/heading"
 
 
 const Contact = ()=>{
@@ -23,12 +24,9 @@ const Contact = ()=>{
             </form>
             <div className="relative z-1   flex  justify-center items-center">
                 <div className="flex flex-col items-center justify-center p-5  md:p-8 gap-5 shadow-lg  rounded-xl !my-10 h-[200px] ">
-                    <div className="heading w-full">
-                        <h2 className="">MAKE AN APPOINTMENT</h2>
-                    </div>
-                    <p className="text-sm text-center">
-                    Book your visit easily and take the first step toward a healthier, brighter smile. Our friendly team is ready to welcome you and provide the care you deserve. 
-                    </p>
+                    <Heading hint="Say Hello" title="MAKE AN APPOINTMENT"  desc="Book your visit easily and take the first step toward a healthier, brighter smile. Our friendly team is ready to welcome you and provide the care you deserve." 
+                            isCenter={true} isfullDescriptionWidth={true}
+                    />
                     <div className="flex justify-center">
                     <img src={img} alt="" />
                 </div>

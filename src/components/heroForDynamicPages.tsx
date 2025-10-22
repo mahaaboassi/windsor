@@ -21,7 +21,7 @@ type Item = {
 
 const HeroForDynamicPages = ({hint,title,desc,link,label,subLabel,type}:Item) => {
   return (
-    <section className="hero container-layout flex flex-col gap-5 overflow-hidden relative">
+    <section className="hero container-layout flex flex-col gap-5 overflow-hidden relative dynamic-pages">
       {/* Animated Background */}
       <AnimatePresence mode="sync">
         <motion.div
@@ -38,8 +38,8 @@ const HeroForDynamicPages = ({hint,title,desc,link,label,subLabel,type}:Item) =>
       {/* Content */}
       <div className="relative flex flex-col gap-3 mid:gap-5 z-10">
         <div>
-          <span>{hint}</span>
-          <h1>{title}</h1>
+          <span className="uppercase">{hint}</span>
+          <h1 className="uppercase">{title}</h1>
           {/* <h2>TAKE CARE OF YOUR SMILE</h2> */}
         </div>
       

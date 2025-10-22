@@ -9,7 +9,6 @@ import ContactPage from './pages/contact/page'
 import Terms from './pages/terms/page'
 
 function App() {
-  
   return (<BrowserRouter>
     <Routes>
       <Route path='/*' element={<Layout/>}>

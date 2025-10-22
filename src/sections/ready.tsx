@@ -1,10 +1,11 @@
+import Heading from "../components/heading"
 
 const Ready = ()=>{
 
     return(<div className="container-layout ready">
         <div className="relative overflow-hidden bg-[var(--main)] rounded-xl">
             <div className="relative z-1 flex flex-col justify-center items-center gap-3 py-10">
-                <h3>Ready to Smile Confidence?</h3>
+                <Heading hint="" desc="" title="Ready to Smile Confidence?" isCenter={true} isWhite={true} />
                 <p>Discover your brightest smile with care that makes you feel comfortable, confident, and radiant every day. Because when you smile, the world smiles with you.</p>
                 <button className="btn flex justify-center items-center gap-2 !bg-[var(--light)] !text-[var(--main)]">
                     BOOK AN APPOINTMENT

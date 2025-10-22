@@ -39,7 +39,7 @@ const ContactPage = ()=>{
     useEffect(()=>window.scrollTo({top:0}))
     return(<div className="flex flex-col gap-10 md:gap-20 ">
         <HeroForDynamicPages type="contact" hint="Get in Touch" title="Contact Us"
-                            desc="Whether you’re ready to book an appointment, have a question about our dental services, or just want to learn more about Windsor Dental Care, we’re here to help. Reach out to our friendly team today — your smile is our priority."
+                            desc="Whether you’re ready to book an appointment, have a question about our dental services, or just want to learn more about Windsor Dental Care, we’re here to help. Reach out to our friendly team today your smile is our priority."
                             link="/" label="Contact Us" subLabel="Home"
         />
         <div className="container-layout flex flex-col gap-10 items-center">
@@ -52,7 +52,7 @@ const ContactPage = ()=>{
 
                     <div className="flex justify-center">{e.icon}</div>
                     <h3 className={`flex justify-center ${idx == 0 ? "text-[var(--light)]" : "text-[var(--dark)]"}`}>{e.title}</h3>
-                    <p  className={`flex break-all justify-center text-center ${idx == 0 ? "text-[var(--light)]" : "text-[var(--grey_1)]"}`}>
+                    <p className={`flex break-all justify-center text-center ${idx == 0 ? "text-[var(--light)]" : "text-[var(--grey_1)]"}`}>
                         {e.title != "Opening Hours"? <Link to={e.link}>{e.value}</Link>:e.value}
                     </p>
                     <div className={`w-1/4 h-[3px] rounded m-auto  ${idx == 0 ? "bg-[var(--light)]" : "bg-[var(--grey_1)]"}`}></div>
