@@ -60,7 +60,7 @@ nav{
     height: 100px;
     width: 400px;
     background-color: var(--main);
-    clip-path: polygon(
+    clipPath: polygon(
         0 0,        /* top-left */
         85% 0,      /* top-right, move left a bit */
         100% 100%,  /* bottom-right */
@@ -208,8 +208,7 @@ footer a{
   transition: 0.3s;
 }
 .contact-footer svg{
-  width: 25px;
-  height:auto;
+  height: 40px;
 }
 .contact-footer svg path{
   fill: var(--main);
@@ -221,14 +220,13 @@ footer a:hover{
   color: var(--main);
 }
 .icon-social{
-  width: 32px;
-  height: 32px;
   border-radius: 8px;
   background-color: var(--main);
   transition: 0.3s;
 }
 .icon-social:hover{
-  transform: scale(1.1);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-box);
 }
 
 footer iframe{
@@ -336,6 +334,10 @@ footer .element-shape svg{
   }
   .container-layout-icons svg{
     width: 20px;
+  }
+  /* Footer */
+  .icon-social svg{
+    height: 20px;
   }
 }
 @media (max-width:1090px) {
