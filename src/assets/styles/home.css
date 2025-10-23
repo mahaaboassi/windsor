@@ -268,10 +268,16 @@
     height: 250px;
 }
 
+@media (max-width: 1300px) {
+    .contact-card svg{
+        height: 50px;
+    }
+}
 @media (max-width: 1200px) {
     .hero h1{
         font-size: 4rem;
     }
+
 }
 @media (max-width:1020px) {
    .steps-card svg{
@@ -301,9 +307,7 @@
     .hero button{
         font-size: var(--font-size-s);
     }
-    .contact-card svg{
-        height: 50px;
-    }
+
 }
 @media (max-width:600px) {
     .hero h1{

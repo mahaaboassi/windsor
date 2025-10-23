@@ -1354,8 +1354,8 @@ export const contactInfo = [{
 </svg>,
   img: phone,
   title: "Call Us",
-  value: "(02) 4571 2720",
-  link: "tel:0245712720"
+  value: "+61 2 4571 2720",
+  link: "tel:+61245712720"
 },{
   icon : <svg xmlns="http://www.w3.org/2000/svg" width="113" height="79" viewBox="0 0 113 79" fill="none">
 <g clipPath="url(#clip0_1662_1379)">

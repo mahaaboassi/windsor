@@ -29,7 +29,7 @@ const ContactPage = ()=>{
                 <div className="absolute -top-10 left-0 animate-moveAround"><img src={shape} alt="Shape" /></div>
                 <h2>MAKE SCHEDULE EASIER AND SIMPLER FOR PATIENTS</h2>
             </div>
-            <div className="grid grid-cols-1 xs:grid-cols-3 gap-5 steps">
+            <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-5 steps">
                 {contactInfo.map((e:infoItem,idx)=>(<div className={`contact-card flex flex-col gap-1 lg:gap-2 p-3 md:p-5`} key={`Steps_${e.title}_${idx}`}>
 
                     <div className="flex justify-center">{e.icon}</div>
