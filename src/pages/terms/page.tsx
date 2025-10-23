@@ -9,7 +9,7 @@ const Terms = ()=>{
     return(<div className="flex flex-col gap-10 md:gap-20 dynamic-pages">
         <HeroForDynamicPages img={terms} img_sm={terms_sm}  type="terms" hint="Please Read Carefully" title="Terms & Conditions"
                             desc="By accessing and using Windsor Dental Care’s website, you agree to the following terms and conditions. These outline your rights, responsibilities, and the guidelines for using our services and content."
-                            link="/" label="Terms & conditions" subLabel="Home"
+                            link="/" subLabel="Terms & conditions" label="Home"
         />
         <div className="container-layout">
             <div className="flex flex-col gap-3">

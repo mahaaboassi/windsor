@@ -22,7 +22,7 @@ const ContactPage = ()=>{
     return(<div className="flex flex-col gap-10 md:gap-20 ">
         <HeroForDynamicPages img={contact} img_sm={contact_sm} type="contact" hint="Get in Touch" title="Contact Us"
                             desc="Whether you’re ready to book an appointment, have a question about our dental services, or just want to learn more about Windsor Dental Care, we’re here to help. Reach out to our friendly team today your smile is our priority."
-                            link="/" label="Contact Us" subLabel="Home"
+                            link="/" subLabel="Contact Us" label="Home"
         />
         <div className="container-layout flex flex-col gap-10 items-center">
             <div className="heading relative">
