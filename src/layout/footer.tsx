@@ -136,7 +136,7 @@ const Footer = () => {
       <div className="flex gap-2 flex-wrap">
           {
             contactInfo.map((e:infoItem,idx)=><div className="contact-footer min-w-[200px] " key={`Footer_${e.title}_${idx}`}>
-              <Link className="flex gap-2 items-center" target="_blank" to={e.link}>
+              {e.link != ""? <Link className="flex gap-2 items-center" target="_blank" to={e.link}>
                   <div className="xs:w-[50px] xs:h-[50px] w-[30px] h-[30px] border border-[1px] rounded xs:rounded-xl border-[var(--main)] flex justify-center items-center">
                     <img className="object-contain w-[40px]" src={e.img} alt="Icon"/>
                   </div>
@@ -144,7 +144,15 @@ const Footer = () => {
                     <div className="!text-[10px] md:!text-xs">{e.title}</div>
                     <div className="!text-xs md:!text-sm">{e.value}</div>
                   </div>
-              </Link>
+              </Link>:<div className="flex gap-2 items-center" >
+                  <div className="xs:w-[50px] xs:h-[50px] w-[30px] h-[30px] border border-[1px] rounded xs:rounded-xl border-[var(--main)] flex justify-center items-center">
+                    <img className="object-contain w-[40px]" src={e.img} alt="Icon"/>
+                  </div>
+                  <div className="w-full xxs:w-fit">
+                    <div className="!text-[10px] md:!text-xs">{e.title}</div>
+                    <div className="!text-xs md:!text-sm">{e.value}</div>
+                  </div>
+              </div>}
             </div>)
           }
       </div>

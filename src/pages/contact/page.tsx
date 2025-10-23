@@ -35,7 +35,7 @@ const ContactPage = ()=>{
                     <div className="flex justify-center">{e.icon}</div>
                     <h3 className={`flex justify-center`}>{e.title}</h3>
                     <p className={`flex break-all justify-center text-center `}>
-                        {e.title != "Opening Hours"? <Link to={e.link}>{e.value}</Link>:e.value}
+                        {e.title != "Opening Hours"? <Link target="_blank" to={e.link}>{e.value}</Link>:e.value}
                     </p>
                     <div className={`w-1/4 h-[3px] rounded m-auto  ${idx == 0 ? "bg-[var(--light)]" : "bg-[var(--grey_1)]"}`}></div>
                 </div>))}
