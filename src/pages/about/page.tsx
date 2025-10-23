@@ -7,8 +7,10 @@ import Team from "../../sections/team"
 import Ready from "../../sections/ready"
 import img from "../../assets/images/about_.png"
 import img_sm from "../../assets/images/about_sm.png"
+import { useEffect } from "react"
 
 const About = ()=>{
+    useEffect(()=>window.scrollTo({top:0}),[])
     return(<div className="flex flex-col gap-10 md:gap-20 dynamic-pages">
         <HeroForDynamicPages img={img} img_sm={img_sm} hint="Get to Know" title="Windsor Dental Care"
                             desc="We’re a dental practice that offers all aspects of dentistry, from preventive care and fillings to teeth whitening and wisdom teeth removal. Our team is dedicated to providing quality dental care in a relaxed and comfortable atmosphere."
