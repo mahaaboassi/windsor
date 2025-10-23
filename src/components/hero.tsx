@@ -51,7 +51,7 @@ const Hero = () => {
           </span>
         </button>
       </div>
-      <div className="absolute bottom-5 right-5 flex gap-2 z-50">
+      <div className="absolute bottom-5 layout-container-left flex gap-2 z-50">
         {[...Array(banners.length)].map((_,idx)=>(<div key={`Circle_${idx}`} className={`circle ${idx==bannerIndex ? "fill-circle" : "outline-circle"}`}></div>))}
       </div>
     </section>

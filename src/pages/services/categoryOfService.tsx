@@ -42,7 +42,9 @@ type Item = {
     category : string;
     services : Services[],
     first_sections : Section,
-    second_section : Section
+    second_section : Section,
+    img: string,
+    img_sm: string
 
 };
 
@@ -60,7 +62,7 @@ const CategoryOfService = ()=>{
         // setData(catValue?.services);
     },[category])
     return(<div className="flex flex-col gap-10 md:gap-20 dynamic-pages">
-        <HeroForDynamicPages hint={cat?.category ?? ""} title={"In Windsor"}
+        <HeroForDynamicPages img={cat?.img ?? ""} img_sm={cat?.img_sm ?? ""}  hint={cat?.category ?? ""} title={"In Windsor"}
                             desc={""}
                             link={"/"} label={"Home"} subLabel={cat?.category ??  ""}
         />

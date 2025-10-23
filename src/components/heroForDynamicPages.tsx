@@ -1,12 +1,4 @@
 import { motion, AnimatePresence } from "framer-motion";
-// images
-import banner_2 from "../assets/images/banner_2.png"
-import banner_sm_2 from "../assets/images/banner_sm_3.png"
-import contact from "../assets/images/contact.png"
-import contact_sm from "../assets/images/contact_small.png"
-import terms from "../assets/images/terms.png"
-import terms_sm from "../assets/images/terms_small.png"
-
 import { Link } from "react-router-dom";
 
 type Item = {
@@ -16,18 +8,19 @@ type Item = {
   link:string,
   label:string,
   subLabel:string,
-  type?: string
+  type?: string,
+  img?:string,
+  img_sm?: string
 }
 
-const HeroForDynamicPages = ({hint,title,desc,link,label,subLabel,type}:Item) => {
+const HeroForDynamicPages = ({hint,title,desc,link,label,subLabel,type,img,img_sm}:Item) => {
   return (
     <section className="hero container-layout flex flex-col gap-5 overflow-hidden relative dynamic-pages">
       {/* Animated Background */}
       <AnimatePresence mode="sync">
         <motion.div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${window.innerWidth<900 ? (type == "contact" ? contact_sm : (type == "terms" ? terms_sm : banner_sm_2)) 
-            :(type == "contact" ? contact: (type == "terms" ? terms : banner_2))})` }}
+          style={{ backgroundImage: `url(${window.innerWidth<900 ?img_sm:img})` }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0.5 }}
@@ -52,11 +45,11 @@ const HeroForDynamicPages = ({hint,title,desc,link,label,subLabel,type}:Item) =>
           </span>
         </button>}
       </div>
-      <div className="absolute bottom-0 right-5 flex gap-2 z-50">
+      <div className="absolute bottom-0 layout-container-left flex gap-2 z-50">
         <div className="flex gap-2 text-md items-center">
             <Link className="text-[var(--main)]" to={link}><strong>{label}</strong></Link>
-            <div className="text-black">/</div>
-            <div className="text-black text-sm">{subLabel}</div>
+            <div className="text-white">/</div>
+            <div className="text-white text-sm">{subLabel}</div>
         </div>
       </div>
     </section>

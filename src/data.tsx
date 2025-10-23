@@ -1,3 +1,19 @@
+// Images
+import cat_1 from "./assets/images/cat_1.png";
+import cat_sm_1 from "./assets/images/cat_sm_1.png";
+
+import cat_2 from "./assets/images/cat_2.png";
+import cat_sm_2 from "./assets/images/cat_sm_2.png";
+
+import cat_3 from "./assets/images/cat_3.png";
+import cat_sm_3 from "./assets/images/cat_sm_3.png";
+
+import cat_4 from "./assets/images/cat_4.png";
+import cat_sm_4 from "./assets/images/cat_sm_4.png";
+
+import cat_5 from "./assets/images/cat_5.png";
+import cat_sm_5 from "./assets/images/cat_sm_5.png";
+
 
 export const aboutData = {
     hero:{
@@ -45,6 +61,8 @@ export const categories = [{
     id: 1,
     category: "General Dentistry",
     link: "/general-dentistry",
+    img: cat_1,
+    img_sm: cat_sm_1,
     services : [{
     id: 1,
     link: "general-dentistry/root-canal-therapy",
@@ -406,6 +424,8 @@ export const categories = [{
     id: 2,
     category: "Cosmetic Dentistry",
     link: "/cosmetic-dentistry",
+    img: cat_2,
+    img_sm: cat_sm_2,
     services : [{
     id: 1,
     link: "cosmetic-dentistry/teeth-whitening",
@@ -625,6 +645,8 @@ export const categories = [{
     id: 3,
     category: "Restorative Dentist",
     link: "/restorative-dentist",
+    img: cat_3,
+    img_sm: cat_sm_3,
     services : [{
     id: 1,
     link: "restorative-dentist/dental-fillings",
@@ -842,6 +864,8 @@ export const categories = [{
     id: 4,
     category: "Dental Implants",
     link: "/dental-implants",
+    img: cat_4,
+    img_sm: cat_sm_4,
     services : [{
     id: 1,
     link: "dental-implants/single-dental-implants",
@@ -1040,6 +1064,8 @@ export const categories = [{
     id: 5,
     category: "Emergency Dentist",
     link: "/emergency-dentist",
+    img: cat_5,
+    img_sm: cat_sm_5,
     services : [{
     id: 1,
     link: "emergency-dentist/toothache",
@@ -1286,4 +1312,56 @@ export const categories = [{
             desc: "The loss of a filling or crown can result in not only cosmetic issues but also unexpected dental discomfort. Schedule a visit to Windsor Dental Care, where our adept dentist will restore your fillings or crowns, ensuring your smile is as radiant as ever."
         }]
     }
+}]
+export const navMenu = [
+    {category: 'Home', link: '/'},
+    {category: 'About', link: '/about'},
+    ...categories,
+    {category: 'Contact', link: '/contact'}
+]
+
+
+export const contactInfo = [{
+  icon : <svg xmlns="http://www.w3.org/2000/svg" width="79" height="79" viewBox="0 0 79 79" fill="none">
+        <g clipPath="url(#clip0_1662_1372)">
+        <path fillRule="evenodd" clipRule="evenodd" d="M39.5 0C47.3124 0 54.9493 2.31663 61.445 6.65695C67.9408 10.9973 73.0036 17.1663 75.9932 24.384C78.9829 31.6017 79.7651 39.5438 78.241 47.2061C76.7169 54.8683 72.9549 61.9065 67.4307 67.4307C61.9065 72.9549 54.8683 76.7169 47.2061 78.241C39.5438 79.7651 31.6017 78.9829 24.384 75.9932C17.1663 73.0036 10.9973 67.9408 6.65695 61.445C2.31663 54.9493 0 47.3124 0 39.5C0 29.0239 4.1616 18.977 11.5693 11.5693C18.977 4.1616 29.0239 0 39.5 0ZM34.0225 19.6214H38.8507C39.2764 19.6231 39.6842 19.793 39.9853 20.094C40.2864 20.3951 40.4562 20.8029 40.4579 21.2287V39.86H57.437C57.8628 39.8617 58.2706 40.0316 58.5716 40.3327C58.8727 40.6337 59.0426 41.0415 59.0443 41.4673V46.2891C59.0426 46.7148 58.8727 47.1226 58.5716 47.4237C58.2706 47.7247 57.8628 47.8946 57.437 47.8963H32.4088V21.2158C32.4105 20.789 32.5812 20.3802 32.8837 20.0789C33.1861 19.7777 33.5956 19.6086 34.0225 19.6086V19.6214Z" fill="white"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_1662_1372">
+        <rect width="79" height="79" fill="white"/>
+        </clipPath>
+        </defs>
+        </svg>,
+  title: "Opening Hours",
+  value: "Mon-Fri 9:00 am - 6:00 pm",
+  link: ""
+},{
+  icon : <svg xmlns="http://www.w3.org/2000/svg" width="79" height="79" viewBox="0 0 79 79" fill="none">
+<g clip-path="url(#clip0_1662_1369)">
+<path d="M21.7562 32.4652C24.4115 37.2788 27.4717 41.8984 31.4448 46.1111C35.4308 50.3495 40.3876 54.207 46.8039 57.5021C47.2795 57.7348 47.7294 57.7348 48.1347 57.5732C48.7454 57.3406 49.3691 56.8302 49.9797 56.2164C50.4553 55.7381 51.047 54.9757 51.664 54.1423C54.1328 50.8796 57.1865 46.8284 61.5007 48.8572C61.5971 48.9022 61.6678 48.9539 61.7642 48.9926L76.1524 57.3082C76.1975 57.3339 76.2488 57.3793 76.2875 57.405C78.1839 58.7167 78.9684 60.7391 78.9874 63.0329C78.9874 65.3654 78.1326 67.9886 76.8788 70.2045C75.2202 73.1315 72.7772 75.0697 69.9612 76.3491C67.2804 77.5894 64.2973 78.255 61.43 78.6816C56.9294 79.3472 52.712 78.9206 48.3982 77.5895C44.1807 76.2781 39.9313 74.1134 35.2894 71.2319L34.9487 71.0123C32.8206 69.6748 30.519 68.2469 28.2624 66.5607C20.0076 60.2932 11.5919 51.2414 6.108 41.2783C1.51123 32.9175 -0.996099 23.8913 0.373287 15.2916C1.13191 10.575 3.1442 6.28481 6.65445 3.45485C9.71467 0.973782 13.8357 -0.383052 19.1718 0.0950701C19.7825 0.140298 20.329 0.495658 20.6183 1.02547L29.844 16.7001C31.1941 18.4576 31.3613 20.202 30.6219 21.9466C30.0112 23.3744 28.7768 24.6925 27.0924 25.9201C26.5973 26.3466 26.0059 26.7795 25.3822 27.2317C23.3185 28.7372 20.9719 30.4752 21.7756 32.5169L21.7562 32.4652Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_1662_1369">
+<rect width="79" height="79" fill="white"/>
+</clipPath>
+</defs>
+</svg>,
+  title: "Call Us",
+  value: "(02) 4571 2720",
+  link: "tel:0245712720"
+},{
+  icon : <svg xmlns="http://www.w3.org/2000/svg" width="113" height="79" viewBox="0 0 113 79" fill="none">
+<g clip-path="url(#clip0_1662_1379)">
+<path d="M56.4998 35.7028L108.019 2.60625C105.948 1.05266 103.433 0.204839 100.844 0.1875H12.1561C9.56697 0.204839 7.05176 1.05266 4.98047 2.60625L56.4998 35.7028Z" fill="white"/>
+<path d="M58.6769 43.8879L57.9916 44.2104H57.6691C57.2979 44.3763 56.9037 44.485 56.5 44.5329C56.1654 44.5751 55.8268 44.5751 55.4922 44.5329H55.1697L54.4844 44.2104L0.465625 9.2998C0.207537 10.2735 0.0721133 11.2756 0.0625 12.2829V68.7204C0.0625 71.9279 1.33666 75.004 3.60468 77.272C5.8727 79.54 8.94879 80.8142 12.1562 80.8142H100.844C104.051 80.8142 107.127 79.54 109.395 77.272C111.663 75.004 112.937 71.9279 112.938 68.7204V12.2829C112.928 11.2756 112.792 10.2735 112.534 9.2998L58.6769 43.8879Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_1662_1379">
+<rect width="113" height="79" fill="white"/>
+</clipPath>
+</defs>
+</svg>,
+  title: "Email Us",
+  value: "reception@windsordentalcare.com.au",
+  link: "mailto:reception@windsordentalcare.com.au"
 }]

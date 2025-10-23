@@ -1,5 +1,5 @@
 .hero{
-    height: 700px;
+    height: 750px;
     padding-top: 250px;
 }
 .hero div:nth-child(1){
@@ -69,12 +69,13 @@
     font-size: var(--font-size-xxs);
     font-weight: 500;
 }
-.steps-card{
+.steps-card,.contact-card{
     border: 2px solid var(--main);
     border-radius: 20px;
     background-color: var(--light);
     transition: 0.3s;
 }
+
 .steps-card .num{
     width: 30px;
     height: 30px;
@@ -101,7 +102,7 @@
     background: var(--grey_1);
     transition: 0.3s;
 }
-.steps-card:hover{
+.steps-card:hover, .contact-card:hover{
     background-color: var(--main);
     color: var(--light);
 }
@@ -109,7 +110,10 @@
     color: var(--light);
     transition: 0.3s;
 }
-.steps-card:hover svg path{
+.contact-card svg path{
+    fill: var(--main);
+}
+.steps-card:hover svg path, .contact-card:hover svg path{
     fill: var(--light);
 }
 .steps-card:hover .line-card{
@@ -297,6 +301,9 @@
     .hero button{
         font-size: var(--font-size-s);
     }
+    .contact-card svg{
+        height: 50px;
+    }
 }
 @media (max-width:600px) {
     .hero h1{
@@ -313,6 +320,12 @@
     .hero{
         height: 550px;
         padding-top: 150px;
+    }
+    .contact-card svg{
+        height: 40px;
+    }
+    .fixed-component svg{
+        height: 60px;
     }
     
 }

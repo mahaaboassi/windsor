@@ -5,10 +5,12 @@ import img_2 from "../../assets/images/about.png"
 import { aboutData } from "../../data"
 import Team from "../../sections/team"
 import Ready from "../../sections/ready"
+import img from "../../assets/images/about_.png"
+import img_sm from "../../assets/images/about_sm.png"
 
 const About = ()=>{
     return(<div className="flex flex-col gap-10 md:gap-20 dynamic-pages">
-        <HeroForDynamicPages hint="Get to Know" title="Windsor Dental Care"
+        <HeroForDynamicPages img={img} img_sm={img_sm} hint="Get to Know" title="Windsor Dental Care"
                             desc="We’re a dental practice that offers all aspects of dentistry, from preventive care and fillings to teeth whitening and wisdom teeth removal. Our team is dedicated to providing quality dental care in a relaxed and comfortable atmosphere."
                             link="/" label="About" subLabel="Home"
         />
