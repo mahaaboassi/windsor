@@ -8,6 +8,7 @@ import Ready from "../../sections/ready"
 import img from "../../assets/images/about_.png"
 import img_sm from "../../assets/images/about_sm.png"
 import { useEffect } from "react"
+import Heading from "../../components/heading"
 
 const About = ()=>{
     useEffect(()=>window.scrollTo({top:0}),[])
@@ -18,10 +19,7 @@ const About = ()=>{
         />
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 container-layout">
             <div className="flex flex-col gap-5 md:gap-10">
-                <div className="content-heading">
-                    <span>{aboutData.sections[0].hint}</span>
-                    <h2 className="uppercase">{aboutData.sections[0].title}</h2>
-                </div>
+                <Heading hint={aboutData.sections[0].hint} title={aboutData.sections[0].title} desc="" />
                 <div>{aboutData.sections[0].desc_1}</div>
             </div>
             <div><img className="" src={img_1} alt="Image" /></div>
@@ -29,10 +27,7 @@ const About = ()=>{
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 container-layout">
             <div><img src={img_2} alt="Image" /></div>
             <div className="flex flex-col gap-5 md:gap-10">
-                <div className="content-heading">
-                    <span>{aboutData.sections[1].hint}</span>
-                    <h2 className="uppercase">{aboutData.sections[1].title}</h2>
-                </div>
+                <Heading hint={aboutData.sections[1].hint} title={aboutData.sections[1].title} desc="" />
                 <div>{aboutData.sections[1].desc_1}</div>
                 <div className="grid grid-cols-1 xs:grid-cols-2 gap-3">
                     {
