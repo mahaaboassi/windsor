@@ -111,7 +111,7 @@ const Footer = () => {
           <Link to={e.link}><h2 className="uppercase !text-sm md:!text-lg">{e.category}</h2></Link>
           <ul>
             {e.services.map((child,i)=><li key={`Sub_Categories_${e.category}_${i}`}>
-              <Link className="!text-xs md:!text-sm" to={child.link}>{child.hero.subLabel}</Link>
+              <Link className="!text-xs md:!text-sm" to={`/${child.link}`}>{child.hero.subLabel}</Link>
             </li>)}
           </ul>
         </div>)}
