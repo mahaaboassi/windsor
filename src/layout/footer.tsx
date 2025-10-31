@@ -152,7 +152,7 @@ const Footer = () => {
 
       <div className="w-full h-[1px] bg-zinc-100 opacity-60" ></div>
       <div className=" text-start flex flex-col gap-3 md:text-center md:flex-row justify-between final-line-footer">
-        <div className=" text-center xs:text-start xs:flex justify-center md:justify-start">© 2025, All Rights Reserved, Powered by &nbsp;<Link to="https://arizglobal.com" target="_blank" >Ariz Global</Link></div>
+        <div className=" text-center xs:text-start xs:flex justify-center md:justify-start">© 2025, All Rights Reserved, Powered by&nbsp;<Link to="https://arizglobal.com" target="_blank" >Ariz Global</Link></div>
         <div className="flex gap-4 flex justify-center md:justify-start">
           <Link to="/terms-and-conditions">Terms and Conditions </Link>
           {/* <Link to="/privacy-policy">Privacy Policy </Link> */}
