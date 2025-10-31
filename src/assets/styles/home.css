@@ -69,19 +69,38 @@
     font-size: var(--font-size-xxs);
     font-weight: 500;
 }
-.steps-card,.contact-card{
+.contact-card{
     border: 2px solid var(--main);
     border-radius: 20px;
     background-color: var(--light);
     transition: 0.3s;
 }
+.steps-card{
+    border-radius: 20px;
+    background-color: var(--main);
+    color: var(--light);
+    transition: 0.3s;
+    border: 2px solid var(--main);
+}
+.steps-card:hover{
+    background-color: var(--light);
+    color: var(--dark) ;
+}
+.steps-card:hover .line-card{
+    background-color: var(--light);
 
+}
 .steps-card .num{
+    background-color: var(--light);
+    color: var(--main);
     width: 30px;
     height: 30px;
     border-radius: 50%;
     font-weight: 700;
     font-size: var(--font-size-xs);
+    transition: 0.3s;
+}
+.steps-card:hover .num{
     background-color: var(--main);
     color: var(--light);
 }
@@ -89,40 +108,39 @@
     width: 90px;
     height: auto;
 }
-.steps-card p{
+
+.steps-card:hover p{
     color: var(--grey_1);
     transition: 0.3s;
 }
 .steps-card svg path{
-    fill: var(--main);
+    fill: var(--light);
     transition: 0.3s;
+}
+.steps-card:hover svg path{
+    fill: var(--main);
 }
 
 .line-card{
     background: var(--grey_1);
     transition: 0.3s;
 }
-.steps-card:hover, .contact-card:hover{
+.contact-card:hover{
     background-color: var(--main);
     color: var(--light);
 }
-.steps-card:hover p{
+.steps-card p{
     color: var(--light);
     transition: 0.3s;
 }
 .contact-card svg path{
     fill: var(--main);
 }
-.steps-card:hover svg path, .contact-card:hover svg path{
+.steps-card svg path, .contact-card:hover svg path{
     fill: var(--light);
 }
-.steps-card:hover .line-card{
-    background-color: var(--light);
-}
-.steps-card:hover .num{
-    background-color: var(--light);
-    color: var(--main);
-}
+
+
 
 /* Treatment */
 .treatment-card{

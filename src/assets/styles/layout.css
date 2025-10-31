@@ -190,12 +190,13 @@ nav li{
 }
 /* Footer */
 footer{
-  background-color: rgba(128, 128, 128, 0.063);
+  background-color: var(--main);
 }
 footer h2{
   color: var(--main);
   font-size: var(--font-size-xl);
   font-weight: 600;
+  color: var(--light);
 }
 footer {
   font-size: var(--font-size-s);
@@ -217,12 +218,15 @@ footer a{
   font-size: var(--font-size-xs);
 }
 footer a:hover{
-  color: var(--main);
+  color: var(--grey_1);
 }
 .icon-social{
   border-radius: 8px;
-  background-color: var(--main);
+  background-color: var(--light);
   transition: 0.3s;
+}
+.icon-social svg path{
+  fill: var(--main);
 }
 .icon-social:hover{
     transform: translateY(-1px);

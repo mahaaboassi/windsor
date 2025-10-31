@@ -7,6 +7,7 @@ import Team from "../../sections/team"
 import Ready from "../../sections/ready"
 import img from "../../assets/images/about_.png"
 import img_sm from "../../assets/images/about_sm.png"
+import { useEffect } from "react"
 
 const About = ()=>{
     return(<div className="flex flex-col gap-10 md:gap-20 dynamic-pages">
