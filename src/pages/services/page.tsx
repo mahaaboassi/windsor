@@ -58,7 +58,7 @@ const Service = ()=>{
         setCat(catValue)
         setData(service);
     },[link,category])
-    return(<div className="flex flex-col gap-10 md:gap-20 dynamic-pages">
+    return( <div className="flex flex-col gap-10 md:gap-20 dynamic-pages">
         <HeroForDynamicPages img={cat?.img ?? ""} img_sm={cat?.img_sm ?? ""} hint={data?.hero?.hint ?? ""} title={data?.hero?.title ?? ""}
                             desc={data?.hero?.desc ?? ""}
                             link={cat?.link ?? ""} label={cat?.category ?? ""} subLabel={data?.hero?.subLabel ?? ""}

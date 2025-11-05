@@ -38,7 +38,7 @@ const HeroForDynamicPages = ({hint,title,desc,link,label,subLabel,type,img,img_s
       
         <p className="sm:w-[80%] lg:w-[60%] text-xs md:text-lg">{desc}</p>
         
-        {type != "terms" && <Link target="_blank" to="https://appointments.praktika.net.au/online-booking/step1?Apikey=0d6cbe87-8f4d-4fa9-94a9-a54f847c5751">
+        {type != "terms" && <Link className="w-fit" target="_blank" to="https://appointments.praktika.net.au/online-booking/step1?Apikey=0d6cbe87-8f4d-4fa9-94a9-a54f847c5751">
           <button className="btn flex justify-center items-center gap-2 mt-4 !py-2 xs:!py-3 md:!py-4">
             BOOK AN APPOINTMENT
             <span>

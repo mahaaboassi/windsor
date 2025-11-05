@@ -45,7 +45,7 @@ const Hero = () => {
           <h2>TAKE CARE OF YOUR SMILE</h2>
         </div>
         <p>We design smiles that speak for themselves</p>
-        <Link target="_blank" to="https://appointments.praktika.net.au/online-booking/step1?Apikey=0d6cbe87-8f4d-4fa9-94a9-a54f847c5751">
+        <Link className="w-fit"  target="_blank" to="https://appointments.praktika.net.au/online-booking/step1?Apikey=0d6cbe87-8f4d-4fa9-94a9-a54f847c5751">
           <button className="btn flex justify-center items-center gap-2 mt-4">
             BOOK AN APPOINTMENT
             <span>
