@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const FixedComponent: React.FC = ()=>{
     return(<div className="fixed right-3 bottom-3 xxs:right-6 xxs:bottom-6 z-60 fixed-component">
-        <Link to={"https://wa.me/+61410103926"}>
+        <Link aria-label="Whatsapp" to={"https://wa.me/+61410103926"}>
             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
             <path d="M39 0.5H76C77.933 0.500001 79.5 2.067 79.5 4V41C79.5 62.263 62.263 79.5 41 79.5H39C17.737 79.5 0.500001 62.263 0.5 41V39C0.500001 18.0694 17.2024 1.03999 38.0059 0.512695L39 0.5Z" fill="#A6CE38"/>
             <path d="M39 0.5H76C77.933 0.500001 79.5 2.067 79.5 4V41C79.5 62.263 62.263 79.5 41 79.5H39C17.737 79.5 0.500001 62.263 0.5 41V39C0.500001 18.0694 17.2024 1.03999 38.0059 0.512695L39 0.5Z" stroke="#EEEEEE"/>

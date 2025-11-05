@@ -66,6 +66,13 @@ const social: ItemContact[] = [{
     </svg>,
     value: "Telegram",
     link: "https://www.instagram.com/windsor.dc"
+},{
+    svg: <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 19 19" fill="none">
+        <path d="M0.644693 3.67068C0.214584 3.26166 0 2.75563 0 2.15352C0 1.55141 0.214584 1.02254 0.644693 0.613525C1.0748 0.204509 1.62845 0 2.30752 0C2.98659 0 3.51797 0.204509 3.94715 0.613525C4.37726 1.02254 4.59184 1.53619 4.59184 2.15352C4.59184 2.77085 4.37726 3.26166 3.94715 3.67068C3.51704 4.0797 2.9708 4.2842 2.30752 4.2842C1.64424 4.2842 1.0748 4.0797 0.644693 3.67068ZM4.22954 6.01634V18.5503H0.362285V6.01634H4.22954Z" fill="#A6CE38"/>
+        <path d="M17.1063 7.25358C17.9489 8.19051 18.3707 9.47748 18.3707 11.1154V18.3293H14.6966V11.6243C14.6966 10.7987 14.4876 10.1566 14.0696 9.69911C13.6516 9.24158 13.0895 9.0133 12.3835 9.0133C11.6775 9.0133 11.1155 9.24253 10.6974 9.69911C10.2794 10.1566 10.0704 10.7987 10.0704 11.6243V18.3293H6.375V5.98183H10.0704V7.61979C10.4448 7.0738 10.9492 6.64291 11.5837 6.32521C12.2172 6.00846 12.9307 5.84961 13.7231 5.84961C15.1351 5.84961 16.2628 6.31854 17.1054 7.25452L17.1063 7.25358Z" fill="#A6CE38"/>
+        </svg>,
+    value: "Linkedin",
+    link: "https://www.linkedin.com/in/windsor-dental-care-602681395/"
 }]
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState<Boolean>(false)
@@ -126,7 +133,7 @@ const Navbar: React.FC = () => {
                 <div className="flex items-center gap-2 xs:gap-5">
                     <div className="flex gap-3">
                         {
-                            social.map((e, idx) => (<Link className="icon-nav" key={`Social_Navbar_${idx}`} to={e.link}>
+                            social.map((e, idx) => (<Link aria-label={e.value} className="icon-nav" key={`Social_Navbar_${idx}`} to={e.link}>
                                 {e.svg}
                             </Link>))
                         }
