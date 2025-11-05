@@ -132,9 +132,12 @@ const Navbar: React.FC = () => {
                         }
                     </div>
                     <div>
+                        <Link target="_blank" to="https://appointments.praktika.net.au/online-booking/step1?Apikey=0d6cbe87-8f4d-4fa9-94a9-a54f847c5751">
                         <button className="btn !py-2 xxs:!py-3 md:!py-4 !bg-[var(--light)] !text-[var(--main)]">
                             BOOK&nbsp;<span>AN APPOINTEMENT </span>
                         </button>
+                        </Link>
+                        
                     </div>
                     <div className="flex justify-between items-center flex-col text-white gap-1 text-[1.4rem] call-div">
                         {/* <div>CALL US</div> */}

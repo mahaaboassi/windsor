@@ -1,23 +1,23 @@
 // Images
-import cat_1 from "./assets/images/cat_1.png";
-import cat_sm_1 from "./assets/images/cat_sm_1.png";
+import cat_1 from "./assets/images/cat_1.webp";
+import cat_sm_1 from "./assets/images/cat_sm_1.webp";
 
-import cat_2 from "./assets/images/cat_2.png";
-import cat_sm_2 from "./assets/images/cat_sm_2.png";
+import cat_2 from "./assets/images/cat_2.webp";
+import cat_sm_2 from "./assets/images/cat_sm_2.webp";
 
-import cat_3 from "./assets/images/cat_3.png";
-import cat_sm_3 from "./assets/images/cat_sm_3.png";
+import cat_3 from "./assets/images/cat_3.webp";
+import cat_sm_3 from "./assets/images/cat_sm_3.webp";
 
-import cat_4 from "./assets/images/cat_4.png";
-import cat_sm_4 from "./assets/images/cat_sm_4.png";
+import cat_4 from "./assets/images/cat_4.webp";
+import cat_sm_4 from "./assets/images/cat_sm_4.webp";
 
-import cat_5 from "./assets/images/cat_5.png";
-import cat_sm_5 from "./assets/images/cat_sm_5.png";
+import cat_5 from "./assets/images/cat_5.webp";
+import cat_sm_5 from "./assets/images/cat_sm_5.webp";
 
-import mail from "./assets/images/mail.png"
-import phone from "./assets/images/phone.png"
-import location from "./assets/images/location.png"
-import time from "./assets/images/time.png"
+import mail from "./assets/images/mail.webp"
+import phone from "./assets/images/phone.webp"
+import location from "./assets/images/location.webp"
+import time from "./assets/images/time.webp"
 
 
 export const aboutData = {

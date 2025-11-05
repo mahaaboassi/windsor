@@ -2,14 +2,14 @@ import type { ReactNode } from "react"
 import { Link } from "react-router-dom"
 import { categories, contactInfo } from "../data"
 // Images
-import method_1 from "../assets/images/method_1.png";
-import method_2 from "../assets/images/method_2.png";
-import method_3 from "../assets/images/method_3.png";
-import method_4 from "../assets/images/method_4.png";
-import method_5 from "../assets/images/method_5.png";
-import method_6 from "../assets/images/method_6.png";
-import method_7 from "../assets/images/method_7.png";
-import method_8 from "../assets/images/method_8.png";
+import method_1 from "../assets/images/method_1.webp";
+import method_2 from "../assets/images/method_2.webp";
+import method_3 from "../assets/images/method_3.webp";
+import method_4 from "../assets/images/method_4.webp";
+import method_5 from "../assets/images/method_5.webp";
+import method_6 from "../assets/images/method_6.webp";
+import method_7 from "../assets/images/method_7.webp";
+import method_8 from "../assets/images/method_8.webp";
 
 const methods = [method_1,method_2,method_3,method_4,method_5,method_6,method_7,method_8]
 type infoItem = {

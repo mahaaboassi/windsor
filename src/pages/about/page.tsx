@@ -1,12 +1,12 @@
 import HeroForDynamicPages from "../../components/heroForDynamicPages"
 // Images
-import img_1 from "../../assets/images/img.png"
-import img_2 from "../../assets/images/about.png"
+import img_1 from "../../assets/images/img.webp"
+import img_2 from "../../assets/images/about.webp"
 import { aboutData } from "../../data"
 import Team from "../../sections/team"
 import Ready from "../../sections/ready"
-import img from "../../assets/images/about_.png"
-import img_sm from "../../assets/images/about_sm.png"
+import img from "../../assets/images/about_.webp"
+import img_sm from "../../assets/images/about_sm.webp"
 import { useEffect } from "react"
 import Heading from "../../components/heading"
 

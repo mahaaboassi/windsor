@@ -1,5 +1,5 @@
-import img_1 from "../assets/images/doctor_2.png"
-import shape from "../assets/images/Vector.png"
+import img_1 from "../assets/images/doctor_2.webp"
+import shape from "../assets/images/Vector.webp"
 
 const Team = ()=>{
 

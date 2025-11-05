@@ -1,5 +1,5 @@
 import type React from "react"
-import shape from "../assets/images/Vector.png"
+import shape from "../assets/images/Vector.webp"
 type Item = {
     hint: string,
     title: string,

@@ -3,12 +3,12 @@ import Contact from "../../sections/contactUS"
 import Ready from "../../sections/ready"
 import { useEffect } from "react"
 import type { ReactNode } from "react"
-import shape from "../../assets/images/Vector.png"
+import shape from "../../assets/images/Vector.webp"
 import  { Link } from "react-router-dom"
 import { contactInfo } from "../../data"
 
-import contact from "../../assets/images/contact.png"
-import contact_sm from "../../assets/images/contact_small.png"
+import contact from "../../assets/images/contact.webp"
+import contact_sm from "../../assets/images/contact_small.webp"
 
 type infoItem = {
   icon : ReactNode,

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import img_1 from "../assets/images/before.png"
-import img_2 from "../assets/images/before_2.png"
-import img_3 from "../assets/images/after.png"
-import img_4 from "../assets/images/after_2.png"
+import img_1 from "../assets/images/before.webp"
+import img_2 from "../assets/images/before_2.webp"
+import img_3 from "../assets/images/after.webp"
+import img_4 from "../assets/images/after_2.webp"
 import Heading from "../components/heading";
 
 const data = [{before : img_1, after: img_3},

@@ -1,4 +1,4 @@
-import img from "../assets/images/tooth.png"
+import img from "../assets/images/tooth.webp"
 import Heading from "../components/heading"
 
 

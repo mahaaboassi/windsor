@@ -1,5 +1,5 @@
 import type React from "react";
-import img from "../assets/images/about.png"
+import img from "../assets/images/about.webp"
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import CountUp from "react-countup";

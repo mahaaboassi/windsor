@@ -1,7 +1,7 @@
 import HeroForDynamicPages from "../../components/heroForDynamicPages"
 // Images
-import img_1 from "../../assets/images/img.png"
-import img_2 from "../../assets/images/about.png"
+import img_1 from "../../assets/images/img.webp"
+import img_2 from "../../assets/images/about.webp"
 import { categories } from "../../data"
 import { useParams } from "react-router-dom"
 import { useEffect, useState, type ReactNode } from "react"
