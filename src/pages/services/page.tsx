@@ -3,7 +3,7 @@ import HeroForDynamicPages from "../../components/heroForDynamicPages"
 import img_1 from "../../assets/images/img.webp"
 import img_2 from "../../assets/images/about.webp"
 import { categories } from "../../data"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { useEffect, useState, type ReactNode } from "react"
 import Ready from "../../sections/ready"
 import Heading from "../../components/heading"
@@ -47,6 +47,7 @@ type Item = {
 };
 
 const Service = ()=>{
+    const navigate = useNavigate()
     const { category, link} = useParams()
     const [ data, setData ] = useState<Services | undefined>(undefined)
       const [cat, setCat] = useState<Item | undefined>(undefined);
@@ -55,6 +56,9 @@ const Service = ()=>{
         window.scrollTo({top:0})
         const catValue = categories.find(e => e.link === `/${category}`);
         const service = catValue?.services.find(e => e.link === `${category}/${link}`);
+        if(!catValue) navigate("/")
+        if(catValue && !service) navigate(`${catValue?.link}`)
+        if(!catValue && !service) navigate("/")
         setCat(catValue)
         setData(service);
     },[link,category])

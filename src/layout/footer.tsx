@@ -5,13 +5,11 @@ import { categories, contactInfo } from "../data"
 import method_1 from "../assets/images/method_1.webp";
 import method_2 from "../assets/images/method_2.webp";
 import method_3 from "../assets/images/method_3.webp";
-import method_4 from "../assets/images/method_4.webp";
 import method_5 from "../assets/images/method_5.webp";
 import method_6 from "../assets/images/method_6.webp";
-import method_7 from "../assets/images/method_7.webp";
 import method_8 from "../assets/images/method_8.webp";
 
-const methods = [method_1,method_2,method_3,method_4,method_5,method_6,method_7,method_8]
+const methods = [method_1,method_2,method_3,method_5,method_6,method_8]
 type infoItem = {
   icon : ReactNode,
   value: string,
@@ -37,7 +35,7 @@ const socialData: socialItem[] = [{
   <path d="M21.932 10.6148C21.7005 7.93975 20.5038 5.45882 18.562 3.62959C16.6088 1.78866 14.0735 0.775024 11.4229 0.775024C5.60519 0.775024 0.871788 5.62175 0.871788 11.5787C0.871788 13.5777 1.41009 15.5259 2.42957 17.2225L0.15625 22.3765L7.43738 21.5824C8.70362 22.1131 10.0442 22.3824 11.4229 22.3824C11.7859 22.3824 12.1574 22.3628 12.53 22.3238C12.8587 22.2877 13.1903 22.235 13.5171 22.1677C18.3896 21.1599 21.9463 16.7317 21.9739 11.6363V11.5787C21.9739 11.2538 21.9597 10.9299 21.9311 10.6158L21.932 10.6148ZM7.71654 19.32L3.68821 19.759L4.89156 17.0303L4.65145 16.6996C4.63335 16.6752 4.61619 16.6508 4.59619 16.6235C3.55194 15.1474 3.00028 13.403 3.00028 11.5777C3.00028 6.82172 6.77902 2.95351 11.4229 2.95351C15.7742 2.95351 19.4614 6.42953 19.8168 10.8665C19.8359 11.1046 19.8454 11.3436 19.8454 11.5787C19.8454 11.646 19.8445 11.7123 19.8426 11.7826C19.753 15.761 17.0385 19.1395 13.2417 20C12.9521 20.0663 12.6548 20.1161 12.3585 20.1492C12.0507 20.1853 11.7354 20.2029 11.4219 20.2029C10.3062 20.2029 9.22193 19.9814 8.19674 19.5444C8.08336 19.4975 7.97189 19.4478 7.86708 19.3961L7.71465 19.321L7.71654 19.32Z" fill="#FDFDFD"/>
   </svg>,
   value: "Whatsapp",
-  link: "https://wa.me/+61410103926"
+  link: "https://wa.me/+61419358029"
 },{
   icon : <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 22 22" fill="none">
     <path d="M15.9498 0.599976H5.50041C2.61354 0.599976 0.265625 3.0041 0.265625 5.96008V15.7487C0.265625 18.7047 2.61354 21.1089 5.50041 21.1089H15.9498C18.8367 21.1089 21.1846 18.7047 21.1846 15.7487V5.96008C21.1846 3.0041 18.8367 0.599976 15.9498 0.599976ZM2.11206 5.96008C2.11206 4.04681 3.63187 2.49062 5.50041 2.49062H15.9498C17.8184 2.49062 19.3382 4.04681 19.3382 5.96008V15.7487C19.3382 17.662 17.8184 19.2182 15.9498 19.2182H5.50041C3.63187 19.2182 2.11206 17.662 2.11206 15.7487V5.96008Z" fill="white"/>
@@ -126,7 +124,7 @@ const Footer = () => {
       <div className="w-full h-[1px] bg-zinc-100 opacity-60" ></div>
       <div className="flex flex-col gap-3">
         <h2 className="uppercase !text-lg">Payment options</h2>
-        <div className="grid grid-cols-4 md:grid-cols-8 gap-3 md:gap-5">
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-5">
             {methods.map((e,i)=><div className="flex  justify-center items-center" key={`Method_${i}`}>
               <img src={e} alt="Method"/>
             </div>)}

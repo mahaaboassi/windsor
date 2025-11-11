@@ -14,10 +14,11 @@ function App() {
       <Route path='/*' element={<Layout/>}>
           <Route index element={<Home/>}/>
           <Route path='about' element={<About/>}/>
-          <Route path=':category' element={<CategoryOfService/>}/>
-          <Route path=':category/:link' element={<Service/>}/>
           <Route path='contact' element={<ContactPage/>}/>
           <Route path='terms-and-conditions' element={<Terms/>}/>
+          <Route path=':category' element={<CategoryOfService/>}/>
+          <Route path=':category/:link' element={<Service/>}/>
+          
       </Route>
     </Routes>
   </BrowserRouter>)

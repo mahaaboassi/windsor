@@ -158,7 +158,7 @@ export const categories = [{
     }]
 },{
     id: 3,
-    link: "general-dentistry/gum-disease-treatment/",
+    link: "general-dentistry/gum-disease-treatment",
     hero:{
         hint: "Gum Disease Treatment",
         title: "in Windsor",

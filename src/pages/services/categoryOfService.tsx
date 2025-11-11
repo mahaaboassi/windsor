@@ -3,7 +3,7 @@ import HeroForDynamicPages from "../../components/heroForDynamicPages"
 import img_1 from "../../assets/images/img.webp"
 import img_2 from "../../assets/images/about.webp"
 import { categories } from "../../data"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { useEffect, useState, type ReactNode } from "react"
 import Ready from "../../sections/ready"
 import Heading from "../../components/heading"
@@ -49,7 +49,7 @@ type Item = {
 };
 
 const CategoryOfService = ()=>{
-    
+    const navigate = useNavigate()
     const { category} = useParams()
     // const [ data, setData ] = useState<Services[] | undefined>(undefined)
     const [cat, setCat] = useState<Item | undefined>(undefined);
@@ -57,9 +57,8 @@ const CategoryOfService = ()=>{
         if (!category) return;
         window.scrollTo({top:0})
         const catValue = categories.find(e => e.link === `/${category}`);
-        
+        if(!catValue) navigate("/")
         setCat(catValue)
-        // setData(catValue?.services);
     },[category])
     return(<div className="flex flex-col gap-10 md:gap-20 dynamic-pages">
         <HeroForDynamicPages img={cat?.img ?? ""} img_sm={cat?.img_sm ?? ""}  hint={cat?.category ?? ""} title={"In Windsor"}
