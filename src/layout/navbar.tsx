@@ -138,13 +138,24 @@ const Navbar: React.FC = () => {
                             </Link>))
                         }
                     </div>
+                    <div onClick={()=>setIsOpen(!isOpen)} className="cursor-pointer menu-icon py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="26" viewBox="0 0 71 56" fill="none">
+                            <g clipPath="url(#clip0_1598_1335)">
+                            <path fillRule="evenodd" clipRule="evenodd" d="M71 0V11.586H19.1829V0H71ZM12.2089 44.414V56H0V44.414H12.2089ZM12.2089 22.207V33.793H0V22.207H12.2089ZM12.2089 0V11.586H0V0H12.2089ZM71 44.414V56H19.1829V44.414H71ZM71 22.207V33.793H19.1829V22.207H71Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1598_1335">
+                            <rect width="71" height="56" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
                     <div>
                         <Link target="_blank" to="https://appointments.praktika.net.au/online-booking/step1?Apikey=0d6cbe87-8f4d-4fa9-94a9-a54f847c5751">
-                        <button className="btn !py-2 xxs:!py-3 md:!py-4 !bg-[var(--light)] !text-[var(--main)]">
-                            BOOK&nbsp;<span>AN APPOINTEMENT </span>
-                        </button>
+                            <button className="btn !py-2 xxs:!py-3 md:!py-4 !bg-[var(--light)] !text-[var(--main)]">
+                                BOOK&nbsp;<span>AN APPOINTEMENT </span>
+                            </button>
                         </Link>
-                        
                     </div>
                     <div className="flex justify-between items-center flex-col text-white gap-1 text-[1.4rem] call-div">
                         {/* <div>CALL US</div> */}
@@ -159,18 +170,6 @@ const Navbar: React.FC = () => {
                             </div>
                         </Link>
 
-                    </div>
-                    <div onClick={()=>setIsOpen(!isOpen)} className="cursor-pointer menu-icon py-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="26" viewBox="0 0 71 56" fill="none">
-                            <g clipPath="url(#clip0_1598_1335)">
-                            <path fillRule="evenodd" clipRule="evenodd" d="M71 0V11.586H19.1829V0H71ZM12.2089 44.414V56H0V44.414H12.2089ZM12.2089 22.207V33.793H0V22.207H12.2089ZM12.2089 0V11.586H0V0H12.2089ZM71 44.414V56H19.1829V44.414H71ZM71 22.207V33.793H19.1829V22.207H71Z" fill="white"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_1598_1335">
-                            <rect width="71" height="56" fill="white"/>
-                            </clipPath>
-                            </defs>
-                        </svg>
                     </div>
                 </div>
 
