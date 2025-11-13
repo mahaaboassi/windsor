@@ -264,10 +264,7 @@ footer .element-shape svg{
     font-size: var(--font-size-xs);
   }
 
-  /* heading */
-  .headings h2, .headings h3, .headings p{
-    text-align: center;
-  }
+  
 }
 @media (max-width:1100px) {
   .container-layout{
@@ -285,7 +282,10 @@ footer .element-shape svg{
   .contact-nav-item, .second-nav button {
     display: none;
   }
-
+  /* heading */
+  .headings h2, .headings h3, .headings p{
+    text-align: center;
+  }
   
 }
 @media (max-width:900px) {

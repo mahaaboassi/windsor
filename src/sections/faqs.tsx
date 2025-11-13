@@ -8,7 +8,7 @@ import img_3 from "../assets/images/logo_3.webp"
 import img_4 from "../assets/images/logo_4.webp"
 import img_5 from "../assets/images/logo_5.webp"
 import img_6 from "../assets/images/logo_6.webp"
-import img from "../assets/images/FAQs.webp"
+import img from "../assets/images/faqs_.png"
 import Heading from "../components/heading"
 
 type ItemContact = {

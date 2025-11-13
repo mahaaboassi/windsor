@@ -1,5 +1,5 @@
 import type React from "react";
-import img from "../assets/images/about.webp"
+import img from "../assets/images/test.png"
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import CountUp from "react-countup";
@@ -53,7 +53,7 @@ const About: React.FC =()=>{
                 ))}
             </motion.div>
         </div>
-        <div className="flex items-center">
+        <div className="flex justify-center lg:justify-end items-center">
             <img src={img} alt="about" />
         </div>
     </div>)

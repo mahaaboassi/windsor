@@ -7,6 +7,8 @@ import { useNavigate, useParams } from "react-router-dom"
 import { useEffect, useState, type ReactNode } from "react"
 import Ready from "../../sections/ready"
 import Heading from "../../components/heading"
+import Reviews from "../../sections/review"
+import Consultation from "../../sections/consultation"
 
 type Service = {
     icon: string;
@@ -67,6 +69,8 @@ const Service = ()=>{
                             desc={data?.hero?.desc ?? ""}
                             link={cat?.link ?? ""} label={cat?.category ?? ""} subLabel={data?.hero?.subLabel ?? ""}
         />
+        <Reviews/>
+        <Consultation/>
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 container-layout">
             <div className="flex flex-col gap-5 md:gap-10">
                 <Heading desc="" title={data?.sections[0].title ?? ""} hint={data?.sections[0].hint ?? ""} />

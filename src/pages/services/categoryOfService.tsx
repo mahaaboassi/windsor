@@ -7,6 +7,8 @@ import { useNavigate, useParams } from "react-router-dom"
 import { useEffect, useState, type ReactNode } from "react"
 import Ready from "../../sections/ready"
 import Heading from "../../components/heading"
+import Reviews from "../../sections/review"
+import Consultation from "../../sections/consultation"
 
 
 type Service = {
@@ -65,6 +67,8 @@ const CategoryOfService = ()=>{
                             desc={""}
                             link={"/"} label={"Home"} subLabel={cat?.category ??  ""}
         />
+        <Reviews/>
+        <Consultation/>
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 container-layout">
             <div className="flex flex-col gap-5">
                 <Heading hint={cat?.first_sections.hint ?? ""} title={cat?.first_sections.title ?? ""} desc=""/>
