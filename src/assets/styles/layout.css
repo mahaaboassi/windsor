@@ -48,7 +48,9 @@ nav{
 .first-nav button{
   line-height: 1.1rem;
 }
-
+.small-screen-dev{
+  display: none
+}
 .circle-service{
   opacity: 0;
   transition: 0.3s;
@@ -394,6 +396,9 @@ footer .element-shape svg{
 @media (max-width : 700px) {
   .call-div{
     display: none;
+  }
+  .small-screen-dev{
+    display: flex
   }
 }
 @media (max-width:600px) {
