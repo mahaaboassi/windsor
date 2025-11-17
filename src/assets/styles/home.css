@@ -55,9 +55,9 @@
 }
 /* About */
 .card-metrics{
-    background: linear-gradient(to bottom, var(--grey_1), var(--grey_2));
+    background: linear-gradient(to bottom, var(--main), var(--main-2));
     border-radius: 10px;
-    color: var(--light);
+    color: rgb(48, 48, 48);
 }
 
 /* Steps */
@@ -68,6 +68,7 @@
 .steps p{
     font-size: var(--font-size-xxs);
     font-weight: 500;
+    color: var(--grey_1);
 }
 .contact-card{
     border: 2px solid var(--main);
@@ -77,32 +78,32 @@
 }
 .steps-card{
     border-radius: 20px;
-    background-color: var(--main);
+    background-color: var(--light);
     color: var(--light);
     transition: 0.3s;
     border: 2px solid var(--main);
+    color: var(--dark) ;
 }
 .steps-card:hover{
-    background-color: var(--light);
-    color: var(--dark) ;
+    background-color: var(--main); 
 }
 .steps-card:hover .line-card{
     background-color: var(--light);
 
 }
 .steps-card .num{
-    background-color: var(--light);
-    color: var(--main);
     width: 30px;
     height: 30px;
     border-radius: 50%;
     font-weight: 700;
     font-size: var(--font-size-xs);
     transition: 0.3s;
-}
-.steps-card:hover .num{
     background-color: var(--main);
     color: var(--light);
+}
+.steps-card:hover .num{
+    background-color: var(--light);
+    color: var(--main);
 }
 .steps-card svg{
     width: 90px;
@@ -110,15 +111,15 @@
 }
 
 .steps-card:hover p{
-    color: var(--grey_1);
+    color: var(--light);
     transition: 0.3s;
 }
 .steps-card svg path{
-    fill: var(--light);
+    fill: var(--main);
     transition: 0.3s;
 }
 .steps-card:hover svg path{
-    fill: var(--main);
+    fill: var(--light);
 }
 
 .line-card{
@@ -130,13 +131,12 @@
     color: var(--light);
 }
 .steps-card p{
-    color: var(--light);
     transition: 0.3s;
 }
 .contact-card svg path{
     fill: var(--main);
 }
-.steps-card svg path, .contact-card:hover svg path{
+.contact-card:hover svg path{
     fill: var(--light);
 }
 
@@ -151,7 +151,7 @@
 .treatment-card h3{
     font-size: var(--font-size-s);
     font-weight: 700;
-    color: var(--light);
+    color: var(--main);
 }
 .treatment-card p{
     font-size: var(--font-size-xxs);
@@ -168,29 +168,30 @@
     align-items: center;
 }
 .treatment-card:hover{
-    box-shadow: var(--shadow-box);
+    /* box-shadow: var(--shadow-box); */
+    transform: translateY(5px);
 }
-.treatment-card:hover .icon-tooth{
+/* .treatment-card:hover .icon-tooth{
     background-color: var(--light);
-}
-.treatment-card:hover .icon-tooth svg path{
+} */
+/* .treatment-card:hover .icon-tooth svg path{
     fill: var(--grey_1);
-}
+} */
 .overlay-icon{
     position: absolute;
     right: 20px;
     top: 70px;
     transform: scale(4) rotate(20deg);
 }
-.overlay-icon svg path{
+/* .overlay-icon svg path{
     fill: rgb(167, 167, 167);
-}
+} */
 .container-layout-bg{
     position: absolute;
     inset: 0;
     background: linear-gradient(var(--grey_1), var(--grey_2));
     z-index: -1;
-    opacity: 1;
+    opacity: 0;
     transition: 0.3s;
 }
 
@@ -203,7 +204,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(45deg, rgba(128, 128, 128, 0.829) 20%, rgba(255, 255, 255, 0.105));
+    background: linear-gradient(45deg, rgba(34, 34, 34, 0.671) 20%, rgba(0, 0, 0, 0.108));
 }
 .container-layout-img img{
     width: 100%;

@@ -131,13 +131,13 @@ const Navbar: React.FC = () => {
                     </svg>
                 </Link>
                 <div className="flex items-center gap-2 xs:gap-5">
-                    <div className="flex gap-3">
+                    {/* <div className="flex gap-3">
                         {
                             social.map((e, idx) => (<Link target="_blank" aria-label={e.value} className="icon-nav" key={`Social_Navbar_${idx}`} to={e.link}>
                                 {e.svg}
                             </Link>))
                         }
-                    </div>
+                    </div> */}
                    
                     <div>
                         <Link target="_blank" to="https://appointments.praktika.net.au/online-booking/step1?Apikey=0d6cbe87-8f4d-4fa9-94a9-a54f847c5751">
@@ -179,7 +179,7 @@ const Navbar: React.FC = () => {
             </div>
             {/* Location And Phone for small screen */}
             <div className="small-screen-dev justify-between items-center container-layout font-bold  text-white gap-1 text-[0.9rem] xs:text-[1.4rem] bg-[var(--main)] !pb-2 -mt-1">
-                        <div>Windsor</div>
+                        <div className="text-black">Windsor</div>
                         <Link className="flex gap-1 items-center" to="tel:+61245712720">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 20 20" fill="none">
@@ -284,6 +284,15 @@ const Navbar: React.FC = () => {
                             </NavLink>
                         </li>)
                     ))}
+                    {/* <li>
+                        <div>
+                            <Link target="_blank" to="https://appointments.praktika.net.au/online-booking/step1?Apikey=0d6cbe87-8f4d-4fa9-94a9-a54f847c5751">
+                                <button className="btn !py-2 xxs:!py-3 md:!py-4 ">
+                                    BOOK&nbsp;<span>APPOINTEMENT </span>
+                                </button>
+                            </Link>
+                        </div>
+                    </li> */}
                 </ul>
             </div>
         </nav>

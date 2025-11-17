@@ -167,7 +167,9 @@ const Reviews = ()=>{
                     </div>
                     <div className="flex flex-col gap-2">
                         <p className={`flex justify-center text-center !font-normal`}>{desc[idx]?.open?desc[idx]?.desc:desc[idx]?.desc.substring(0,100)+"..."}</p>
-                        {desc[idx]?.desc.length > 100 && <span onClick={()=>{
+                        
+                        <Link className="text-[13px] m-auto text-[var(--main)]" target="_blank" to="https://maps.app.goo.gl/7Yys1RebB6nSiiJo7"><span>{desc[idx]?.open?"Read Less":"Read More"}</span></Link>
+                        {/* {desc[idx]?.desc.length > 100 && <span onClick={()=>{
                             const temp = desc.map((element, index) => {
                                 if (index === idx) {
                                     return { ...element, open: !element.open }
@@ -175,7 +177,7 @@ const Reviews = ()=>{
                                 return element
                             })
                             setDesc(temp)
-                        }} className="text-[13px] m-auto text-[var(--main)] cursor-pointer">{desc[idx]?.open?"Read Less":"Read More"}</span>}
+                        }} className="text-[13px] m-auto text-[var(--main)] cursor-pointer">{desc[idx]?.open?"Read Less":"Read More"}</span>} */}
                         <div className={`w-1/4 h-[3px] rounded m-auto line-card !bg-[var(--main)]`}></div>
                     </div>
                 </div>
