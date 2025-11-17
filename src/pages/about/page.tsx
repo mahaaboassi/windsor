@@ -1,7 +1,7 @@
 import HeroForDynamicPages from "../../components/heroForDynamicPages"
 // Images
-import img_1 from "../../assets/images/img.webp"
-import img_2 from "../../assets/images/about.webp"
+import img_1 from "../../assets/images/test_1.png"
+import img_2 from "../../assets/images/test.png"
 import { aboutData } from "../../data"
 import Team from "../../sections/team"
 import Ready from "../../sections/ready"
