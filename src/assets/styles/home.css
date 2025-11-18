@@ -300,13 +300,14 @@
 }
 @media (max-width:1020px) {
    .steps-card svg{
-        width: 50px;
+        width: 70px;
         height: auto;
     } 
 }
 @media (max-width: 768px) {
     .hero{
-        height: 600px;
+        height: 700px;
+        padding-top: 300px;
     }
     .hero h1{
         font-size: 3rem;
@@ -341,8 +342,8 @@
 }
 @media (max-width:400px) {
     .hero{
-        height: 550px;
-        padding-top: 150px;
+        height: 650px;
+        padding-top: 250px;
     }
     .contact-card svg{
         height: 40px;

@@ -57,16 +57,16 @@ const Steps = ()=>{
         />
         <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-5 steps">
             {data.map((e,idx)=>(<div className={`steps-card flex flex-col gap-1 lg:gap-2 p-3 md:p-5 `} key={`Steps_${e.name}_${idx}`}>
-                <div className={`num flex justify-center lg:flex hidden items-center`}>
+                <div className={`num flex justify-center flex items-center`}>
                     <div>{idx+1}</div>
                 </div>
-                <div className="lg:flex hidden justify-center">{e.svg}</div>
-                <div className="justify-between flex lg:hidden">
+                <div className="flex  justify-center">{e.svg}</div>
+                {/* <div className="justify-between flex lg:hidden">
                     <div className={`num flex justify-center items-center`}>
                         <div>{idx+1}</div>
                     </div>
                     <div className="flex justify-center">{e.svg}</div>
-                </div>
+                </div> */}
                 <h3 className={`flex justify-center`}>{e.name}</h3>
                 <p className={`flex justify-center text-center`}>{e.desc}</p>
                 <div className={`w-1/4 h-[3px] rounded m-auto line-card`}></div>

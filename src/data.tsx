@@ -79,16 +79,18 @@ export const categories = [{
     },
     sections : [ {
         img: "",
-        hint: "Ease Your Toothache and Protect Your",
-        title: "Professional Root Canal Services Windsor",
+        hint: "About the service",
+        title: "What Is Root Canal Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>Root canal treatment is commonly perceived as an intimidating process, yet it's crucial to recognize its importance in rescuing teeth from infection and preventing tooth loss.</p>
-            <p>The fear of discomfort and pain often leads people to delay their root canal treatment. However, at Windsor Dental Care, we prioritise your comfort. Our clinic provides soothing root canal therapy in a tranquil setting. Employing state-of-the-art technology and methods, we ensure your procedure is as pain-free as possible. You can confidently walk out of our office with a beaming smile and a fully rehabilitated tooth.</p>
+            <p>A root canal treatment is a common dental procedure that removes infection from inside the tooth and helps save it from extraction.
+            Inside each tooth is a soft tissue called the pulp, which contains nerves and blood vessels. When this tissue becomes infected due to deep decay, cracks, or trauma, it can cause severe pain and sensitivity.</p>
+            <p>Root canal therapy gently removes the infected pulp, disinfects the tooth, and seals it to prevent future infection, giving you back a healthy, pain-free smile.</p>
+            <p> At Windsor Dental Care, we make root canal treatment simple, stress-free, and comfortable.</p>
         </div>
     },{
         img: "",
         hint: "Key Dental Issues That Require",
-        title: "Root Canal Treatment",
+        title: "When Do You Need a Root Canal and Why Is It Important?",
         desc_1 : <div>
             <p>Your dentist can determine the necessity for a root canal by observing indications of dental issues. Nonetheless, there are certain warning signs that could suggest an infection in the tooth pulp, requiring prompt attention to prevent further complications.</p>
         </div>,

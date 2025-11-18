@@ -62,7 +62,7 @@ nav{
     height: 100px;
     width: 400px;
     background-color: var(--main);
-    clipPath: polygon(
+    clip-path: polygon(
         0 0,        /* top-left */
         85% 0,      /* top-right, move left a bit */
         100% 100%,  /* bottom-right */
@@ -245,6 +245,11 @@ footer .element-shape svg{
 .final-line-footer,.final-line-footer a{
   font-size: var(--font-size-xs) !important;
 }
+@media (max-width:1400px) {
+  nav ul{
+    font-size: 0.9rem;
+  }
+}
 @media (max-width:1200px) {
   .container-layout{
     padding: 0 4rem;
@@ -389,17 +394,16 @@ footer .element-shape svg{
   .call-div{
     font-size: var(--font-size-s);
   }
-  .call-div svg{
-    height: 19px;
+  .small-screen-dev{
+    display: flex;
+    border-top: 1px solid var(--light);
   }
 }
 @media (max-width : 700px) {
   .call-div{
     display: none;
   }
-  .small-screen-dev{
-    display: flex
-  }
+
 }
 @media (max-width:600px) {
   
@@ -411,7 +415,7 @@ footer .element-shape svg{
 }
 @media (max-width: 500px) {
   nav svg.logo{
-    width: 80px;
+    width: 70px;
   }
   .element-shape{
     width: 150px;
@@ -426,6 +430,9 @@ footer .element-shape svg{
   .headings h3{
     font-size: 1.2rem !important;
     line-height: 1.6rem !important;
+  }
+  .small-screen-dev svg{
+    width: 15px;
   }
 
 
@@ -446,4 +453,5 @@ footer .element-shape svg{
   nav .btn span{
     display: none;
   }
+
 }

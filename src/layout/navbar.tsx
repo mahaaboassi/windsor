@@ -139,7 +139,7 @@ const Navbar: React.FC = () => {
                         }
                     </div> */}
                    
-                    <div>
+                    <div className="hidden md:flex">
                         <Link target="_blank" to="https://appointments.praktika.net.au/online-booking/step1?Apikey=0d6cbe87-8f4d-4fa9-94a9-a54f847c5751">
                             <button className="btn !py-2 xxs:!py-3 md:!py-4 !bg-[var(--light)] !text-[var(--main)]">
                                 BOOK&nbsp;<span>AN APPOINTEMENT </span>
@@ -147,8 +147,7 @@ const Navbar: React.FC = () => {
                         </Link>
                     </div>
                      
-                    <div className="flex justify-between items-center flex-col text-white gap-1 text-[1.4rem] call-div">
-                        {/* <div>CALL US</div> */}
+                    <div className="hidden md:flex justify-between items-center flex-col text-white gap-1 text-[1.4rem] call-div">
                         <Link className="flex gap-1 items-center" to="tel:+61245712720">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 20 20" fill="none">
@@ -178,8 +177,22 @@ const Navbar: React.FC = () => {
 
             </div>
             {/* Location And Phone for small screen */}
-            <div className="small-screen-dev justify-between items-center container-layout font-bold  text-white gap-1 text-[0.9rem] xs:text-[1.4rem] bg-[var(--main)] !pb-2 -mt-1">
-                        <div className="text-black">Windsor</div>
+            <div className="small-screen-dev shadow !bg-[var(--light)] justify-between items-center container-layout font-bold  text-white gap-1 text-[0.9rem] xs:text-[1.3rem] bg-[var(--main)] !py-1 xs:!py-2 -mt-2">
+                        <div className="text-black flex gap-1 items-center">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="39" viewBox="0 0 58 79" fill="none">
+                                    <g clipPath="url(#clip0_1681_3038)">
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M43.0737 68.3277C39.5592 72.2687 35.4662 75.7982 30.8702 78.6527C30.3043 79.0771 29.5373 79.1285 28.9085 78.717C22.1183 74.3003 16.4157 68.9963 11.9329 63.2295C5.74626 55.2961 1.85444 46.5011 0.521544 38.0277C-0.836505 29.4385 0.433523 21.1707 4.61455 14.4524C6.26182 11.7972 8.36805 9.37988 10.9333 7.29044C16.8307 2.48795 23.5644 -0.0515207 30.2792 -8.84301e-05C36.7425 0.0513439 43.124 2.51366 48.638 7.66332C50.5744 9.46345 52.2028 11.5272 53.5357 13.7645C58.0311 21.3379 58.9994 30.9943 57.0252 40.7793C55.0761 50.4486 50.2349 60.2721 43.0737 68.3084V68.3277ZM28.9966 15.2753C36.9688 15.2753 43.4258 21.8843 43.4258 30.0299C43.4258 38.182 36.9625 44.7846 28.9966 44.7846C21.0243 44.7846 14.5673 38.182 14.5673 30.0299C14.561 21.8779 21.0243 15.2753 28.9966 15.2753Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1681_3038">
+                                    <rect width="58" height="79" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            Windsor
+                        </div>
                         <Link className="flex gap-1 items-center" to="tel:+61245712720">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 20 20" fill="none">
@@ -187,9 +200,22 @@ const Navbar: React.FC = () => {
                                 </svg>
                             </div>
                             <div className="text-black">
-                                +61 2 4571 2720
+                                Call Us
                             </div>
                         </Link>
+                        <div className="text-black flex gap-1 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <g clipPath="url(#clip0_1820_1355)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C18.627 0 24 5.37305 24 12C24 18.627 18.627 24 12 24C5.37305 24 0 18.627 0 12C0 5.37305 5.37305 0 12 0ZM10.3359 5.96094H11.8027C12.0703 5.96094 12.291 6.18164 12.291 6.44922V12.1016H17.4492C17.7187 12.1016 17.9375 12.3223 17.9375 12.5898V14.0566C17.9375 14.3262 17.7168 14.5449 17.4492 14.5449H9.8457V6.44922C9.8457 6.17969 10.0664 5.96094 10.3359 5.96094ZM12 2.72461C17.123 2.72461 21.2754 6.87695 21.2754 12C21.2754 17.123 17.123 21.2754 12 21.2754C6.87695 21.2754 2.72461 17.123 2.72461 12C2.72461 6.87891 6.87695 2.72461 12 2.72461Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1820_1355">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            Book Now
+                        </div>
 
                     </div>
             <div className="container-layout bg-white shadow">
