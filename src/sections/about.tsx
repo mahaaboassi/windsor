@@ -48,7 +48,7 @@ const About: React.FC =()=>{
                         {e.signal && <span className="text-xl">{e.signal}</span>}
                         </h3>
                     </div>
-                    <p className=" text-lg ">{e.desc}</p>
+                    <p className="text-xs xs:text-sm md:text-lg ">{e.desc}</p>
                     </div>
                 ))}
             </motion.div>
