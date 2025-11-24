@@ -18,7 +18,7 @@ const FixedComponent: React.FC = ()=>{
                         exit={{ opacity: 0, y: 40 }}
                         transition={{ duration: 0.6, ease: "easeOut" }}
                         className="
-                            fixed right-4 bottom-28 card-pop-up w-72 max-w-[90%] z-20
+                            fixed right-4 bottom-28 card-pop-up w-72 max-w-[90%] z-50
                             bg-white/90 backdrop-blur-xl 
                             text-gray-700 shadow-[0_8px_30px_rgba(0,0,0,0.12)]
                             rounded-2xl border border-white/60
