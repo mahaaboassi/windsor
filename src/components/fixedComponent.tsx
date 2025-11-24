@@ -33,7 +33,7 @@ const FixedComponent: React.FC = ()=>{
 
                             <button
                             onClick={() => setShow(false)}
-                            className="text-gray-400 hover:text-gray-600 transition"
+                            className="text-gray-400 hover:text-gray-600 transition cursor-pointer"
                             >
                             ✕
                             </button>
