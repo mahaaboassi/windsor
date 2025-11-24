@@ -351,5 +351,8 @@
     .fixed-component svg{
         height: 60px;
     }
+    .card-pop-up{
+        bottom: 80px;
+    }
     
 }

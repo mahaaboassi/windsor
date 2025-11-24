@@ -10,40 +10,37 @@ const FixedComponent: React.FC = ()=>{
         return () => clearTimeout(timer);
     }, []);
     return(<div>
-        {/* <div className="fixed right-3 bottom-27 p-5 xxs:right-6 w-70 z-20 text-[var(--main)] text-md rounded-xl bg-[var(--light)]">
-            Welcome! Looking for dental care or a consultation? Our team is ready to assist you with any concerns.
-        </div> */}
         <AnimatePresence>
-            {show && (
-                <motion.div
-                    initial={{ opacity: 0, y: 40, scale: 0.9 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={{ opacity: 0, y: 40 }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
-                    className="
-                        fixed right-4 bottom-28 xxs:right-6 w-72 max-w-[90%] z-20
-                        bg-white/90 backdrop-blur-xl 
-                        text-gray-700 shadow-[0_8px_30px_rgba(0,0,0,0.12)]
-                        rounded-2xl border border-white/60
-                        p-4
-                    "
-                    >
-                    <div className="flex items-start justify-between gap-3">
-                        <p className="text-sm leading-relaxed font-medium">
-                        Welcome! Looking for dental care or a consultation?<br />
-                        Our team is ready to assist you with any concerns.
-                        </p>
-
-                        <button
-                        onClick={() => setShow(false)}
-                        className="text-gray-400 hover:text-gray-600 transition"
+                {show && (
+                    <motion.div
+                        initial={{ opacity: 0, y: 40, scale: 0.9 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        exit={{ opacity: 0, y: 40 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        className="
+                            fixed right-4 bottom-28 card-pop-up w-72 max-w-[90%] z-20
+                            bg-white/90 backdrop-blur-xl 
+                            text-gray-700 shadow-[0_8px_30px_rgba(0,0,0,0.12)]
+                            rounded-2xl border border-white/60
+                            p-4
+                        "
                         >
-                        ✕
-                        </button>
-                    </div>
-                    </motion.div>
-            )}
-    </AnimatePresence>
+                        <div className="flex items-start justify-between gap-3">
+                            <p className="text-sm leading-relaxed font-medium">
+                            Welcome! Looking for dental care or a consultation?<br />
+                            Our team is ready to assist you with any concerns.
+                            </p>
+
+                            <button
+                            onClick={() => setShow(false)}
+                            className="text-gray-400 hover:text-gray-600 transition"
+                            >
+                            ✕
+                            </button>
+                        </div>
+                        </motion.div>
+                )}
+        </AnimatePresence>
         <div className="fixed right-3 bottom-3 xxs:right-6 xxs:bottom-6 z-60 fixed-component">
             <Link target="_blank" aria-label="Whatsapp" to={"https://wa.me/+61419358029"}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
