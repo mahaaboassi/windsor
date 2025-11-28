@@ -18,7 +18,7 @@ const Gallery = ()=>{
         }, 4000); 
         return () => clearInterval(intervalId);
       }, []);
-    return(<div className="container-layout gallery bg-[var(--main)]  relative overflow-hidden">
+    return(<div className="container-layout gallery gradient_bg  relative overflow-hidden">
         <div className="flex flex-col gap-5 md:gap-10 py-10 items-center relative z-1 ">
             <Heading hint="Smile Transformation" desc="See the amazing results of our dental treatments. Our before-and-after photos showcase real patient transformations and the power of expert dental care." 
                     title="BEFORE AND AFTER PHOTOS RESTORATION"

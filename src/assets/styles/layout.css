@@ -191,9 +191,7 @@ nav li{
  background-color: rgba(128, 128, 128, 0.986);
 }
 /* Footer */
-footer{
-  background-color: var(--main);
-}
+
 footer h2{
   color: var(--main);
   font-size: var(--font-size-xl);
