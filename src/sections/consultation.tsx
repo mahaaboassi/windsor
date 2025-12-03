@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Consultation = ()=>{
 
-    return(<div className="container-layout gallery bg-[var(--main)] !py-5 xs:!py-10 relative overflow-hidden">
+    return(<div className="container-layout gallery gradient_bg !py-5 xs:!py-10 relative overflow-hidden">
         <div className="flex flex-col gap-5 md:gap-10 py-10 items-center relative z-1 ">
             <Heading hint="Discover Best Smile" desc="At Happy Smiles Dental, we are dedicated to providing the highest quality dental care. We believe in helping you make informed decisions, which is why we offer a complimentary consultation to discuss treatment options tailored specifically to your needs." 
                     title="Book Your Free Consultation"

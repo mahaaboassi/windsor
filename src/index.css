@@ -66,7 +66,9 @@ a{
   text-decoration: none;
 }
 .gradient_bg{
-  background: linear-gradient(180deg, #a6ce38, #bbbbbb, transparent);
+  /* background: linear-gradient(180deg, #a6ce38, #bbbbbb, transparent); */
+  /* background: linear-gradient(180deg, #a6ce38, #dcdada, transparent); */
+  background: linear-gradient(180deg, #a6ce38, #aebb8c, #bbbbbb, #dcdada, transparent);
 }
 .blur-bg{
     background-color: rgba(255, 255, 255, 0.152);

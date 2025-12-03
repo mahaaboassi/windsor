@@ -1322,10 +1322,13 @@ export const categories = [{
     }
 }]
 export const navMenu = [
-    {category: 'Home', link: '/'},
-    {category: 'About', link: '/about'},
-    ...categories,
-    {category: 'Contact', link: '/contact'}
+    {category: 'Home', link: '/',},
+    {category: 'About Us', link: '/about'},
+    {category: 'Services', link: '/about', cats : [...categories]},
+    {category: 'Payment Methods', link: '/about'},
+    {category: 'Best Offers', link: '/about'},
+    {category: 'Blogs', link: '/about'},
+    {category: 'Contact Us', link: '/contact'}
 ]
 
 

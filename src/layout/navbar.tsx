@@ -1,44 +1,11 @@
-import { useEffect, useRef, useState, type ReactNode } from "react"
+import { useEffect, useRef, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion";
 import type React from "react"
 import { Link, NavLink } from "react-router-dom"
 import { navMenu } from "../data"
 
-type Service = {
-    icon: string;
-    link?: string;
-    title: string;
-    desc: string;
-};
 
-type Section = {
-    img: string;
-    hint: string;
-    title: string;
-    desc_1: ReactNode;
-    service?: Partial<Service>[];
-};
 
-type Hero = {
-    hint: string;
-    title: string;
-    desc: string;
-    subLabel: string;
-};
-type Services = {
-    id: number;
-    link: string,
-    hero: Hero;
-    sections: Section[];
-}
-type Item = {
-    id?: number;
-    link: string;
-    category : string;
-    services? : Services[],
-    first_sections? : Section,
-    second_section? : Section
-};
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState<Boolean>(false)
@@ -70,7 +37,7 @@ const Navbar: React.FC = () => {
     }
     return (
         <nav ref={menuRef} >
-            <div className="flex first-nav justify-between w-full container-layout items-center !py-2 ">
+            <div className="flex first-nav  justify-between w-full container-layout items-center !py-2 ">
                 <Link to="/">
                     <svg className="logo" xmlns="http://www.w3.org/2000/svg" width="126" height="81" viewBox="0 0 126 81" fill="none">
                         <path d="M78.8864 45.851C79.2868 45.6331 79.6873 45.5605 80.0877 45.4879C81.3983 45.2338 82.6724 45.3064 83.9466 45.6331C87.0773 46.3592 89.6256 48.0654 91.7371 50.4252C92.6472 51.4779 93.4117 52.6397 94.0306 53.874C95.0135 55.8706 95.8144 57.9399 96.6153 60.0092C97.2706 61.7155 97.9622 63.4217 98.6539 65.0917C99.2 66.3623 99.8189 67.5603 100.62 68.6857C101.129 69.4117 101.712 70.0652 102.513 70.4645C103.241 70.8276 103.969 70.7913 104.697 70.4645C105.534 70.0652 106.153 69.448 106.736 68.7946C107.719 67.6329 108.483 66.3623 109.211 65.019C110.813 62.0422 112.087 58.9201 113.216 55.7254C114.271 52.8212 115.145 49.8806 115.946 46.9037C116.601 44.4714 117.147 42.0028 117.621 39.5342C118.094 37.1745 118.421 34.8148 118.64 32.4188C118.858 29.9138 118.931 27.4452 118.749 24.9403C118.64 23.1978 118.349 21.4915 117.875 19.8215C117.439 18.2605 116.82 16.8084 115.91 15.4652C114.453 13.3596 112.488 12.0164 110.012 11.3992C108.592 11.0362 107.136 10.9273 105.68 10.9999C103.896 11.0725 102.112 11.2177 100.329 11.3992C98.9088 11.5444 97.489 11.7259 96.0328 11.8348C94.9771 11.9438 93.9214 11.9801 92.8656 11.9801C91.7735 11.9801 90.645 11.9438 89.5528 11.8711C88.3879 11.7985 87.223 11.5807 86.058 11.3266C84.6747 10.9999 83.2913 10.6005 81.9807 10.056C79.7601 9.14841 77.8306 7.84149 76.3381 5.95372C75.3551 4.75572 74.6271 3.3762 74.081 1.92407C73.8626 1.37952 73.6805 0.79867 73.4985 0.254121C73.4621 0.181515 73.4621 0.10891 73.5349 0C73.9718 0.363032 74.445 0.726064 74.8819 1.0891C75.5008 1.63364 76.0832 2.17819 76.7021 2.72274C77.685 3.59402 78.8136 4.35638 79.9785 4.97354C81.6531 5.88112 83.4369 6.53458 85.3299 6.8613C87.405 7.18803 89.48 7.26064 91.5551 7.15173C93.3753 7.04282 95.1591 6.86131 96.9429 6.57088C99.2728 6.20785 101.566 5.80851 103.896 5.40918C105.571 5.11875 107.245 4.86463 108.92 4.61051C110.667 4.32008 112.415 4.17487 114.162 4.10226C115.728 4.02965 117.293 4.10226 118.822 4.32008C119.914 4.46529 121.006 4.75572 121.989 5.26397C123.3 5.91742 124.173 6.93391 124.756 8.24083C125.193 9.25732 125.411 10.3101 125.593 11.3992C125.848 12.9602 125.957 14.5576 125.994 16.1549C126.03 18.6235 125.884 21.0559 125.63 23.5245C125.338 26.3561 124.938 29.1878 124.465 32.0194C124.028 34.7059 123.482 37.356 122.936 40.0061C122.171 43.6002 121.334 47.1579 120.351 50.7156C119.477 53.8377 118.567 56.9234 117.548 59.9729C116.492 63.0587 115.327 66.1081 113.98 69.1213C112.888 71.481 111.723 73.8044 110.194 75.91C109.248 77.2532 108.192 78.5238 106.881 79.504C106.044 80.1212 105.134 80.5568 104.115 80.702C103.314 80.8109 102.549 80.6657 101.785 80.3753C100.911 80.0123 100.146 79.4677 99.4912 78.7417C98.9451 78.1245 98.5083 77.4347 98.1443 76.7087C97.2342 74.9661 96.4697 73.151 95.8144 71.2995C94.8679 68.6857 94.067 66.0718 93.2661 63.4217C92.538 61.0257 91.8099 58.6297 90.7906 56.3063C89.9897 54.4548 89.0796 52.7123 87.8418 51.1149C86.6041 49.4813 85.0751 48.1381 83.2185 47.2305C82.3084 46.7948 81.4347 46.3592 80.4517 46.1051C79.9421 45.9962 79.4324 45.9236 78.8864 45.851Z" fill="black"/>
@@ -96,40 +63,214 @@ const Navbar: React.FC = () => {
                         <path d="M78.0875 54.4914C77.3594 54.4914 76.7042 54.3462 76.1217 54.0195C75.5756 53.6928 75.1388 53.2934 74.8111 52.7489C74.4835 52.2043 74.3379 51.5872 74.3379 50.8611C74.3379 50.1713 74.4835 49.5179 74.8111 49.0096C75.1024 48.4651 75.5392 48.0295 76.0489 47.739C76.595 47.4123 77.1774 47.2671 77.8327 47.2671C78.488 47.2671 79.1069 47.4123 79.6165 47.739C80.1262 48.0295 80.563 48.4651 80.8543 49.0096C81.1455 49.5542 81.2911 50.1713 81.2911 50.8974C81.2911 50.9337 81.2911 51.0063 81.2911 51.0426C81.2911 51.0789 81.2911 51.1515 81.2911 51.1878H75.066V50.4618H80.7451L80.381 50.7522C80.381 50.244 80.2718 49.772 80.0534 49.3727C79.8349 48.9733 79.5437 48.6466 79.1433 48.4288C78.7792 48.211 78.306 48.1021 77.8327 48.1021C77.3595 48.1021 76.8862 48.211 76.5222 48.4288C76.1217 48.6466 75.8305 48.9733 75.612 49.3727C75.3936 49.772 75.2844 50.244 75.2844 50.7522V50.8974C75.2844 51.442 75.3936 51.9139 75.6484 52.3132C75.9033 52.7126 76.2309 53.0393 76.6678 53.2571C77.1046 53.4749 77.5779 53.6202 78.1239 53.6202C78.5608 53.6202 78.9612 53.5475 79.3253 53.4023C79.6893 53.2571 80.017 53.003 80.3082 52.7126L80.8543 53.3297C80.5266 53.6928 80.1262 53.9832 79.6529 54.201C79.1797 54.3825 78.67 54.4914 78.0875 54.4914Z" fill="white"/>
                     </svg>
                 </Link>
-                <div className="flex items-center gap-2 xs:gap-5">
-                    {/* <div className="flex gap-3">
-                        {
-                            social.map((e, idx) => (<Link target="_blank" aria-label={e.value} className="icon-nav" key={`Social_Navbar_${idx}`} to={e.link}>
-                                {e.svg}
-                            </Link>))
-                        }
-                    </div> */}
-                   
-                    <div className="hidden md:flex">
-                        <Link target="_blank" to="https://appointments.praktika.net.au/online-booking/step1?Apikey=0d6cbe87-8f4d-4fa9-94a9-a54f847c5751">
-                            <button className="btn !py-2 xxs:!py-3 md:!py-4 !bg-[var(--light)] !text-[var(--main)]">
-                                BOOK&nbsp;<span>AN APPOINTEMENT </span>
-                            </button>
-                        </Link>
-                    </div>
-                     
-                    <div className="hidden md:flex justify-between items-center flex-col text-white gap-1 text-[1.4rem] call-div">
-                        <Link className="flex gap-1 items-center" to="tel:+61245712720">
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 20 20" fill="none">
-                                    <path d="M5.50791 8.21905C6.18012 9.43766 6.95485 10.6072 7.96071 11.6737C8.96983 12.7467 10.2247 13.7233 11.8491 14.5575C11.9695 14.6164 12.0834 14.6164 12.186 14.5755C12.3406 14.5166 12.4985 14.3874 12.6531 14.232C12.7735 14.1109 12.9233 13.9179 13.0795 13.7069C13.7045 12.8809 14.4776 11.8553 15.5698 12.3689C15.5942 12.3803 15.6121 12.3934 15.6365 12.4032L19.2791 14.5084C19.2905 14.5149 19.3035 14.5264 19.3133 14.5329C19.7934 14.865 19.992 15.377 19.9968 15.9577C19.9968 16.5482 19.7804 17.2123 19.463 17.7733C19.0431 18.5143 18.4246 19.005 17.7117 19.3289C17.033 19.6429 16.2778 19.8114 15.5519 19.9194C14.4125 20.0879 13.3448 19.9799 12.2527 19.6429C11.185 19.3109 10.1092 18.7629 8.93402 18.0334L8.84776 17.9778C8.30902 17.6392 7.72634 17.2777 7.15505 16.8508C5.06521 15.2641 2.93467 12.9725 1.54633 10.4502C0.382589 8.33355 -0.252177 6.04844 0.094503 3.87129C0.28656 2.67721 0.796 1.59109 1.68467 0.874645C2.45941 0.246527 3.50271 -0.0969752 4.85362 0.0240684C5.00824 0.0355185 5.14659 0.125483 5.21983 0.259613L7.55544 4.22788C7.89724 4.6728 7.93956 5.11444 7.75238 5.55609C7.59776 5.91758 7.28526 6.25127 6.85883 6.56206C6.7335 6.67002 6.58376 6.77961 6.42588 6.89411C5.90342 7.27523 5.30935 7.71524 5.5128 8.23213L5.50791 8.21905Z" fill="black" />
+                <div className="flex gap-5 items-center">
+                    <div >
+                        <Link className="flex gap-2 items-center" target="_blank" to="tel:+61245712720">
+                            <div className="border flex justify-center items-center icon-nav border-[var(--light)] border-[2px] rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 20 20" fill="none">
+                                    <path d="M5.50791 8.21905C6.18012 9.43766 6.95485 10.6072 7.96071 11.6737C8.96983 12.7467 10.2247 13.7233 11.8491 14.5575C11.9695 14.6164 12.0834 14.6164 12.186 14.5755C12.3406 14.5166 12.4985 14.3874 12.6531 14.232C12.7735 14.1109 12.9233 13.9179 13.0795 13.7069C13.7045 12.8809 14.4776 11.8553 15.5698 12.3689C15.5942 12.3803 15.6121 12.3934 15.6365 12.4032L19.2791 14.5084C19.2905 14.5149 19.3035 14.5264 19.3133 14.5329C19.7934 14.865 19.992 15.377 19.9968 15.9577C19.9968 16.5482 19.7804 17.2123 19.463 17.7733C19.0431 18.5143 18.4246 19.005 17.7117 19.3289C17.033 19.6429 16.2778 19.8114 15.5519 19.9194C14.4125 20.0879 13.3448 19.9799 12.2527 19.6429C11.185 19.3109 10.1092 18.7629 8.93402 18.0334L8.84776 17.9778C8.30902 17.6392 7.72634 17.2777 7.15505 16.8508C5.06521 15.2641 2.93467 12.9725 1.54633 10.4502C0.382589 8.33355 -0.252177 6.04844 0.094503 3.87129C0.28656 2.67721 0.796 1.59109 1.68467 0.874645C2.45941 0.246527 3.50271 -0.0969752 4.85362 0.0240684C5.00824 0.0355185 5.14659 0.125483 5.21983 0.259613L7.55544 4.22788C7.89724 4.6728 7.93956 5.11444 7.75238 5.55609C7.59776 5.91758 7.28526 6.25127 6.85883 6.56206C6.7335 6.67002 6.58376 6.77961 6.42588 6.89411C5.90342 7.27523 5.30935 7.71524 5.5128 8.23213L5.50791 8.21905Z" fill="white" />
                                 </svg>
                             </div>
-                            <div className="text-black">
-                                +61 2 4571 2720
+                            <div >
+                                <div className="text-white text-sm md:text-md">+61 2 4571 2720</div>
+                                <div className="text-black text-xs md:text-sm font-medium">Call Us</div>
                             </div>
                         </Link>
-
                     </div>
+                    <div className="hidden md:flex">
+                        <Link className="flex gap-2 items-center" target="_blank" to="https://maps.app.goo.gl/4CyvV4fEzoKzq51a7">
+                            <div className="border flex justify-center items-center icon-nav border-[var(--light)] border-[2px] rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 42 56" fill="none">
+                                    <g clip-path="url(#clip0_1884_1345)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.1913 48.4348C28.6463 51.2284 25.6824 53.7304 22.3543 55.7538C21.9445 56.0546 21.3891 56.0911 20.9338 55.7994C16.0167 52.6686 11.8873 48.9088 8.64108 44.8209C4.16108 39.1972 1.34287 32.9628 0.37767 26.9563C-0.605745 20.8678 0.31393 15.0071 3.34157 10.2447C4.53442 8.36256 6.05962 6.64902 7.91718 5.1679C12.1878 1.7636 17.0638 -0.0365257 21.9263 -6.73202e-05C26.6066 0.036391 31.2278 1.78183 35.2206 5.43222C36.6229 6.70827 37.8021 8.17116 38.7673 9.75709C42.0225 15.1256 42.7237 21.9706 41.2941 28.9068C39.8827 35.761 36.377 42.7245 31.1913 48.4212V48.4348ZM20.9975 10.8281C26.7705 10.8281 31.4463 15.513 31.4463 21.287C31.4463 27.0657 26.766 31.746 20.9975 31.746C15.2245 31.746 10.5487 27.0657 10.5487 21.287C10.5442 15.5084 15.2245 10.8281 20.9975 10.8281Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1884_1345">
+                                    <rect width="42" height="56" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div className="">
+                                <div className="text-white text-md">1–3/485 George St, South Windsor </div>
+                                <div className="text-black font-medium">Find Us</div>
+                            </div>
+                        </Link>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div className="container-layout bg-white shadow !py-2">
+                 
+                <div className={`flex justify-between items-center`}>
+                    <ul className={` ${isOpen ? "open": "flex gap-4"}`}>
+                        {isOpen && <div className="menu-small flex-col gap-3 mt-2">
+                                    {
+                                        navMenu.map((e,idx)=>(<div className="flex flex-col gap-2" key={`Root_Menu_${e.category}_${idx}`}>
+                                            <div className="flex gap-3 items-center" >
+                                                
+                                                {(e.cats && e.cats.length > 0) ?  <h2 className="text-sm  border-b border-b-[1px] border-[var(--main)] w-[150px] sp:w-fit">{e.category}</h2>:<Link to={e.link}>
+                                                    <h2 onClick={()=>setIsOpen(false)}  className="text-sm  border-b border-b-[1px] border-[var(--main)] w-[150px] sp:w-fit">{e.category}</h2>
+                                                </Link>}
+                                                
+                                            </div>
+                                            <div className="flex flex-col gap-2 ">
+                                                {
+                                                    e.cats && e.cats.length > 0 && e.cats.map((cat,index)=>(<div key={`Services_small_size_${idx}`}>
+                                                        <div className="flex gap-2 items-center">
+                                                            <div onClick={() => {toggleAccordion(index)}}>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 17 10" fill="none">
+                                                                    <path d="M2.27453 0.0605463L8.39453 6.16721L14.5145 0.0605468L16.3945 1.94055L8.39453 9.94055L0.394531 1.94055L2.27453 0.0605463Z" fill="#A6CE38"/>
+                                                                </svg>
+                                                            </div>
+                                                            <Link to={cat.link}>{cat.category}</Link>
+                                                        </div>
+                                                        
+                                                        <AnimatePresence mode="sync">
+                                                            {activeIndex === index && (
+                                                            <motion.div
+                                                                ref={ref}
+                                                                initial={{ opacity: 0, height: 0 }}
+                                                                animate={{
+                                                                opacity: 1,
+                                                                height: ref.current ? ref.current.scrollHeight : "auto",
+                                                                }}
+                                                                exit={{ opacity: 0, height: 0 }}
+                                                                transition={{ duration: 0.3, ease: "easeInOut" }}
+                                                                className="overflow-hidden flex flex-col gap-1 pl-4 mt-2"
+                                                            >
+                                                                {cat.services && cat.services.map((service, i) => (
+                                                                <Link
+                                                                    onClick={()=>setIsOpen(false)}
+                                                                    key={service.hero.hint + i}
+                                                                    to={`/${service.link}`}
+                                                                    className="flex items-center gap-2 text-xs "
+                                                                >
+                                                                    <div className="w-[6px] h-[6px] rounded-full bg-[var(--main)]"></div>
+                                                                    {service.hero.hint}
+                                                                </Link>
+                                                                ))}
+                                                            </motion.div>
+                                                            )}
+                                                        </AnimatePresence>
+                                                    </div>))
+                                                }
+                                            </div>
+                                            
+                                        </div>))
+                                    }
+                                </div>
+                                }
+                        {!isOpen &&
+                            navMenu.map((item, index) =>
+                            item?.cats ? (
+                                <li
+                                key={index}
+                                // onClick={()=> !clicked && setOpenServices(!openServices)}
+                                onMouseEnter={() => !clicked && setOpenServices(true)}
+                                onMouseLeave={() => !clicked && setOpenServices(false)}
+                                className="root-menu cursor-pointer relative nav-item"
+                                >
+                                <div
+                                    onClick={() => {
+                                    setOpenServices(false);
+                                    setClicked(true);
+                                    setTimeout(() => setClicked(false), 300);
+                                    }}
+                                    className="flex items-center gap-1 relative"
+                                >
+                                    <div className="items-center flex gap-1 item">
+                                        <span >{item.category}</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="6" viewBox="0 0 14 7" fill="none">
+                                            <g clipPath="url(#clip0_1647_2489)">
+                                            <path
+                                                fillRule="evenodd"
+                                                clipRule="evenodd"
+                                                d="M7 7L14 0H0L7 7Z"
+                                                fill="black"
+                                            />
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_1647_2489">
+                                                <rect width="14" height="7" fill="white" />
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+
+                                    {/* Main Dropdown with Framer Motion */}
+                                    <AnimatePresence>
+                                    {openServices && (
+                                        <motion.div
+                                        initial={{ opacity: 0, y: -10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        exit={{ opacity: 0, y: -10 }}
+                                        transition={{ duration: 0.2 }}
+                                        className="absolute top-10 bg-[var(--light)] w-[200px] flex flex-col gap-3 py-5 px-3 shadow-lg rounded-md z-50 !text-sm "
+                                        >
+                                        {item.cats.map((ele, idx) => (
+                                            <div key={idx} className="relative sub-item group">
+                                                <div className="flex gap-2 items-center">
+                                                    <Link to={ele.link}>{ele.category}</Link>
+                                                    <svg style={{transform: "rotate(-90deg)"}} xmlns="http://www.w3.org/2000/svg" width="12" height="5" viewBox="0 0 14 7" fill="none" >
+                                                        <g clipPath="url(#clip0_1647_2489)">
+                                                        <path fillRule="evenodd" clipRule="evenodd" d="M7 7L14 0H0L7 7Z" fill="black" />
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_1647_2489">
+                                                            <rect width="14" height="7" fill="white" />
+                                                        </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+
+                                            {/* Nested Submenu */}
+                                            {ele.services && ele.services.length > 0 && (
+                                                <AnimatePresence>
+                                                <motion.div
+                                                    initial={{ opacity: 0, x: -10 }}
+                                                    animate={{ opacity: 1, x: 0 }}
+                                                    exit={{ opacity: 0, x: -10 }}
+                                                    transition={{ duration: 0.2 }}
+                                                    className="absolute left-full top-0 hidden group-hover:flex flex-col bg-[var(--light)] w-[200px] py-3 px-2 shadow-md rounded-md"
+                                                >
+                                                    {ele.services.map((sub, subIdx) => (
+                                                    <div
+                                                        key={`service_${subIdx}_${sub.hero.hint}`}
+                                                        className="py-1 px-2 hover:bg-gray-200 rounded cursor-pointer"
+                                                    >
+                                                        <Link to={sub.link}>{sub.hero.hint}</Link>
+                                                    </div>
+                                                    ))}
+                                                </motion.div>
+                                                </AnimatePresence>
+                                            )}
+                                            </div>
+                                        ))}
+                                        </motion.div>
+                                    )}
+                                    </AnimatePresence>
+                                </div>
+                                </li>
+                            ) : (
+                                !isOpen && (
+                                <li className="nav-item" key={index} onClick={() => setIsOpen(false)}>
+                                    <NavLink
+                                    to={item.link}
+                                    className="items-center flex h-full gap-0.5"
+                                    >
+                                    {item.category}
+                                    </NavLink>
+                                </li>
+                                )
+                            )
+                            )}
+                    </ul>
                     <div onClick={()=>setIsOpen(!isOpen)} className="cursor-pointer menu-icon py-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="26" viewBox="0 0 71 56" fill="none">
                             <g clipPath="url(#clip0_1598_1335)">
-                            <path fillRule="evenodd" clipRule="evenodd" d="M71 0V11.586H19.1829V0H71ZM12.2089 44.414V56H0V44.414H12.2089ZM12.2089 22.207V33.793H0V22.207H12.2089ZM12.2089 0V11.586H0V0H12.2089ZM71 44.414V56H19.1829V44.414H71ZM71 22.207V33.793H19.1829V22.207H71Z" fill="white"/>
+                            <path fillRule="evenodd" clipRule="evenodd" d="M71 0V11.586H19.1829V0H71ZM12.2089 44.414V56H0V44.414H12.2089ZM12.2089 22.207V33.793H0V22.207H12.2089ZM12.2089 0V11.586H0V0H12.2089ZM71 44.414V56H19.1829V44.414H71ZM71 22.207V33.793H19.1829V22.207H71Z" fill="#A6CE38"/>
                             </g>
                             <defs>
                             <clipPath id="clip0_1598_1335">
@@ -138,154 +279,14 @@ const Navbar: React.FC = () => {
                             </defs>
                         </svg>
                     </div>
-                </div>
-                
-
-            </div>
-            {/* Location And Phone for small screen */}
-            <div className="small-screen-dev shadow !bg-[var(--light)] justify-between items-center container-layout font-bold  text-white gap-1 text-[0.9rem] xs:text-[1.3rem] bg-[var(--main)] !py-1 xs:!py-2 -mt-2">
-                        <div className="text-black flex gap-1 items-center">
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="39" viewBox="0 0 58 79" fill="none">
-                                    <g clipPath="url(#clip0_1681_3038)">
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M43.0737 68.3277C39.5592 72.2687 35.4662 75.7982 30.8702 78.6527C30.3043 79.0771 29.5373 79.1285 28.9085 78.717C22.1183 74.3003 16.4157 68.9963 11.9329 63.2295C5.74626 55.2961 1.85444 46.5011 0.521544 38.0277C-0.836505 29.4385 0.433523 21.1707 4.61455 14.4524C6.26182 11.7972 8.36805 9.37988 10.9333 7.29044C16.8307 2.48795 23.5644 -0.0515207 30.2792 -8.84301e-05C36.7425 0.0513439 43.124 2.51366 48.638 7.66332C50.5744 9.46345 52.2028 11.5272 53.5357 13.7645C58.0311 21.3379 58.9994 30.9943 57.0252 40.7793C55.0761 50.4486 50.2349 60.2721 43.0737 68.3084V68.3277ZM28.9966 15.2753C36.9688 15.2753 43.4258 21.8843 43.4258 30.0299C43.4258 38.182 36.9625 44.7846 28.9966 44.7846C21.0243 44.7846 14.5673 38.182 14.5673 30.0299C14.561 21.8779 21.0243 15.2753 28.9966 15.2753Z" fill="black"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_1681_3038">
-                                    <rect width="58" height="79" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                            Windsor
-                        </div>
-                        <Link className="flex gap-1 items-center" to="tel:+61245712720">
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 20 20" fill="none">
-                                    <path d="M5.50791 8.21905C6.18012 9.43766 6.95485 10.6072 7.96071 11.6737C8.96983 12.7467 10.2247 13.7233 11.8491 14.5575C11.9695 14.6164 12.0834 14.6164 12.186 14.5755C12.3406 14.5166 12.4985 14.3874 12.6531 14.232C12.7735 14.1109 12.9233 13.9179 13.0795 13.7069C13.7045 12.8809 14.4776 11.8553 15.5698 12.3689C15.5942 12.3803 15.6121 12.3934 15.6365 12.4032L19.2791 14.5084C19.2905 14.5149 19.3035 14.5264 19.3133 14.5329C19.7934 14.865 19.992 15.377 19.9968 15.9577C19.9968 16.5482 19.7804 17.2123 19.463 17.7733C19.0431 18.5143 18.4246 19.005 17.7117 19.3289C17.033 19.6429 16.2778 19.8114 15.5519 19.9194C14.4125 20.0879 13.3448 19.9799 12.2527 19.6429C11.185 19.3109 10.1092 18.7629 8.93402 18.0334L8.84776 17.9778C8.30902 17.6392 7.72634 17.2777 7.15505 16.8508C5.06521 15.2641 2.93467 12.9725 1.54633 10.4502C0.382589 8.33355 -0.252177 6.04844 0.094503 3.87129C0.28656 2.67721 0.796 1.59109 1.68467 0.874645C2.45941 0.246527 3.50271 -0.0969752 4.85362 0.0240684C5.00824 0.0355185 5.14659 0.125483 5.21983 0.259613L7.55544 4.22788C7.89724 4.6728 7.93956 5.11444 7.75238 5.55609C7.59776 5.91758 7.28526 6.25127 6.85883 6.56206C6.7335 6.67002 6.58376 6.77961 6.42588 6.89411C5.90342 7.27523 5.30935 7.71524 5.5128 8.23213L5.50791 8.21905Z" fill="black" />
-                                </svg>
-                            </div>
-                            <div className="text-black">
-                                Call Us
-                            </div>
+                    <div>
+                        <Link target="_blank" to="https://appointments.praktika.net.au/online-booking/step1?Apikey=0d6cbe87-8f4d-4fa9-94a9-a54f847c5751">
+                            <button className="btn !py-2 xxs:!py-3 md:!py-4 !text-[1rem]">
+                                BOOK&nbsp;<span>APPOINTEMENT </span>
+                            </button>
                         </Link>
-                        <div className="text-black flex gap-1 items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <g clipPath="url(#clip0_1820_1355)">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C18.627 0 24 5.37305 24 12C24 18.627 18.627 24 12 24C5.37305 24 0 18.627 0 12C0 5.37305 5.37305 0 12 0ZM10.3359 5.96094H11.8027C12.0703 5.96094 12.291 6.18164 12.291 6.44922V12.1016H17.4492C17.7187 12.1016 17.9375 12.3223 17.9375 12.5898V14.0566C17.9375 14.3262 17.7168 14.5449 17.4492 14.5449H9.8457V6.44922C9.8457 6.17969 10.0664 5.96094 10.3359 5.96094ZM12 2.72461C17.123 2.72461 21.2754 6.87695 21.2754 12C21.2754 17.123 17.123 21.2754 12 21.2754C6.87695 21.2754 2.72461 17.123 2.72461 12C2.72461 6.87891 6.87695 2.72461 12 2.72461Z" fill="black"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_1820_1355">
-                                <rect width="24" height="24" fill="white"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            Book Now
-                        </div>
-
                     </div>
-            <div className="container-layout bg-white shadow">
-                 
-                <ul className={` ${isOpen ? "open": "flex justify-between items-center"}`}>
-                    {
-                        isOpen && <div className="menu-small flex-col gap-3 mt-2">
-                                        {
-                                            navMenu.map((e:Item,idx)=>(<div className="flex flex-col gap-2" key={`Root_Menu_${e.category}_${idx}`}>
-                                                <div className="flex gap-3 items-center" onClick={() => {toggleAccordion(idx)}}>
-                                                    
-                                                    <Link to={e.link}>
-                                                        <h2 onClick={()=>setIsOpen(false)}  className="text-sm  border-b border-b-[1px] border-[var(--main)] w-[150px] sp:w-fit">{e.category}</h2>
-                                                    </Link>
-                                                    {e.services && <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 17 10" fill="none">
-                                                            <path d="M2.27453 0.0605463L8.39453 6.16721L14.5145 0.0605468L16.3945 1.94055L8.39453 9.94055L0.394531 1.94055L2.27453 0.0605463Z" fill="#A6CE38"/>
-                                                        </svg>}
-                                                </div>
-                                                <AnimatePresence mode="sync">
-                                                    {activeIndex === idx && (
-                                                    <motion.div
-                                                        ref={ref}
-                                                        initial={{ opacity: 0, height: 0 }}
-                                                        animate={{
-                                                        opacity: 1,
-                                                        height: ref.current ? ref.current.scrollHeight : "auto",
-                                                        }}
-                                                        exit={{ opacity: 0, height: 0 }}
-                                                        transition={{ duration: 0.3, ease: "easeInOut" }}
-                                                        className="overflow-hidden flex flex-col gap-1 pl-4 mt-2"
-                                                    >
-                                                        {e.services && e.services.map((service, i) => (
-                                                        <Link
-                                                            onClick={()=>setIsOpen(false)}
-                                                            key={service.hero.subLabel + i}
-                                                            to={`/${service.link}`}
-                                                            className="flex items-center gap-2 text-xs "
-                                                        >
-                                                            <div className="w-[6px] h-[6px] rounded-full bg-[var(--main)]"></div>
-                                                            {service.hero.subLabel}
-                                                        </Link>
-                                                        ))}
-                                                    </motion.div>
-                                                    )}
-                                                </AnimatePresence>
-                                            </div>))
-                                        }
-                                    </div>
-                            }
-                   
-                    {!isOpen && navMenu.map((item:Item,index)=>(
-                        item?.services ? <li onClick={()=>setOpenServices(true)} onMouseLeave={()=>setOpenServices(false)} onMouseEnter={()=>setOpenServices(true)}
-                        className="nav-item root-menu cursor-pointer relative">
-                           <Link onClick={()=>{
-                                            setOpenServices(false);
-                                            setClicked(true); // stop mouse events from reopening
-                                            setTimeout(() => setClicked(false), 300);
-                                }}  to={item.link} className="flex items-center gap-1">
-                            {item.category}
-                            {item?.services && <div className="hidden sp:flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="7" viewBox="0 0 14 7" fill="none">
-                                <g clipPath="url(#clip0_1647_2489)">
-                                <path fillRule="evenodd" clipRule="evenodd" d="M7 7L14 0H0L7 7Z" fill="black"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_1647_2489">
-                                <rect width="14" height="7" fill="white"/>
-                                </clipPath>
-                                </defs>
-                                </svg>
-                            </div>}
-                            </Link>
-                            
-                                {
-                                !clicked && !isOpen && openServices &&  <div   onMouseEnter={() => setOpenServices(true)}
-                                                            onMouseLeave={() => setOpenServices(false)} className="sub-menu gap-3 py-5 px-1">
-                                                    {item.services.map((child,i)=>(<div className="text-xs lg:text-sm capitalize" key={`Child_${child.hero.subLabel}_${i}`}>
-                                                    <Link onClick={()=>{
-                                                                setOpenServices(false);
-                                                                setClicked(true); // stop mouse events from reopening
-                                                                setTimeout(() => setClicked(false), 300);
-                                                    }} to={`/${child.link}`} className="transition-text duration-200 hover:text-[var(--grey_1)] flex items-center gap-1 link-service">
-                                                        <div className="w-[6px] h-[6px] rounded-full bg-[var(--main)] circle-service"></div>{child.hero.subLabel}
-                                                    </Link>
-                                                </div>))}
-                                    </div>
-                                }
-                        </li>
-                        :(!isOpen&&<li onClick={()=>setIsOpen(false)}>
-                            <NavLink key={index} to={item.link} className="nav-item items-center  flex h-full gap-0.5">
-                                {item.category}
-                            </NavLink>
-                        </li>)
-                    ))}
-                    {/* <li>
-                        <div>
-                            <Link target="_blank" to="https://appointments.praktika.net.au/online-booking/step1?Apikey=0d6cbe87-8f4d-4fa9-94a9-a54f847c5751">
-                                <button className="btn !py-2 xxs:!py-3 md:!py-4 ">
-                                    BOOK&nbsp;<span>APPOINTEMENT </span>
-                                </button>
-                            </Link>
-                        </div>
-                    </li> */}
-                </ul>
+                </div>
             </div>
         </nav>
     )

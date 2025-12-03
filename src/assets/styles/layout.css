@@ -21,29 +21,26 @@ nav{
 .icon-nav{
   width: 45px;
   height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  background-color: var(--light);
   transition: 0.3s;
 }
 .icon-nav:hover {
      transform: translateY(-1px);
      box-shadow: var(--shadow-box);
 }
-.nav-item{
+.nav-item a{
   transition: 0.3s;
 }
 .menu-small{
   display: none;
 }
-.nav-item:hover{
-  color: var(--light);
-  background: var(--main);
+.nav-item a:hover{
+  color: var(--main);
 }
-.nav-item:hover path{
-  fill: var(--light);
+.nav-item .item:hover{
+  color: var(--main);
+}
+.nav-item .item:hover path{
+  fill: var(--main);
 }
 .first-nav button{
   line-height: 1.1rem;
@@ -71,13 +68,12 @@ nav{
 }
 .first-nav{
     background-color: var(--main);
-    font-size: var(--font-size-xs);
     font-weight: 600;
 }
 nav ul{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 nav li{
   height: 100%;
@@ -357,13 +353,13 @@ footer .element-shape svg{
   .nav-item:hover path{
     fill: var(--dark);
   }
+  nav ul{
+    display: none;
+  }
   .menu-icon,.menu-small{
     display: flex;
   }
 
-  nav ul,.icon-nav{
-    display: none;
-  }
   nav ul.open{
     display: flex;
     flex-direction: column;
@@ -373,7 +369,7 @@ footer .element-shape svg{
     left: 0;
     right: 0;
     padding: 20px;
-    top: 90px;
+    top: 160px;
     animation: openMenu 0.3s forwards linear;
     overflow: hidden;
   }
@@ -387,7 +383,7 @@ footer .element-shape svg{
 }
 @media (max-width:768px) {
   nav ul.open{
-    top: 84px;
+    top: 150px;
   }
   .call-div{
     font-size: var(--font-size-s);
@@ -414,6 +410,13 @@ footer .element-shape svg{
 @media (max-width: 500px) {
   nav svg.logo{
     width: 70px;
+  }
+  .icon-nav{
+    width: 35px;
+    height: 35px;
+  }
+  .icon-nav svg{
+    width: 20px;
   }
   .element-shape{
     width: 150px;
