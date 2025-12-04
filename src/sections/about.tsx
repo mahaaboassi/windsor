@@ -23,7 +23,7 @@ const About: React.FC =()=>{
 
     return(<div id="about" className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 container-layout">
         <div className="flex flex-col gap-4 md:gap-10 relative">
-            <Heading withShape={true} hint="About" title="ABOUT US AT WINDSOR DENTAL CARE" isfullDescriptionWidth={true}
+            <Heading withShape={true} hint="About Us" title="AT WINDSOR DENTAL CARE" isfullDescriptionWidth={true}
                      desc="Welcome to Windsor Dental Care where advanced technology meets compassionate care. We’re dedicated to making every smile healthy, beautiful, and affordable."
             />
             <motion.div

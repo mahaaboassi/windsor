@@ -1,5 +1,26 @@
 import type { ReactNode } from "react"
 import Heading from "../components/heading"
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.18, 
+      delayChildren: 0.1, 
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, x: -40, filter: "blur(2px)" },         
+  show: { opacity: 1, x: 0, filter: "blur(0px)",         
+      transition: {
+      duration: 0.8, 
+      ease: [0.22, 1, 0.36, 1] as any,
+    },
+  },
+};
 
 type ItemContact = {
     svg: ReactNode,
@@ -55,25 +76,31 @@ const Steps = ()=>{
                 isCenter={true}
                 withShape={true}        
         />
-        <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-5 steps">
-            {data.map((e,idx)=>(<div className={`steps-card flex flex-col gap-1 lg:gap-2 p-3 md:p-5 `} key={`Steps_${e.name}_${idx}`}>
-                <div className={`num flex justify-center flex items-center`}>
-                    <div>{idx+1}</div>
-                </div>
-                <div className="flex  justify-center">{e.svg}</div>
-                {/* <div className="justify-between flex lg:hidden">
-                    <div className={`num flex justify-center items-center`}>
+        <div >
+            <motion.div 
+                variants={container}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.2 }} 
+                className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-5 steps "
+            >
+                {data.map((e, idx) => (
+                <motion.div
+                    key={`Steps_${e.name}_${idx}`}
+                    variants={item}
+                    className={`steps-card flex flex-col gap-1 lg:gap-2 p-3 md:p-5 `} 
+                >
+                    <div className={`num flex justify-center flex items-center`}>
                         <div>{idx+1}</div>
                     </div>
-                    <div className="flex justify-center">{e.svg}</div>
-                </div> */}
-                <h3 className={`flex justify-center`}>{e.name}</h3>
-                <p className={`flex justify-center text-center`}>{e.desc}</p>
-                <div className={`w-1/4 h-[3px] rounded m-auto line-card`}></div>
-            </div>))}
-
+                    <div className="flex  justify-center">{e.svg}</div>
+                    <h3 className={`flex justify-center`}>{e.name}</h3>
+                    <p className={`flex justify-center text-center`}>{e.desc}</p>
+                    <div className={`w-1/4 h-[3px] rounded m-auto line-card`}></div>
+                </motion.div>
+                ))}
+            </motion.div>
         </div>
-
     </div>)
 }
 export default Steps

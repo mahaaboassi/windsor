@@ -55,9 +55,9 @@
 }
 /* About */
 .card-metrics{
-    background: linear-gradient(to bottom, var(--main), var(--main-2));
+    background: linear-gradient(180deg, #eeeeee, white, #dedddd);
     border-radius: 10px;
-    color: rgb(48, 48, 48);
+    color: var(--main);
 }
 
 /* Steps */
