@@ -1,5 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import img_bg from "../assets/images/dynamic_banner.png"
+import img_small from "../assets/images/dynamic_banner_sm.png"
 
 type Item = {
   hint:string,
@@ -13,14 +15,14 @@ type Item = {
   img_sm?: string
 }
 
-const HeroForDynamicPages = ({hint,title,desc,link,label,subLabel,type,img,img_sm}:Item) => {
+const HeroForDynamicPages = ({hint,title,link,label,subLabel}:Item) => {
   return (
-    <section className="hero container-layout flex flex-col gap-5 overflow-hidden relative dynamic-pages">
+    <section className="hero-small container-layout flex flex-col gap-5 overflow-hidden relative dynamic-pages">
       {/* Animated Background */}
       <AnimatePresence mode="sync">
         <motion.div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${window.innerWidth<900 ?img_sm:img})` }}
+          style={{ backgroundImage: `url(${window.innerWidth<1000 ?img_small:img_bg})` }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0.5 }}
@@ -29,16 +31,16 @@ const HeroForDynamicPages = ({hint,title,desc,link,label,subLabel,type,img,img_s
       </AnimatePresence>
 
       {/* Content */}
-      <div className="relative flex flex-col gap-3 mid:gap-5 z-10">
+      <div className="relative flex flex-col gap-2 mid:gap-5 z-10">
         <div>
-          <span className="uppercase">{hint}</span>
-          <h1 className="uppercase">{title}</h1>
+          <span className="uppercase">{title}</span>
+          <h1 className="uppercase">{hint }</h1>
           {/* <h2>TAKE CARE OF YOUR SMILE</h2> */}
         </div>
       
-        <p className="sm:w-[80%] lg:w-[60%] text-xs md:text-lg">{desc}</p>
+        {/* <p className="sm:w-[80%] lg:w-[60%] text-xs md:text-lg">{desc}</p> */}
         
-        {type != "terms" && <Link className="w-fit" target="_blank" to="https://appointments.praktika.net.au/online-booking/step1?Apikey=0d6cbe87-8f4d-4fa9-94a9-a54f847c5751">
+        {/* {type != "terms" && <Link className="w-fit" target="_blank" to="https://appointments.praktika.net.au/online-booking/step1?Apikey=0d6cbe87-8f4d-4fa9-94a9-a54f847c5751">
           <button className="btn flex justify-center items-center gap-2 mt-4 !py-2 xs:!py-3 md:!py-4">
             BOOK AN APPOINTMENT
             <span>
@@ -46,13 +48,13 @@ const HeroForDynamicPages = ({hint,title,desc,link,label,subLabel,type,img,img_s
             </span>
           </button>
         </Link>
-        }
+        } */}
       </div>
       <div className="absolute bottom-0 layout-container-left flex gap-2 z-50">
         <div className="flex gap-2 text-md items-center">
             <Link className="text-[var(--main)]" to={link}><strong>{label}</strong></Link>
-            <div className="text-white">/</div>
-            <div className="text-white text-sm">{subLabel}</div>
+            <div className="text-[var(--grey_1)]">/</div>
+            <div className="text-[var(--grey_1)] text-sm">{subLabel}</div>
         </div>
       </div>
     </section>

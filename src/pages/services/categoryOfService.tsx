@@ -9,6 +9,7 @@ import Ready from "../../sections/ready"
 import Heading from "../../components/heading"
 import Reviews from "../../sections/review"
 import Consultation from "../../sections/consultation"
+import PaymentMethods from "../../sections/paymentMethods"
 
 
 type Service = {
@@ -103,6 +104,7 @@ const CategoryOfService = ()=>{
             
         </div>
         <Ready/>
+        <PaymentMethods/>
     </div>)
 }
 export default CategoryOfService

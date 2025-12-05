@@ -2,27 +2,31 @@
     height: 750px;
     padding-top: 250px;
 }
+.hero-small{
+    height: 500px;
+    padding-top: 250px; 
+}
 .hero div:nth-child(1){
     line-height: 3.5rem;
 }
-.hero h1{
+.hero h1, .hero-small h1{
     font-size: 4.5rem;
     font-weight: 700;
     color: var(--main);
 }
-.hero h2{
+.hero h2, .hero-small h2{
     font-size: var(--font-size-xxl);
     font-weight: 600;
-    color: var(--light);
+    color: var(--grey_1);
 }
-.hero span{
-    color: var(--light);
+.hero span, .hero-small span{
+    /* color: var(--light); */
     font-size: var(--font-size-xl);
 }
-.hero p{
+.hero p,.hero-small p{
     font-size: var(--font-size-l);
     font-weight: 400;
-    color: var(--light);
+    /* color: var(--grey_1); */
 }
 .hero button{
     background-color: var(--main);
@@ -268,10 +272,33 @@
 }
 
 /* ready */
+.ready{
+    background: url("../images/clinic.jpeg");
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+.ready::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background: rgba(0,0,0,0.2); */
+    z-index: 1;
+}
+.content-ready{
+    background: rgba(66, 65, 65, 0.616);
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    
+}
 .ready h3{
     font-size: var(--font-size-xxl);
     font-weight: 700;
-    color: var(--light);
+    color: var(--main);
 }
 .ready p{
     font-size: var(--font-size-s);
@@ -296,6 +323,9 @@
     .hero h1{
         font-size: 4rem;
     }
+    .hero-small h1{
+        font-size: 3rem;
+    }
 
 }
 @media (max-width:1020px) {
@@ -303,22 +333,33 @@
         width: 70px;
         height: auto;
     } 
+    .ready{
+        justify-content: center;
+    }
+    .content-ready{
+        position: static;
+        width: 100%;
+    }
 }
 @media (max-width: 768px) {
     .hero{
         height: 700px;
         padding-top: 300px;
     }
-    .hero h1{
+    .hero-small{
+        height: 400px;
+        padding-top: 220px;
+    }
+    .hero h1, .hero-small h1{
         font-size: 3rem;
     }
-    .hero h2{
+    .hero h2, .hero-small h2{
         font-size: var(--font-size-xl);
     }
-    .hero div:nth-child(1){
+    .hero div:nth-child(1),.hero-small div:nth-child(1){
         line-height: 2.8rem;
     }
-    .hero span{
+    .hero span,.hero-small span{
         font-size: var(--font-size-l);
     }
     .hero p{
@@ -330,13 +371,13 @@
 
 }
 @media (max-width:600px) {
-    .hero h1{
+    .hero h1, .hero-small h1{
         font-size: 2.5rem;
     }
-    .hero h2{
+    .hero h2, .hero-small h2{
         font-size: var(--font-size-l);
     }
-    .hero div:nth-child(1){
+    .hero div:nth-child(1),.hero-small div:nth-child(1){
         line-height: 2.1rem;
     } 
 }

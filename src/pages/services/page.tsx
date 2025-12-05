@@ -9,6 +9,7 @@ import Ready from "../../sections/ready"
 import Heading from "../../components/heading"
 import Reviews from "../../sections/review"
 import Consultation from "../../sections/consultation"
+import PaymentMethods from "../../sections/paymentMethods"
 
 type Service = {
     icon: string;
@@ -105,6 +106,7 @@ const Service = ()=>{
             
         </div>
         <Ready/>
+        <PaymentMethods/>
     </div>)
 }
 export default Service

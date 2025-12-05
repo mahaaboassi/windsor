@@ -9,6 +9,7 @@ import img from "../../assets/images/about_.webp"
 import img_sm from "../../assets/images/about_sm.webp"
 import { useEffect } from "react"
 import Heading from "../../components/heading"
+import PaymentMethods from "../../sections/paymentMethods"
 
 const About = ()=>{
     useEffect(()=>window.scrollTo({top:0}),[])
@@ -56,6 +57,7 @@ const About = ()=>{
         </div>
         <Team/>
         <Ready/>
+        <PaymentMethods/>
     </div>)
 }
 export default About

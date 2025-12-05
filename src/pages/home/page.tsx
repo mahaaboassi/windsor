@@ -5,6 +5,7 @@ import Consultation from "../../sections/consultation"
 import Contact from "../../sections/contactUS"
 import FAQs from "../../sections/faqs"
 import Gallery from "../../sections/gallery"
+import PaymentMethods from "../../sections/paymentMethods"
 import Ready from "../../sections/ready"
 import Reviews from "../../sections/review"
 import Steps from "../../sections/steps"
@@ -23,6 +24,7 @@ const Home = ()=>{
         <Gallery/>
         <Team/>
         <Ready/>
+        <PaymentMethods/>
         <FAQs/>
         <Contact/>
         

@@ -7,6 +7,8 @@ import Service from './pages/services/page'
 import CategoryOfService from './pages/services/categoryOfService'
 import ContactPage from './pages/contact/page'
 import Terms from './pages/terms/page'
+import PaymentMethodsPage from './pages/paymentMethods/page'
+import SpecialOffers from './pages/specialOffers/page'
 
 function App() {
   return (<BrowserRouter>
@@ -18,7 +20,9 @@ function App() {
           <Route path='terms-and-conditions' element={<Terms/>}/>
           <Route path=':category' element={<CategoryOfService/>}/>
           <Route path=':category/:link' element={<Service/>}/>
-          
+          <Route path='payment-options' element={<PaymentMethodsPage/>}/>
+          <Route path='special-offers' element={<SpecialOffers/>}/>
+          <Route path='blog' element={<PaymentMethodsPage/>}/>
       </Route>
     </Routes>
   </BrowserRouter>)
