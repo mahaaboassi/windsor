@@ -6,7 +6,6 @@ import Ready from "../../sections/ready"
 import { motion } from "framer-motion";
 import img from "../../assets/images/banner_without_content.png"
 import img_sm from "../../assets/images/dynamic_banner_sm.png"
-import Heading from "../../components/heading"
 
 const container = {
   hidden: {},
