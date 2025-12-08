@@ -105,7 +105,7 @@ const Navbar: React.FC = () => {
                  
                 <div className={`flex justify-between items-center`}>
                     <ul className={` ${isOpen ? "open": "flex gap-4"}`}>
-                        {isOpen && <div className="menu-small flex-col gap-3 mt-2">
+                        {isOpen ? <div className="menu-small flex-col gap-3 mt-2">
                                     {
                                         navMenu.map((e,idx)=>(<div className="flex flex-col gap-2" key={`Root_Menu_${e.category}_${idx}`}>
                                             <div className="flex gap-3 items-center" >
@@ -124,7 +124,7 @@ const Navbar: React.FC = () => {
                                                                     <path d="M2.27453 0.0605463L8.39453 6.16721L14.5145 0.0605468L16.3945 1.94055L8.39453 9.94055L0.394531 1.94055L2.27453 0.0605463Z" fill="#A6CE38"/>
                                                                 </svg>
                                                             </div>
-                                                            <Link to={cat.link}>{cat.category}</Link>
+                                                            <Link onClick={()=>setIsOpen(false)} to={cat.link}>{cat.category}</Link>
                                                         </div>
                                                         
                                                         <AnimatePresence mode="sync">
@@ -161,61 +161,33 @@ const Navbar: React.FC = () => {
                                         </div>))
                                     }
                                 </div>
-                                }
-                        {!isOpen &&
-                            navMenu.map((item, index) =>
-                            item?.cats ? (
-                                <li
-                                key={index}
-                                // onClick={()=> !clicked && setOpenServices(!openServices)}
-                                onMouseEnter={() => !clicked && setOpenServices(true)}
-                                onMouseLeave={() => !clicked && setOpenServices(false)}
-                                className="root-menu cursor-pointer relative nav-item"
-                                >
-                                <div
-                                    onClick={() => {
-                                    setOpenServices(false);
-                                    setClicked(true);
-                                    setTimeout(() => setClicked(false), 300);
-                                    }}
-                                    className="flex items-center gap-1 relative"
-                                >
-                                    <div className="items-center flex gap-1 item">
-                                        <span >{item.category}</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="6" viewBox="0 0 14 7" fill="none">
-                                            <g clipPath="url(#clip0_1647_2489)">
-                                            <path
-                                                fillRule="evenodd"
-                                                clipRule="evenodd"
-                                                d="M7 7L14 0H0L7 7Z"
-                                                fill="black"
-                                            />
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_1647_2489">
-                                                <rect width="14" height="7" fill="white" />
-                                            </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-
-                                    {/* Main Dropdown with Framer Motion */}
-                                    <AnimatePresence>
-                                    {openServices && (
-                                        <motion.div
-                                        initial={{ opacity: 0, y: -10 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        exit={{ opacity: 0, y: -10 }}
-                                        transition={{ duration: 0.2 }}
-                                        className="absolute top-10 bg-[var(--light)] w-[200px] flex flex-col gap-3 py-5 px-3 shadow-lg rounded-md z-50 !text-sm "
-                                        >
-                                        {item.cats.map((ele, idx) => (
-                                            <div key={idx} className="relative sub-item group">
-                                                <div className="flex gap-2 items-center">
-                                                    <Link to={ele.link}>{ele.category}</Link>
-                                                    <svg style={{transform: "rotate(-90deg)"}} xmlns="http://www.w3.org/2000/svg" width="12" height="5" viewBox="0 0 14 7" fill="none" >
+                                :navMenu.map((item, index) =>
+                                        item?.cats ? (
+                                            <li
+                                            key={index}
+                                            // onClick={()=> !clicked && setOpenServices(!openServices)}
+                                            onMouseEnter={() => !clicked && setOpenServices(true)}
+                                            onMouseLeave={() => !clicked && setOpenServices(false)}
+                                            className="root-menu cursor-pointer relative nav-item"
+                                            >
+                                            <div
+                                                onClick={() => {
+                                                setOpenServices(false);
+                                                setClicked(true);
+                                                setTimeout(() => setClicked(false), 300);
+                                                }}
+                                                className="flex items-center gap-1 relative"
+                                            >
+                                                <div className="items-center flex gap-1 item">
+                                                    <span >{item.category}</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="6" viewBox="0 0 14 7" fill="none">
                                                         <g clipPath="url(#clip0_1647_2489)">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M7 7L14 0H0L7 7Z" fill="black" />
+                                                        <path
+                                                            fillRule="evenodd"
+                                                            clipRule="evenodd"
+                                                            d="M7 7L14 0H0L7 7Z"
+                                                            fill="black"
+                                                        />
                                                         </g>
                                                         <defs>
                                                         <clipPath id="clip0_1647_2489">
@@ -225,47 +197,75 @@ const Navbar: React.FC = () => {
                                                     </svg>
                                                 </div>
 
-                                            {/* Nested Submenu */}
-                                            {ele.services && ele.services.length > 0 && (
+                                                {/* Main Dropdown with Framer Motion */}
                                                 <AnimatePresence>
-                                                <motion.div
-                                                    initial={{ opacity: 0, x: -10 }}
-                                                    animate={{ opacity: 1, x: 0 }}
-                                                    exit={{ opacity: 0, x: -10 }}
+                                                {openServices && (
+                                                    <motion.div
+                                                    initial={{ opacity: 0, y: -10 }}
+                                                    animate={{ opacity: 1, y: 0 }}
+                                                    exit={{ opacity: 0, y: -10 }}
                                                     transition={{ duration: 0.2 }}
-                                                    className="absolute left-full top-0 hidden group-hover:flex flex-col bg-[var(--light)] w-[200px] py-3 px-2 shadow-md rounded-md"
-                                                >
-                                                    {ele.services.map((sub, subIdx) => (
-                                                    <div
-                                                        key={`service_${subIdx}_${sub.hero.hint}`}
-                                                        className="py-1 px-2 hover:bg-gray-200 rounded cursor-pointer"
+                                                    className="absolute top-10 bg-[var(--light)] w-[200px] flex flex-col gap-3 py-5 px-3 shadow-lg rounded-md z-50 !text-sm "
                                                     >
-                                                        <Link to={`/${sub.link}`}>{sub.hero.hint}</Link>
-                                                    </div>
+                                                    {item.cats.map((ele, idx) => (
+                                                        <div key={idx} className="relative sub-item group">
+                                                            <div className="flex gap-2 items-center">
+                                                                <Link to={ele.link}>{ele.category}</Link>
+                                                                <svg style={{transform: "rotate(-90deg)"}} xmlns="http://www.w3.org/2000/svg" width="12" height="5" viewBox="0 0 14 7" fill="none" >
+                                                                    <g clipPath="url(#clip0_1647_2489)">
+                                                                    <path fillRule="evenodd" clipRule="evenodd" d="M7 7L14 0H0L7 7Z" fill="black" />
+                                                                    </g>
+                                                                    <defs>
+                                                                    <clipPath id="clip0_1647_2489">
+                                                                        <rect width="14" height="7" fill="white" />
+                                                                    </clipPath>
+                                                                    </defs>
+                                                                </svg>
+                                                            </div>
+
+                                                        {/* Nested Submenu */}
+                                                        {ele.services && ele.services.length > 0 && (
+                                                            <AnimatePresence>
+                                                            <motion.div
+                                                                initial={{ opacity: 0, x: -10 }}
+                                                                animate={{ opacity: 1, x: 0 }}
+                                                                exit={{ opacity: 0, x: -10 }}
+                                                                transition={{ duration: 0.2 }}
+                                                                className="absolute left-full top-0 hidden group-hover:flex flex-col bg-[var(--light)] w-[200px] py-3 px-2 shadow-md rounded-md"
+                                                            >
+                                                                {ele.services.map((sub, subIdx) => (
+                                                                <div
+                                                                    key={`service_${subIdx}_${sub.hero.hint}`}
+                                                                    className="py-1 px-2 hover:bg-gray-200 rounded cursor-pointer"
+                                                                >
+                                                                    <Link to={`/${sub.link}`}>{sub.hero.hint}</Link>
+                                                                </div>
+                                                                ))}
+                                                            </motion.div>
+                                                            </AnimatePresence>
+                                                        )}
+                                                        </div>
                                                     ))}
-                                                </motion.div>
+                                                    </motion.div>
+                                                )}
                                                 </AnimatePresence>
-                                            )}
                                             </div>
-                                        ))}
-                                        </motion.div>
-                                    )}
-                                    </AnimatePresence>
-                                </div>
-                                </li>
-                            ) : (
-                                !isOpen && (
-                                <li className="nav-item" key={index} onClick={() => setIsOpen(false)}>
-                                    <NavLink
-                                    to={item.link}
-                                    className="items-center flex h-full gap-0.5"
-                                    >
-                                    {item.category}
-                                    </NavLink>
-                                </li>
-                                )
-                            )
-                            )}
+                                            </li>
+                                        ) : (
+                                            !isOpen && (
+                                            <li className="nav-item" key={index} onClick={() => setIsOpen(false)}>
+                                                <NavLink
+                                                to={item.link}
+                                                className="items-center flex h-full gap-0.5"
+                                                >
+                                                {item.category}
+                                                </NavLink>
+                                            </li>
+                                            )
+                                        )
+                                        )
+                                }
+                        
                     </ul>
                     <div onClick={()=>setIsOpen(!isOpen)} className="cursor-pointer menu-icon py-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="26" viewBox="0 0 71 56" fill="none">
