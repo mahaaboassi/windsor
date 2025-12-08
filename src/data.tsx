@@ -1,19 +1,18 @@
 // Images
-import cat_1 from "./assets/images/cat_1.webp";
-// import cat_1 from "./assets/images/tesst.png";
-import cat_sm_1 from "./assets/images/cat_sm_1.webp";
+import cat_1 from "./assets/images/cat_1_1.png";
+import cat_sm_1 from "./assets/images/cat_sm_1_1.png";
 
-import cat_2 from "./assets/images/cat_2.webp";
-import cat_sm_2 from "./assets/images/cat_sm_2.webp";
+import cat_2 from "./assets/images/cat_4_4.png";
+import cat_sm_2 from "./assets/images/cat_sm_4_4.png";
 
-import cat_3 from "./assets/images/cat_3.webp";
-import cat_sm_3 from "./assets/images/cat_sm_3.webp";
+import cat_3 from "./assets/images/cat_2_2.png";
+import cat_sm_3 from "./assets/images/cat_sm_2_2.png";
 
-import cat_4 from "./assets/images/cat_4.webp";
-import cat_sm_4 from "./assets/images/cat_sm_4.webp";
+import cat_4 from "./assets/images/cat_5_5.png";
+import cat_sm_4 from "./assets/images/cat_sm_5_5.png";
 
-import cat_5 from "./assets/images/cat_5.webp";
-import cat_sm_5 from "./assets/images/cat_sm_5.webp";
+import cat_5 from "./assets/images/cat_3_3.png";
+import cat_sm_5 from "./assets/images/cat_sm_3_3.png";
 
 import mail from "./assets/images/mail.png"
 import phone from "./assets/images/phone.png"
@@ -25,6 +24,13 @@ import method_2 from "./assets/images/method_2.png";
 import method_3 from "./assets/images/method_3.png";
 import method_4 from "./assets/images/method_4.png";
 import method_5 from "./assets/images/method_5.png";
+
+// Images for blog
+import blog_1 from "./assets/images/blog_1.png";
+import blog_2 from "./assets/images/blog_2.png";
+import blog_3 from "./assets/images/blog_3.png";
+import blog_4 from "./assets/images/blog_4.png";
+import blog_5 from "./assets/images/blog_5.png";
 
 export const paymentMethodsData = [
   {
@@ -1503,3 +1509,142 @@ export const contactInfo = [{
   value: "Shop 1-3/485 George St, South Windsor NSW 2756, Australia",
   link: "https://maps.app.goo.gl/m1RG5UGZ5f6ntoYL9"
 }]
+
+export const blogData = [{
+    img: blog_1,
+    title: "Emergency Dental Care",
+    date: "Dec 10, 2025",
+    link: "/blog/emergency-dental-care-fast-relief-when-you-need-it-most",
+    desc: "Dental pain can come unexpectedly, a cracked tooth, a severe toothache, or an injury. At Windsor Dental Care, we understand that emergencies aren’t just about treating teeth; they’re about restoring comfort, calm, and confidence. Our team responds with compassion and skill, ensuring you receive immediate attention and pain relief so you can get back to your day without worry.",
+    ques_1: {
+        content: "What You Can Expect",
+        options: [ 
+            "Immediate assessment to understand the cause of pain",
+            "Same-day emergency appointments whenever possible",
+            "Gentle, pain-free treatment focused on comfort and relief",
+            "Clear explanations of treatment options before we begin",
+            "A long-term care plan to prevent future emergencies"
+        ]
+    },
+    ques_2: {
+        content: "Common Emergency Situations We Treat",
+        options: [
+            "Sudden toothache or nerve pain",
+            "Broken or chipped teeth",
+            "Lost fillings or crowns",
+            "Gum swelling or infection",
+            "Tooth trauma or accidents"
+        ]
+    },
+  },{
+    img: blog_2,
+    title: "Preventive Dentistry",
+    date: "Dec 10, 2025",
+    link: "/blog/preventive-dentistry-protecting-your-smile-for-the-long-run",
+    desc: "A healthy smile begins with prevention. Regular check-ups and cleans don’t just keep your teeth bright, they protect your overall wellbeing. At Windsor Dental Care, we focus on early detection, gentle cleaning, and education, helping our patients maintain strong teeth and confident smiles throughout their lives.",
+    ques_1: {
+        content: "Why Preventive Care Matters",
+        options: [
+            "Detects problems early before they become painful",
+            "Removes plaque and bacteria that brushing can’t reach",
+            "Supports long-term gum health",
+            "Keeps your natural teeth strong and stable",
+            "Helps avoid costly or complex treatments later",
+        ]
+    },
+    ques_2: {
+        content: "What’s Included in Preventive Visits",
+        options: [
+            "Comprehensive dental examination",
+            "Professional clean and polish",
+            "Gum health assessment",
+            "X-rays if needed",
+            "Personalised oral care tips"
+        ]
+    },
+  },{
+    img: blog_3,
+    title: "Cosmetic Dentistry & Smile Confidenc",
+    date: "Dec 10, 2025",
+    link: "/blog/cosmetic-dentistry-confidence-begins-with-a-smile",
+    desc: "Cosmetic dentistry isn’t about changing your identity,  it’s about enhancing the beauty that’s already there. Whether you want a brighter smile, straighter teeth, or subtle improvements, Windsor Dental Care offers personalised cosmetic solutions designed to look natural, balanced, and completely you.",
+    ques_1: {
+        content: "Our Cosmetic Services",
+        options: [
+            "Teeth whitening",
+            "Veneers (porcelain or composite)",
+            "Composite bonding",
+            "Smile makeovers",
+            "Teeth contouring and reshaping"
+        ]
+    },
+    ques_2: {
+        content: "What to Expect During a Cosmetic Visit",
+        options: [
+            "A friendly discussion about your smile goals",
+            "A professional assessment to create a tailored plan",
+            "Digital previews (if suitable)",
+            "Natural results that complement your features",
+            "Guidance on aftercare and long-term maintenance"
+        ]
+    },
+  },{
+    img: blog_4,
+    title: "Gentle Root Canal Therapy",
+    date: "Dec 10, 2025",
+    link: "/blog/gentle-root-canal-therapy-saving-your-natural-tooth",
+    desc: "Root canal therapy has a reputation for being scary, but the reality is the opposite. Modern root canal treatment is gentle, comfortable, and often completely pain-free. At Windsor Dental Care, we focus on preserving your natural tooth, relieving pain, and restoring your oral health with precision and care.",
+    ques_1: {
+        content: "Why You Might Need a Root Canal",
+        options: [
+            "Deep decay reaching the nerve",
+            "Infection or abscess",
+            "Severe toothache or sensitivity",
+            "Cracked or damaged tooth",
+            "Pain when chewing or biting"
+        ]
+    },
+    ques_2: {
+        content: "What You Can Expect",
+        options: [
+            "Numbing and comfort-focused approach",
+            "Removal of infection and bacteria",
+            "Restoring the tooth with a protective filling or crown",
+            "A long-lasting, natural-looking result"
+        ]
+    },
+    ques_3: {
+        content: "Key Benefits",
+        options: [
+            "Keeps your natural tooth",
+            "Prevents spread of infection",
+            "Relieves pain quickly",
+            "Protects your overall oral health"
+        ]
+    },
+  },{
+    img: blog_5,
+    title: "Family Dentistry for Every Age",
+    date: "Dec 10, 2025",
+    link: "/blog/family-dentistry-caring-for-smiles-of-every-age",
+    desc: "Every stage of life brings unique dental needs, from your child’s first tooth to adult maintenance and senior care. At Windsor Dental Care, we create a safe, warm environment where families feel supported, understood, and cared for. We believe dental visits should be positive and empowering, especially for children.",
+    ques_1: {
+        content: "Our Approach to Family Dental Care",
+        options: [
+            "Gentle, friendly treatment for kids",
+            "Preventive check-ups for adults",
+            "Education tailored to every age group",
+            "Long-term dental planning for the whole family",
+            "A calm, welcoming clinic environment"
+        ]
+    },
+    ques_2: {
+        content: "Why Families Trust Us",
+        options: [
+            "Compassionate and patient-focused care",
+            "Experienced team skilled in treating anxious patients",
+            "Clear communication and honest advice",
+            "Focus on prevention to support lifelong oral health"
+        ]
+    },
+  }]

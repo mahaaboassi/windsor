@@ -9,6 +9,8 @@ import ContactPage from './pages/contact/page'
 import Terms from './pages/terms/page'
 import PaymentMethodsPage from './pages/paymentMethods/page'
 import SpecialOffers from './pages/specialOffers/page'
+import Blog from './pages/blog/page'
+import DetailsBlog from './pages/blog/blogDetails'
 
 function App() {
   return (<BrowserRouter>
@@ -22,7 +24,8 @@ function App() {
           <Route path=':category/:link' element={<Service/>}/>
           <Route path='payment-options' element={<PaymentMethodsPage/>}/>
           <Route path='special-offers' element={<SpecialOffers/>}/>
-          <Route path='blog' element={<PaymentMethodsPage/>}/>
+          <Route path='blog' element={<Blog/>}/>
+          <Route path='blog/:link' element={<DetailsBlog/>}/>
       </Route>
     </Routes>
   </BrowserRouter>)

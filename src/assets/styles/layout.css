@@ -59,7 +59,7 @@ nav{
     height: 100px;
     width: 400px;
     background-color: var(--main);
-    clip-path: polygon(
+    clipPath: polygon(
         0 0,        /* top-left */
         85% 0,      /* top-right, move left a bit */
         100% 100%,  /* bottom-right */

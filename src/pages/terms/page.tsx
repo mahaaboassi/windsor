@@ -1,8 +1,8 @@
 import HeroForDynamicPages from "../../components/heroForDynamicPages"
 import { useEffect } from "react"
 import Ready from "../../sections/ready"
-import terms from "../../assets/images/terms.webp"
-import terms_sm from "../../assets/images/terms_small.webp"
+import terms from "../../assets/images/dynamic_banner.png"
+import terms_sm from "../../assets/images/dynamic_banner_sm.png"
 
 const Terms = ()=>{
     useEffect(()=>window.scrollTo({top:0}))
