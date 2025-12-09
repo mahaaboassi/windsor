@@ -1,6 +1,5 @@
 import HeroForDynamicPages from "../../components/heroForDynamicPages"
 // Images
-import img_1 from "../../assets/images/test.png"
 import img_2 from "../../assets/images/test_1.png"
 import { categories } from "../../data"
 import { Link, useNavigate, useParams } from "react-router-dom"

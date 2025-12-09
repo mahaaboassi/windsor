@@ -1,4 +1,3 @@
-import type { ReactNode } from "react"
 import Heading from "../components/heading"
 import { motion } from "framer-motion";
 

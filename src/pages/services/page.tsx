@@ -38,22 +38,36 @@ type Services = {
     hero: Hero;
     sections: Section[];
 }
+type ItemContact = {
+    icon?: string | undefined;
+    title: string,
+    content: string,
+}
 type Item = {
     id: number;
     link: string;
     category : string;
     services : Services[],
-    first_sections : Section,
-    second_section : Section,
     img: string,
-    img_sm: string
+    img_sm: string,
+    desc?: ReactNode;
+    section?: {
+        desc?: ReactNode;
+        options: {
+            title?: string; 
+            content: string; 
+            link: string;
+        }[]
+    },
+    chooseUs?: ItemContact[],
+
 };
 
 const Service = ()=>{
     const navigate = useNavigate()
     const { category, link} = useParams()
     const [ data, setData ] = useState<Services | undefined>(undefined)
-      const [cat, setCat] = useState<Item | undefined>(undefined);
+    const [cat, setCat] = useState<Item | undefined>(undefined);
     useEffect(()=>{
         if (!category || !link) return;
         window.scrollTo({top:0})
