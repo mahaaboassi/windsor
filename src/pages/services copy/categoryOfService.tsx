@@ -3,15 +3,13 @@ import HeroForDynamicPages from "../../components/heroForDynamicPages"
 import img_1 from "../../assets/images/test.png"
 import img_2 from "../../assets/images/test_1.png"
 import { categories } from "../../data"
-import { Link, useNavigate, useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { useEffect, useState, type ReactNode } from "react"
 import Ready from "../../sections/ready"
 import Heading from "../../components/heading"
 import Reviews from "../../sections/review"
 import Consultation from "../../sections/consultation"
 import PaymentMethods from "../../sections/paymentMethods"
-import StepsCard from "../../components/stepCard"
-import Contact from "../../sections/contactUS"
 
 
 type Service = {
@@ -41,28 +39,15 @@ type Services = {
     hero: Hero;
     sections: Section[];
 }
-type ItemContact = {
-    icon?: string | undefined;
-    title: string,
-    content: string,
-}
 type Item = {
     id: number;
     link: string;
     category : string;
     services : Services[],
+    first_sections : Section,
+    second_section : Section,
     img: string,
-    img_sm: string,
-    desc?: ReactNode;
-    section?: {
-        desc?: ReactNode;
-        options: {
-            title?: string; 
-            content: string; 
-            link: string;
-        }[]
-    },
-    chooseUs?: ItemContact[],
+    img_sm: string
 
 };
 
@@ -85,36 +70,41 @@ const CategoryOfService = ()=>{
         />
         <Reviews/>
         <Consultation/>
-        <div className="container-layout flex flex-col gap-5">
-            <Heading hint={`Overview`} title={`${cat?.category || ""} `} desc=""/>
-                <div className="desc">{cat?.desc}</div>
-        </div>
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 container-layout">
             <div className="flex flex-col gap-5">
-                <Heading hint={"Foundational Dental Services"} title={`What ${cat?.category} Covers`} desc=""/>
-                <div className="flex flex-col gap-2 ">{
-                    cat?.section?.options.map((e,idx)=>{
-                        return(<div style={{background: "linear-gradient(180deg, #eeeeee, white, #dedddd)"}} className=" p-3 rounded-xl flex flex-col gap-3" key={`${e.content}_${idx}`}>
-                            <div className="flex flex-col gap-2">
-                                <h4 className="font-semibold text-lg">{e.title}</h4>
-                                <div className="desc">{e.content}</div>
-                            </div>
-                            <Link className="w-fit" to={e.link}>
-                                <div className="text-[var(--main)] font-bold !text-md">Learn More</div>
-                            </Link>
-                        </div>)
-                    })}
-                </div>
+                <Heading hint={cat?.first_sections.hint ?? ""} title={cat?.first_sections.title ?? ""} desc=""/>
+                <div className="desc">{cat?.first_sections.desc_1}</div>
             </div>
             <div className="relative">
                 <div className="sticky top-30"><img src={img_2} alt="Image" /></div>
             </div>
         </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 container-layout">
+            <div className="relative">
+                <div className="sticky top-30"><img src={img_1} alt="Image" /></div>
+            </div>
+            <div className="flex flex-col gap-5 md:gap-10">
+                <Heading hint={cat?.second_section.hint ?? ""} title={cat?.second_section.title ?? ""} desc=""/>
+                <div className="desc">{cat?.second_section.desc_1}</div>
+                <div className="flex flex-col gap-3">
+                    {
+                        cat?.second_section.service?.map((e,idx)=>(
+                            <div key={`${e.title}_${idx}`} className="flex gap-3">
+                                <div className="w-[20px] h-[20px] border border-[2px] border-[var(--grey_2)] rounded-full bg-[var(--main)] flex justify-center items-center"></div>
+                                <div className="flex flex-col gap-1 w-full option">
+                                    <div className="title">{e.title}</div>
+                                    <p>{e.desc}</p>
+                                </div>
+                            </div>
+                        ))
+                    }
 
-        <StepsCard data={cat?.chooseUs ?? []} hint="Why Us  " title="Why Choose Our Dental Clinic" />
+                </div>
+            </div>
+            
+        </div>
         <Ready/>
         <PaymentMethods/>
-        <Contact/>
     </div>)
 }
 export default CategoryOfService

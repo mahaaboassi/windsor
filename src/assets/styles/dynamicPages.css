@@ -1,5 +1,5 @@
 .dynamic-pages .desc{
-    font-size: var(--font-size-xs);
+    font-size: 1rem;
     color: var(--grey_1);
     font-weight: 500;
 }
