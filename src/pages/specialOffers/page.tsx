@@ -5,8 +5,8 @@ import { useEffect } from "react"
 import Contact from "../../sections/contactUS"
 import Ready from "../../sections/ready"
 import { motion } from "framer-motion";
-import img from "../../assets/images/offers.png"
-import img_sm from "../../assets/images/offers_sm.png"
+import img from "../../assets/images/offers.webp"
+import img_sm from "../../assets/images/offers_sm.webp"
 import Heading from "../../components/heading"
 
 const container = {

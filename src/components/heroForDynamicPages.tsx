@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import img_bg from "../assets/images/dynamic_banner.png"
-import img_small from "../assets/images/dynamic_banner_sm.png"
+import img_bg from "../assets/images/dynamic_banner.webp"
+import img_small from "../assets/images/dynamic_banner_sm.webp"
 
 type Item = {
   hint:string,

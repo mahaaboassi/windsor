@@ -3,11 +3,11 @@ import Heading from "../components/heading";
 import { motion } from "framer-motion";
 
 // Images
-import method_1 from "../assets/images/method_1.png";
-import method_2 from "../assets/images/method_2.png";
-import method_3 from "../assets/images/method_3.png";
-import method_5 from "../assets/images/method_4.png";
-import method_6 from "../assets/images/method_5.png";
+import method_1 from "../assets/images/method_1.webp";
+import method_2 from "../assets/images/method_2.webp";
+import method_3 from "../assets/images/method_3.webp";
+import method_5 from "../assets/images/method_4.webp";
+import method_6 from "../assets/images/method_5.webp";
 
 const data = [
     { img: method_1 },

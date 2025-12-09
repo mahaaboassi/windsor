@@ -4,8 +4,8 @@ import { useEffect } from "react"
 import Contact from "../../sections/contactUS"
 import Ready from "../../sections/ready"
 import { motion } from "framer-motion";
-import img from "../../assets/images/banner_without_content.png"
-import img_sm from "../../assets/images/dynamic_banner_sm.png"
+import img from "../../assets/images/banner_without_content.webp"
+import img_sm from "../../assets/images/dynamic_banner_sm.webp"
 
 const container = {
   hidden: {},

@@ -1,36 +1,36 @@
 // Images
-import cat_1 from "./assets/images/cat_1_1.png";
-import cat_sm_1 from "./assets/images/cat_sm_1_1.png";
+import cat_1 from "./assets/images/cat_1_1.webp";
+import cat_sm_1 from "./assets/images/cat_sm_1_1.webp";
 
-import cat_2 from "./assets/images/cat_4_4.png";
-import cat_sm_2 from "./assets/images/cat_sm_4_4.png";
+import cat_2 from "./assets/images/cat_4_4.webp";
+import cat_sm_2 from "./assets/images/cat_sm_4_4.webp";
 
-import cat_3 from "./assets/images/cat_2_2.png";
-import cat_sm_3 from "./assets/images/cat_sm_2_2.png";
+import cat_3 from "./assets/images/cat_2_2.webp";
+import cat_sm_3 from "./assets/images/cat_sm_2_2.webp";
 
-import cat_4 from "./assets/images/cat_5_5.png";
-import cat_sm_4 from "./assets/images/cat_sm_5_5.png";
+import cat_4 from "./assets/images/cat_5_5.webp";
+import cat_sm_4 from "./assets/images/cat_sm_5_5.webp";
 
-import cat_5 from "./assets/images/cat_3_3.png";
-import cat_sm_5 from "./assets/images/cat_sm_3_3.png";
+import cat_5 from "./assets/images/cat_3_3.webp";
+import cat_sm_5 from "./assets/images/cat_sm_3_3.webp";
 
 import mail from "./assets/images/mail.png"
 import phone from "./assets/images/phone.png"
 import location from "./assets/images/location.png"
 import time from "./assets/images/time.png"
 // Images for payment methods
-import method_1 from "./assets/images/method_1.png";
-import method_2 from "./assets/images/method_2.png";
-import method_3 from "./assets/images/method_3.png";
-import method_4 from "./assets/images/method_4.png";
-import method_5 from "./assets/images/method_5.png";
+import method_1 from "./assets/images/method_1.webp";
+import method_2 from "./assets/images/method_2.webp";
+import method_3 from "./assets/images/method_3.webp";
+import method_4 from "./assets/images/method_4.webp";
+import method_5 from "./assets/images/method_5.webp";
 
 // Images for blog
-import blog_1 from "./assets/images/blog_1.png";
-import blog_2 from "./assets/images/blog_2.png";
-import blog_3 from "./assets/images/blog_3.png";
-import blog_4 from "./assets/images/blog_4.png";
-import blog_5 from "./assets/images/blog_5.png";
+import blog_1 from "./assets/images/blog_1.webp";
+import blog_2 from "./assets/images/blog_2.webp";
+import blog_3 from "./assets/images/blog_3.webp";
+import blog_4 from "./assets/images/blog_4.webp";
+import blog_5 from "./assets/images/blog_5.webp";
 
 export const paymentMethodsData = [
   {

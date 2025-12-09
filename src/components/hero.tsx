@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // images
 // import banner from "../assets/images/banner.webp"
-import banner from "../assets/images/banner_img.png"
-import banner_1 from "../assets/images/banner_img_2.png"
-import banner_2 from "../assets/images/banner_img_3.png"
-import banner_sm from "../assets/images/banner_sm_img_1.png"
-import banner_sm_1 from "../assets/images/banner_sm_img_2.png"
-import banner_sm_2 from "../assets/images/banner_sm_img_3.png"
+import banner from "../assets/images/banner_img_1.webp"
+import banner_1 from "../assets/images/banner_img_2.webp"
+import banner_2 from "../assets/images/banner_img_3.webp"
+import banner_sm from "../assets/images/banner_sm_img_1.webp"
+import banner_sm_1 from "../assets/images/banner_sm_img_2.webp"
+import banner_sm_2 from "../assets/images/banner_sm_img_3.webp"
 import { Link } from "react-router-dom";
 
 const banners = [banner_1,banner,banner_2];

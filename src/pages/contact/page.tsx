@@ -7,8 +7,8 @@ import shape from "../../assets/images/Vector.webp"
 import  { Link } from "react-router-dom"
 import { contactInfo } from "../../data"
 
-import contact from "../../assets/images/contact.png"
-import contact_sm from "../../assets/images/contact_sm.png"
+import contact from "../../assets/images/contact.webp"
+import contact_sm from "../../assets/images/contact_sm.webp"
 
 type infoItem = {
   icon : ReactNode,
