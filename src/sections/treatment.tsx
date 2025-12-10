@@ -1,10 +1,10 @@
 import shape from "../assets/images/Vector.webp"
-import img_1 from "../assets/images/1.webp"
-import img_2 from "../assets/images/2.webp"
-import img_3 from "../assets/images/3.webp"
-import img_4 from "../assets/images/4.webp"
-import img_5 from "../assets/images/5.webp"
-import img_6 from "../assets/images/6.webp"
+import img_1 from "../assets/images/service_1.webp"
+import img_2 from "../assets/images/service_2.webp"
+import img_3 from "../assets/images/service_3.webp"
+import img_4 from "../assets/images/service_4.webp"
+import img_5 from "../assets/images/service_5.webp"
+import img_6 from "../assets/images/service_6.webp"
 import Heading from "../components/heading"
 
 type ItemContact = {
