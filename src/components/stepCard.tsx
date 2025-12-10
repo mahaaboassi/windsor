@@ -33,8 +33,9 @@ type Props = {
     desc?: string,
     isCenter?: boolean,
     withShape?: boolean,
+    type: string,
 }
-const StepsCard = ({data, title, hint, desc, isCenter=true, withShape=true }:Props)=>{
+const StepsCard = ({type, data, title, hint, desc, isCenter=true, withShape=true }:Props)=>{
     return(<div className="container-layout flex flex-col gap-10 items-center">
         <Heading hint={hint} title={title}
                 desc={desc || ""}
@@ -43,6 +44,7 @@ const StepsCard = ({data, title, hint, desc, isCenter=true, withShape=true }:Pro
         />
         <div >
             <motion.div 
+                key={type}
                 variants={container}
                 initial="hidden"
                 whileInView="show"

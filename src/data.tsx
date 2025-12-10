@@ -31,7 +31,13 @@ import blog_2 from "./assets/images/blog_2.webp";
 import blog_3 from "./assets/images/blog_3.webp";
 import blog_4 from "./assets/images/blog_4.webp";
 import blog_5 from "./assets/images/blog_5.webp";
-
+// Images for FAQ
+import img_1 from "./assets/images/logo_1.webp"
+import img_2 from "./assets/images/logo_2.webp"
+import img_3 from "./assets/images/logo_3.webp"
+import img_4 from "./assets/images/logo_4.webp"
+import img_5 from "./assets/images/logo_5.webp"
+import img_6 from "./assets/images/logo_6.webp"
 
 export const categories = [{
     id: 1,
@@ -103,15 +109,36 @@ export const categories = [{
         desc: "Your smile should experience the highest level of comfort! Windsor Dental Care's skilled dental team provides root canal therapy in our contemporary clinic, outfitted with cutting-edge technology. We are committed to making your visit as calm and soothing as possible.",
         subLabel: "Root Canal Therapy"
     },
+    faqs :[{
+        question: "Is root canal treatment painful?",
+        answer:<div className="space-y-3">
+            <p>No! At Windsor Dental Care, we use local anaesthetic and modern pain-free techniques to make the procedure comfortable. Most patients report feeling little to no discomfort during the treatment.</p>
+        </div>,
+    },{
+        question: "How long does a root canal take?",
+        answer: <div className="space-y-3">
+            <p>A root canal is usually completed in one or two visits, depending on the tooth’s condition. Each visit typically lasts 60–90 minutes.</p>
+        </div>,
+    },{
+        question: "Can a root canal save my natural tooth?",
+        answer: <div className="space-y-3">
+            <p>Yes! Root canal therapy removes infection and preserves your natural teeth, allowing you to maintain normal chewing, appearance, and oral health.</p>
+        </div>,
+    },{
+        question: "How should I care for my tooth after a root canal?",
+        answer: <div className="space-y-3">
+            <p>After treatment, avoid chewing hard foods on the treated tooth until it is fully restored. Maintain regular brushing, flossing, and dental check-ups to keep your teeth healthy and infection-free.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "About the service",
         title: "What Is Root Canal Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>A root canal treatment is a common dental procedure that removes infection from inside the tooth and helps save it from extraction.
-            Inside each tooth is a soft tissue called the pulp, which contains nerves and blood vessels. When this tissue becomes infected due to deep decay, cracks, or trauma, it can cause severe pain and sensitivity.</p>
+            <p>A root canal treatment is a common dental procedure that removes infection from inside the tooth and helps save it from extraction.</p>
+            <p>Inside each tooth is a soft tissue called the pulp, which contains nerves and blood vessels. When this tissue becomes infected due to deep decay, cracks, or trauma, it can cause severe pain and sensitivity.</p>
             <p>Root canal therapy gently removes the infected pulp, disinfects the tooth, and seals it to prevent future infection, giving you back a healthy, pain-free smile.</p>
-            <p> At Windsor Dental Care, we make root canal treatment simple, stress-free, and comfortable.</p>
+            <p>At Windsor Dental Care, we make root canal treatment simple, stress-free, and comfortable.</p>
         </div>
     },{
         img: "",
@@ -148,6 +175,27 @@ export const categories = [{
         desc: "Extracting a wisdom tooth doesn't have to involve discomfort. At Windsor Dental Care, we ensure a soothing and tranquil setting for the dental attention you require.",
         subLabel: "Wisdom Teeth Removal"
     },
+    faqs : [{
+        question: "Is wisdom teeth removal painful?",
+        answer:<div className="space-y-3">
+            <p>No, the area is completely numbed, and sedation is available. Most patients feel pressure but no pain during the procedure.</p>
+        </div>,
+    },{
+        question: "How long does it take to recover?",
+        answer: <div className="space-y-3">
+            <p>Most people recover within 3–7 days, depending on whether the extraction was simple or surgical. Swelling and tenderness are normal and improve quickly with proper care.</p>
+        </div>,
+    },{
+        question: "Do all wisdom teeth need to be removed?",
+        answer: <div className="space-y-3">
+            <p>Not always. We only recommend removal if they are causing pain, impacted, infected, or likely to cause problems in the future.</p>
+        </div>,
+    },{
+        question: "What can I eat after wisdom teeth removal?",
+        answer: <div className="space-y-3">
+            <p>Soft foods like soups, smoothies, yogurt, mashed potatoes, and scrambled eggs are best for the first few days. Avoid hard, spicy, or chewy foods until healing progresses.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "A Relaxing",
@@ -193,6 +241,27 @@ export const categories = [{
         desc: "Are you in search of a nearby dental clinic to address your gum concerns? Our dedicated team is here to provide proactive care for your gums, ensuring their well-being and preventing future complications.",
         subLabel: "Gum Disease Treatment"
     },
+    faqs : [{
+        question: "How do I know if I have gum disease?",
+        answer:<div className="space-y-3">
+            <p>Look for bleeding gums, bad breath, swelling, or receding gums. Early detection is key to successful treatment.</p>
+        </div>,
+    },{
+        question: "Can gum disease be reversed?",
+        answer: <div className="space-y-3">
+            <p>Yes! Gingivitis (early gum disease) can often be reversed with professional cleaning and proper home care. Periodontitis requires more intensive treatment to control progression.</p>
+        </div>,
+    },{
+        question: "How is gum disease treated?",
+        answer: <div className="space-y-3">
+            <p>Treatment includes professional cleaning, scaling and root planing, antibacterial therapy, and regular maintenance. Advanced cases may need surgical intervention.</p>
+        </div>,
+    },{
+        question: "Can gum disease affect overall health?",
+        answer: <div className="space-y-3">
+            <p>Yes. Untreated gum disease can increase the risk of heart disease, diabetes complications, and other systemic health issues.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Experience Relief from",
@@ -237,6 +306,27 @@ export const categories = [{
         desc: "We're here to elevate your child's dental care experience. Allow our team to work their magic and enhance their smile like never before!",
         subLabel: "Children's Dentistry"
     },
+    faqs : [{
+        question: "When should my child first see a dentist?",
+        answer:<div className="space-y-3">
+            <p>Ideally, on their first birthday or when the first tooth appears. Early visits help establish a dental home and promote healthy habits.</p>
+        </div>,
+    },{
+        question: "How often should children visit the dentist?",
+        answer: <div className="space-y-3">
+            <p>Most children benefit from check-ups every six months to monitor growth, prevent cavities, and maintain oral health.</p>
+        </div>,
+    },{
+        question: "Are dental procedures safe for children?",
+        answer: <div className="space-y-3">
+            <p>Yes! We use gentle, child-friendly techniques and anesthesia options if needed to ensure a safe, comfortable experience.</p>
+        </div>,
+    },{
+        question: "How can I help my child maintain healthy teeth at home?",
+        answer: <div className="space-y-3">
+            <p>Encourage brushing twice a day, flossing, limiting sugary snacks, and making dental visits a positive, routine part of life.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Pedriatic Dentistry",
@@ -280,6 +370,27 @@ export const categories = [{
         desc: "Don't let dental mishaps disrupt your life. Safeguard your smile with our tailor-made mouthguards now!",
         subLabel: "Mouthguards"
     },
+    faqs : [{
+        question: "What types of mouthguards are available?",
+        answer:<div className="space-y-3">
+            <p>We provide custom-fitted sports mouthguards and night guards for teeth grinding (bruxism) to protect teeth and jaw health.</p>
+        </div>,
+    },{
+        question: "Can a mouthguard prevent dental injuries?",
+        answer: <div className="space-y-3">
+            <p>Yes! A properly fitted mouthguard reduces the risk of chipped teeth, jaw injuries, and soft tissue damage during sports or nighttime grinding.</p>
+        </div>,
+    },{
+        question: "How long does it take to get a custom mouthguard?",
+        answer: <div className="space-y-3">
+            <p>Typically, the process takes 1–2 visits, including assessment, impressions, and fitting.</p>
+        </div>,
+    },{
+        question: "How do I care for my mouthguard?",
+        answer: <div className="space-y-3">
+            <p>Clean it daily with mild soap and water, store it in a protective case, and check regularly for wear or damage.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Minimize Dental Injury",
@@ -322,6 +433,27 @@ export const categories = [{
         desc: "Are you struggling to achieve a restful night's sleep? Snoring can be a nuisance, affecting not just you but also your partner. Windsor Dental Care is ready to assist you in minimizing snoring and symptoms of sleep apnea.",
         subLabel: "Snoring and Sleep Apnea"
     },
+    faqs : [{
+        question: "Can snoring be treated with a dental appliance?",
+        answer:<div className="space-y-3">
+            <p>Yes! Custom oral appliances reposition the jaw and tongue to keep airways open, reducing snoring and mild sleep apnea.</p>
+        </div>,
+    },{
+        question: "How do I know if I have sleep apnea?",
+        answer: <div className="space-y-3">
+            <p>Signs include loud snoring, pauses in breathing during sleep, daytime fatigue, and morning headaches. A proper assessment helps determine the best treatment.</p>
+        </div>,
+    },{
+        question: "Are oral appliances comfortable to wear?",
+        answer: <div className="space-y-3">
+            <p>Yes! Our devices are custom-made to fit your teeth and jaw, ensuring comfort and effectiveness throughout the night.</p>
+        </div>,
+    },{
+        question: "Can treatment improve overall health?",
+        answer: <div className="space-y-3">
+            <p>Absolutely. Treating snoring and sleep apnea can enhance sleep quality, reduce daytime fatigue, and lower risks of heart disease and high blood pressure.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Improve Your Sleep",
@@ -365,7 +497,28 @@ export const categories = [{
         desc: "Taking good care of your teeth is crucial. Getting your teeth professionally cleaned can aid in preserving your oral health and reduce the chances of developing gum disease and tooth decay.",
         subLabel: "Scale and Clean"
     },
-    sections : [ {
+    faqs : [{
+        question: "How often should I have a scale and clean?",
+        answer:<div className="space-y-3">
+            <p>Most patients benefit from every six months, but your dentist may recommend more frequent visits based on your oral health.</p>
+        </div>,
+    },{
+        question: "Is the cleaning procedure painful?",
+        answer: <div className="space-y-3">
+            <p>No! We use gentle techniques and modern tools to ensure a comfortable experience.</p>
+        </div>,
+    },{
+        question: "Can a scale and clean whiten my teeth?",
+        answer: <div className="space-y-3">
+            <p>Professional polishing removes surface stains and leaves teeth looking brighter, but it does not replace professional whitening treatments.</p>
+        </div>,
+    },{
+        question: "Will a scale and clean prevent cavities and gum disease?",
+        answer: <div className="space-y-3">
+            <p>Yes! Regular cleaning removes plaque and tartar, preventing cavities, gum disease, and other dental problems.</p>
+        </div>,
+    }],
+    sections : [{
         img: "",
         hint: "Transform Your Smile",
         title: "With a Healthy Scale and Clean",
@@ -459,6 +612,27 @@ export const categories = [{
         desc: "Elevate your smile with our teeth whitening service and experience the joy of possessing a whiter, more radiant set of teeth.",
         subLabel: "Teeth Whitening"
     },
+    faqs : [{
+        question: "Are teeth whitening safe?",
+        answer:<div className="space-y-3">
+            <p>Yes! Professional whitening performed by our team is safe and effective, protecting your enamel and gums.</p>
+        </div>,
+    },{
+        question: "How long does the whitening procedure take?",
+        answer: <div className="space-y-3">
+            <p>Depending on the method, treatments typically take 45–90 minutes, with immediate visible results.</p>
+        </div>,
+    },{
+        question: "How long will the results last?",
+        answer: <div className="space-y-3">
+            <p>Results can last months to a year, depending on diet, habits, and oral care. Touch-up treatments help maintain brightness.</p>
+        </div>,
+    },{
+        question: "Are teeth whitening painful or sensitive?",
+        answer: <div className="space-y-3">
+            <p>Some patients may experience mild temporary sensitivity, but our professional methods minimize discomfort.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Achieve A Beaming Smile",
@@ -502,6 +676,27 @@ export const categories = [{
         desc: "Picture enhancing your smile with dental veneers. If you're on the hunt for a way to achieve a fresh, beautiful set of teeth, the moment is now!",
         subLabel: "Dental Veneers"
     },
+    faqs : [{
+        question: "How long do dental veneers last?",
+        answer:<div className="space-y-3">
+            <p>With proper care, porcelain veneers can last 10–15 years or more, while composite veneers last around 5–7 years.</p>
+        </div>,
+    },{
+        question: "Are veneers painful to get?",
+        answer: <div className="space-y-3">
+            <p>No, the procedure is minimally invasive and performed under local anesthesia to ensure comfort.</p>
+        </div>,
+    },{
+        question: "Can veneers stain or discolor?",
+        answer: <div className="space-y-3">
+            <p>Porcelain veneers are highly resistant to stains, keeping your smile bright for years.</p>
+        </div>,
+    },{
+        question: "Do veneers damage natural teeth?",
+        answer: <div className="space-y-3">
+            <p>No. Only a small amount of enamel is removed to ensure a proper fit and natural appearance.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Authentic-Appearing",
@@ -546,6 +741,28 @@ export const categories = [{
         desc: "At Windsor Dental Care, we understand the importance of a beautiful smile. It's not just about aesthetics; it's about feeling confident and happy in your own skin. That's why we're proud to offer our patients the latest in orthodontic treatment with our state-of-the-art clear aligners.",
         subLabel: "Clear Aligners"
     },
+    faqs : [{
+        question: "How long does clear aligner treatment take?",
+        answer:<div className="space-y-3">
+            <p>Most treatments last 6–18 months, depending on your alignment needs.</p>
+        </div>,
+    },{
+        question: "Do clear aligners hurt?",
+        answer: <div className="space-y-3">
+            <p>You may feel mild pressure when switching to a new tray, but it’s temporary and shows the aligners are working.</p>
+        </div>,
+    },{
+        question: "How many hours a day should I wear them?",
+        answer: <div className="space-y-3">
+            <p>Aligners must be worn 20–22 hours per day for best results.</p>
+        </div>,
+    },{
+        question: "Can I eat with my aligners on?",
+        answer: <div className="space-y-3">
+            <p>No, remove them before eating or drinking anything other than water to avoid damage.</p>
+        </div>,
+    }],
+
     sections : [ {
         img: "",
         hint: "Discover the",
@@ -591,6 +808,27 @@ export const categories = [{
         desc: "A smile transformation can grant you a radiant and self-assured new appearance. If you're in pursuit of a fast and cutting-edge method to revamp your smile, consider a visit to Windsor Dental Care",
         subLabel: "Smile Makeovers"
     },
+    faqs : [{
+        question: "How long does a smile makeover take?",
+        answer:<div className="space-y-3">
+            <p>Depending on the treatments chosen, your makeover can take a few weeks to several months.</p>
+        </div>,
+    },{
+        question: "Are the results permanent?",
+        answer: <div className="space-y-3">
+            <p>Many treatments (like veneers or crowns) are long-lasting, while others (like whitening) may need maintenance.</p>
+        </div>,
+    },{
+        question: "Can I choose what I want to change?",
+        answer: <div className="space-y-3">
+            <p>Yes, your smile makeover is fully customized based on your goals and preferences.</p>
+        </div>,
+    },{
+        question: "Is a smile makeover painful?",
+        answer: <div className="space-y-3">
+            <p>Most procedures are comfortable and minimally invasive, with numbing provided when needed.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Boost Your",
@@ -684,6 +922,27 @@ export const categories = [{
         desc: "Cavities are filled with bacteria that pose a threat to your teeth and gums. Maintaining a healthy smile is crucial for both your looks and oral functionality; neglecting it can result in numerous dental issues. Prevent these complications by scheduling a tooth filling appointment at Windsor Dental Care.",
         subLabel: "Dental Fillings"
     },
+    faqs : [{
+        question: "How long does a dental filling last?",
+        answer:<div className="space-y-3">
+            <p>Tooth-colored fillings typically last 5–10 years, depending on oral hygiene and bite forces.</p>
+        </div>,
+    },{
+        question: "Is getting a filling painful?",
+        answer: <div className="space-y-3">
+            <p>No. We use local anaesthetic and gentle techniques for a comfortable, pain-free procedure.</p>
+        </div>,
+    },{
+        question: "Can fillings be done in one visit?",
+        answer: <div className="space-y-3">
+            <p>Yes! Most fillings are completed in a single appointment.</p>
+        </div>,
+    },{
+        question: "How should I care for my filling?",
+        answer: <div className="space-y-3">
+            <p>Maintain good oral hygiene, brush and floss regularly, and attend routine dental check-ups.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Maintain and Safeguard",
@@ -728,6 +987,27 @@ export const categories = [{
         desc: "Why contend with the challenges of missing teeth when you can enjoy a full and attractive smile? We provide dentures as a solution for those seeking to replace missing teeth!",
         subLabel: "Dentures"
     },
+    faqs : [{
+        question: "How long do dentures last?",
+        answer:<div className="space-y-3">
+            <p>With proper care, dentures can last 5–10 years, though adjustments may be needed over time.</p>
+        </div>,
+    },{
+        question: "Are dentures comfortable to wear?",
+        answer: <div className="space-y-3">
+            <p>Yes! Custom-fit dentures are designed for comfort, and follow-up adjustments ensure a perfect fit.</p>
+        </div>,
+    },{
+        question: "Can dentures help me chew and speak normally?",
+        answer: <div className="space-y-3">
+            <p>Absolutely. Well-fitted dentures restore chewing efficiency and clear speech.</p>
+        </div>,
+    },{
+        question: "How do I care for my dentures?",
+        answer: <div className="space-y-3">
+            <p>Clean daily with a soft brush and denture cleanser, soak overnight, and attend regular dental check-ups.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Reclaim Your Full Smile With",
@@ -772,6 +1052,27 @@ export const categories = [{
         desc: "Discover a new level of dental crown technology with Windsor Dental Care. They're excited to offer cutting-edge dental crown solutions designed to rejuvenate your smile.",
         subLabel: "Crown"
     },
+    faqs : [{
+        question: "How long do dental crowns last?",
+        answer:<div className="space-y-3">
+            <p>With proper care, crowns can last 10–15 years or more.</p>
+        </div>,
+    },{
+        question: "Is getting a crown painful?",
+        answer: <div className="space-y-3">
+            <p>No, local anaesthetic ensures a comfortable, pain-free procedure.</p>
+        </div>,
+    },{
+        question: "Can crowns look natural?",
+        answer: <div className="space-y-3">
+            <p>Yes! Crowns are custom-made to match your tooth color, shape, and size for a seamless smile.</p>
+        </div>,
+    },{
+        question: "How should I care for my crown?",
+        answer: <div className="space-y-3">
+            <p>Brush and floss regularly, avoid biting hard objects, and attend routine dental check-ups.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Safeguard and Revitalize",
@@ -813,6 +1114,27 @@ export const categories = [{
         desc: "The absence of teeth can cause discomfort and self-consciousness. At Windsor Dental Care located in Windsor, we provide dental bridges as a solution to fill the gaps left by missing teeth, restoring your smile and boosting your confidence.",
         subLabel: "Dental Bridges"
     },
+    faqs : [{
+        question: "How long do dental bridges last?",
+        answer:<div className="space-y-3">
+            <p>With proper care, bridges can last 10–15 years or more.</p>
+        </div>,
+    },{
+        question: "Is getting a bridge painful?",
+        answer: <div className="space-y-3">
+            <p>No, local anaesthetic ensures a comfortable, pain-free procedure.</p>
+        </div>,
+    },{
+        question: "Can bridges look natural?",
+        answer: <div className="space-y-3">
+            <p>Yes! Bridges are custom-made to match your teeth in color, shape, and size.</p>
+        </div>,
+    },{
+        question: "How should I care for my dental bridge?",
+        answer: <div className="space-y-3">
+            <p>Maintain excellent oral hygiene, brush and floss daily, and attend routine dental check-ups.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Reclaim Your Smile Through",
@@ -902,6 +1224,27 @@ export const categories = [{
         desc: "Windsor Dental Care is founded on the principle that everyone should have a smile they're proud of. If you're in search of a dental solution for missing teeth, our dedicated team is here to assist you in attaining the smile you've always desired.",
         subLabel: "Single Dental Implants"
     },
+    faqs : [{
+        question: "How long does a dental implant last?",
+        answer:<div className="space-y-3">
+            <p>With proper care, single implants can last 20 years or more, often a lifetime.</p>
+        </div>,
+    },{
+        question: "Is implant surgery painful?",
+        answer: <div className="space-y-3">
+            <p>No, local anaesthetic and sedation options ensure a comfortable, pain-free procedure.</p>
+        </div>,
+    },{
+        question: "How long does the implant process take?",
+        answer: <div className="space-y-3">
+            <p>The full process, including healing, typically takes 3–6 months depending on individual cases.</p>
+        </div>,
+    },{
+        question: "Can implants replace any tooth?",
+        answer: <div className="space-y-3">
+            <p>Yes! Single dental implants can replace any missing tooth, restoring full function and aesthetics.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Enhance Your Beautiful Smile with",
@@ -937,6 +1280,27 @@ export const categories = [{
         desc: "Restore your smile with multiple dental implants, offering a natural, comfortable, and long-lasting solution for missing teeth.",
         subLabel: "Multiple Implants"
     },
+    faqs : [{
+        question: "How long do multiple implants last?",
+        answer:<div className="space-y-3">
+            <p>With proper care, implants can last 20 years or more, often a lifetime.</p>
+        </div>,
+    },{
+        question: "Is the implant procedure painful?",
+        answer: <div className="space-y-3">
+            <p>No, local anaesthetic and sedation ensure a comfortable, pain-free experience.</p>
+        </div>,
+    },{
+        question: "How long does the full treatment take?",
+        answer: <div className="space-y-3">
+            <p>From implant placement to final restoration, it typically takes 3–6 months, depending on healing.</p>
+        </div>,
+    },{
+        question: "Can multiple implants replace all missing teeth?",
+        answer: <div className="space-y-3">
+            <p>Yes, multiple implants can replace several teeth or serve as a foundation for implant-supported bridges or dentures.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Dental Implants: A Permanent Solution for Replacing",
@@ -977,6 +1341,27 @@ export const categories = [{
         desc: "In the quest to replace missing teeth, the goal is always to find an option that mimics natural teeth as closely as possible. Implant-supported dentures offer a more stable and comfortable alternative to traditional dentures, providing a sensation akin to having your natural teeth restored.",
         subLabel: "Implant Supported Dentures"
     },
+    faqs : [{
+        question: "How long do implant-supported dentures last?",
+        answer:<div className="space-y-3">
+            <p>With proper care, they can last 10–20 years or more, with regular check-ups and maintenance.</p>
+        </div>,
+    },{
+        question: "Are implant-supported dentures painful?",
+        answer: <div className="space-y-3">
+            <p>No, local anaesthetic and gentle techniques ensure a comfortable, pain-free procedure.</p>
+        </div>,
+    },{
+        question: "How do they differ from traditional dentures?",
+        answer: <div className="space-y-3">
+            <p>Unlike traditional dentures, implant-supported dentures are securely anchored to implants, preventing slipping and improving function.</p>
+        </div>,
+    },{
+        question: "Can I eat normally with implant-supported dentures?",
+        answer: <div className="space-y-3">
+            <p>Yes! They restore chewing ability, allowing you to eat a wide variety of foods comfortably</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Achieve a Stable and Comfortable Fit with",
@@ -1016,6 +1401,27 @@ export const categories = [{
         desc: "Replacing your missing teeth with a durable, efficient, and aesthetically pleasing dental bridge is now within reach. At Windsor Dental Care, we provide implant-supported bridges, offering a stable and enduring solution for your tooth replacement needs.",
         subLabel: "Implant Supported Bridge"
     },
+    faqs : [{
+        question: "How long do implant-supported bridges last?",
+        answer:<div className="space-y-3">
+            <p>With proper care, they can last 10–20 years or more, often longer with regular check-ups.</p>
+        </div>,
+    },{
+        question: "Is the procedure painful?",
+        answer: <div className="space-y-3">
+            <p>No, local anaesthetic and gentle techniques ensure a comfortable, pain-free experience.</p>
+        </div>,
+    },{
+        question: "Can bridges be placed on multiple implants?",
+        answer: <div className="space-y-3">
+            <p>Yes! Multiple implants provide a strong foundation for replacing several teeth.</p>
+        </div>,
+    },{
+        question: "How do I care for an implant-supported bridge?",
+        answer: <div className="space-y-3">
+            <p>Maintain excellent oral hygiene, clean around implants carefully, and attend regular dental check-ups.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Restore Your Full Smile and Boost Your Confidence with an",
@@ -1109,6 +1515,27 @@ export const categories = [{
         desc: "No need to endure toothache pain any longer. Come to Windsor Dental Care in Windsor, and we'll have you smiling again in no time.",
         subLabel: "Toothache"
     },
+    faqs : [{
+        question: "What should I do if I have a sudden toothache?",
+        answer:<div className="space-y-3">
+            <p>Rinse your mouth, avoid very hot or cold foods, and contact us immediately for prompt dental care.</p>
+        </div>,
+    },{
+        question: "Can a toothache go away on its own?",
+        answer: <div className="space-y-3">
+            <p>Temporary relief is possible, but the underlying problem may worsen without professional treatment.</p>
+        </div>,
+    },{
+        question: "How is a toothache treated?",
+        answer: <div className="space-y-3">
+            <p>Treatment depends on the cause: fillings, root canal therapy, extraction, or gum treatment.</p>
+        </div>,
+    },{
+        question: "Can I prevent future toothaches?",
+        answer: <div className="space-y-3">
+            <p>Yes! Maintain good oral hygiene, regular check-ups, and prompt treatment of decay or gum issues.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Don't Let a Toothache Dampen Your Enjoyment of",
@@ -1148,6 +1575,27 @@ export const categories = [{
         desc: "Is your tooth chipped? Come to our Windsor clinic for a consultation. We're here to save your tooth and bring back your smile.",
         subLabel: "Chipped Tooth"
     },
+    faqs : [{
+        question: "Can a small chip cause pain?",
+        answer:<div className="space-y-3">
+            <p>Yes, even minor chips can expose sensitive areas of the tooth, leading to pain or discomfort.</p>
+        </div>,
+    },{
+        question: "How is a chipped tooth repaired?",
+        answer: <div className="space-y-3">
+            <p>Treatment may include bonding, veneers, or crowns, depending on the size and location of the chip.</p>
+        </div>,
+    },{
+        question: "Can a chipped tooth worsen if left untreated?",
+        answer: <div className="space-y-3">
+            <p>Yes, untreated chips can lead to further damage, decay, or infection.</p>
+        </div>,
+    },{
+        question: "How long does the repair last?",
+        answer: <div className="space-y-3">
+            <p>With proper care, repairs can last many years, especially bonding and crowns</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Have Your Chipped Tooth Examined Before It Turns",
@@ -1191,6 +1639,27 @@ export const categories = [{
         desc: "Should you find yourself in a dental crisis requiring immediate attention for a dental abscess, Windsor Dental Care stands ready to assist. We offer emergency dental care to patients experiencing pain and in urgent need of relief.",
         subLabel: "Abscess"
     },
+    faqs : [{
+        question: "What causes a dental abscess?",
+        answer:<div className="space-y-3">
+            <p>Common causes include tooth decay, gum disease, cracked teeth, or trauma.</p>
+        </div>,
+    },{
+        question: "Is dental abscess dangerous?",
+        answer: <div className="space-y-3">
+            <p>Yes, untreated abscesses can spread infection, damage bone, and affect overall health.</p>
+        </div>,
+    },{
+        question: "How is a dental abscess treated?",
+        answer: <div className="space-y-3">
+            <p>Treatment may involve draining the abscess, root canal therapy, antibiotics, or extraction, depending on severity.</p>
+        </div>,
+    },{
+        question: "Can a dental abscess be prevented?",
+        answer: <div className="space-y-3">
+            <p>Yes, maintain good oral hygiene, regular dental check-ups, and early treatment of decay or gum issues.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Immediate Dental Treatment For",
@@ -1234,6 +1703,27 @@ export const categories = [{
         desc: "Experiencing the loss of a filling or crown can be both aggravating and disruptive. Often, there's a temptation to postpone fixing it and not treat it as a priority. Nonetheless, it is advisable to address and replace any dislodged restorations promptly.",
         subLabel: "Lost Fillings & Crowns"
     },
+    faqs : [{
+        question: "What should I do if my filling or crown falls out?",
+        answer:<div className="space-y-3">
+            <p>Keep the tooth clean, avoid chewing on that side, and contact us immediately for prompt replacement.</p>
+        </div>,
+    },{
+        question: "Can a lost filling or crown cause pain?",
+        answer: <div className="space-y-3">
+            <p>Yes, exposed tooth areas may be sensitive or prone to decay and infection.</p>
+        </div>,
+    },{
+        question: "How long does it take to replace a filling or crown?",
+        answer: <div className="space-y-3">
+            <p>Most replacements can be done in one visit, depending on the material and complexity.</p>
+        </div>,
+    },{
+        question: "Can I prevent fillings or crowns from falling out?",
+        answer: <div className="space-y-3">
+            <p>Yes, maintain good oral hygiene, avoid biting hard objects, and attend regular dental check-ups.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Restore Your Smile:Promptly Replace Missing",
@@ -1277,6 +1767,27 @@ export const categories = [{
         desc: "Tooth removal is a frequently performed dental procedure that often worries patients. However, for individuals facing serious dental problems, extraction remains a valuable option. Windsor Dental Care provides gentle and painless tooth removal services, aiming to enhance patients' overall oral health.",
         subLabel: "Tooth Extractions"
     },
+        faqs : [{
+        question: "Is tooth extraction painful?",
+        answer:<div className="space-y-3">
+            <p>No, local anaesthetic ensures a comfortable, pain-free procedure.</p>
+        </div>,
+    },{
+        question: "How long does it take to recover from a tooth extraction?",
+        answer: <div className="space-y-3">
+            <p>Most patients heal within 1–2 weeks, with proper care and follow-up.</p>
+        </div>,
+    },{
+        question: "Can a removed tooth be replaced?",
+        answer: <div className="space-y-3">
+            <p>Yes, options include dental implants, bridges, or dentures to restore function and aesthetics.</p>
+        </div>,
+    },{
+        question: "Are wisdom teeth extractions different?",
+        answer: <div className="space-y-3">
+            <p>Impacted or complex wisdom teeth may require surgical extraction, performed with specialized techniques for safety and comfort.</p>
+        </div>,
+    }],
     sections : [ {
         img: "",
         hint: "Enhance Your Dental Well-being Through",
@@ -2927,4 +3438,87 @@ export const blogData = [{
     },
   }]
 
-
+export const faqsData = [
+  {
+    question: "Does your clinic accept health funds?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Yes, we accept all health funds. We will be able to provide you with
+          the benefits from your health fund for all our dental services at our
+          practice. We also use HICAPS machines for fast and automatic claims on
+          the same day. We accept all health funds like:
+        </p>
+        <div className="flex flex-wrap gap-3">
+          {[img_1, img_2, img_3, img_4, img_5, img_6].map((logo, i) => (
+            <img key={i} className="w-16 h-auto" src={logo} alt="Health fund logo" />
+          ))}
+        </div>
+      </div>
+    ),
+    options: "",
+  },
+  {
+    question: "What Solutions Are Available for Anxiety or Fear During Dental Procedures?",
+    answer: (
+      <div className="space-y-2">
+        <p>
+          We at Windsor Dental Care recognize that dental visits can be daunting
+          for some. It’s our priority to ensure you feel confident and at ease
+          before your procedure.
+        </p>
+        <p>
+          Our welcoming staff is dedicated to making you comfortable throughout
+          your visit.
+        </p>
+        <p>
+          Should you think General dentistry might be right for you, please let
+          our team know or reach out to us at 02 4571 2720.
+        </p>
+      </div>
+    ),
+    options: "",
+  },
+  {
+    question: "What Steps Should I Take to Get Ready for My Dental Visit?",
+    answer: (
+      <div className="space-y-2">
+        <p>
+          Preparing adequately for your dental visit is crucial, regardless of
+          the type of treatment you’re receiving. Here are some tips to help you
+          get ready for your next appointment:
+        </p>
+        <ul className="list-disc pl-6 space-y-1">
+          <li>Confirm your appointment’s date and time.</li>
+          <li>Understand the purpose of your visit.</li>
+          <li>Brush and floss before your visit.</li>
+          <li>Arrive on time as a sign of respect for the schedule.</li>
+          <li>Bring your personal and medical information if you’re new.</li>
+          <li>Prepare questions about your dental health.</li>
+        </ul>
+      </div>
+    ),
+    options: "",
+  },
+  {
+    question: "What Makes Regular Dental Examinations Crucial?",
+    answer: (
+      <div className="space-y-2">
+        <p>
+          During your dental check-up, the dentist will examine your teeth and
+          gums for early signs of issues. This allows for preventive care and
+          helps stop problems before they worsen.
+        </p>
+        <p>
+          Regular visits help prevent tooth decay, remove plaque buildup, and
+          ensure long-term oral health.
+        </p>
+        <p>
+          Your dentist will also offer advice on improving your dental hygiene
+          routine, which contributes to overall health and quality of life.
+        </p>
+      </div>
+    ),
+    options: "",
+  },
+]

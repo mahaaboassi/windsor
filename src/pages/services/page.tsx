@@ -10,6 +10,7 @@ import Heading from "../../components/heading"
 import Reviews from "../../sections/review"
 import Consultation from "../../sections/consultation"
 import PaymentMethods from "../../sections/paymentMethods"
+import Accordion from "../../components/accordion"
 
 type Service = {
     icon: string;
@@ -37,6 +38,11 @@ type Services = {
     link: string,
     hero: Hero;
     sections: Section[];
+    faqs?: {
+        question: string;
+        answer: ReactNode;
+        options?: string;
+    }[]
 }
 type ItemContact = {
     icon?: string | undefined;
@@ -60,6 +66,7 @@ type Item = {
         }[]
     },
     chooseUs?: ItemContact[],
+
 
 };
 
@@ -118,6 +125,12 @@ const Service = ()=>{
                 </div>
             </div>
             
+        </div>
+        <div className="flex flex-col gap-5 container-layout">
+            <Heading hint="Ask Away" desc="Find answers to the most common questions"
+                title="FREQUENTLY ASKED QUESTIONS" isfullDescriptionWidth={true} isCenter={true}
+            />
+            <Accordion data={data?.faqs || []} />
         </div>
         <Ready/>
         <PaymentMethods/>

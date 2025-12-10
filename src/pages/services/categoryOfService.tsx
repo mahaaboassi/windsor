@@ -110,7 +110,7 @@ const CategoryOfService = ()=>{
             </div>
         </div>
 
-        <StepsCard data={cat?.chooseUs ?? []} hint="Why Us  " title="Why Choose Our Dental Clinic" />
+        <StepsCard type={cat?.category || ""} data={cat?.chooseUs ?? []} hint="Why Us  " title="Why Choose Our Dental Clinic" />
         <Ready/>
         <PaymentMethods/>
         <Contact/>
