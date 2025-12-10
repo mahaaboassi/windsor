@@ -12,10 +12,10 @@ type MetricItem = {
 };
 
 const data: MetricItem[] = [
-  { number: 875, signal: "+", desc: "Happy Patients" },
-  { number: 115, signal: "+", desc: "Experts Doctors" },
-  { number: 95,  signal: "+", desc: "Hospital Room" },
-  { number: 79,  signal: "+", desc: "Award Winner" },
+  { number: 400, signal: "+", desc: "Happy Patients" },
+  { number: 3, signal: "", desc: "Expert Dentists" },
+  { number: 20,  signal: "+", desc: "Dental Services" },
+  { number: 2,  signal: "+", desc: "Years of Excellence" },
 ];
 const About: React.FC =()=>{
     const ref = useRef(null);
