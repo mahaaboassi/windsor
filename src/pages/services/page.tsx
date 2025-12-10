@@ -63,7 +63,8 @@ type Item = {
             title?: string; 
             content: string; 
             link: string;
-        }[]
+        }[];
+        img: string;
     },
     chooseUs?: ItemContact[],
 

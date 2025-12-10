@@ -1,18 +1,23 @@
 // Images
 import cat_1 from "./assets/images/cat_1_1.webp";
 import cat_sm_1 from "./assets/images/cat_sm_1_1.webp";
+import cat_sec_1 from "./assets/images/cat_1.webp";
 
 import cat_2 from "./assets/images/cat_4_4.webp";
 import cat_sm_2 from "./assets/images/cat_sm_4_4.webp";
+import cat_sec_2 from "./assets/images/cat_2.webp";
 
 import cat_3 from "./assets/images/cat_2_2.webp";
 import cat_sm_3 from "./assets/images/cat_sm_2_2.webp";
+import cat_sec_3 from "./assets/images/cat_3.webp";
 
 import cat_4 from "./assets/images/cat_5_5.webp";
 import cat_sm_4 from "./assets/images/cat_sm_5_5.webp";
+import cat_sec_4 from "./assets/images/cat_4.webp";
 
 import cat_5 from "./assets/images/cat_3_3.webp";
 import cat_sm_5 from "./assets/images/cat_sm_3_3.webp";
+import cat_sec_5 from "./assets/images/cat_5.webp";
 
 import mail from "./assets/images/mail.png"
 import phone from "./assets/images/phone.png"
@@ -79,7 +84,8 @@ export const categories = [{
             title: "Scale and Clean",
             content: "Deep cleaning to maintain fresh breath and healthy gums.",
             link: "/general-dentistry/scale-and-clean"
-        }]
+        }],
+        img: cat_sec_1
     },
     chooseUs : [{
         title: "Comfort-Focused Care",
@@ -582,7 +588,8 @@ export const categories = [{
             title: "Smile Makeovers ",
             content: "A personalised combination of cosmetic treatments to transform your smile completely.",
             link: "/cosmetic-dentistry/smile-makeovers"
-        }]
+        }],
+        img: cat_sec_2
     },
     chooseUs : [{
         title: "Cosmetic Expertise",
@@ -894,7 +901,8 @@ export const categories = [{
             title: "Dental Bridges",
             content: "Fixed tooth replacement solutions that fill gaps and support your natural bite.",
             link: "/restorative-dentist/bridges"
-        }]
+        }],
+        img: cat_sec_3
     },
     chooseUs : [{
         title: "Skilled Restorative Experts",
@@ -1196,7 +1204,8 @@ export const categories = [{
             title: "Implant Supported Bridge",
             content: "A permanent bridge anchored by implants to restore multiple missing teeth.",
             link: "/dental-implants/implant-supported-bridge"
-            }]
+            }],
+        img: cat_sec_4
     },
     chooseUs :  [{
             title: "Experienced Implant Specialists",
@@ -1487,7 +1496,8 @@ export const categories = [{
             title: "Tooth Extractions",
             content: "Safe removal of severely damaged or infected teeth when necessary.",
             link: "/emergency-dentist/tooth-extractions"
-        }]
+        }],
+        img: cat_sec_5
     },
     chooseUs : [{
         title: "Immediate Response",

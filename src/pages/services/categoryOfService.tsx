@@ -1,6 +1,5 @@
 import HeroForDynamicPages from "../../components/heroForDynamicPages"
 // Images
-import img_2 from "../../assets/images/test_1.png"
 import { categories } from "../../data"
 import { Link, useNavigate, useParams } from "react-router-dom"
 import { useEffect, useState, type ReactNode } from "react"
@@ -59,7 +58,8 @@ type Item = {
             title?: string; 
             content: string; 
             link: string;
-        }[]
+        }[];
+        img: string;
     },
     chooseUs?: ItemContact[],
 
@@ -106,7 +106,7 @@ const CategoryOfService = ()=>{
                 </div>
             </div>
             <div className="relative">
-                <div className="sticky top-30"><img src={img_2} alt="Image" /></div>
+                <div className="sticky top-30"><img src={cat?.section?.img || ""} alt="Image" /></div>
             </div>
         </div>
 
