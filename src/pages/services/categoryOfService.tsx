@@ -91,6 +91,7 @@ const CategoryOfService = ()=>{
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 container-layout">
             <div className="flex flex-col gap-5">
                 <Heading hint={"Foundational Dental Services"} title={`What ${cat?.category} Covers`} desc=""/>
+                <div><p>{cat?.section?.desc}</p></div>
                 <div className="flex flex-col gap-2 ">{
                     cat?.section?.options.map((e,idx)=>{
                         return(<div style={{background: "linear-gradient(180deg, #eeeeee, white, #dedddd)"}} className=" p-3 rounded-xl flex flex-col gap-3" key={`${e.content}_${idx}`}>
@@ -106,7 +107,7 @@ const CategoryOfService = ()=>{
                 </div>
             </div>
             <div className="relative">
-                <div className="sticky top-30"><img src={cat?.section?.img || ""} alt="Image" /></div>
+                <div className="sticky top-50 justify-center flex"><img className="max-h-[300px] xs:max-h-[400px] md:max-h-[500px] object-contain" src={cat?.section?.img || ""} alt="Image" /></div>
             </div>
         </div>
 

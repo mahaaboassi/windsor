@@ -100,12 +100,12 @@ const Service = ()=>{
                 <div className="desc">{data?.sections[0].desc_1}</div>
             </div>
             <div className="relative">
-                <div className="sticky top-30"><img src={img_2} alt="Image" /></div>
+                <div className="sticky top-50 flex justify-center"><img className="max-h-[300px] xs:max-h-[400px] md:max-h-[500px] object-contain" src={img_2} alt="Image" /></div>
             </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 container-layout">
             <div className="relative">
-                <div className="sticky top-30"><img src={img_1} alt="Image" /></div>
+                <div className="sticky top-50 flex justify-center"><img className="max-h-[300px] xs:max-h-[400px] md:max-h-[500px] object-contain" src={img_1} alt="Image" /></div>
             </div>
             <div className="flex flex-col gap-5 md:gap-10">
                 <Heading desc="" title={data?.sections[1].title ?? ""} hint={data?.sections[1].hint ?? ""} />
@@ -117,7 +117,7 @@ const Service = ()=>{
                                 <div className="w-[20px] h-[20px] border border-[2px] border-[var(--grey_2)] rounded-full bg-[var(--main)] flex justify-center items-center"></div>
                                 <div className="flex flex-col gap-1 w-full">
                                     <div className="title">{e.title}</div>
-                                    <p>{e.desc}</p>
+                                    <p className="">{e.desc}</p>
                                 </div>
                             </div>
                         ))

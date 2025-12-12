@@ -22,3 +22,12 @@
 .offers path{
     fill: var(--light);
 }
+@media (max-width: 600px) {
+    .dynamic-pages .desc{
+        font-size: 0.8rem;
+    }
+    .dynamic-pages .option .title{
+        font-size: 0.8rem;
+    }
+    
+}

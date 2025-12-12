@@ -40,11 +40,11 @@ const HeroForDynamicPages = ({hint,title,link,label,subLabel, img, img_sm,isDeta
         </div>
     
       </div>
-      {!isDetailsBlog && <div className="absolute bottom-0 layout-container-left flex gap-2 z-50">
+      {!isDetailsBlog && <div className="absolute bottom-0 layout-container-left text-xs md:text-sm flex gap-2 z-50">
         <div className="flex gap-2 text-md items-center">
             <Link className="text-[var(--main)]" to={link}><strong>{label}</strong></Link>
             <div className="text-[var(--grey_1)]">/</div>
-            <div className="text-[var(--grey_1)] text-sm">{subLabel}</div>
+            <div className="text-[var(--grey_1)] ">{subLabel}</div>
         </div>
       </div>}
     </section>

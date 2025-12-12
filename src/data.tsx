@@ -19,6 +19,10 @@ import cat_5 from "./assets/images/cat_3_3.webp";
 import cat_sm_5 from "./assets/images/cat_sm_3_3.webp";
 import cat_sec_5 from "./assets/images/cat_5.webp";
 
+import cat_6 from "./assets/images/cat_6_6.webp";
+import cat_sm_6 from "./assets/images/cat_sm_6_6.webp";
+import cat_sec_6 from "./assets/images/cat_sec_6.webp";
+
 import mail from "./assets/images/mail.png"
 import phone from "./assets/images/phone.png"
 import location from "./assets/images/location.png"
@@ -581,10 +585,6 @@ export const categories = [{
             content: "Thin, custom-made shells that correct stains, chips, gaps, and uneven teeth.",
             link: "/cosmetic-dentistry/dental-veneers"
         },{
-            title: "Clear Aligners ",
-            content: "Nearly invisible trays that gently straighten teeth without metal braces.",
-            link: "/cosmetic-dentistry/clear-aligners"
-        },{
             title: "Smile Makeovers ",
             content: "A personalised combination of cosmetic treatments to transform your smile completely.",
             link: "/cosmetic-dentistry/smile-makeovers"
@@ -737,73 +737,6 @@ export const categories = [{
             link: "/services/teeth-whitening/",
             title: "It Guards Against Tooth Staining",
             desc: "Certain types of dental veneers boast superior resistance to stains caused by food and beverages. Because they adhere to each tooth individually, they offer the benefit of maintaining brighter teeth for an extended period. As a result, veneers are often viewed as a long-term solution for teeth whitening."
-        }]
-    }]
-},{
-    id: 3,
-    link: "cosmetic-dentistry/clear-aligners",
-    hero:{
-        hint: "Clear Aligners",
-        title: "in Windsor",
-        desc: "At Windsor Dental Care, we understand the importance of a beautiful smile. It's not just about aesthetics; it's about feeling confident and happy in your own skin. That's why we're proud to offer our patients the latest in orthodontic treatment with our state-of-the-art clear aligners.",
-        subLabel: "Clear Aligners"
-    },
-    faqs : [{
-        question: "How long does clear aligner treatment take?",
-        answer:<div className="space-y-3">
-            <p>Most treatments last 6–18 months, depending on your alignment needs.</p>
-        </div>,
-    },{
-        question: "Do clear aligners hurt?",
-        answer: <div className="space-y-3">
-            <p>You may feel mild pressure when switching to a new tray, but it’s temporary and shows the aligners are working.</p>
-        </div>,
-    },{
-        question: "How many hours a day should I wear them?",
-        answer: <div className="space-y-3">
-            <p>Aligners must be worn 20–22 hours per day for best results.</p>
-        </div>,
-    },{
-        question: "Can I eat with my aligners on?",
-        answer: <div className="space-y-3">
-            <p>No, remove them before eating or drinking anything other than water to avoid damage.</p>
-        </div>,
-    }],
-
-    sections : [ {
-        img: "",
-        hint: "Discover the",
-        title: "Clear Aligners Difference",
-        desc_1 : <div className="flex flex-col gap-2">
-            <p>Clear aligners offer a modern, nearly invisible solution to straighten your teeth without the need for traditional braces. Custom-made to fit your teeth perfectly, they gently guide your teeth into their correct positions over time. Here's why our patients love them:</p>
-            <p><strong>Virtually Invisible:</strong> Crafted from clear, flexible plastic, our aligners are discreet and hard to notice.</p>
-            <p><strong>Comfort:</strong> Designed to fit snugly over your teeth, each aligner is smooth, with no sharp edges to irritate your mouth.</p>
-            <p><strong>Convenience:</strong> Clear aligners can be removed for eating, drinking, brushing, and flossing, making them a convenient option for a busy lifestyle.</p>
-            <p><strong>Efficiency:</strong> For many patients, treatment times are comparable to those of traditional braces, with less discomfort and fewer visits to the dentist.</p>
-        </div>
-    },{
-        img: "",
-        hint: "Your Journey to A",
-        title: "Perfect Smile",
-        desc_1 : <div>
-            <p>Where your smile is our passion. Our clear aligners are designed to straighten your teeth discreetly and comfortably, allowing you to achieve the smile you've always desired.</p>
-        </div>,
-        service: [{
-            icon: "",
-            title: "Initial Consultation",
-            desc: "Your path to a brighter smile begins with a consultation at Windsor Dental Care. Our expert team will assess your dental needs and determine if clear aligners are the right choice for you."
-        },{
-            icon: "",
-            title: "Custom Treatment Plan",
-            desc: "Utilising the latest in 3D imaging technology, we'll craft a personalised treatment plan designed to achieve your ideal smile. You'll even get a sneak peek of your future smile before you begin treatment."
-        },{
-            icon: "",
-            title: "Receive Your Aligners",
-            desc: "You'll receive a series of custom aligners to wear. Each set is worn for about two weeks before moving on to the next, gradually shifting your teeth into their perfect positions."
-        },{
-            icon: "",
-            title: "Achieve Your Dream Smile",
-            desc: "Once your treatment is complete, we'll provide you with a retainer to ensure your new smile lasts a lifetime."
         }]
     }]
 },{
@@ -1829,6 +1762,112 @@ export const categories = [{
     }]
 }],
 
+},{
+    id: 2,
+    category: "Straightening Teeth",
+    link: "/straightening-teeth",
+    desc: <div>
+        <p>Straightening your teeth not only improves oral health but also enhances your smile’s aesthetics. Our services focus on aligning your teeth gently and effectively while maintaining comfort and natural appearance.</p>
+        <p>Whether you’re looking for minor adjustments or a full smile transformation, our straightening treatments are designed to boost confidence, improve functionality, and give you the radiant smile you’ve always wanted.</p>
+    </div>,
+    section: {
+        desc: <div>
+            <p>Our Straightening Teeth services combine advanced techniques and personalised care to help you achieve perfectly aligned teeth. This category includes:</p>
+        </div>,
+        options: [{
+            title: "Clear Aligners ",
+            content: "Nearly invisible trays that gently straighten teeth without metal braces.",
+            link: "/straightening-teeth/clear-aligners"
+        }],
+        img: cat_sec_6
+    },
+    chooseUs : [{
+        title: "Expert Orthodontic Care",
+        content: "Highly skilled professionals ensuring precise and effective teeth alignment.",
+        icon: ""
+    },{
+        title: "State-of-the-Art Technology",
+        content: "Digital imaging and treatment planning for accurate and predictable results.",
+        icon: ""
+    },{
+        title: "Premium Materials",
+        content: "High-quality aligners and braces for comfort, durability, and excellent aesthetics.",
+        icon: ""    
+    },{
+        title: "Tailored Treatment Plans",
+        content: "Customized solutions to fit your smile goals and lifestyle.",
+        icon: ""
+    }],
+    img: cat_6,
+    img_sm: cat_sm_6,
+    services : [{
+    id: 3,
+    link: "straightening-teeth/clear-aligners",
+    hero:{
+        hint: "Clear Aligners",
+        title: "in Windsor",
+        desc: "At Windsor Dental Care, we understand the importance of a beautiful smile. It's not just about aesthetics; it's about feeling confident and happy in your own skin. That's why we're proud to offer our patients the latest in orthodontic treatment with our state-of-the-art clear aligners.",
+        subLabel: "Clear Aligners"
+    },
+    faqs : [{
+        question: "How long does clear aligner treatment take?",
+        answer:<div className="space-y-3">
+            <p>Most treatments last 6–18 months, depending on your alignment needs.</p>
+        </div>,
+    },{
+        question: "Do clear aligners hurt?",
+        answer: <div className="space-y-3">
+            <p>You may feel mild pressure when switching to a new tray, but it’s temporary and shows the aligners are working.</p>
+        </div>,
+    },{
+        question: "How many hours a day should I wear them?",
+        answer: <div className="space-y-3">
+            <p>Aligners must be worn 20–22 hours per day for best results.</p>
+        </div>,
+    },{
+        question: "Can I eat with my aligners on?",
+        answer: <div className="space-y-3">
+            <p>No, remove them before eating or drinking anything other than water to avoid damage.</p>
+        </div>,
+    }],
+
+    sections : [ {
+        img: "",
+        hint: "Discover the",
+        title: "Clear Aligners Difference",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Clear aligners offer a modern, nearly invisible solution to straighten your teeth without the need for traditional braces. Custom-made to fit your teeth perfectly, they gently guide your teeth into their correct positions over time. Here's why our patients love them:</p>
+            <p><strong>Virtually Invisible:</strong> Crafted from clear, flexible plastic, our aligners are discreet and hard to notice.</p>
+            <p><strong>Comfort:</strong> Designed to fit snugly over your teeth, each aligner is smooth, with no sharp edges to irritate your mouth.</p>
+            <p><strong>Convenience:</strong> Clear aligners can be removed for eating, drinking, brushing, and flossing, making them a convenient option for a busy lifestyle.</p>
+            <p><strong>Efficiency:</strong> For many patients, treatment times are comparable to those of traditional braces, with less discomfort and fewer visits to the dentist.</p>
+        </div>
+    },{
+        img: "",
+        hint: "Your Journey to A",
+        title: "Perfect Smile",
+        desc_1 : <div>
+            <p>Where your smile is our passion. Our clear aligners are designed to straighten your teeth discreetly and comfortably, allowing you to achieve the smile you've always desired.</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Initial Consultation",
+            desc: "Your path to a brighter smile begins with a consultation at Windsor Dental Care. Our expert team will assess your dental needs and determine if clear aligners are the right choice for you."
+        },{
+            icon: "",
+            title: "Custom Treatment Plan",
+            desc: "Utilising the latest in 3D imaging technology, we'll craft a personalised treatment plan designed to achieve your ideal smile. You'll even get a sneak peek of your future smile before you begin treatment."
+        },{
+            icon: "",
+            title: "Receive Your Aligners",
+            desc: "You'll receive a series of custom aligners to wear. Each set is worn for about two weeks before moving on to the next, gradually shifting your teeth into their perfect positions."
+        },{
+            icon: "",
+            title: "Achieve Your Dream Smile",
+            desc: "Once your treatment is complete, we'll provide you with a retainer to ensure your new smile lasts a lifetime."
+        }]
+    }]
+}],
 }]
 
 export const paymentMethodsData = [
