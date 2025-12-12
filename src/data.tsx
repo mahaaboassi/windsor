@@ -1786,12 +1786,12 @@ export const categories = [{
         content: "Highly skilled professionals ensuring precise and effective teeth alignment.",
         icon: ""
     },{
-        title: "State-of-the-Art Technology",
+        title: "State of the Art Technology",
         content: "Digital imaging and treatment planning for accurate and predictable results.",
         icon: ""
     },{
         title: "Premium Materials",
-        content: "High-quality aligners and braces for comfort, durability, and excellent aesthetics.",
+        content: "High quality aligners and braces for comfort, durability, and excellent aesthetics.",
         icon: ""    
     },{
         title: "Tailored Treatment Plans",
