@@ -34,7 +34,7 @@ const data: ItemContact[] = [{
         desc: "Fast, reliable care for tooth pain, injuries, or unexpected dental emergencies.",
     },{
         img: img_6,
-        name: "ORTHODONTIST",
+        name: "CLEAR ALIGNERS",
         desc: "Straighten your teeth and perfect your bite with modern braces or clear aligners.",
     },]
 const tooth = <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
