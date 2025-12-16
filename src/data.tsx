@@ -19,9 +19,9 @@ import cat_5 from "./assets/images/cat_3_3.webp";
 import cat_sm_5 from "./assets/images/cat_sm_3_3.webp";
 import cat_sec_5 from "./assets/images/cat_5.webp";
 
-import cat_6 from "./assets/images/cat_6_6.webp";
-import cat_sm_6 from "./assets/images/cat_sm_6_6.webp";
-import cat_sec_6 from "./assets/images/cat_sec_6.webp";
+// import cat_6 from "./assets/images/cat_6_6.webp";
+// import cat_sm_6 from "./assets/images/cat_sm_6_6.webp";
+// import cat_sec_6 from "./assets/images/cat_sec_6.webp";
 
 import mail from "./assets/images/mail.png"
 import phone from "./assets/images/phone.png"
