@@ -25,6 +25,7 @@ type Section = {
     hint: string;
     title: string;
     desc_1: ReactNode;
+    desc_2?: ReactNode;
     service?: Partial<Service>[];
 };
 
@@ -138,6 +139,29 @@ const Service = ()=>{
                 </div>
             </div>
             
+        </div>
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 container-layout">
+            <div className="flex flex-col gap-5 md:gap-10">
+                <Heading desc="" title={data?.sections[2].title ?? ""} hint={data?.sections[2].hint ?? ""} />
+                <div className="desc">{data?.sections[2].desc_1}</div>
+                <div className="flex flex-col gap-3">
+                    {
+                        data?.sections[2].service?.map((e,idx)=>(
+                            <div key={`${e.title}_${idx}`} className="flex gap-3 option">
+                                <div className="w-[20px] h-[20px] border border-[2px] border-[var(--grey_2)] rounded-full bg-[var(--main)] flex justify-center items-center"></div>
+                                <div className="flex flex-col gap-1 w-full">
+                                    <div className="title">{e.title}</div>
+                                    <p className="">{e.desc}</p>
+                                </div>
+                            </div>
+                        ))
+                    }
+
+                </div>
+            </div>
+            <div className="relative">
+                <div className="sticky top-50 flex justify-center"><img className="max-h-[300px] xs:max-h-[400px] md:max-h-[500px] object-contain" src={data?.sections[0].img? data?.sections[0].img:img_2} alt="Image" /></div>
+            </div>
         </div>
         <StepsCard type={cat?.category || ""} data={dataWhyUs ?? []} hint="Why Us" title={`Why Choose WINDSOR DENTAL`} />
         <div className="flex flex-col gap-5 container-layout">

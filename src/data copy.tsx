@@ -193,70 +193,35 @@ export const categories = [
             hint: "About the service",
             title: "What Is Root Canal Treatment?",
             desc_1 : <div className="flex flex-col gap-2">
-                <p>A root canal treatment is a common dental procedure that removes infection from inside the tooth and helps save it from extraction..</p>
+                <p>A root canal treatment is a common dental procedure that removes infection from inside the tooth and helps save it from extraction.</p>
                 <p>Inside each tooth is a soft tissue called the pulp, which contains nerves and blood vessels. When this tissue becomes infected due to deep decay, cracks, or trauma, it can cause severe pain and sensitivity.</p>
                 <p>Root canal therapy gently removes the infected pulp, disinfects the tooth, and seals it to prevent future infection, giving you back a healthy, pain-free smile.</p>
                 <p>At Windsor Dental Care, we make root canal treatment simple, stress-free, and comfortable.</p>
             </div>
         },{
             img: service_1_sec_2,
-            hint: "Key Dental Issues That Require Treatment",
+            hint: "Key Dental Issues That Require",
             title: "When Do You Need a Root Canal and Why Is It Important?",
-            desc_1 : <div className="flex flex-col gap-2">
-                <p>Ignoring these signs can lead to spreading infection, bone damage, or even tooth loss.
-                 A root canal allows you to save your natural teeth, restore full function, and prevent more complex treatments later.
-                </p>
-                <p>You may need a root canal if you notice:</p>
+            desc_1 : <div>
+                <p>Your dentist can determine the necessity for a root canal by observing indications of dental issues. Nonetheless, there are certain warning signs that could suggest an infection in the tooth pulp, requiring prompt attention to prevent further complications.</p>
             </div>,
             service: [{
                 icon: "",
-                title: "Persistent tooth pain or throbbing",
-                desc: ""
+                title: "EXTENSIVE CAVITIES AND TOOTH DECAY",
+                desc: "If a cavity or decay penetrates deeply into your tooth, reaching the inner core (dental pulp), a root canal might be necessary. This procedure can repair and save a tooth that is damaged or infected, offering an alternative to tooth extraction."
             },{
                 icon: "",
-                title: "Sensitivity to hot or cold that lingers",
-                desc: ""
+                title: "TRAUMA",
+                desc: "When your tooth experiences chips or cracks from physical trauma or mouth injury, bacteria can infiltrate the tooth, potentially leading to cavities. It's advisable to visit your dentist promptly if you observe any chipping in your tooth."
             },{
                 icon: "",
-                title: "Swollen or tender gums near one tooth",
-                desc: ""
+                title: "PERSISTENT TOOTH PAIN",
+                desc: "You may experience constant tooth pain or discomfort that intermittently subsides, only to reoccur later. This pain could manifest as a deep ache in your tooth, spreading to your jaws, face, or adjacent teeth. If you're dealing with ongoing tooth pain, our team will assess your condition to decide if a root canal is the appropriate solution."
             },{
                 icon: "",
-                title: "Tooth discoloration or darkening",
-                desc: ""
-            },{
-                icon: "",
-                title: "A pimple-like bump on the gum",
-                desc: ""
-            }]
-        },{
-            img: service_1_sec_2,
-            hint: "A Clear Guide from Start to Finish",
-            title: "How the Root Canal Process Works",
-            desc_1 : <div className="flex flex-col gap-2">
-                <p>Our experienced dental team at Windsor Dental Care uses the latest technology to ensure a gentle, efficient, and pain-free experience.</p>
-                <p>Here’s what to expect:</p>
-            </div>,
-            service: [{
-                icon: "",
-                title: "Examination & X-rays ",
-                desc: "We identify the cause of pain and confirm infection."
-            },{
-                icon: "",
-                title: "Local Anaesthetic ",
-                desc: "The area is fully numbed for a comfortable procedure."
-            },{
-                icon: "",
-                title: "Cleaning the Canal ",
-                desc: "Infected tissue is carefully removed."
-            },{
-                icon: "",
-                title: "Disinfection & Filling ",
-                desc: "The canal is cleaned, shaped, and sealed."
-            },{
-                icon: "",
-                title: "Tooth Restoration ",
-                desc: "A filling or crown restores strength and appearance."
+                link: "/services/toothache/",
+                title: "SWELLING AROUND THE AREA",
+                desc: "Feeling tenderness or swelling in your gums may be a sign of a tooth infection. If left unaddressed, this issue could lead to more severe complications, such as tooth loss. At Windsor Dental Care, we specialise in root canal treatments designed to alleviate your toothache and prevent irreversible damage"
             }]
         }]
     },{
@@ -291,64 +256,38 @@ export const categories = [
         }],
         sections : [ {
             img: service_2_sec_1,
-            hint: "About the service",
-            title: "What Is Wisdom Teeth Removal?",
+            hint: "A Relaxing",
+            title: "Wisdom Tooth Extraction Experience",
             desc_1 : <div className="flex flex-col gap-2">
-                <p>Wisdom teeth removal is a dental procedure to extract one or more of the third molars located at the back of your mouth. These teeth often emerge during late teens or early twenties and can cause pain, crowding, or infection if there isn’t enough space for them to grow properly. Removing them helps prevent dental complications and maintains overall oral health.</p>
-                <p>The procedure is typically straightforward and performed under local anesthesia or sedation to ensure comfort. Early evaluation and timely removal can reduce the risk of complications, support proper alignment of surrounding teeth, and help preserve long-term oral health.</p>
+                <p>Removing wisdom teeth can often be a daunting experience, emphasizing the importance of proper wound care to avoid infections.</p>
+                <p>The emergence of wisdom teeth can lead to discomfort, including swelling and difficulties with chewing. It's natural to feel apprehensive about the surgery or to be uncertain about what the procedure entails.</p>
+                <p>Wisdom tooth extraction is a common dental practice aimed at removing the last set of molars to avert potential tooth damage. This procedure is performed in either a dental clinic or a hospital setting, utilizing anesthesia to ensure patient comfort.</p>
+                <p>At Windsor Dental Care, we are dedicated to ensuring your extraction process is as smooth and pain-free as possible. Our skilled team is committed to providing comprehensive support, from the initial consultation through to your recovery, ensuring you're well-informed and comfortable throughout the entire process.</p>
             </div>
         },{
             img: service_2_sec_2,
-            hint: "Key Dental Issues That Require Treatment",
-            title: "When Do You Need a Wisdom Teeth Removal and Why Is It Important?",
-            desc_1 : <div className="flex flex-col gap-2">
-                <p>Early removal of problematic wisdom teeth can prevent pain, infections, damage to neighboring teeth, and cyst formation, keeping your oral health on track.</p>
-                <p>You may need wisdom teeth removal if you experience:</p>
-            </div>,
-            service: [{
-                icon: "",
-                title: "Persistent jaw pain or pressure",
-                desc: ""
-            },{
-                icon: "",
-                title: "Swollen or tender gums around the back teeth",
-                desc: ""
-            },{
-                icon: "",
-                title: "Difficulty opening your mouth or chewing",
-                desc: ""
-            },{
-                icon: "",
-                title: "Recurrent infections near the wisdom teeth",
-                desc: ""
-            },{
-                icon: "",
-                title: "Crowding or misalignment of other teeth",
-                desc: ""
-            },]
-        },{
-            img: service_2_sec_2,
-            hint: "A Clear Guide from Start to Finish",
-            title: "How the Wisdom Teeth Removal Process Works",
+            hint: "Oral Health Issues Necessitating",
+            title: "Wisdom Tooth Extraction",
             desc_1 : <div>
-                <p>Our team at Windsor Dental Care uses modern techniques and sedation options to ensure a smooth, comfortable experience.</p>
+                <p>The symptoms associated with emerging wisdom teeth can be bothersome and uncomfortable. Yet, it's not always necessary to remove wisdom teeth. Your dentist will take several factors into account before suggesting an extraction, such as:</p>
             </div>,
             service: [{
                 icon: "",
-                title: "Consultation & X-rays",
-                desc: "Assess the position and condition of your wisdom teeth."
+                link: "/services/tooth-extractions/",
+                title: "Dental Crowding",
+                desc: "When wisdom teeth emerge, they require adequate space. However, there can be instances where the mouth is too crowded with existing teeth. This overcrowding may lead to the shifting and misalignment of neighboring teeth. Therefore, to prevent these issues, wisdom tooth extraction is often performed."
             },{
                 icon: "",
-                title: "Local Anaesthetic / Sedation ",
-                desc: "Ensures you are comfortable during the procedure."
+                title: "Potential for Tooth Harm",
+                desc: "Wisdom teeth, being the final set to emerge, often struggle to find sufficient room to properly surface. This lack of space, closely tied to dental overcrowding, can result in an impacted tooth. Such a tooth may exert pressure on adjacent teeth, leading to potential damage, an increased likelihood of decay, and overall compromised dental health."
             },{
                 icon: "",
-                title: "Tooth Extraction ",
-                desc: "Carefully removes the wisdom tooth with minimal trauma."
+                title: "Discomfort and Infection in Teeth",
+                desc: "Should you notice discomfort or swelling in your jaw or gums, it's probable that a wisdom tooth is emerging. A wisdom tooth that has only partially surfaced carries a significant risk of becoming infected. This is because food particles and plaque can become lodged between the wisdom tooth and the gums, fostering bacterial growth. Our dental team is ready to alleviate your discomfort and safeguard your oral health."
             },{
                 icon: "",
-                title: "Post-Extraction Care ",
-                desc: "Guidance provided for faster healing and infection prevention."
+                title: "Obstructed Tooth",
+                desc: "Pain stemming from an impacted wisdom tooth can hinder your dental hygiene routine. The crowding and limited space make it challenging to brush, floss, and clean your teeth effectively. In such cases, your dentist might suggest the removal of the wisdom tooth to ensure proper oral care can be maintained."
             }]
         }]
     },{
@@ -383,65 +322,37 @@ export const categories = [
         }],
         sections : [ {
             img: service_3_sec_1,
-            hint: "About the service",
-            title: "What Is Gum Disease Treatment?",
+            hint: "Experience Relief from",
+            title: "Gum Issues with Our Comprehensive Gum Disease Treatment",
             desc_1 : <div className="flex flex-col gap-2">
-                <p>Gum disease (periodontal disease) is a common dental condition caused by the buildup of bacteria and plaque along the gumline. It often begins with mild symptoms such as red, swollen, or bleeding gums and persistent bad breath. Without proper treatment, the infection can worsen over time and may eventually lead to gum recession, bone damage, and tooth loss.</p>
-                <p>Gum disease develops in stages. Gingivitis is the early stage and involves inflammation of the gums that is often reversible with good oral hygiene and professional care. Periodontitis is the more advanced stage, where the infection spreads deeper, causing permanent damage to the gums and supporting bone, leading to loose teeth and potential tooth loss.</p>
+                <p>Gum disease is a serious condition that, if left untreated, can lead to tooth loss and pose potential health risks. Symptoms may include bleeding, swelling, and redness of the gums.</p>
+                <p>Untreated gum disease can result in tooth and bone loss, as well as impact overall health. It's crucial to address this condition promptly with the guidance of a dentist.</p>
+                <p>Various treatments are available to prevent and manage gum disease, with the choice of treatment depending on factors like severity, overall health, and previous responses to procedures. Treatment options range from nonsurgical approaches to surgical interventions aimed at promoting gum healing and tissue restoration.</p>
+                <p>At Windsor Dental Care, we offer a comprehensive range of gum disease treatments, tailoring our approach to your specific needs. We're dedicated to finding the most suitable treatment plan to address your individual requirements</p>
             </div>
         },{
             img: service_3_sec_2,
-            hint: "Key Dental Issues That Require Treatment",
-            title: "When Do You Need a Gum Disease and Why Is It Important?",
-            desc_1 : <div className="flex flex-col gap-2">
-                <p>Treating gum disease early can prevent tooth loss, protect your jawbone, and improve overall oral health.</p>
-                <p>You may need gum disease treatment if you notice:</p>
+            hint: "Frequent Causes for Seeking",
+            title: "Gum Disease Treatment",
+            desc_1 : <div>
+                <p>To identify potential gum issues that may require treatment, it's essential to recognize common dental problems associated with them. The following signs may suggest the need for gum disease treatment:</p>
             </div>,
             service: [{
                 icon: "",
-                title: "Bleeding or tender gums while brushing or flossing",
-                desc: ""
+                title: "Red and Swollen Gums",
+                desc: "These are among the most prevalent indicators of gum irritation or possible infection. While redness and swelling often resolve within a few days, if they persist, it's advisable to promptly reach out to your dentist for evaluation and potential treatment."
             },{
                 icon: "",
-                title: "Persistent bad breath or a bad taste in your mouth",
-                desc: ""
+                title: "Gum Recession",
+                desc: "When you observe that your teeth appear longer than usual, it may be a sign of gum recession, where the gums are shrinking and receding. This condition can potentially lead to tooth mobility or loosening and, over time, may necessitate extraction. Seeking gum disease treatment can be a proactive step to prevent this complication."
             },{
                 icon: "",
-                title: "Receding gums or longer-looking teeth",
-                desc: ""
+                title: "Tooth Sensitivity",
+                desc: "If you experience discomfort or a sharp sensation when consuming cold beverages, it could be indicative of tooth sensitivity to temperature changes. This sensitivity may coincide with gum recession, which exposes the vulnerable part of the tooth known as dentin."
             },{
                 icon: "",
-                title: "Loose or shifting teeth",
-                desc: ""
-            },{
-                icon: "",
-                title: "Swollen or red gums",
-                desc: ""
-            }]
-        },{
-            img: service_3_sec_2,
-            hint: "A Clear Guide from Start to Finish",
-            title: "How Gum Disease Treatment Works",
-            desc_1 : <div className="flex flex-col gap-2">
-                <p>Our experienced team at Windsor Dental Care uses modern, gentle techniques to restore gum health.</p>
-                <p>Treatment process:</p>
-            </div>,
-            service: [{
-                icon: "",
-                title: "Comprehensive Examination & X-rays ",
-                desc: "Assess the severity of gum disease."
-            },{
-                icon: "",
-                title: "Professional Cleaning (Scaling & Root Planing) ",
-                desc: "Remove plaque and tartar below the gumline."
-            },{
-                icon: "",
-                title: "Antibacterial Treatments ",
-                desc: "Reduce infection and promote healing."
-            },{
-                icon: "",
-                title: "Follow-Up Care & Maintenance ",
-                desc: "Customized home care plan and routine check-ups."
+                title: "Tooth Mobility or Shifting",
+                desc: "Gum disease has the potential to impact the supportive bone structures that anchor your teeth, leading to tooth mobility or loosening. The good news is that there are treatments available to address this dental concern, helping to protect your teeth and gums."
             }]
         }]
     },{
@@ -476,65 +387,36 @@ export const categories = [
         }],
         sections : [ {
             img: service_4_sec_1,
-            hint: "About the service",
-            title: "What Is Children's Dentistry Treatment?",
+            hint: "Pedriatic Dentistry",
+            title: "Committed To Your Child's Dental Well-Being",
             desc_1 : <div className="flex flex-col gap-2">
-                <p>Children’s dentistry (pediatric dentistry) focuses on the oral health of infants, children, and adolescents. Regular check-ups and preventive care help build healthy habits early, detect problems early, and ensure proper growth and development of teeth and jaws.</p>
-                <p>Children’s dentistry also emphasizes preventive treatments such as fluoride applications, dental sealants, and guidance on proper brushing and nutrition. Pediatric dentists are trained to create a comfortable, child-friendly environment that helps reduce anxiety and encourages positive dental experiences. Early dental care not only protects against cavities and gum problems but also supports proper speech development, bite alignment, and long-term oral health.</p>
+                <p>Many parents or guardians may feel uncertain about bringing their child to the dentist, worried it could be a stressful or upsetting experience.</p>
+                <p>However, delaying a visit can lead to bigger issues such as cavities, tooth decay, and gum disease. Early intervention is key to preventing these common concerns.</p>
+                <p>At Windsor Dental Care, our friendly and experienced children's dentist in Windsor are passionate about building positive oral health habits from a young age. We provide comprehensive pediatric dental care for babies, toddlers, children, and teenagers. Our team uses gentle techniques to make every kids dental check-up calm, comfortable, and reassuring. Helping children feel at ease, every step of the way.</p>
             </div>
         },{
             img: service_4_sec_2,
-            hint: "Key Dental Issues That Require Treatment",
-            title: "When Do You Need a Children's Dentistry and Why Is It Important?",
-            desc_1 : <div className="flex flex-col gap-2">
-                <p>Regular visits help prevent dental problems, guide proper growth, and promote a positive attitude toward oral health.</p>
-                <p>Your child may need pediatric dental care if you notice:</p>
+            hint: "Top Reasons To Visit",
+            title: "Pediatric Dentist",
+            desc_1 : <div>
+                <p>Many parents wonder why it's necessary to take their children to the dentist, especially when their teeth are only beginning to come in. Understanding the typical dental issues that can arise in children is crucial for making informed decisions. Your child's dental health is vital to us, and we are committed to not only caring for their teeth but also supporting the overall health and happiness of your young one.</p>
             </div>,
             service: [{
                 icon: "",
-                title: "Tooth decay or cavities",
-                desc: ""
+                title: "Dental Cavities",
+                desc: "Tooth decay is a prevalent long-term dental issue in children, caused by the buildup of plaque, a sticky substance on the teeth. This condition occurs when plaque comes into contact with sugars and starches, leading to decay. Given children's frequent consumption of sweet treats, they are particularly at risk for developing cavities and decay."
             },{
                 icon: "",
-                title: "Early loss of baby teeth or crowding",
-                desc: ""
+                title: "Halitosis",
+                desc: "The unpleasant odor in the mouth is primarily due to bacteria residing there. These bacteria consume remnants of food, fluids, and plaque, releasing hydrogen sulfide, which is responsible for the bitter taste and bad smell. Your dentist can offer solutions to help minimize this issue."
             },{
                 icon: "",
-                title: "Sensitive or painful teeth and gums",
-                desc: ""
+                title: "Oral Ulcers",
+                desc: "Mouth sores typically represent a slight annoyance, often disappearing within a week or two. They may appear on any of the soft tissues within the mouth, including the cheeks, lips, tongue, and gums. These sores can cause discomfort when chewed on, particularly for young ones. Although not a major dental concern, they can sometimes signal other underlying issues. Regular dental examinations can facilitate early intervention and treatment."
             },{
                 icon: "",
-                title: "Habits-like thumb sucking or teeth grinding",
-                desc: ""
-            },{
-                icon: "",
-                title: "Fear or anxiety around dental visits",
-                desc: ""
-            }]
-        },{
-            img: service_4_sec_2,
-            hint: "A Clear Guide from Start to Finish",
-            title: "How Children's Dentistry Proccess Works",
-            desc_1 : <div className="flex flex-col gap-2">
-                <p>Our experienced team at Windsor Dental Care uses modern, gentle techniques to restore gum health.</p>
-                <p>Treatment process:</p>
-            </div>,
-            service: [{
-                icon: "",
-                title: "Comprehensive Examination & X-rays ",
-                desc: "Assess the severity of gum disease."
-            },{
-                icon: "",
-                title: "Professional Cleaning (Scaling & Root Planing) ",
-                desc: "Remove plaque and tartar below the gumline."
-            },{
-                icon: "",
-                title: "Antibacterial Treatments ",
-                desc: "Reduce infection and promote healing."
-            },{
-                icon: "",
-                title: "Follow-Up Care & Maintenance ",
-                desc: "Customized home care plan and routine check-ups."
+                title: "Thumb Sucking Habit",
+                desc: "Many children naturally gravitate towards thumb sucking from birth. While this behavior isn't inherently problematic, it warrants attention if it persists as your child ages. Dental professionals frequently advise discouraging thumb sucking, particularly as their teeth begin to emerge, to prevent potential dental issues, including teeth misalignment."
             }]
         }]
     },{
@@ -569,57 +451,35 @@ export const categories = [
         }],
         sections : [ {
             img: service_5_sec_1,
-            hint: "About the service",
-            title: "What Is Mouthguards Treatment?",
+            hint: "Minimize Dental Injury",
+            title: "Risks Now With Personalized Mouthguards",
             desc_1 : <div className="flex flex-col gap-2">
-                    <p>Mouthguards are protective devices worn over your teeth and gums to prevent injuries during sports, physical activities, or teeth grinding while sleeping. They cushion impacts, reduce the risk of broken teeth and jaw injuries, and protect soft tissues like lips and cheeks, helping you maintain a healthy smile.</p>
-
-                    <p>Custom-fitted mouthguards provide the best protection and comfort, staying securely in place and lasting longer than standard options. They are ideal for athletes, children in sports, and anyone who grinds their teeth at night, helping prevent injuries and dental stress while allowing you to stay confident and active.</p>
-                </div>
+                <p>Dental injuries are particularly common among individuals who participate in sports. Without a mouthguard, the risk of experiencing a dental injury during sports activities is significantly increased, by up to five times.</p>
+                <p>The reluctance to wear mouthguards often stems from concerns about comfort or the perception that they are not essential. However, mouthguards tailored by a dentist can offer a comfortable fit and are crucial for safeguarding against dental injuries.</p>
+                <p>Windsor Dental Care provides custom-fitted mouthguards designed to protect your teeth effectively. Crafted from superior quality materials, our mouthguards promise a snug and comfortable fit. With a variety of colors and styles available, you're sure to find the ideal mouthguard that suits your preference.</p>
+            </div>
         },{
             img: service_5_sec_2,
-            hint: "Key Dental Issues That Require Treatment",
-            title: "When Do You Need a Mouthguards and Why Is It Important?",
-            desc_1 : <div className="flex flex-col gap-2">
-                <p>Using a custom mouthguard can reduce the risk of dental trauma, protect restorations, and prevent long-term damage.</p>
-                <p>You may need a mouthguard if you experience:</p>
+            hint: "Top Reasons To Consider Using A",
+            title: "Mouthguard",
+            desc_1 : <div>
+                <p>Anyone can benefit from wearing a mouthguard to shield their teeth against the impact from sports, recreational pursuits, and various high-intensity activities. Key reasons for opting for a custom-fitted mouthguard include the following:</p>
             </div>,
             service: [{
-                icon: "Playing contact sports like football, basketball, or martial arts",
-                desc: ""
-            },{
-                icon: "Teeth grinding or clenching at night",
-                desc: ""
-            },{
-                icon: "Jaw pain, headaches, or worn teeth due to bruxism",
-                desc: ""
-            },{
-                icon: "A desire to prevent dental injuries or fractures",
-                desc: ""
-            },]
-        },{
-            img: service_5_sec_2,
-            hint: "A Clear Guide from Start to Finish",
-            title: "How Mouthguards Proccess Works",
-            desc_1 : <div className="flex flex-col gap-2">
-                <p>Our dental team ensures your mouthguard fits perfectly for comfort and protection.</p>
-            </div>,
-            service: [{
-                icon: "",
-                title: "Comprehensive Examination & X-rays ",
-                desc: "Assess the severity of gum disease."
+                icon: "Cracked Teeth",
+                desc: "A fractured tooth occurs when a visible crack appears in your tooth. While it might seem minor and inconsequential at first, it's important not to ignore it. These cracks can lead to your tooth splitting or breaking in some instances. To prevent such issues, our dentist might suggest using a mouthguard."
             },{
                 icon: "",
-                title: "Professional Cleaning (Scaling & Root Planing) ",
-                desc: "Remove plaque and tartar below the gumline."
+                title: "Knocked-Out Teeth",
+                desc: "Incidents such as a strong impact to the face or mouth can result in a tooth being dislodged. Activities such as boxing, football, hockey, and basketball carry a higher risk of dental injuries. To mitigate this risk, wearing a customized mouthguard is recommended."
             },{
                 icon: "",
-                title: "Antibacterial Treatments ",
-                desc: "Reduce infection and promote healing."
+                title: "Teeth Grinding (Bruxism)",
+                desc: "Chronic tooth grinding can lead to significant enamel damage and weaken your teeth. Using a custom-fitted mouthguard is an effective method to shield your teeth from the wear and tear caused by persistent clenching and grinding."
             },{
                 icon: "",
-                title: "Follow-Up Care & Maintenance ",
-                desc: "Customized home care plan and routine check-ups."
+                title: "Dental Displacement Or Concussion",
+                desc: "Teeth luxation can occur due to various incidents, including falls and accidents. This condition arises when the supporting tissues of your tooth are damaged, leading to sensitivity and bleeding without actual tooth movement. Allow our team to assist you in preventing this dental issue by safeguarding your teeth with a custom-made mouthguard."
             }]
         }]
     },{
