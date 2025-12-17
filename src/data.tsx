@@ -3,20 +3,54 @@ import cat_1 from "./assets/images/cat_1_1.webp";
 import cat_sm_1 from "./assets/images/cat_sm_1_1.webp";
 import cat_sec_1 from "./assets/images/cat_1.webp";
 // services
-import service_1_sec_1 from "./assets/images/services/sec_1_service_1.png";
-import service_1_sec_2 from "./assets/images/services/sec_2_service_1.png";
-import service_2_sec_1 from "./assets/images/services/sec_1_service_2.png";
-import service_2_sec_2 from "./assets/images/services/sec_2_service_2.png";
-import service_3_sec_1 from "./assets/images/services/sec_1_service_3.png";
-import service_3_sec_2 from "./assets/images/services/sec_2_service_3.png";
-import service_4_sec_1 from "./assets/images/services/sec_1_service_4.png";
-import service_4_sec_2 from "./assets/images/services/sec_2_service_4.png";
-import service_5_sec_1 from "./assets/images/services/sec_1_service_5.png";
-import service_5_sec_2 from "./assets/images/services/sec_2_service_5.png";
-import service_6_sec_1 from "./assets/images/services/sec_1_service_6.png";
-import service_6_sec_2 from "./assets/images/services/sec_2_service_6.png";
-import service_7_sec_1 from "./assets/images/services/sec_1_service_7.png";
-import service_7_sec_2 from "./assets/images/services/sec_2_service_7.png";
+import service_1_sec_1 from "./assets/images/services/sec_1_service_1.webp";
+import service_1_sec_2 from "./assets/images/services/sec_2_service_1.webp";
+import service_2_sec_1 from "./assets/images/services/sec_1_service_2.webp";
+import service_2_sec_2 from "./assets/images/services/sec_2_service_2.webp";
+import service_3_sec_1 from "./assets/images/services/sec_1_service_3.webp";
+import service_3_sec_2 from "./assets/images/services/sec_2_service_3.webp";
+import service_4_sec_1 from "./assets/images/services/sec_1_service_4.webp";
+import service_4_sec_2 from "./assets/images/services/sec_2_service_4.webp";
+import service_5_sec_1 from "./assets/images/services/sec_1_service_5.webp";
+import service_5_sec_2 from "./assets/images/services/sec_2_service_5.webp";
+import service_6_sec_1 from "./assets/images/services/sec_1_service_6.webp";
+import service_6_sec_2 from "./assets/images/services/sec_2_service_6.webp";
+import service_7_sec_1 from "./assets/images/services/sec_1_service_7.webp";
+import service_7_sec_2 from "./assets/images/services/sec_2_service_7.webp";
+import service_8_sec_1 from "./assets/images/services/sec_1_service_8.webp";
+import service_8_sec_2 from "./assets/images/services/sec_2_service_8.webp";
+import service_9_sec_1 from "./assets/images/services/sec_1_service_9.webp";
+import service_9_sec_2 from "./assets/images/services/sec_2_service_9.webp";
+import service_10_sec_1 from "./assets/images/services/sec_1_service_10.webp";
+import service_10_sec_2 from "./assets/images/services/sec_2_service_10.webp";
+import service_11_sec_1 from "./assets/images/services/sec_1_service_11.webp";
+import service_11_sec_2 from "./assets/images/services/sec_2_service_11.webp";
+import service_12_sec_1 from "./assets/images/services/sec_1_service_12.webp";
+import service_12_sec_2 from "./assets/images/services/sec_2_service_12.webp";
+import service_13_sec_1 from "./assets/images/services/sec_1_service_13.webp";
+import service_13_sec_2 from "./assets/images/services/sec_2_service_13.webp";
+import service_14_sec_1 from "./assets/images/services/sec_1_service_14.webp";
+import service_14_sec_2 from "./assets/images/services/sec_2_service_14.webp";
+import service_15_sec_1 from "./assets/images/services/sec_1_service_15.webp";
+import service_15_sec_2 from "./assets/images/services/sec_2_service_15.webp";
+import service_16_sec_1 from "./assets/images/services/sec_1_service_16.webp";
+import service_16_sec_2 from "./assets/images/services/sec_2_service_16.webp";
+import service_17_sec_1 from "./assets/images/services/sec_1_service_17.webp";
+import service_17_sec_2 from "./assets/images/services/sec_2_service_17.webp";
+import service_18_sec_1 from "./assets/images/services/sec_1_service_18.webp";
+import service_18_sec_2 from "./assets/images/services/sec_2_service_18.webp";
+import service_19_sec_1 from "./assets/images/services/sec_1_service_19.webp";
+import service_19_sec_2 from "./assets/images/services/sec_2_service_19.webp";
+import service_20_sec_1 from "./assets/images/services/sec_1_service_20.webp";
+import service_20_sec_2 from "./assets/images/services/sec_2_service_20.webp";
+import service_21_sec_1 from "./assets/images/services/sec_1_service_21.webp";
+import service_21_sec_2 from "./assets/images/services/sec_2_service_21.webp";
+import service_22_sec_1 from "./assets/images/services/sec_1_service_22.webp";
+import service_22_sec_2 from "./assets/images/services/sec_2_service_22.webp";
+import service_23_sec_1 from "./assets/images/services/sec_1_service_23.webp";
+import service_23_sec_2 from "./assets/images/services/sec_2_service_23.webp";
+
+
 import cat_2 from "./assets/images/cat_4_4.webp";
 import cat_sm_2 from "./assets/images/cat_sm_4_4.webp";
 import cat_sec_2 from "./assets/images/cat_2.webp";
@@ -657,7 +691,7 @@ export const categories = [
         </div>,
     }],
     sections : [ {
-        img: "",
+        img: service_8_sec_1,
         hint: "Achieve A Beaming Smile",
         title: "Through Our Teeth Whitening Service",
         desc_1 : <div className="flex flex-col gap-2">
@@ -666,7 +700,7 @@ export const categories = [
             <p>Windsor Dental Care provides a secure and efficient teeth whitening service that can significantly brighten your teeth in just a single session. Our dental experts employ cutting-edge technology to deliver optimal outcomes swiftly.</p>
         </div>
     },{
-        img: "",
+        img: service_8_sec_2,
         hint: "Top Causes For Considering",
         title: "Teeth Whitening",
         desc_1 : <div>
@@ -721,7 +755,7 @@ export const categories = [
         </div>,
     }],
     sections : [ {
-        img: "",
+        img: service_9_sec_1,
         hint: "Authentic-Appearing",
         title: "Dental Veneers For A Radiant Smile",
         desc_1 : <div className="flex flex-col gap-2">
@@ -730,7 +764,7 @@ export const categories = [
             <p>Fortunately, dental veneers present an excellent alternative to conventional cosmetic dental treatments like braces or whitening. At Windsor Dental Care, our team specialises in affixing slender, tooth-colored coverings onto the front of your teeth. These veneers skillfully hide any intrinsic stains or misalignments, offering a less invasive solution. With the right maintenance, veneers can provide enduring beauty and function.</p>
         </div>
     },{
-        img: "",
+        img: service_9_sec_2,
         hint: "Top Motivations For Considering",
         title: "Dental Veneers",
         desc_1 : <div>
@@ -787,7 +821,7 @@ export const categories = [
     }],
 
     sections : [ {
-        img: "",
+        img: service_10_sec_1,
         hint: "Discover the",
         title: "Clear Aligners Difference",
         desc_1 : <div className="flex flex-col gap-2">
@@ -798,7 +832,7 @@ export const categories = [
             <p><strong>Efficiency:</strong> For many patients, treatment times are comparable to those of traditional braces, with less discomfort and fewer visits to the dentist.</p>
         </div>
     },{
-        img: "",
+        img: service_10_sec_2,
         hint: "Your Journey to A",
         title: "Perfect Smile",
         desc_1 : <div>
@@ -853,7 +887,7 @@ export const categories = [
         </div>,
     }],
     sections : [ {
-        img: "",
+        img: service_11_sec_1,
         hint: "Boost Your",
         title: "Smile Confidence",
         desc_1 : <div className="flex flex-col gap-2">
@@ -862,7 +896,7 @@ export const categories = [
             <p>At Windsor Dental Care, we provide an extensive selection of smile makeover services designed to enhance your teeth's appearance. From teeth whitening and veneers to dental implants, our range of cosmetic options caters to diverse needs. Our skilled dental team is committed to tailoring a treatment plan that aligns with your lifestyle preferences and financial considerations. Book a consultation with us today to discover how we can assist you in achieving your ideal smile.</p>
         </div>
     },{
-        img: "",
+        img: service_11_sec_2,
         hint: "Top Reasons To Consider",
         title: "A Smile Makeover",
         desc_1 : <div>
@@ -970,7 +1004,7 @@ export const categories = [
         </div>,
     }],
     sections : [ {
-        img: "",
+        img: service_12_sec_1,
         hint: "Maintain and Safeguard",
         title: "your Teeth Through Dental Fillings",
         desc_1 : <div className="flex flex-col gap-2">
@@ -979,7 +1013,7 @@ export const categories = [
             <p>If you find yourself with a cavity, there's no need to worry! Windsor Dental Care is here to assist. We provide dental fillings as a solution to repair and protect your teeth from needing to be extracted. Dental fillings, which can be composed of materials like porcelain, gold, or silver amalgam, are a durable restoration option. The procedure involves removing the decayed portion of the tooth and filling it with a suitable material.</p>
         </div>
     },{
-        img: "",
+        img: service_12_sec_2,
         hint: "Dental Issues Requiring the use of",
         title: "Dental Fillings",
         desc_1 : <div>
@@ -1035,7 +1069,7 @@ export const categories = [
         </div>,
     }],
     sections : [ {
-        img: "",
+        img: service_13_sec_1,
         hint: "Reclaim Your Full Smile With",
         title: "Our Realistic-Looking Dentures",
         desc_1 : <div className="flex flex-col gap-2">
@@ -1045,7 +1079,7 @@ export const categories = [
             <p>Opting for dentures can facilitate easier eating, improve your speech, and prevent jawbone loss. There are two primary types of dentures: complete and partial. Consulting with your dentist will allow you to choose the option that best suits your specific needs and financial considerations.</p>
         </div>
     },{
-        img: "",
+        img: service_13_sec_2,
         hint: "Dental Issues That May Require",
         title: "Dentures",
         desc_1 : <div>
@@ -1100,14 +1134,14 @@ export const categories = [
         </div>,
     }],
     sections : [ {
-        img: "",
+        img: service_14_sec_1,
         hint: "Safeguard and Revitalize",
         title: "Your Smile with Same-Day Crowns",
         desc_1 : <div className="flex flex-col gap-2">
             <p>Windsor Dental Care revolutionizes the dental crown experience with state-of-the-art same-day crown technology. Utilizing Computer-Aided Design (CAD) and Computer-Aided Manufacturing (CAM), they offer custom-made, natural-looking, and comfortable crowns crafted during a single visit. This efficient process eliminates the need for multiple appointments and temporary crowns, ensuring a swift and satisfying experience. Made from durable materials, these crowns promise longevity. For a hassle-free, quick solution to dental crowns, consider booking an appointment with Windsor Dental Care.</p>
         </div>
     },{
-        img: "",
+        img: service_14_sec_2,
         hint: "Key Reasons to Consider",
         title: "Dental Crowns",
         desc_1 : <div>
@@ -1162,7 +1196,7 @@ export const categories = [
         </div>,
     }],
     sections : [ {
-        img: "",
+        img: service_15_sec_1,
         hint: "Reclaim Your Smile Through",
         title: "Dental Bridge Treatment",
         desc_1 : <div className="flex flex-col gap-2">
@@ -1171,7 +1205,7 @@ export const categories = [
             <p>At Windsor Dental Care, we're dedicated to helping you reclaim your smile. Our durable and high-quality dental bridges are designed to allow you to laugh, talk, and eat with confidence again. Our skilled dental team specialises in crafting custom-fitted dental bridges tailored to your unique needs. Book a consultation today to explore how we can assist in restoring your smile!</p>
         </div>
     },{
-        img: "",
+        img: service_15_sec_2,
         hint: "Top Reasons To Consider",
         title: "Dental Bridges For Your Smile",
         desc_1 : <div>
@@ -1275,7 +1309,7 @@ export const categories = [
         </div>,
     }],
     sections : [ {
-        img: "",
+        img: service_16_sec_1,
         hint: "Enhance Your Beautiful Smile with",
         title: "Single Implants",
         desc_1 : <div className="flex flex-col gap-2">
@@ -1284,7 +1318,7 @@ export const categories = [
             <p>Windsor Dental Care specialises in providing dental implants for individual tooth replacement. The process involves securely embedding the implant into the jawbone, followed by the placement of a crown on top to simulate a natural tooth. Notably, dental implants are the only tooth replacement technique that encourages natural bone growth, helping to maintain facial structure and prevent bone loss. If you're considering a dental implant for single tooth replacement, we invite you to contact our office for a consultation. Our skilled dentists are committed to delivering high-quality dental implants that will rejuvenate your smile and self-assurance.</p>
         </div>
     },{
-        img: "",
+        img: service_16_sec_2,
         hint: "Why You Might Require A",
         title: "Single Dental Implant",
         desc_1 : <div>
@@ -1331,7 +1365,7 @@ export const categories = [
         </div>,
     }],
     sections : [ {
-        img: "",
+        img: service_17_sec_1,
         hint: "Dental Implants: A Permanent Solution for Replacing",
         title: "Multiple Missing Teeth",
         desc_1 : <div className="flex flex-col gap-2">
@@ -1340,7 +1374,7 @@ export const categories = [
             <p>At Windsor Dental Care, we provide dental implants as a superior solution for replacing missing teeth. These implants act as artificial tooth roots, surgically anchored into the jawbone, serving as foundations for replacing single or multiple teeth, or even an entire set of teeth in either jaw. Our implants are designed to be strong, long-lasting, and mimic the appearance of natural teeth. They not only halt bone deterioration and prevent facial sagging but also rejuvenate your appearance by revitalizing your smile. If you're dealing with tooth loss and seeking replacements, we invite you to schedule a consultation with our dental professionals today.</p>
         </div>
     },{
-        img: "",
+        img: service_17_sec_2,
         hint: "Who Should Consider Getting",
         title: "Multiple Dental Implants?",
         desc_1 : <div>
@@ -1452,7 +1486,7 @@ export const categories = [
         </div>,
     }],
     sections : [ {
-        img: "",
+        img: service_18_sec_1,
         hint: "Restore Your Full Smile and Boost Your Confidence with an",
         title: "Implant Supported Bridge",
         desc_1 : <div className="flex flex-col gap-2">
@@ -1461,7 +1495,7 @@ export const categories = [
             <p>At Windsor Dental Care, we specialise in offering top-tier, reliable solutions for the replacement of multiple missing teeth. Our implant-supported bridges, crafted from premium materials, are designed to replace missing teeth with dental implants, ensuring a seamless restoration. Our skilled team is committed to delivering exceptional care at an affordable price. If you're missing teeth and considering implants as a solution, we invite you to reach out to Comfort Care Dental for a consultation. Our goal is to assist you in exploring your treatment options and choosing the best path forward for your dental health.</p>
         </div>
     },{
-        img: "",
+        img: service_18_sec_2,
         hint: "Situations Where an",
         title: "Implant Supported Bridge May Be Necessary",
         desc_1 : <div>
@@ -1569,7 +1603,7 @@ export const categories = [
         </div>,
     }],
     sections : [ {
-        img: "",
+        img:  service_19_sec_1,
         hint: "Don't Let a Toothache Dampen Your Enjoyment of",
         title: "Life's Greatest Pleasures",
         desc_1 : <div className="flex flex-col gap-2">
@@ -1578,7 +1612,7 @@ export const categories = [
             <p>At Windsor Dental Care, we provide high-quality dental services at affordable prices, without compromising on the level of care or expertise. Our comprehensive offerings include fillings, extractions, root canal treatments, and dental implants. Our mission is to prevent dental issues from detracting from our patients' quality of life, aiming instead for everyone to boast a healthy, confident smile. Leveraging advanced technology and methods, we strive to make your treatment as efficient and comfortable as possible. So, if you're struggling with a toothache, don't hesitate to reach out to us. We're here to assist you in receiving the necessary care to alleviate your pain.</p>
         </div>
     },{
-        img: "",
+        img: service_19_sec_2,
         hint: "Why It's Crucial to Address",
         title: "Toothache Promptly",
         desc_1 : <div>
@@ -1629,7 +1663,7 @@ export const categories = [
         </div>,
     }],
     sections : [ {
-        img: "",
+        img: service_20_sec_1,
         hint: "Have Your Chipped Tooth Examined Before It Turns",
         title: "Into A Major Issue",
         desc_1 : <div className="flex flex-col gap-2">
@@ -1638,7 +1672,7 @@ export const categories = [
             <p>Windsor Dental Care provides swift and dependable solutions for chipped teeth, offering a variety of options to mend the damage and rejuvenate your smile. The most frequent remedies include fillings, which are used to close the spaces created by the chip, and crowns, which cover the tooth entirely to prevent additional harm. For certain cases, veneers might be an option to fix damaged teeth. Should you experience a chipped tooth, schedule your visit with Windsor Dental Care to regain your smile with ease!</p>
         </div>
     },{
-        img: "",
+        img: service_20_sec_2,
         hint: "Why It'S Crucial To Get A",
         title: "Chipped Tooth Treated",
         desc_1 : <div>
@@ -1693,7 +1727,7 @@ export const categories = [
         </div>,
     }],
     sections : [ {
-        img: "",
+        img: service_21_sec_1,
         hint: "Immediate Dental Treatment For",
         title: "Abscess Management",
         desc_1 : <div className="flex flex-col gap-2">
@@ -1702,7 +1736,7 @@ export const categories = [
             <p>At Windsor Dental Care, we're prepared to offer exceptional treatment, crafting a personalized plan to alleviate the discomfort caused by a dental abscess. Our range of dental services caters to patients across all age groups, encompassing everything from standard cleanings and fillings to more involved procedures like root canal therapy. Dedicated to delivering top-notch dental care, Windsor Dental Care ensures a comfortable and convenient experience, supported by the latest in dental technology and a team of skilled professionals focused on your well-being.</p>
         </div>
     },{
-        img: "",
+        img: service_21_sec_2,
         hint: "Indicators Of",
         title: "A Dental Abscess",
         desc_1 : <div>
@@ -1757,7 +1791,7 @@ export const categories = [
         </div>,
     }],
     sections : [ {
-        img: "",
+        img: service_22_sec_1,
         hint: "Restore Your Smile:Promptly Replace Missing",
         title: "Fillings or Crowns",
         desc_1 : <div className="flex flex-col gap-2">
@@ -1766,7 +1800,7 @@ export const categories = [
             <p>Dental health is a vital aspect of your overall wellbeing, and we're here to support you at every turn. Windsor Dental Care provides a range of services, including the replacement of fillings and crowns. These treatments help shield your teeth against additional harm, revitalizing the health of your smile. In the event of a dental emergency, you can count on our team of dentists to deliver exceptional care tailored to your needs. Feel free to get in touch and make an appointment; we're eager to assist you in maintaining a vibrant smile.</p>
         </div>
     },{
-        img: "",
+        img: service_22_sec_2,
         hint: "Why Managing Missing",
         title: "Fillings or Crowns is Essential",
         desc_1 : <div>
@@ -1821,7 +1855,7 @@ export const categories = [
         </div>,
     }],
     sections : [ {
-        img: "",
+        img: service_23_sec_1,
         hint: "Enhance Your Dental Well-being Through",
         title: "A Comfortable Tooth Removal Experience",
         desc_1 : <div className="flex flex-col gap-2">
@@ -1829,7 +1863,7 @@ export const categories = [
             <p>At Windsor Dental Care, we recognize the common concerns surrounding tooth extractions and are dedicated to maximizing your comfort and security throughout the procedure. We will guide you through every phase, ensuring you are fully informed about what to expect. Our team of welcoming and skilled dentists will ensure you're comfortable during your entire visit. If you're contemplating a tooth extraction, please reach out to Windsor Dental Care. We're here to assist you in making a knowledgeable choice regarding your dental care.</p>
         </div>
     },{
-        img: "",
+        img: service_23_sec_2,
         hint: "Benefits of Undergoing",
         title: "Tooth Removal",
         desc_1 : <div>
