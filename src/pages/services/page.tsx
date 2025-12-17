@@ -160,7 +160,7 @@ const Service = ()=>{
                 </div>
             </div>
             <div className="relative">
-                <div className="sticky top-50 flex justify-center"><img className="max-h-[300px] xs:max-h-[400px] md:max-h-[500px] object-contain" src={data?.sections[0].img? data?.sections[0].img:img_2} alt="Image" /></div>
+                <div className="sticky top-50 flex justify-center"><img className="max-h-[300px] xs:max-h-[400px] md:max-h-[500px] object-contain" src={data?.sections[2].img? data?.sections[2].img:img_2} alt="Image" /></div>
             </div>
         </div>
         <StepsCard type={cat?.category || ""} data={dataWhyUs ?? []} hint="Why Us" title={`Why Choose WINDSOR DENTAL`} />

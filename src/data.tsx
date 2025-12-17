@@ -230,7 +230,7 @@ export const categories = [
                 desc: ""
             }]
         },{
-            img: service_1_sec_2,
+            img: service_14_sec_2,
             hint: "A Clear Guide from Start to Finish",
             title: "How the Root Canal Process Works",
             desc_1 : <div className="flex flex-col gap-2">
@@ -327,7 +327,7 @@ export const categories = [
                 desc: ""
             },]
         },{
-            img: service_2_sec_2,
+            img: service_15_sec_2,
             hint: "A Clear Guide from Start to Finish",
             title: "How the Wisdom Teeth Removal Process Works",
             desc_1 : <div>
@@ -419,7 +419,7 @@ export const categories = [
                 desc: ""
             }]
         },{
-            img: service_3_sec_2,
+            img: service_14_sec_2,
             hint: "A Clear Guide from Start to Finish",
             title: "How Gum Disease Treatment Works",
             desc_1 : <div className="flex flex-col gap-2">
@@ -512,7 +512,7 @@ export const categories = [
                 desc: ""
             }]
         },{
-            img: service_4_sec_2,
+            img: service_16_sec_2,
             hint: "A Clear Guide from Start to Finish",
             title: "How Children's Dentistry Proccess Works",
             desc_1 : <div className="flex flex-col gap-2">
@@ -573,7 +573,6 @@ export const categories = [
             title: "What Is Mouthguards Treatment?",
             desc_1 : <div className="flex flex-col gap-2">
                     <p>Mouthguards are protective devices worn over your teeth and gums to prevent injuries during sports, physical activities, or teeth grinding while sleeping. They cushion impacts, reduce the risk of broken teeth and jaw injuries, and protect soft tissues like lips and cheeks, helping you maintain a healthy smile.</p>
-
                     <p>Custom-fitted mouthguards provide the best protection and comfort, staying securely in place and lasting longer than standard options. They are ideal for athletes, children in sports, and anyone who grinds their teeth at night, helping prevent injuries and dental stress while allowing you to stay confident and active.</p>
                 </div>
         },{
@@ -598,7 +597,7 @@ export const categories = [
                 desc: ""
             },]
         },{
-            img: service_5_sec_2,
+            img: service_20_sec_2,
             hint: "A Clear Guide from Start to Finish",
             title: "How Mouthguards Proccess Works",
             desc_1 : <div className="flex flex-col gap-2">
@@ -606,20 +605,24 @@ export const categories = [
             </div>,
             service: [{
                 icon: "",
-                title: "Comprehensive Examination & X-rays ",
-                desc: "Assess the severity of gum disease."
+                title: "Consultation & Assessment ",
+                desc: "Determine the type of mouthguard you need (sports or night-time)."
             },{
                 icon: "",
-                title: "Professional Cleaning (Scaling & Root Planing) ",
-                desc: "Remove plaque and tartar below the gumline."
+                title: "Impression or Digital Scan ",
+                desc: "Capture the exact shape of your teeth."
             },{
                 icon: "",
-                title: "Antibacterial Treatments ",
-                desc: "Reduce infection and promote healing."
+                title: "Custom Fabrication",
+                desc: "Create a mouthguard tailored for your bite and comfort."
             },{
                 icon: "",
-                title: "Follow-Up Care & Maintenance ",
-                desc: "Customized home care plan and routine check-ups."
+                title: "Fitting & Adjustments",
+                desc: "Ensure perfect fit, easy breathing, and optimal protection."
+            },{
+                icon: "",
+                title: "Care Instructions",
+                desc: "Guidance on cleaning, storage, and maintenance."
             }]
         }]
     },{
@@ -654,36 +657,65 @@ export const categories = [
         }],
         sections : [ {
             img: service_6_sec_1,
-            hint: "Improve Your Sleep",
-            title: "Solutions For Snoring And Sleep Apnea Management",
+            hint: "About the service",
+            title: "What Is Snoring and Sleep Apnea Treatment?",
             desc_1 : <div className="flex flex-col gap-2">
-                <p>Loud snoring not only disrupts sleep, particularly for those sharing your bed, but it may also indicate sleep apnea, a serious condition. Insufficient rest can impact your daytime energy and overall well-being.</p>
-                <p>A lack of quality sleep due to sleep disorders can detrimentally influence your productivity and daily activities.</p>
-                <p>Windsor Dental Care provides strategies to address snoring and sleep apnea effectively. We create tailored oral devices designed to maintain an open airway throughout the night, thus preventing the breathing interruptions characteristic of obstructive sleep apnea, where your airway becomes blocked during sleep.</p>
+                <p>Snoring occurs when airflow is partially blocked during sleep, causing vibration of the throat tissues. While common, it can indicate obstructive sleep apnea (OSA), a serious condition where breathing repeatedly stops and starts during sleep.</p>
+                <p>Untreated sleep apnea can lead to daytime fatigue, high blood pressure, heart problems, and reduced quality of life.</p>
             </div>
         },{
             img: service_6_sec_2,
-            hint: "Why Managing",
-            title: "Snoring And Sleep Apnea Is Crucial",
-            desc_1: <div>
-                <p>While loud snoring is widespread, not everyone who snores suffers from sleep apnea. Yet, it can result in significant issues, such as difficulty sleeping and daytime fatigue after waking. There are several other reasons why seeking a professional diagnosis and treatment is important, including:</p>
+            hint: "Key Dental Issues That Require Treatment",
+            title: "When Do You Need a Snoring and Sleep Apnea and Why Is It Important?",
+            desc_1: <div className="flex flex-col gap-2">
+                <p>Early intervention can improve sleep quality, prevent health risks, and enhance overall well-being.</p>
+                <p>You may need assessment or treatment if you notice:</p>
             </div>,
             service: [{
                 icon: "",
-                title: "Potential For Higher Health Risk",
-                desc: "Sleep apnea may lead to sudden decreases in blood oxygen levels, increasing the risk for conditions such as high blood pressure or hypertension and cardiovascular issues, including arrhythmias, strokes, or heart attacks. Additionally, it is associated with various other health concerns, such as impaired liver function and diabetes."
+                title: "Loud or frequent snoring",
+                desc: ""
             },{
                 icon: "",
-                title: "Daytime Tiredness",
-                desc: "Sleep apnea can lead to difficulties in both falling asleep and remaining awake. Frequent awakenings during the night can result in feelings of exhaustion, irritability, or sleepiness throughout the day, complicating your ability to carry out daily activities effectively."
+                title: "Pauses in breathing during sleep (noticed by a partner)",
+                desc: ""
             },{
                 icon: "",
-                title: "Inadequate Sleep",
-                desc: "Poor sleep quality, often due to numerous awakenings during the night, can lead to a range of problems such as difficulty concentrating, decreased alertness, and skin issues, among others. Additionally, the snoring that disrupts your sleep may also be preventing your partner from achieving adequate rest."
+                title: "Excessive daytime sleepiness or fatigue",
+                desc: ""
             },{
                 icon: "",
-                title: "Potential Medication Complications",
-                desc: "Those with sleep apnea might be more likely to experience complications after major surgery because there's a concern with certain types of anaesthesia. They're prone to breathing problems, especially when sedated and lying on their backs."
+                title: "Morning headaches or dry mouth",
+                desc: ""
+            },{
+                icon: "",
+                title: "Difficulty concentrating, irritability, or mood changes",
+                desc: ""
+            }]
+        },{
+            img: service_14_sec_2,
+            hint: "A Clear Guide from Start to Finish",
+            title: "How Snoring and Sleep Apnea Proccess Works",
+            desc_1: <div className="flex flex-col gap-2">
+                <p>Our dental team uses advanced, non-invasive approaches to address snoring and mild-to-moderate sleep apnea.</p>
+                <p>Treatment process:</p>
+            </div>,
+            service: [{
+                icon: "",
+                title: "Consultation & Assessment",
+                desc: "Discuss symptoms, medical history, and sleep patterns."
+            },{
+                icon: "",
+                title: "Oral Appliance Fitting ",
+                desc: "Custom-made devices reposition the jaw and tongue to keep airways open."
+            },{
+                icon: "",
+                title: "Monitoring & Adjustments",
+                desc: "Ensure comfort and effectiveness through follow-up appointments."
+            },{
+                icon: "",
+                title: "Lifestyle Guidance ",
+                desc: "Recommendations on weight management, sleeping positions, and habits."
             }]
         }]
     },{
@@ -718,36 +750,68 @@ export const categories = [
         }],
         sections : [{
             img: service_7_sec_1,
-            hint: "Transform Your Smile",
-            title: "With a Healthy Scale and Clean",
+            hint: "About the service",
+            title: "What Is Scale and Clean Treatment?",
             desc_1 : <div className="flex flex-col gap-2">
-                <p>Sometimes, plaque and tartar accumulation cannot be effectively eliminated with just home tooth brushing.</p>
-                <p>If plaque is allowed to persist between your teeth and gums for an extended period, it can cause irritation and lead to gum disease. Without early intervention, this can severely affect your dental well-being, potentially resulting in tooth loss, bad breath, and more severe health issues.</p>
-                <p>At Windsor Dental Care, Scale and Clean is a specialised cleaning process designed to remove hardened plaque and tartar from your teeth. Our skilled dentists employ this sophisticated cleaning technique to assist in restoring your oral health.</p>
+                <p>A scale and clean is a routine dental procedure that removes plaque, tartar, and surface stains from your teeth, helping prevent gum disease, tooth decay, and bad breath.</p>
+                <p>It’s an essential part of preventive dental care, keeping your teeth and gums healthy while maintaining a clean, polished smile.</p>
             </div>
         },{
             img: service_7_sec_2,
-            hint: "Dental Issues Addressed by",
-            title: "Scale and Clean Treatments",
-            desc_1 : <div>
-                <p>Maintaining great oral hygiene is vital for a healthy mouth. However, there are occasions when food particles begin to build up over time, and simply brushing and flossing your teeth may not suffice to eliminate stubborn plaque and tartar. This accumulation can result in an array of dental issues, making scale and clean procedures essential for prevention.</p>
+            hint: "Key Dental Issues That Require Treatment",
+            title: "When Do You Need a Scale and Clean and Why Is It Important?",
+            desc_1 : <div className="flex flex-col gap-2">
+                <p>Regular professional cleaning can prevent cavities, gum disease, and tooth loss, and keep your smile looking best.</p>
+                <p>You should have a scale and clean if you notice:</p>
             </div>,
             service: [{
                 icon: "",
-                title: "Gum Inflammation",
-                desc: "Gingivitis is a mild form of gum disease characterized by the accumulation of plaque and bacteria on the teeth. This buildup can result in dental tartar, leading to inflammation and sensitivity in the soft tissues around the gums. Without proper treatment, gingivitis can progress to periodontitis, a more severe gum disease. A dentist can address this issue by removing the stubborn plaque with a scale and clean procedure."
+                title: "Plaque or tartar buildup on teeth",
+                desc: ""
             },{
                 icon: "",
-                title: "Advanced Gum Disease",
-                desc: "This condition develops when dental tartar persists between the teeth and gum line; in contrast to gingivitis, periodontal disease involves damage to the bone, gums, and other tissues that support the teeth. Through professional cleaning, this issue can be managed, potentially preventing tooth loss."
+                title: "Gum inflammation or bleeding while brushing",
+                desc: ""
             },{
                 icon: "",
-                title: "Halitosis",
-                desc: "Poor dental hygiene can lead to bad breath, as bacteria found in plaque and tartar emit an unpleasant smell. One of the objectives of the scale and clean process is to assist individuals in achieving fresher breath."
+                title: "Persistent bad breath",
+                desc: ""
             },{
                 icon: "",
-                title: "Dental Caries",
-                desc: "Tooth decay occurs when bacteria in the mouth produce acids that erode the tooth's surface or enamel, leading to not just cavities but also potentially severe outcomes like tooth loss. The scale and clean procedure can aid in preventing or reducing the risk of tooth decay."
+                title: "Discolored teeth or surface stains",
+                desc: ""
+            },{
+                icon: "",
+                title: "Routine dental maintenance to prevent dental problems",
+                desc: ""
+            }]
+        },{
+            img: service_20_sec_2,
+            hint: "A Clear Guide from Start to Finish",
+            title: "How Scale and Clean Proccess Works",
+            desc_1 : <div className="flex flex-col gap-2">
+                <p>Our dental team uses modern tools and gentle techniques to give you thorough, comfortable cleaning.</p>
+            </div>,
+            service: [{
+                icon: "",
+                title: "Examination & Assessment",
+                desc: "Check your teeth and gums for plaque, tartar, and signs of dental issues."
+            },{
+                icon: "",
+                title: "Scaling",
+                desc: "Remove plaque and tartar from above and below the gumline."
+            },{
+                icon: "",
+                title: "Polishing",
+                desc: "Smooth and polish teeth to remove surface stains and make teeth shine."
+            },{
+                icon: "",
+                title: "Fluoride Treatment (Optional)",
+                desc: "Strengthen enamel and protect against cavities."
+            },{
+                icon: "",
+                title: "Advice & Follow-Up",
+                desc: "Guidance on home oral care and next cleaning schedule."
             }]
         }]
         },],
@@ -832,36 +896,64 @@ export const categories = [
     }],
     sections : [ {
         img: service_8_sec_1,
-        hint: "Achieve A Beaming Smile",
-        title: "Through Our Teeth Whitening Service",
+        hint: "About the service",
+        title: "What Is Teeth Whitening Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>Teeth can become stained from certain foods, beverages, smoking, and various lifestyle habits, affecting your confidence to smile openly.</p>
-            <p>It's common for individuals to experience some level of tooth discoloration. Over time, these stains may become difficult to remove with just whitening toothpaste or regular brushing.</p>
-            <p>Windsor Dental Care provides a secure and efficient teeth whitening service that can significantly brighten your teeth in just a single session. Our dental experts employ cutting-edge technology to deliver optimal outcomes swiftly.</p>
+            <p>Teeth whitening is a cosmetic dental procedure that removes stains and discoloration from your teeth, helping you achieve a brighter, more confident smile.</p>
+            <p>It is suitable for teeth discolored by coffee, tea, smoking, certain foods, or aging.</p>
         </div>
     },{
         img: service_8_sec_2,
-        hint: "Top Causes For Considering",
-        title: "Teeth Whitening",
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Teeth Whitening and Why Is It Important?",
         desc_1 : <div>
-            <p>Our welcoming staff provides teeth whitening services that can significantly brighten your teeth in just a single appointment. Experience looking years younger and enjoy receiving compliments on your radiant smile.</p>
+            <p>Professional whitening can enhance your appearance, boost confidence, and complement your overall dental health.</p>
+            <p>You may consider teeth whitening if you notice:</p>
         </div>,
         service: [{
             icon: "",
-            title: "Minimize Discoloration",
-            desc: "Professional whitening procedures in the dental office offer an effective solution for removing tough stains that accumulate on teeth and are hard to eliminate with just toothpaste, mouthwash, or over-the-counter whitening kits. Your dentist will meticulously apply potent whitening agents to your teeth and employ additional methods to ensure your smile becomes noticeably brighter."
+            title: "Yellowing or dull teeth",
+            desc: ""
         },{
             icon: "",
-            title: "Rapid Outcomes",
-            desc: "For those with busy schedules, teeth whitening sessions can conveniently fit into your routine. Requiring just an hour to an hour and a half per appointment, you'll notice your teeth becoming visibly whiter in no time."
+            title: "Stains from food, beverages, or smoking",
+            desc: ""
         },{
             icon: "",
-            title: "Peak Dental Wellness",
-            desc: "A professional cleaning is performed prior to the treatment to ensure the whitening agent is absorbed uniformly by the enamel. Moreover, carbamide peroxide, a common ingredient in professional whitening formulas, eliminates bacteria responsible for causing gum disease and tooth decay."
+            title: "Desire for a brighter, more confident smile",
+            desc: ""
         },{
             icon: "",
-            title: "Customized And Conducted By Dental Experts",
-            desc: "Professional teeth whitening treatments are carried out by experienced dentists skilled in the safe application of bleaching agents to eliminate discoloration. To ensure your lips and gums are protected from the active substances, they employ a protective buffer gel, cheek retractors, and various dental instruments throughout the procedure."
+            title: "Preparing for a special event or milestone",
+            desc: ""
+        }]
+    },{
+        img: service_14_sec_2,
+        hint: "A Clear Guide from Start to Finish",
+        title: "How Teeth Whitening Proccess Works",
+        desc_1 : <div>
+            <p>Our dental team uses professional-grade whitening systems that are safe, effective, and minimally sensitive.</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Consultation & Assessment",
+            desc: "Determine suitability and discuss desired results."
+        },{
+            icon: "",
+            title: "Cleaning (Optional)",
+            desc: "Remove surface plaque and tartar for better whitening."
+        },{
+            icon: "",
+            title: "Application of Whitening Agent",
+            desc: "Professional gel applied to teeth."
+        },{
+            icon: "",
+            title: "Activation",
+            desc: "Light or laser may be used to accelerate whitening."
+        },{
+            icon: "",
+            title: "Aftercare Advice",
+            desc: "Guidance to maintain results and prevent staining."
         }]
     }]
 },{
@@ -896,38 +988,69 @@ export const categories = [
     }],
     sections : [ {
         img: service_9_sec_1,
-        hint: "Authentic-Appearing",
-        title: "Dental Veneers For A Radiant Smile",
+        hint: "About the service",
+        title: "What Is Dental Veneers Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>If you're exploring options to conceal tooth discolorations or seeking the most effective way to achieve straighter teeth, you're not alone.</p>
-            <p>Sporting straight, white teeth is undeniably attractive, yet traditional braces can be cumbersome, and professional teeth whitening might not suit everyone due to its limited success rate.</p>
-            <p>Fortunately, dental veneers present an excellent alternative to conventional cosmetic dental treatments like braces or whitening. At Windsor Dental Care, our team specialises in affixing slender, tooth-colored coverings onto the front of your teeth. These veneers skillfully hide any intrinsic stains or misalignments, offering a less invasive solution. With the right maintenance, veneers can provide enduring beauty and function.</p>
+            <p>Dental veneers are thin, custom-made shells placed over the front surface of teeth to improve their appearance, color, shape, and alignment.</p>
+            <p>They are a popular cosmetic solution for chipped, discolored, uneven, or slightly crooked teeth, providing a natural, long-lasting, and radiant smile.</p>
         </div>
     },{
         img: service_9_sec_2,
-        hint: "Top Motivations For Considering",
-        title: "Dental Veneers",
-        desc_1 : <div>
-            <p>Veneers offer an aesthetic enhancement to your smile by concealing deep stains on your teeth that other whitening methods fail to address. Due to their numerous advantages, veneers are commonly employed in smile makeover procedures.</p>
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Dental Veneers and Why Is It Important?",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Veneers can dramatically improve your smile and boost your self-confidence.</p>
+            <p>You may consider dental veneers if you have:</p>
         </div>,
         service: [{
             icon: "",
-            title: "Veneers Mask Permanent Stains",
-            desc: "Both professional and at-home teeth whitening products can effectively brighten your teeth's shade. Yet, certain types of discoloration might not improve with these methods. For such situations, veneers serve as a viable solution. Their slim design coats the front of your teeth, providing a consistently whiter smile and permanently concealing deep-set stains."
+            title: "Chipped or cracked teeth",
+            desc: ""
         },{
             icon: "",
-            title: "Capable Of Solving Cosmetic Concerns",
-            desc: "Dental veneers are effective for correcting minor aesthetic flaws, including slight gaps between teeth, chips, shorter teeth, and small cracks visible when smiling or speaking. Veneers, which are attached to the front surface of the teeth, can dramatically alter their appearance from before. In a consultation, your dentist can assess whether veneers are a suitable solution for your specific dental issue."
+            title: "Severe discoloration not improved by whitening",
+            desc: ""
         },{
             icon: "",
-            title: "Slight Enamel Reduction",
-            desc: "Getting veneers involves a minimally invasive procedure that necessitates removing only a slim layer of the tooth's surface. This step ensures that the veneers fit seamlessly without feeling cumbersome. Porcelain veneers, crafted from exceptionally thin materials, demand minimal preparation of the tooth."
+            title: "Misshapen or slightly misaligned teeth",
+            desc: ""
         },{
             icon: "",
-            link: "/services/teeth-whitening/",
-            title: "It Guards Against Tooth Staining",
-            desc: "Certain types of dental veneers boast superior resistance to stains caused by food and beverages. Because they adhere to each tooth individually, they offer the benefit of maintaining brighter teeth for an extended period. As a result, veneers are often viewed as a long-term solution for teeth whitening."
-        }]
+            title: "Gaps between teeth",
+            desc: ""
+        },{
+            icon: "",
+            title: "Desire for a more even, radiant smile",
+            desc: ""
+        },]
+    },{
+        img: service_20_sec_2,
+        hint: "A Clear Guide from Start to Finish",
+        title: "How Dental Veneers Proccess Works",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Our experienced dentists ensure each step is precise, comfortable, and customized for you.</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Consultation & Smile Design",
+            desc: "Discuss goals, assess your teeth, and choose the right veneer material."
+        },{
+            icon: "",
+            title: "Tooth Preparation",
+            desc: "A thin layer of enamel is gently removed for perfect fit."
+        },{
+            icon: "",
+            title: "Impressions & Custom Fabrication ",
+            desc: "Molds are sent to create veneers that match your teeth perfectly."
+        },{
+            icon: "",
+            title: "Veneer Placement",
+            desc: "Once ready, veneers are bonded securely to your teeth."
+        },{
+            icon: "",
+            title: "Final Adjustments & Polishing",
+            desc: "Ensuring a natural, flawless finish."
+        },]
     }]
 },{
     id: 3,
@@ -962,38 +1085,72 @@ export const categories = [
 
     sections : [ {
         img: service_10_sec_1,
-        hint: "Discover the",
-        title: "Clear Aligners Difference",
+        hint: "About the service",
+        title: "What Is Clear Aligners Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>Clear aligners offer a modern, nearly invisible solution to straighten your teeth without the need for traditional braces. Custom-made to fit your teeth perfectly, they gently guide your teeth into their correct positions over time. Here's why our patients love them:</p>
-            <p><strong>Virtually Invisible:</strong> Crafted from clear, flexible plastic, our aligners are discreet and hard to notice.</p>
-            <p><strong>Comfort:</strong> Designed to fit snugly over your teeth, each aligner is smooth, with no sharp edges to irritate your mouth.</p>
-            <p><strong>Convenience:</strong> Clear aligners can be removed for eating, drinking, brushing, and flossing, making them a convenient option for a busy lifestyle.</p>
-            <p><strong>Efficiency:</strong> For many patients, treatment times are comparable to those of traditional braces, with less discomfort and fewer visits to the dentist.</p>
+            <p>Clear aligners are transparent, removable trays that gently shift your teeth into proper alignment without the need for metal braces.</p>
+            <p>They are an effective and convenient solution for correcting crowding, spacing, overbites, underbites, and mild to moderate misalignment, all while keeping your treatment almost invisible.</p>
         </div>
     },{
         img: service_10_sec_2,
-        hint: "Your Journey to A",
-        title: "Perfect Smile",
-        desc_1 : <div>
-            <p>Where your smile is our passion. Our clear aligners are designed to straighten your teeth discreetly and comfortably, allowing you to achieve the smile you've always desired.</p>
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Clear Aligners and Why Is It Important?",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>They are ideal for teens and adults looking for a more flexible, aesthetic orthodontic solution.</p>
+            <p>Clear aligners may be right for you if you have:</p>
         </div>,
         service: [{
             icon: "",
-            title: "Initial Consultation",
-            desc: "Your path to a brighter smile begins with a consultation at Windsor Dental Care. Our expert team will assess your dental needs and determine if clear aligners are the right choice for you."
+            title: "Crooked or crowded teeth",
+            desc: ""
         },{
             icon: "",
-            title: "Custom Treatment Plan",
-            desc: "Utilising the latest in 3D imaging technology, we'll craft a personalised treatment plan designed to achieve your ideal smile. You'll even get a sneak peek of your future smile before you begin treatment."
+            title: "Gaps between teeth",
+            desc: ""
         },{
             icon: "",
-            title: "Receive Your Aligners",
-            desc: "You'll receive a series of custom aligners to wear. Each set is worn for about two weeks before moving on to the next, gradually shifting your teeth into their perfect positions."
+            title: "Mild to moderate bite issues",
+            desc: ""
         },{
             icon: "",
-            title: "Achieve Your Dream Smile",
-            desc: "Once your treatment is complete, we'll provide you with a retainer to ensure your new smile lasts a lifetime."
+            title: "Desire for a straighter smile without metal braces",
+            desc: ""
+        },{
+            icon: "",
+            title: "Lifestyle preference for a discreet and removable option",
+            desc: ""
+        },]
+    },{
+        img: service_16_sec_2,
+        hint: "A Clear Guide from Start to Finish",
+        title: "How Clear Aligners Proccess Works",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Our team ensures a smooth and personalized treatment process from start to finish.</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Consultation & Smile Assessment",
+            desc: "We examine your teeth and discuss goals."
+        },{
+            icon: "",
+            title: "Digital Scans & Treatment Plan",
+            desc: "Advanced 3D imaging maps out your tooth movement."
+        },{
+            icon: "",
+            title: "Custom Aligner Creation",
+            desc: "A series of clear trays are made just for you."
+        },{
+            icon: "",
+            title: "Wearing Your Aligners",
+            desc: "Each set is worn for 1–2 weeks before moving to the next."
+        },{
+            icon: "",
+            title: "Progress Check-ups",
+            desc: "Regular visits to monitor alignment."
+        },{
+            icon: "",
+            title: "Retention",
+            desc: "A retainer helps maintain your new, straight smile."
         }]
     }]
 },{
@@ -1028,36 +1185,76 @@ export const categories = [
     }],
     sections : [ {
         img: service_11_sec_1,
-        hint: "Boost Your",
-        title: "Smile Confidence",
+        hint: "About the service",
+        title: "What Is Smile Makeovers Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>Occasionally, the presence of misaligned, short, or discolored teeth can lead to feelings of self-consciousness or dissatisfaction with one’s looks.</p>
-            <p>There’s no longer a need to harbor such feelings towards your smile. The cosmetic solution known as a “smile makeover” combines various treatments to rectify these aesthetic concerns, gifting you the radiant, confident smile you've always wanted.</p>
-            <p>At Windsor Dental Care, we provide an extensive selection of smile makeover services designed to enhance your teeth's appearance. From teeth whitening and veneers to dental implants, our range of cosmetic options caters to diverse needs. Our skilled dental team is committed to tailoring a treatment plan that aligns with your lifestyle preferences and financial considerations. Book a consultation with us today to discover how we can assist you in achieving your ideal smile.</p>
+            <p>A smile makeover is a customized treatment plan using a combination of cosmetic and restorative dental procedures to transform the look of your smile.</p>
+            <p>It can address concerns like discolouration, worn teeth, gaps, chips, misalignment, or an overall lack of symmetry.</p>
         </div>
     },{
         img: service_11_sec_2,
-        hint: "Top Reasons To Consider",
-        title: "A Smile Makeover",
-        desc_1 : <div>
-            <p>It's increasingly clear why smile makeovers are gaining such popularity in the realm of cosmetic dentistry lately. They provide an accessible method to completely revamp your smile's appearance, resulting in a brighter, more uniform set of teeth.</p>
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Smile Makeovers and Why Is It Important?",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Whether small changes or a full transformation, your smile makeover is designed around you.</p>
+            <p>A smile makeover may be right for you if you want to improve:</p>
         </div>,
         service: [{
             icon: "",
-            title: "Large Spaces Between Teeth",
-            desc: "Gaps, particularly among the front teeth, can impact the appearance of your smile. At Windsor Dental, our dentist can develop a customized plan to adjust the alignment, ensuring even spacing between your teeth."
+            title: "Yellow or stained teeth",
+            desc: ""
         },{
             icon: "",
-            title: "Discolored Teeth",
-            desc: "A smile makeover can eliminate yellowish stains or tooth discoloration, resulting in whiter teeth that can make you appear years younger."
+            title: "Gaps or spaces",
+            desc: ""
         },{
             icon: "",
-            title: "Cracked And Chipped Teeth",
-            desc: "Beyond their unattractive appearance, a cracked tooth can pose a risk of decay, threatening your oral health. Solutions such as veneers, crowns, or fillings can enhance your teeth's aesthetic while also restoring their functionality."
+            title: "Crooked or uneven teeth",
+            desc: ""
         },{
             icon: "",
-            title: "Misaligned Teeth",
-            desc: "A smile makeover offers a powerful solution for enhancing the look of your smile. It can address issues with misaligned, short, or teeth of varying lengths, creating a more uniform appearance and giving you a set of neat, pearly whites."
+            title: "Chipped or worn teeth",
+            desc: ""
+        },{
+            icon: "",
+            title: "Gummy smile or uneven gum line",
+            desc: ""
+        },{
+            icon: "",
+            title: "Old restorations that affect appearance",
+            desc: ""
+        },{
+            icon: "",
+            title: "Overall desire for a more balanced, radiant smile",
+            desc: ""
+        }]
+    },{
+        img: service_14_sec_2,
+        hint: "A Clear Guide from Start to Finish",
+        title: "How Children's Smile Makeovers Proccess Works",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Every makeover starts with detailed consultation and visual planning.</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Consultation & Smile Analysis",
+            desc: "Discuss concerns, goals, and desired smile."
+        },{
+            icon: "",
+            title: "Photos & Digital Planning",
+            desc: "Advanced imaging to design your ideal smile."
+        },{
+            icon: "",
+            title: "Treatment Options Review",
+            desc: "Choose the procedures that fit your needs and budget."
+        },{
+            icon: "",
+            title: "Smile Transformation",
+            desc: "Step-by-step treatments completed with precision."
+        },{
+            icon: "",
+            title: "Final Adjustments",
+            desc: "Ensuring comfort, symmetry, and a natural-looking finish."
         }]
     }]
 },],
@@ -1145,38 +1342,70 @@ export const categories = [
     }],
     sections : [ {
         img: service_12_sec_1,
-        hint: "Maintain and Safeguard",
-        title: "your Teeth Through Dental Fillings",
+        hint: "About the service",
+        title: "What Is Dental Fillings Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>Cavities and tooth decay are common dental issues that can affect individuals of all ages, often leading to discomforts such as sensitivity and toothaches.</p>
-            <p>A cavity forms when bacteria degrade the enamel on your teeth, resulting in a hole.</p>
-            <p>If you find yourself with a cavity, there's no need to worry! Windsor Dental Care is here to assist. We provide dental fillings as a solution to repair and protect your teeth from needing to be extracted. Dental fillings, which can be composed of materials like porcelain, gold, or silver amalgam, are a durable restoration option. The procedure involves removing the decayed portion of the tooth and filling it with a suitable material.</p>
+            <p>Dental fillings are treatments used to repair cavities or minor tooth damage, restoring the tooth’s structure and function.</p>
+            <p>Modern fillings are tooth-colored and durable, blending seamlessly with your natural smile while protecting against further decay.</p>
         </div>
     },{
         img: service_12_sec_2,
-        hint: "Dental Issues Requiring the use of",
-        title: "Dental Fillings",
-        desc_1 : <div>
-            <p>Regrettably, dental decay often doesn't present many signs in its initial phases. However, if you notice any of the symptoms listed below, it's advisable to schedule a visit with your dentist.</p>
-            <p>Tooth decay typically doesn't show symptoms until it has caused significant harm. Routine dental examinations are key in identifying early signs and preventing further issues. The presence of the following oral issues could suggest the necessity for dental fillings:</p>
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Dental Fillings and Why Is It Important?",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Timely treatment prevents further damage, avoids more complex procedures, and preserves your natural tooth.</p>
+            <p>You may require a dental filling if you notice:</p>
         </div>,
         service: [{
             icon: "",
-            title: "Large Spaces Between Teeth",
-            desc: "Gaps, particularly among the front teeth, can impact the appearance of your smile. At Windsor Dental, our dentist can develop a customized plan to adjust the alignment, ensuring even spacing between your teeth."
+            title: "Cavities or tooth decay",
+            desc: ""
         },{
             icon: "",
-            title: "Harm To Existing Dental Fillings",
-            desc: "Should your existing dental fillings show any signs of cracking or breaking, regardless of the severity, it's important to make an appointment with your dentist right away. If left unattended, food particles could seep into these small openings and exacerbate the damage."
+            title: "Sensitivity to hot or cold foods and drinks",
+            desc: ""
         },{
             icon: "",
-            title: "Broken Or Split Tooth",
-            desc: "Teeth that undergo abrupt force are prone to cracking or chipping. Often, these issues may not result in any immediate discomfort or pain. However, small openings can form, allowing bacteria to infiltrate and begin deteriorating the tooth."
+            title: "Visible holes, cracks, or dark spots on your teeth",
+            desc: ""
         },{
             icon: "",
-            title: "Uneven Tooth Texture",
-            desc: "Typically, the initial indicator of dental decay is a tooth developing a rough surface. You might detect this by feeling your tooth with your tongue. Your dentist can assess whether tooth fillings are needed to repair your tooth."
-        }]
+            title: "Chipped or worn-down teeth",
+            desc: ""
+        },{
+            icon: "",
+            title: "Pain or discomfort when chewing",
+            desc: ""
+        },]
+    },{
+        img: service_18_sec_2,
+        hint: "A Clear Guide from Start to Finish",
+        title: "How Dental Fillings Proccess Works",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Our experienced dental team ensures a pain-free, efficient experience:</p>
+            <p>Most fillings are completed in a single visit, restoring your tooth immediately.</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Examination & X-rays",
+            desc: "Assess the affected tooth and identify decay."
+        },{
+            icon: "",
+            title: "Local Anaesthetic",
+            desc: "Numb the area for a comfortable procedure."
+        },{
+            icon: "",
+            title: "Decay Removal & Cleaning",
+            desc: "Carefully remove damaged tissue."
+        },{
+            icon: "",
+            title: "Filling Placement",
+            desc: "Apply a tooth-colored composite filling shaped to match your natural tooth."
+        },{
+            icon: "",
+            title: "Polishing & Bite Check",
+            desc: "Ensure smoothness and proper alignment."
+        },]
     }]
 },{
     id: 2,
@@ -1210,38 +1439,70 @@ export const categories = [
     }],
     sections : [ {
         img: service_13_sec_1,
-        hint: "Reclaim Your Full Smile With",
-        title: "Our Realistic-Looking Dentures",
+        hint: "About the service",
+        title: "What Is Dentures Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>There are numerous reasons why you might be missing teeth, ranging from gum disease resulting in the loss of all your natural teeth to accidents causing them to be knocked out.</p>
-            <p>Feeling self-conscious about missing teeth can significantly impact your willingness to smile or laugh, potentially leading you to shy away from social interactions. Additionally, the absence of teeth can compromise your ability to chew and bite correctly, affecting your eating habits, particularly if you're missing several teeth.</p>
-            <p>Dentures, which serve as replacements for missing teeth, can be used to replace either a single tooth or multiple teeth. They typically consist of artificial teeth set into a base that matches the color of your gums, with the surrounding soft tissues in your mouth helping to secure them in place.</p>
-            <p>Opting for dentures can facilitate easier eating, improve your speech, and prevent jawbone loss. There are two primary types of dentures: complete and partial. Consulting with your dentist will allow you to choose the option that best suits your specific needs and financial considerations.</p>
+            <p>Dentures are removable dental appliances that replace missing teeth and surrounding tissues.</p>
+            <p>They help restore function, aesthetics, and speech, improving overall oral health and quality of life.</p>
+            <p>Dentures can be full (replacing all teeth) or partial (replacing a few missing teeth), depending on your needs.</p>
         </div>
     },{
         img: service_13_sec_2,
-        hint: "Dental Issues That May Require",
-        title: "Dentures",
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Dentures and Why Is It Important?",
         desc_1 : <div>
-            <p>In addition to lost teeth, there are other dental conditions that could suggest the need for dentures. Some individuals might require tooth replacements following extractions, or opt for artificial teeth to avoid jeopardizing their oral health.</p>
+            <p>Properly fitted dentures restore function, comfort, and confidence.</p>
+            <p>Dentures may be recommended if you have:</p>
         </div>,
         service: [{
             icon: "",
-            title: "You Are Missing One Or Several Teeth",
-            desc: "The dentist recommends obtaining a prosthesis to protect your remaining teeth from potential harm. If you're missing multiple teeth, the ones left may move into incorrect positions, and the bone beneath your gum line, which previously supported your teeth, could deteriorate. Opting for dentures can help avoid issues with speaking and eating."
+            title: "Multiple missing teeth or complete tooth loss",
+            desc: ""
         },{
             icon: "",
-            title: "Periodontal Disease",
-            desc: "If not addressed or if it persists, gum disease can result in tooth loss. This issue arises from the accumulation of plaque and tartar along the margins of your teeth, leading them to gradually detach from the gums. Utilizing dentures to replace lost teeth can be an effective solution."
+            title: "Difficulty chewing or speaking clearly",
+            desc: ""
         },{
             icon: "",
-            title: "Dental Decay",
-            desc: "Tooth decay is a common dental issue affecting numerous individuals, often due to enamel damage from inadequate oral care. In certain situations, using dentures as a permanent solution to replace decayed teeth may be necessary."
+            title: "Sunken facial appearance due to missing teeth",
+            desc: ""
         },{
             icon: "",
-            title: "Difficulty Chewing",
-            desc: "If missing or damaged teeth make it difficult for you to eat specific foods, dentures could be a solution. Improper chewing and biting can impact your dental and general health. Restoring your teeth and their functionality is advisable."
-        }]
+            title: "Desire to improve smile aesthetics",
+            desc: ""
+        },{
+            icon: "",
+            title: "Oral health conditions where implants or bridges aren’t suitable",
+            desc: ""
+        },]
+    },{
+        img: service_20_sec_2,
+        hint: "A Clear Guide from Start to Finish",
+        title: "How Dentures Proccess Works",
+        desc_1 : <div>
+            <p>Our team ensures a comfortable, precise, and custom-fit denture experience:</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Consultation & Assessment",
+            desc: "Evaluate oral health and discuss goals."
+        },{
+            icon: "",
+            title: "Impressions & Measurements",
+            desc: "Take molds and measurements for a perfect fit."
+        },{
+            icon: "",
+            title: "Try-In & Adjustments ",
+            desc: "Test the dentures and make necessary modifications."
+        },{
+            icon: "",
+            title: "Final Denture Placement",
+            desc: "Ensure comfort, function, and natural appearance."
+        },{
+            icon: "",
+            title: "Follow-Up & Care Instructions",
+            desc: "Guidance on maintenance and adjustments."
+        },]
     }]
 },{
     id: 3,
@@ -1275,35 +1536,70 @@ export const categories = [
     }],
     sections : [ {
         img: service_14_sec_1,
-        hint: "Safeguard and Revitalize",
-        title: "Your Smile with Same-Day Crowns",
+        hint: "About the service",
+        title: "What Is Crowns Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>Windsor Dental Care revolutionizes the dental crown experience with state-of-the-art same-day crown technology. Utilizing Computer-Aided Design (CAD) and Computer-Aided Manufacturing (CAM), they offer custom-made, natural-looking, and comfortable crowns crafted during a single visit. This efficient process eliminates the need for multiple appointments and temporary crowns, ensuring a swift and satisfying experience. Made from durable materials, these crowns promise longevity. For a hassle-free, quick solution to dental crowns, consider booking an appointment with Windsor Dental Care.</p>
+            <p>A dental crown is a tooth-shaped cap that covers a damaged or weakened tooth to restore its shape, strength, and appearance.</p>
+            <p>Crowns are commonly used for teeth that are broken, worn, decayed, or after root canal treatment, helping preserve the natural tooth and maintain proper function.</p>
         </div>
     },{
         img: service_14_sec_2,
-        hint: "Key Reasons to Consider",
-        title: "Dental Crowns",
-        desc_1 : <div>
-            <p>Dentists often recommend crowns to reinforce a weakened tooth, enhancing its durability and structure. This treatment is typically advised in various situations to ensure optimal dental health.</p>
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Crowns and Why Is It Important?",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Crowns protect the tooth, restore functionality, and enhance aesthetics.</p>
+            <p>You may need a dental crown if you have:</p>
         </div>,
         service: [{
             icon: "",
-            title: "Reshaping Irregular Teeth",
-            desc: "An irregularly shaped tooth can disrupt the symmetry of your smile. Dental crowns are often a suitable solution to conceal these flaws and enhance your smile's appearance."
+            title: "Severely decayed or damaged teeth",
+            desc: ""
         },{
             icon: "",
-            title: "Correcting Tooth Discoloration",
-            desc: "If not addressed or if it persists, gum disease can result in tooth loss. This issue arises from the accumulation of plaque and tartar along the margins of your teeth, leading them to gradually detach from the gums. Utilizing dentures to replace lost teeth can be an effective solution."
+            title: "Cracked, chipped, or worn teeth",
+            desc: ""
         },{
             icon: "",
-            title: "Repairing a Broken Tooth",
-            desc: "When a tooth is damaged but doesn't need to be removed, dentists often suggest crowns as a protective measure. Crowns serve to shield the tooth, preventing the exposure of inner tissues and reducing sensitivity, thereby maintaining its integrity and function."
+            title: "A tooth that has undergone root canal therapy",
+            desc: ""
         },{
             icon: "",
-            title: "Replacing a Lost Tooth",
-            desc: "Losing a tooth can lead to various issues, but dental restorations, especially dental implants, offer a modern solution. A crown placed on an implant mimics a natural tooth in appearance and functionality, effectively resolving the problem of tooth loss."
-        }]
+            title: "Large fillings that compromise tooth strength",
+            desc: ""
+        },{
+            icon: "",
+            title: "Desire to improve the shape or appearance of a tooth",
+            desc: ""
+        },]
+    },{
+        img: service_16_sec_2,
+        hint: "A Clear Guide from Start to Finish",
+        title: "How Crowns Proccess Works",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Most crowns are completed in one or two visits, depending on the materials used.</p>
+            <p>Our team ensures a comfortable, precise, and natural-looking result:</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Examination & X-rays",
+            desc: "Assess the tooth and determine suitability for a crown."
+        },{
+            icon: "",
+            title: "Tooth Preparation",
+            desc: "Shape the tooth to fit the crown."
+        },{
+            icon: "",
+            title: "Impressions & Shade Selection",
+            desc: "Create a mold and choose a natural color for your crown."
+        },{
+            icon: "",
+            title: "Temporary Crown",
+            desc: "Protect the tooth while the permanent crown is made."
+        },{
+            icon: "",
+            title: "Crown Placement",
+            desc: "Bond the custom-made crown securely and check for proper fit and bite."
+        },]
     }]
 },{
     id: 4,
@@ -1337,32 +1633,69 @@ export const categories = [
     }],
     sections : [ {
         img: service_15_sec_1,
-        hint: "Reclaim Your Smile Through",
-        title: "Dental Bridge Treatment",
+        hint: "About the service",
+        title: "What Is Bridge Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>The absence of a tooth can lead to several issues, including trouble with chewing and speaking, and feelings of self-consciousness regarding your looks.</p>
-            <p>Dental bridges serve as an effective solution for replacing lost teeth and boosting your self-esteem. These fixed prosthetic devices are anchored to the natural teeth adjacent to the gap left by a missing tooth.</p>
-            <p>At Windsor Dental Care, we're dedicated to helping you reclaim your smile. Our durable and high-quality dental bridges are designed to allow you to laugh, talk, and eat with confidence again. Our skilled dental team specialises in crafting custom-fitted dental bridges tailored to your unique needs. Book a consultation today to explore how we can assist in restoring your smile!</p>
+            <p>A dental bridge is a fixed dental restoration that fills the gap created by one or more missing teeth.</p>
+            <p>It consists of artificial teeth (pontics) anchored to neighboring natural teeth or implants</p>
         </div>
     },{
         img: service_15_sec_2,
-        hint: "Top Reasons To Consider",
-        title: "Dental Bridges For Your Smile",
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Bridges and Why Is It Important?",
         desc_1 : <div>
-            <p>Dental bridges are permanent prosthetic devices designed to fill the gaps left by missing teeth. They are typically recommended under these circumstances:</p>
+            <p>Bridges help maintain proper bite, jaw alignment, and a natural smile.</p>
+            <p>Dental bridges may be recommended if you have:</p>
         </div>,
         service: [{
             icon: "",
-            title: "Gaps From One Or Several Missing Teeth",
-            desc: "A dental bridge is a superb choice for substituting one or several missing teeth. It offers a replacement that mimics the appearance and functionality of your natural teeth closely."
+            title: "One or more missing teeth",
+            desc: ""
         },{
             icon: "",
-            title: "Reduced Jawbone Unable To Support A Removable Denture",
-            desc: "Contrary to a removable denture that sits atop the gums, a dental bridge is securely anchored onto the teeth. This significantly enhances its stability, guaranteeing it remains fixed during eating or speaking."
+            title: "Difficulty chewing or speaking clearly",
+            desc: ""
         },{
             icon: "",
-            title: "Patients With Cognitive Or Physical Challenges Unable To Care For Removable Dentures",
-            desc: "Dental bridges consist of artificial teeth that are permanently bonded to the patient's natural teeth. As a result, patients are relieved from the concern of having to remove and clean the bridge, unlike the maintenance required for removable dentures."
+            title: "Shifting teeth due to gaps",
+            desc: ""
+        },{
+            icon: "",
+            title: "Desire to restore aesthetics and oral function",
+            desc: ""
+        },{
+            icon: "",
+            title: "Prevent bone loss and maintain facial structure",
+            desc: ""
+        }]
+    },{
+        img: service_14_sec_2,
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Bridges and Why Is It Important?",
+        desc_1 : <div>
+            <p>Bridges help maintain proper bite, jaw alignment, and a natural smile.</p>
+            <p>Dental bridges may be recommended if you have:</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Consultation & Examination",
+            desc: "Assess your oral health and suitability for a bridge."
+        },{
+            icon: "",
+            title: "Tooth Preparation",
+            desc: "Shape adjacent teeth to anchor the bridge."
+        },{
+            icon: "",
+            title: "Impressions & Shade Selection",
+            desc: "Create a custom bridge that matches your natural teeth."
+        },{
+            icon: "",
+            title: "Temporary Bridge",
+            desc: "Protect the area while your permanent bridge is being made."
+        },{
+            icon: "",
+            title: "Bridge Placement",
+            desc: "Secure the bridge and ensure proper fit, bite, and appearance."
         }]
     }]
 },],
@@ -1450,29 +1783,69 @@ export const categories = [
     }],
     sections : [ {
         img: service_16_sec_1,
-        hint: "Enhance Your Beautiful Smile with",
-        title: "Single Implants",
+        hint: "About the service",
+        title: "What Is Single Dental Implants Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>Losing a tooth can result in a range of issues, such as gum disease, gaps between teeth, decay, and bone deterioration.</p>
-            <p>For those missing a single tooth, a single dental implant is often the best solution. This method offers a durable replacement that not only restores the tooth's functionality but also matches the look and feel of your natural teeth, without necessitating any extraordinary maintenance.</p>
-            <p>Windsor Dental Care specialises in providing dental implants for individual tooth replacement. The process involves securely embedding the implant into the jawbone, followed by the placement of a crown on top to simulate a natural tooth. Notably, dental implants are the only tooth replacement technique that encourages natural bone growth, helping to maintain facial structure and prevent bone loss. If you're considering a dental implant for single tooth replacement, we invite you to contact our office for a consultation. Our skilled dentists are committed to delivering high-quality dental implants that will rejuvenate your smile and self-assurance.</p>
+            <p>A single dental implant is a titanium post surgically placed into the jawbone to replace a missing tooth root.</p>
+            <p>A crown is then attached to the implant, restoring the tooth’s appearance, strength, and function without affecting neighboring teeth.</p>
         </div>
     },{
         img: service_16_sec_2,
-        hint: "Why You Might Require A",
-        title: "Single Dental Implant",
-        desc_1 : <div>
-            <p>A tooth extraction results in a space between your teeth. Single dental implants offer a solution to fill this void, restoring your smile regardless of whether the gap is at the front, side, or back, and boosting your confidence.</p>
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Single Dental Implants and Why Is It Important?",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Implants are designed to function like a natural tooth and preserve bone health.</p>
+            <p>Single implants are recommended if you have:</p>
         </div>,
         service: [{
             icon: "",
-            title: "A Lost Tooth Amidst Healthy Neighboring Teeth",
-            desc: "Should you find yourself with a missing tooth, Windsor Dental Care provides a solution that eliminates the need to alter or reduce adjacent teeth. Our single dental implants offer an aesthetically pleasing and natural-feeling replacement."
+            title: "One missing tooth",
+            desc: ""
         },{
             icon: "",
-            title: "Loss of the Final Molar",
-            desc: "Gone are the days when replacing a molar tooth necessitated the use of removable dentures or fixed bridges, which could potentially damage neighboring teeth. With a single dental implant from Windsor Dental Care, you can regain your normal chewing ability."
-        }]
+            title: "Difficulty chewing or speaking",
+            desc: ""
+        },{
+            icon: "",
+            title: "Desire for a permanent, natural-looking solution",
+            desc: ""
+        },{
+            icon: "",
+            title: "Avoided gaps that could cause teeth shifting",
+            desc: ""
+        },{
+            icon: "",
+            title: "Healthy jawbone to support the implant",
+            desc: ""
+        },]
+    },{
+        img: service_16_sec_2,
+        hint: "A Clear Guide from Start to Finish",
+        title: "How Single Dental Implants Proccess Works",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Our team ensures a safe, precise, and comfortable implant process:</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Consultation & Examination",
+            desc: "Assess oral health, bone density, and suitability for implants."
+        },{
+            icon: "",
+            title: "Implant Placement",
+            desc: "Titanium post is surgically placed into the jawbone."
+        },{
+            icon: "",
+            title: "Healing & Osseointegration",
+            desc: "The implant fuses with the jawbone over a few months."
+        },{
+            icon: "",
+            title: "Crown Placement",
+            desc: "A custom-made crown is attached for a natural-looking finish."
+        },{
+            icon: "",
+            title: "Follow-Up & Care",
+            desc: "Guidance on maintenance and oral hygiene."
+        },]
     }]
 },{
     id: 2,
@@ -1506,34 +1879,73 @@ export const categories = [
     }],
     sections : [ {
         img: service_17_sec_1,
-        hint: "Dental Implants: A Permanent Solution for Replacing",
-        title: "Multiple Missing Teeth",
+        hint: "About the service",
+        title: "What Is Multiple Implants Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>The loss of multiple teeth can profoundly impact one's life, reducing chewing efficiency and altering speech. It also affects self-confidence due to changes in one's smile.</p>
-            <p>Tooth loss escalates the risk of dental decay, gum disease, and additional oral health issues. Furthermore, the absence of teeth leads to bone shrinkage in the jaw, potentially resulting in a facial structure that appears prematurely aged.</p>
-            <p>At Windsor Dental Care, we provide dental implants as a superior solution for replacing missing teeth. These implants act as artificial tooth roots, surgically anchored into the jawbone, serving as foundations for replacing single or multiple teeth, or even an entire set of teeth in either jaw. Our implants are designed to be strong, long-lasting, and mimic the appearance of natural teeth. They not only halt bone deterioration and prevent facial sagging but also rejuvenate your appearance by revitalizing your smile. If you're dealing with tooth loss and seeking replacements, we invite you to schedule a consultation with our dental professionals today.</p>
+            <p>Multiple dental implants involve placing two or more titanium posts into the jawbone to replace multiple missing teeth.</p>
+            <p>Crowns, bridges, or implant-supported dentures are then attached to restore your smile, chewing ability, and oral health.</p>
         </div>
     },{
         img: service_17_sec_2,
-        hint: "Who Should Consider Getting",
-        title: "Multiple Dental Implants?",
-        desc_1 : <div>
-            <p>Dental implants offer individuals the opportunity to replace missing teeth with options that closely mimic the appearance, sensation, and functionality of natural teeth. The secure attachment of multiple dental implants to the jawbone allows them to support several prosthetic teeth simultaneously, offering patients strong and lifelike replacements.</p>
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Multiple Implants and Why Is It Important?",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>They provide a durable, stable, and natural replacement for missing teeth.</p>
+            <p>Multiple implants are recommended if you have:</p>
         </div>,
         service: [{
             icon: "",
-            title: "Individuals with Missing Teeth and Remaining Natural Dentition",
-            link: "/services/single-dental-implants/",
-            desc: "If you are missing several teeth but still retain some natural ones in good health, multiple dental implants could serve as a viable treatment option. This procedure offers the opportunity to obtain replacement teeth that closely resemble and function like your natural teeth."
+            title: "Several missing teeth in a row",
+            desc: ""
         },{
             icon: "",
-            title: "Individuals Who Have Lost All of Their Teeth",
-            desc: "For individuals without any teeth, multiple dental implants often represent the optimal solution for rejuvenating both smile and chewing capability. Unlike conventional dentures, these implants provide enhanced stability and support, minimizing the risk of movement or displacement. Furthermore, their design closely mimics that of actual teeth, ensuring a more authentic and natural appearance."
+            title: "Difficulty chewing, speaking, or smiling confidently",
+            desc: ""
         },{
             icon: "",
-            title: "Individuals Experiencing Issues with Fixed Bridges and Removable Dentures",
-            desc: "Multiple dental implants, anchored directly into the jawbone, offer a secure foundation for artificial teeth without compromising the surrounding natural teeth. If you're dealing with a fixed bridge or a removable denture that has loosened because of damage or decay to the supporting teeth, dental implants could serve as an effective alternative treatment option."
-        }]
+            title: "Gaps causing teeth shifting or bone loss",
+            desc: ""
+        },{
+            icon: "",
+            title: "Desire for a permanent, natural-looking solution",
+            desc: ""
+        },{
+            icon: "",
+            title: "Need for a strong foundation for bridges or dentures",
+            desc: ""
+        },]
+    },{
+        img: service_20_sec_2,
+        hint: "A Clear Guide from Start to Finish",
+        title: "How Multiple Implants Proccess Works",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Our team ensures a safe, precise, and comfortable experience:</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Consultation & Assessment",
+            desc: "Evaluate oral health, bone structure, and treatment needs."
+        },{
+            icon: "",
+            title: "Treatment Planning",
+            desc: "3D scans and digital planning for accurate implant placement."
+        },{
+            icon: "",
+            title: "Implant Placement Surgery",
+            desc: "Titanium posts are placed into the jawbone."
+        },{
+            icon: "",
+            title: "Healing & Osseointegration",
+            desc: "Implants integrate with the bone over a few months."
+        },{
+            icon: "",
+            title: "Restoration Attachment",
+            desc: "Crowns, bridges, or dentures are securely fixed."
+        },{
+            icon: "",
+            title: "Follow-Up & Care",
+            desc: "Guidance for long-term maintenance and oral hygiene."
+        },]
     }]
 },{
     id: 3,
@@ -1567,33 +1979,73 @@ export const categories = [
     }],
     sections : [ {
         img: "",
-        hint: "Achieve a Stable and Comfortable Fit with",
-        title: "Implant Supported Dentures",
+        hint: "About the service",
+        title: "What Is Implant Supported Dentures Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>Dentures have long been a go-to solution for replacing lost teeth. Yet, even with improvements in their design and adhesives, they often end up feeling unstable and uncomfortable.</p>
-            <p>Many individuals opt for dentures when dealing with tooth loss, but frequently encounter issues such as poor fit and bulkiness, leading to difficulties in chewing, speaking, and a lack of confidence.</p>
-            <p>At Windsor Dental Care, we provide a superior alternative with our implant-supported dentures, designed for enhanced security and comfort. These dentures offer a more natural look and feel, making them an ideal choice for those who have lost all their teeth. Unlike traditional dentures, they remain firmly in place without slipping or producing noise during conversations or meals. If you're interested in exploring the benefits of implant-supported dentures, contact Windsor Dental Care today. Our team is ready to address any inquiries and assist in determining whether this option suits your needs.</p>
+            <p>Implant-supported dentures are dentures anchored onto dental implants rather than resting solely on the gums.</p>
+            <p>This solution provides enhanced stability, chewing efficiency, and comfort compared to traditional dentures, while preventing bone loss and improving facial structure.</p>
         </div>
     },{
         img: "",
-        hint: "Who Is a Candidate for",
-        title: "Implant Supported Dentures?",
-        desc_1 : <div>
-            <p>An implant-supported denture involves replacing multiple teeth with a denture that is securely attached to the bone. Here are the types of patients who might find this dental solution beneficial.</p>
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Implant Supported Dentures and Why Is It Important?",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Implant-supported dentures offer a secure, long-lasting alternative to conventional dentures.</p>
+            <p>They are recommended if you:</p>
         </div>,
         service: [{
             icon: "",
-            title: "Individuals Lacking Sufficient Bone for Denture Stabilization",
-            desc: "Implant-supported dentures present a viable solution for individuals who lack enough jawbone to secure conventional dentures. These dentures are held firmly in position by two or more implants embedded in the jawbone, ensuring they do not shift or slide as traditional dentures might."
+            title: "Have multiple missing teeth or complete tooth loss",
+            desc: ""
         },{
             icon: "",
-            title: "Individuals with Gum Sensitivity to Pressure",
-            desc: "Conventional dentures exert pressure on the gums during chewing or biting. However, implant-supported dentures, thanks to their solid attachment to the jawbone, remain stationary. This significantly reduces pressure on the gums."
+            title: "Struggle with loose or slipping traditional dentures",
+            desc: ""
         },{
             icon: "",
-            title: "Individuals with a Sensitive or Strong Gag Reflex Due to Removable Prosthetics",
-            desc: "Implant-supported dentures are anchored by implants rather than depending on the plastic base for hold, allowing the base of the artificial teeth to be much thinner. Consequently, this leads to a less cumbersome and more compact denture design. For patients experiencing active or pronounced gag reflexes, the minimized size of these dentures offers a significant benefit."
-        }]
+            title: "Want to improve chewing, speaking, and comfort",
+            desc: ""
+        },{
+            icon: "",
+            title: "Desire a permanent, stable, and natural-looking solution",
+            desc: ""
+        },{
+            icon: "",
+            title: "Wish to preserve jawbone health and facial structure",
+            desc: ""
+        },]
+    },{
+        img: service_14_sec_2,
+        hint: "A Clear Guide from Start to Finish",
+        title: "How Implant Supported Dentures Proccess Works",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Our team ensures comfortable, precise, and effective treatment:</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Consultation & Assessment",
+            desc: "Evaluate oral health, jawbone density, and suitability for implants."
+        },{
+            icon: "",
+            title: "Implant Placement Surgery",
+            desc: "Titanium implants are inserted into the jawbone."
+        },{
+            icon: "",
+            title: "Healing & Osseointegration",
+            desc: "Implants fuse with the bone over a few months."
+        },{
+            icon: "",
+            title: "Denture Fabrication",
+            desc: "Custom dentures are designed to attach securely to implants."
+        },{
+            icon: "",
+            title: "Denture Attachment",
+            desc: "Dentures are fixed onto implants for stability and function."
+        },{
+            icon: "",
+            title: "Follow-Up & Maintenance",
+            desc: "Instructions for cleaning, adjustments, and long-term care."
+        },]
     }]
 },{
     id: 4,
@@ -1627,33 +2079,73 @@ export const categories = [
     }],
     sections : [ {
         img: service_18_sec_1,
-        hint: "Restore Your Full Smile and Boost Your Confidence with an",
-        title: "Implant Supported Bridge",
+        hint: "About the service",
+        title: "What Is Implant Supported Bridge Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>The absence of teeth can lead to numerous challenges, including difficulties in speaking and eating, as well as feelings of self-consciousness about one's smile.</p>
-            <p>An implant-supported bridge represents a cutting-edge solution in dental implant therapy, providing a permanent and sturdy replacement for missing teeth. Despite its high success rate, some individuals may hesitate due to concerns about the procedure's complexity or cost.</p>
-            <p>At Windsor Dental Care, we specialise in offering top-tier, reliable solutions for the replacement of multiple missing teeth. Our implant-supported bridges, crafted from premium materials, are designed to replace missing teeth with dental implants, ensuring a seamless restoration. Our skilled team is committed to delivering exceptional care at an affordable price. If you're missing teeth and considering implants as a solution, we invite you to reach out to Comfort Care Dental for a consultation. Our goal is to assist you in exploring your treatment options and choosing the best path forward for your dental health.</p>
+            <p>An implant-supported bridge is a dental restoration used to replace two or more missing teeth.</p>
+            <p>Instead of relying on natural teeth for support, the bridge is anchored onto dental implants, providing strength, stability, and a natural appearance.</p>
         </div>
     },{
         img: service_18_sec_2,
-        hint: "Situations Where an",
-        title: "Implant Supported Bridge May Be Necessary",
-        desc_1 : <div>
-            <p>Differing from traditional tooth-supported bridges, implant-supported bridges are anchored to dental implants instead of natural teeth. This method is used to tackle a variety of dental problems, aiming to rejuvenate a patient's healthy smile.</p>
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Implant Supported Bridge and Why Is It Important?",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Implant-supported bridges offer a durable, functional, and aesthetically pleasing replacement.</p>
+            <p>They are recommended if you:</p>
         </div>,
         service: [{
             icon: "",
-            title: "Multiple Teeth Missing",
-            desc: "An implant-supported bridge serves as a solution for replacing several missing teeth, offering a more robust foundation than natural teeth for prosthetic replacements. This type of bridge can furnish you with artificial teeth that closely resemble and function like your natural teeth."
+            title: "Have multiple missing teeth in a row",
+            desc: ""
         },{
             icon: "",
-            title: "Deteriorated Supporting Teeth",
-            desc: "Implant-supported bridges rely on implants for support rather than natural teeth. This approach eliminates the need to alter adjacent teeth to fit the bridge, reducing the chances of damage and decay. If you seek a prosthetic solution that replaces missing teeth while conserving your natural ones, an implant-supported bridge may be the ideal choice for you."
+            title: "Want a permanent, stable solution rather than removable dentures",
+            desc: ""
         },{
             icon: "",
-            title: "Reduced Stability of Removable Partial Dentures",
-            desc: "An implant-supported bridge is secured to your jawbone through dental implants, offering a firm and supportive foundation. This method is highly durable for tooth replacement, allowing patients to engage in their daily activities without concern for the instability of partial dentures."
-        }]
+            title: "Wish to restore chewing, speech, and aesthetics",
+            desc: ""
+        },{
+            icon: "",
+            title: "Need to prevent teeth shifting and bone loss",
+            desc: ""
+        },{
+            icon: "",
+            title: "Desire a natural-looking, long-lasting smile",
+            desc: ""
+        },]
+    },{
+        img: service_21_sec_2,
+        hint: "A Clear Guide from Start to Finish",
+        title: "How Implant Supported Bridge Proccess Works",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Our team ensures a comfortable, precise, and effective treatment:</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Consultation & Assessment",
+            desc: "Examine oral health, bone quality, and suitability for implants."
+        },{
+            icon: "",
+            title: "Implant Placement Surgery",
+            desc: "Titanium implants are inserted to anchor the bridge."
+        },{
+            icon: "",
+            title: "Healing & Osseointegration",
+            desc: "Implants fuse with the jawbone over a few months."
+        },{
+            icon: "",
+            title: "Bridge Fabrication",
+            desc: "Custom bridge designed to attach to implants for perfect fit and function."
+        },{
+            icon: "",
+            title: "Bridge Placement",
+            desc: "Securely attach the bridge and ensure proper bite, comfort, and appearance."
+        },{
+            icon: "",
+            title: "Follow-Up & Maintenance",
+            desc: "Guidance on cleaning, adjustments, and long-term care."
+        },]
     }]
     },],
 },
@@ -1744,32 +2236,68 @@ export const categories = [
     }],
     sections : [ {
         img:  service_19_sec_1,
-        hint: "Don't Let a Toothache Dampen Your Enjoyment of",
-        title: "Life's Greatest Pleasures",
+        hint: "About the service",
+        title: "What Is Immediate Toothache Relief Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>Experiencing a toothache can be incredibly debilitating, disrupting your ability to enjoy meals, get restful sleep, and concentrate on everyday activities.</p>
-            <p>Dental discomfort is among the most frequently encountered types of pain, significantly impacting your ability to live life fully. It can interfere with eating, drinking, and resting properly.</p>
-            <p>At Windsor Dental Care, we provide high-quality dental services at affordable prices, without compromising on the level of care or expertise. Our comprehensive offerings include fillings, extractions, root canal treatments, and dental implants. Our mission is to prevent dental issues from detracting from our patients' quality of life, aiming instead for everyone to boast a healthy, confident smile. Leveraging advanced technology and methods, we strive to make your treatment as efficient and comfortable as possible. So, if you're struggling with a toothache, don't hesitate to reach out to us. We're here to assist you in receiving the necessary care to alleviate your pain.</p>
+            <p>A toothache is pain or discomfort in or around a tooth, often caused by decay, infection, gum disease, or injury.</p>
+            <p>Tooth pain can range from mild sensitivity to severe throbbing, affecting your ability to eat, speak, and sleep comfortably.</p>
         </div>
     },{
         img: service_19_sec_2,
-        hint: "Why It's Crucial to Address",
-        title: "Toothache Promptly",
-        desc_1 : <div>
-            <p>Experiencing a toothache can be extremely discomforting and painful. It's important to address it promptly, whether it stems from tooth decay, gum disease, or another dental issue, to avoid additional complications.</p>
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Immediate Toothache Relief and Why Is It Important?",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Identifying the cause is crucial for effective, long-lasting relief.</p>
+            <p>Toothaches may occur due to:</p>
         </div>,
         service: [{
             icon: "",
-            title: "Toothache Can Lead to Intense and Debilitating Discomfort",
-            desc: "Dental discomfort is widespread and often overlooked, particularly in its milder forms. Yet, the optimal moment for seeking treatment is during these initial mild stages. Delaying action until the pain intensifies risks subjecting oneself to severe discomfort that could have been preemptively mitigated with earlier intervention."
+            title: "Cavities or tooth decay",
+            desc: ""
         },{
             icon: "",
-            title: "Toothache Can Impact Your Nutritional Intake",
-            desc: "A toothache can cause challenges with consuming food and beverages. This issue is frequently observed in children who, because of dental discomfort, avoid eating and may subsequently face nutritional deficiencies."
+            title: "Gum infection or abscess",
+            desc: ""
         },{
             icon: "",
-            title: "Toothache Could Signal a More Severe Health Problem",
-            desc: "A toothache can signify various issues, occasionally pointing to significant health concerns. This is a key reason why dental pain should never be overlooked."
+            title: "Cracked, chipped, or damaged teeth",
+            desc: ""
+        },{
+            icon: "",
+            title: "Wisdom teeth causing pressure or infection",
+            desc: ""
+        },{
+            icon: "",
+            title: "Tooth grinding or trauma",
+            desc: ""
+        }]
+    },{
+        img: service_20_sec_2,
+        hint: "A Clear Guide from Start to Finish",
+        title: "How Immediate Toothache Relief Proccess Works",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Our team ensures a fast, comfortable, and precise solution:</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Examination & X-rays",
+            desc: "Determine the source of pain."
+        },{
+            icon: "",
+            title: "Diagnosis & Treatment Plan",
+            desc: "Tailored care depending on the cause."
+        },{
+            icon: "",
+            title: "Pain Relief",
+            desc: "Medications or local anaesthetic to ease discomfort."
+        },{
+            icon: "",
+            title: "Targeted Treatment",
+            desc: "Options may include fillings, root canal therapy, extraction, or gum treatment."
+        },{
+            icon: "",
+            title: "Aftercare & Prevention",
+            desc: "Guidance to prevent future toothaches and maintain oral health."
         }]
     }]
 },{
@@ -1804,37 +2332,69 @@ export const categories = [
     }],
     sections : [ {
         img: service_20_sec_1,
-        hint: "Have Your Chipped Tooth Examined Before It Turns",
-        title: "Into A Major Issue",
+        hint: "About the service",
+        title: "What Is Restore Chipped Tooth Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>A chipped tooth, though a common dental mishap, requires immediate attention to avoid complications.</p>
-            <p>Chipped or cracked teeth not only detract from your appearance but can also cause discomfort and further harm if not treated promptly. Delayed treatment for such dental issues can become both complex and costly.</p>
-            <p>Windsor Dental Care provides swift and dependable solutions for chipped teeth, offering a variety of options to mend the damage and rejuvenate your smile. The most frequent remedies include fillings, which are used to close the spaces created by the chip, and crowns, which cover the tooth entirely to prevent additional harm. For certain cases, veneers might be an option to fix damaged teeth. Should you experience a chipped tooth, schedule your visit with Windsor Dental Care to regain your smile with ease!</p>
+            <p>A chipped tooth occurs when part of the tooth breaks due to trauma, biting hard foods, or decay.</p>
+            <p>Chips can range from minor enamel cracks to larger pieces of the tooth breaking off, causing sensitivity, pain, or aesthetic concerns.</p>
         </div>
     },{
         img: service_20_sec_2,
-        hint: "Why It'S Crucial To Get A",
-        title: "Chipped Tooth Treated",
-        desc_1 : <div>
-            <p>Many patients tend to overlook a chipped tooth, particularly when the chip is minor and there's no pain involved. Yet, it's important to remember that a chipped tooth is essentially a broken tooth, which could lead to situations needing more intricate care. Here are a few reasons to get your chipped tooth checked out.</p>
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Restore Chipped Tooth and Why Is It Important?",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Timely treatment prevents further damage and restores function and appearance.</p>
+            <p>Chipped teeth often result from:</p>
         </div>,
         service: [{
             icon: "",
-            title: "Risk Of Cuts Inside Your Mouth",
-            desc: "When a tooth gets chipped, its sharp edges can slice through the lips, cheeks, and tongue, causing sore wounds that complicate eating, drinking, and speaking."
+            title: "Biting or chewing hard foods",
+            desc: ""
         },{
             icon: "",
-            title: "Possibility Of A More Severe Fracture Arising",
-            desc: "A chipped tooth becomes fragile and is at a higher risk of breaking further. Understanding the cause of the tooth's damage is crucial to avoid similar incidents in the future."
+            title: "Accidents or injuries to the mouth",
+            desc: ""
         },{
             icon: "",
-            title: "Potential For Discomfort",
-            desc: "If a part of the tooth breaks away, it exposes the tooth's interior, making it more vulnerable to bacterial invasion. This exposure can result in intense pain and accelerate tooth decay."
+            title: "Tooth decay or cavities weakening the enamel",
+            desc: ""
         },{
             icon: "",
-            title: "Absence Of Pain May Indicate A More Serious Issue",
-            desc: "The nerve in a tooth enables us to sense pain as an indicator of a problem. However, in instances of extreme trauma, the nerve may cease to respond and perish. Contrary to what many might believe, the absence of pain does not signify health. In such cases, even if the nerve is dead, the condition within the tooth can deteriorate unnoticed until it significantly worsens, at which point the patient realizes the extent of the issue."
-        }]
+            title: "Teeth grinding (bruxism)",
+            desc: ""
+        },{
+            icon: "",
+            title: "Sports-related impacts",
+            desc: ""
+        },]
+    },{
+        img: service_16_sec_2,
+        hint: "A Clear Guide from Start to Finish",
+        title: "How Restore Chipped Tooth Proccess Works",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Our team ensures a comfortable and effective repair process:</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Examination & X-rays",
+            desc: "Assess the extent of the chip and underlying tooth health."
+        },{
+            icon: "",
+            title: "Treatment Planning",
+            desc: "Determine the best method: bonding, veneers, or crown."
+        },{
+            icon: "",
+            title: "Tooth Repair",
+            desc: "Apply composite bonding, veneers, or a crown depending on severity."
+        },{
+            icon: "",
+            title: "Polishing & Bite Check",
+            desc: "Ensure smoothness, proper alignment, and natural appearance."
+        },{
+            icon: "",
+            title: "Aftercare Guidance",
+            desc: "Instructions to prevent further damage."
+        },]
     }]
 },{
     id: 3,
@@ -1868,37 +2428,70 @@ export const categories = [
     }],
     sections : [ {
         img: service_21_sec_1,
-        hint: "Immediate Dental Treatment For",
-        title: "Abscess Management",
+        hint: "About the service",
+        title: "What Is Abscess Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>A dental abscess is an infection that leads to pus formation, often stemming from tooth decay, and can result in discomfort and swelling in the face, neck, or head if left unchecked.</p>
-            <p>This condition usually arises from neglecting a cavity or gum disease. Symptoms like pain, swelling, or fever necessitate prompt dental attention.</p>
-            <p>At Windsor Dental Care, we're prepared to offer exceptional treatment, crafting a personalized plan to alleviate the discomfort caused by a dental abscess. Our range of dental services caters to patients across all age groups, encompassing everything from standard cleanings and fillings to more involved procedures like root canal therapy. Dedicated to delivering top-notch dental care, Windsor Dental Care ensures a comfortable and convenient experience, supported by the latest in dental technology and a team of skilled professionals focused on your well-being.</p>
+            <p>A dental abscess is a painful infection at the root of a tooth or in the gums caused by bacteria buildup.</p>
+            <p>It can lead to swelling, severe pain, and even systemic health issues if untreated.</p>
+            <p>Dental abscesses often occur due to tooth decay, gum disease, or injury.</p>
         </div>
     },{
         img: service_21_sec_2,
-        hint: "Indicators Of",
-        title: "A Dental Abscess",
-        desc_1 : <div>
-            <p>A dental abscess is a collection of pus that forms either around a tooth's root or in the space between the gum and a tooth, typically stemming from an infection. To identify whether you might have an abscessed tooth, here are several key indicators to be aware of.</p>
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Abscess and Why Is It Important?",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Early treatment prevents serious complications and protects your overall health.</p>
+            <p>Look out for:</p>
         </div>,
         service: [{
             icon: "",
-            title: "Discomfort With Hot And Cold Drinks And During Biting",
-            desc: "A bacterial infection leading to nerve inflammation is the cause of a dental abscess. This inflammation makes the nerve highly sensitive to temperature variations and pressure. Consequently, consuming hot or cold beverages and chewing can trigger intense discomfort."
+            title: "Persistent, severe tooth or gum pain",
+            desc: ""
         },{
             icon: "",
-            title: "Inflammation",
-            desc: "A prominent indicator of a dental abscess is swelling along the gums, often accompanied by pain and sensitivity. Without treatment, this swelling can increase in size, potentially extending to the cheeks or neck."
+            title: "Swelling in the gums or face",
+            desc: ""
         },{
             icon: "",
-            title: "Sudden, Pulsating Discomfort",
-            desc: "A tooth suffering from a bacterial infection typically experiences intense pain, which can occur spontaneously without any apparent cause. This pain tends to intensify over time and can be intermittent or constant."
+            title: "Pus or discharge near a tooth",
+            desc: ""
         },{
             icon: "",
-            title: "A Gum Swelling with a Central Opening Resembling a Pimple",
-            desc: "In some cases, abscessed teeth do not lead to swelling. Rather, the abscess finds an outlet through a gum lesion resembling a pimple, known as a fistula. This fistula can fluctuate in size during meals, and the drainage from the abscess often results in a metallic taste in the mouth."
-        }]
+            title: "Sensitivity to hot or cold",
+            desc: ""
+        },{
+            icon: "",
+            title: "Fever or general discomfort in severe cases",
+            desc: ""
+        },]
+    },{
+        img: service_14_sec_2,
+        hint: "A Clear Guide from Start to Finish",
+        title: "How Abscess Proccess Works",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Our team provides a comfortable, effective treatment plan:</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Examination & X-rays",
+            desc: "Identify the abscess location and severity."
+        },{
+            icon: "",
+            title: "Pain Management",
+            desc: "Local anesthetic or medication to relieve discomfort."
+        },{
+            icon: "",
+            title: "Drainage & Cleaning",
+            desc: "Remove pus and disinfect the affected area."
+        },{
+            icon: "",
+            title: "Targeted Treatment",
+            desc: "Root canal therapy, extraction, or gum treatment depending on the tooth’s condition."
+        },{
+            icon: "",
+            title: "Aftercare & Prevention",
+            desc: "Guidance to prevent recurrence and maintain oral health."
+        },]
     }]
 },{
     id: 4,
@@ -1932,37 +2525,68 @@ export const categories = [
     }],
     sections : [ {
         img: service_22_sec_1,
-        hint: "Restore Your Smile:Promptly Replace Missing",
-        title: "Fillings or Crowns",
+        hint: "About the service",
+        title: "What Is Restore Lost Dental Fillings & Crowns Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>Missing fillings and crowns can create both cosmetic and functional issues.</p>
-            <p>It's crucial to address a lost filling or crown without delay. Neglecting to do so can lead to worsening conditions over time.</p>
-            <p>Dental health is a vital aspect of your overall wellbeing, and we're here to support you at every turn. Windsor Dental Care provides a range of services, including the replacement of fillings and crowns. These treatments help shield your teeth against additional harm, revitalizing the health of your smile. In the event of a dental emergency, you can count on our team of dentists to deliver exceptional care tailored to your needs. Feel free to get in touch and make an appointment; we're eager to assist you in maintaining a vibrant smile.</p>
+            <p>A lost dental filling or crown can occur due to wear and tear, decay underneath, or trauma.</p>
+            <p>When a filling or crown comes off, the tooth can become sensitive, weak, or prone to further damage, increasing the risk of decay or infection.</p>
         </div>
     },{
         img: service_22_sec_2,
-        hint: "Why Managing Missing",
-        title: "Fillings or Crowns is Essential",
-        desc_1 : <div>
-            <p>A missing filling or crown qualifies as a dental emergency and requires prompt attention. Beyond their impact on your appearance, they heighten the likelihood of tooth decay and infections. Below are several arguments for why it's imperative to swiftly replace any lost dental restorations.</p>
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Restore Lost Dental Fillings & Crowns and Why Is It Important?",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Prompt attention prevents further damage and complications.</p>
         </div>,
         service: [{
             icon: "",
-            title: "The Impact of Losing a Filling or Crown, Particularly on a Front Tooth, on One's Appearance",
-            desc: "When a filling or crown comes loose and separates from a tooth, it alters the tooth's structure, impacting the individual's appearance. This change can lead to increased self-awareness during smiling or speaking for the affected person."
+            title: "Tooth sensitivity to hot, cold, or pressure",
+            desc: ""
         },{
             icon: "",
-            title: "Missing a Filling or Crown Can Complicate Biting and Chewing",
-            desc: "This situation may result in your tooth becoming sensitive or painfully tender, complicating the process of biting and chewing food."
+            title: "Visible gap or missing material on a tooth",
+            desc: ""
         },{
             icon: "",
-            title: "Teeth with Dislodged Fillings and Crowns May Experience Sensitivity or Pain",
-            desc: "When a filling or crown is lost, the tooth's inner components become unprotected. This exposure results in sensitivity to pressure, temperature changes from cold and hot drinks, and even to air."
+            title: "Discomfort while chewing",
+            desc: ""
         },{
             icon: "",
-            title: "A Tooth Missing a Filling or Crown is at Higher Risk for Decay",
-            desc: "The exposure of a tooth's interior following the loss of fillings or crowns allows bacteria to infiltrate and lead to decay. This process may result in cavity development, further compromising the tooth's integrity. Addressing these issues typically necessitates more complex dental treatments."
-        }]
+            title: "Sharp edges on a broken filling or crown",
+            desc: ""
+        },{
+            icon: "",
+            title: "Risk of decay or infection in exposed areas",
+            desc: ""
+        },]
+    },{
+        img: service_18_sec_2,
+        hint: "A Clear Guide from Start to Finish",
+        title: "How Restore Lost Dental Fillings & Crowns Proccess Works",
+        desc_1 : <div>
+            <p>Our team ensures a comfortable, precise, and durable repair:</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Examination & X-rays ",
+            desc: "Assess the tooth’s condition and identify the reason for loss."
+        },{
+            icon: "",
+            title: "Cleaning & Preparation",
+            desc: "Remove any decay and prepare the tooth for replacement."
+        },{
+            icon: "",
+            title: "Filling or Crown Replacement",
+            desc: "Apply a new filling or fit a custom crown."
+        },{
+            icon: "",
+            title: "Polishing & Bite Check",
+            desc: "Ensure comfort, alignment, and natural appearance."
+        },{
+            icon: "",
+            title: "Aftercare Advice",
+            desc: "Tips to prevent future dislodgement and maintain oral health."
+        },]
     }]
 },{
     id: 5,
@@ -1973,7 +2597,7 @@ export const categories = [
         desc: "Tooth removal is a frequently performed dental procedure that often worries patients. However, for individuals facing serious dental problems, extraction remains a valuable option. Windsor Dental Care provides gentle and painless tooth removal services, aiming to enhance patients' overall oral health.",
         subLabel: "Tooth Extractions"
     },
-        faqs : [{
+    faqs : [{
         question: "Is tooth extraction painful?",
         answer:<div className="space-y-3">
             <p>No, local anaesthetic ensures a comfortable, pain-free procedure.</p>
@@ -1996,32 +2620,69 @@ export const categories = [
     }],
     sections : [ {
         img: service_23_sec_1,
-        hint: "Enhance Your Dental Well-being Through",
-        title: "A Comfortable Tooth Removal Experience",
+        hint: "About the service",
+        title: "What Is Tooth Extractions Treatment?",
         desc_1 : <div className="flex flex-col gap-2">
-            <p>Tooth extraction is a process where a tooth is entirely removed from its socket, primarily used to address teeth that are extensively damaged or decayed. Removing a tooth can help eradicate bacteria and bolster your overall dental health.</p>
-            <p>At Windsor Dental Care, we recognize the common concerns surrounding tooth extractions and are dedicated to maximizing your comfort and security throughout the procedure. We will guide you through every phase, ensuring you are fully informed about what to expect. Our team of welcoming and skilled dentists will ensure you're comfortable during your entire visit. If you're contemplating a tooth extraction, please reach out to Windsor Dental Care. We're here to assist you in making a knowledgeable choice regarding your dental care.</p>
+            <p>A tooth extraction is the removal of a tooth from its socket in the jaw.</p>
+            <p>Extractions may be necessary due to severe decay, infection, crowding, or trauma, and are performed carefully to preserve surrounding teeth and gum health.</p>
         </div>
     },{
         img: service_23_sec_2,
-        hint: "Benefits of Undergoing",
-        title: "Tooth Removal",
-        desc_1 : <div>
-            <p>We always strive to preserve teeth whenever feasible, but in certain situations, tooth extraction might be the sole viable treatment. Below are some benefits associated with tooth removal.</p>
+        hint: "Key Dental Issues That Require Treatment",
+        title: "When Do You Need a Tooth Extractions and Why Is It Important?",
+        desc_1 : <div className="flex flex-col gap-2">
+            <p>Timely extraction prevents further infection, pain, or damage to your teeth and gums.</p>
+            <p>You may need an extraction if you have:</p>
         </div>,
         service: [{
             icon: "",
-            title: "Resolve the Root Dental Problem",
-            desc: "In some instances, the best course of action is to extract the tooth. If there's an infection, it risks spreading to nearby teeth, gums, and potentially throughout your body. By removing the infected tooth, you can help restore your oral health to its proper state."
+            title: "Severe tooth decay that cannot be restored",
+            desc: ""
         },{
             icon: "",
-            title: "Alleviates Discomfort",
-            desc: "During your dental visit, your dentist may identify possible health complications linked to gum disease. Without prompt treatment, bacteria from gum disease can enter your bloodstream, potentially impacting your kidneys and liver. Undergoing gum therapy can aid in preventing such health issues."
+            title: "Infection or abscess threatening surrounding teeth",
+            desc: ""
         },{
             icon: "",
-            title: "Enhances Dental Well-being",
-            desc: "Removing a tooth can boost your dental health and protect the rest of your teeth. Extracting a troublesome tooth prevents the spread of dental issues to adjacent teeth. This not only betters your oral hygiene but also saves you both time and expenses in the long run."
-        }]
+            title: "Impacted or problematic wisdom teeth",
+            desc: ""
+        },{
+            icon: "",
+            title: "Overcrowded teeth before orthodontic treatment",
+            desc: ""
+        },{
+            icon: "",
+            title: "Damaged or fractured teeth beyond repair",
+            desc: ""
+        },]
+    },{
+        img: service_17_sec_2,
+        hint: "A Clear Guide from Start to Finish",
+        title: "How Tooth Extractions Proccess Works",
+        desc_1 : <div>
+            <p>Our team ensures a comfortable and safe procedure:</p>
+        </div>,
+        service: [{
+            icon: "",
+            title: "Examination & X-rays",
+            desc: "Assess the tooth and surrounding bone structure."
+        },{
+            icon: "",
+            title: "Local Anaesthetic",
+            desc: "Numb the area for a painless procedure."
+        },{
+            icon: "",
+            title: "Extraction",
+            desc: "Carefully remove the tooth using gentle techniques."
+        },{
+            icon: "",
+            title: "Post-Extraction Care",
+            desc: "Control bleeding, reduce swelling, and provide aftercare instructions."
+        },{
+            icon: "",
+            title: "Follow-Up & Restoration",
+            desc: "Discuss options for replacing the extracted tooth if needed."
+        },]
     }]
 }],
 
