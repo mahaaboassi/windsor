@@ -7,10 +7,11 @@ type Item = {
     isCenter?: boolean,
     withShape?: boolean,
     isWhite?: boolean,
-    isfullDescriptionWidth?: boolean
+    isfullDescriptionWidth?: boolean,
+    note?:string
 }
 
-const Heading: React.FC<Item> = ({hint,title,desc,isCenter,withShape,isWhite,isfullDescriptionWidth})=>{
+const Heading: React.FC<Item> = ({hint,title,desc,isCenter,withShape,isWhite,isfullDescriptionWidth,note})=>{
     return(<div className={`headings relative flex flex-col gap-5 ${isCenter ? "text-center items-center":""}`}>
         { withShape && <div className="absolute top-0 left-0 animate-moveAround"><img src={shape} alt="Shape" /></div> }
         <div className={`flex flex-col gap-0.5 ${isCenter ?"items-center":''}`}>
@@ -18,6 +19,7 @@ const Heading: React.FC<Item> = ({hint,title,desc,isCenter,withShape,isWhite,isf
             <h3 className={`uppercase ${isWhite ? "!text-[var(--light)]" : ""}`}>{title}</h3>
         </div>
         {desc != "" && <p className={`${isfullDescriptionWidth?'!w-full':""}`}>{desc}</p>}
+        {note != "" && <p className={`${isfullDescriptionWidth?'!w-full':""} italic !text-zinc-800`}>{note}</p>}
     </div>)
 }
 export default Heading
