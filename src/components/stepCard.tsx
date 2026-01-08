@@ -52,7 +52,7 @@ import Heading from "../components/heading"
                     key={type}
                     variants={container}
                     initial="hidden"
-                    whileInView="show"
+                    animate="show"
                     viewport={{ once: true, amount: 0.2 }} 
                     className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-5 steps "
                 >
