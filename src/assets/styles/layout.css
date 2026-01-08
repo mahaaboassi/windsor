@@ -124,6 +124,14 @@ nav li{
     color: var(--light);
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
+.whatsapp-icon{
+  animation: vabiration 1s infinite;
+}
+@keyframes vabiration {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-1px); }
+  100% { transform: translateX(0); }
+}
 /* Animation Shape */
 @keyframes moveAround {
   0% {

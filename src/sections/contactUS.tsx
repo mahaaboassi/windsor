@@ -50,7 +50,7 @@ const Contact = ()=>{
             }
     };
     return(<div className="flex flex-col-reverse gap-5 lg:grid lg:grid-cols-2 container-layout">
-        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col !w-full rounded-xl gap-2 md:gap-8 p-6 md:p-10 bg-[var(--main)]   ">
+        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col !w-full rounded-xl gap-2 md:gap-4 p-6 md:p-10 border border-[var(--main)] border-[2px]">
                 <div className="grid grid-cols-1 xs:grid-cols-2 gap-2 md:gap-8">
                     <div>
                         <input {...register("firstName")} className="w-full" placeholder="First Name" />
@@ -76,7 +76,7 @@ const Contact = ()=>{
                     {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
                 </div>
                 <div className="w-full">
-                    <button disabled={loading} className="btn flex justify-center items-center gap-2 !bg-[var(--light)] !text-[var(--main)] !w-full">
+                    <button disabled={loading} className="btn flex justify-center items-center gap-2 !w-full">
                         {loading?<div className="w-5 h-5 border-4 border-t-[var(--main)] border-gray-200 rounded-full animate-spin"></div>:"Submit"}
                     </button>
                 </div>

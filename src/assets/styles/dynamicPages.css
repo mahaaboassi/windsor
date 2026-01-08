@@ -17,7 +17,7 @@
 }
 .card-method:hover{
     transform: translateY(-5px) scale(1.05); 
-    box-shadow: 0 15px 25px rgba(0,0,0,0.2); 
+    /* box-shadow: 0 15px 25px rgba(0,0,0,0.2);  */
 }
 .offers path{
     fill: var(--light);

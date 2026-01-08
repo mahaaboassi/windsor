@@ -179,16 +179,12 @@
     justify-content: center;
     align-items: center;
 }
-.treatment-card:hover{
-    /* box-shadow: var(--shadow-box); */
-    transform: translateY(5px);
-}
-/* .treatment-card:hover .icon-tooth{
+.treatment-card:hover .icon-tooth{
     background-color: var(--light);
-} */
-/* .treatment-card:hover .icon-tooth svg path{
-    fill: var(--grey_1);
-} */
+} 
+.treatment-card:hover .icon-tooth svg path{
+    fill: var(--main);
+}
 .overlay-icon{
     position: absolute;
     right: 20px;
@@ -200,8 +196,12 @@
 } */
 .container-layout-bg{
     position: absolute;
-    inset: 0;
-    background: linear-gradient(var(--grey_1), var(--grey_2));
+    left: 0;
+    top:0;
+    bottom: 0;
+    width: 0;
+    /* background: linear-gradient(var(--grey_1), var(--grey_2)); */
+    background: linear-gradient(rgba(35, 35, 35, 0.536), rgba(38, 38, 38, 0.603));
     z-index: -1;
     opacity: 0;
     transition: 0.3s;
@@ -216,7 +216,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(45deg, rgba(34, 34, 34, 0.671) 20%, rgba(0, 0, 0, 0.108));
+    background: linear-gradient(45deg, rgba(34, 34, 34, 0.671) 20%, rgba(49, 49, 49, 0.108));
 }
 .container-layout-img img{
     width: 100%;
@@ -224,7 +224,8 @@
     object-fit: cover;
 }
 .treatment-card:hover .container-layout-bg{
-    opacity: 0;
+    opacity: 1;
+    width: 100%;
 }
 /* Gallery */
 
