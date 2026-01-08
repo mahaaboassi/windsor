@@ -70,7 +70,6 @@ type Item = {
     },
     chooseUs?: ItemContact[],
 
-
 };
 type ItemWhyChoose = {
     icon?: string | undefined;
@@ -97,9 +96,8 @@ const Service = ()=>{
         const randomItems = [...whyChooseUsData]
         .sort(() => 0.5 - Math.random())
         .slice(0, 4)
-
         setDataWhyUs(randomItems)    
-    },[link,category])
+    },[link])
     return( <div className="flex flex-col gap-10 md:gap-20 dynamic-pages">
         <HeroForDynamicPages img={cat?.img ?? ""} img_sm={cat?.img_sm ?? ""} hint={data?.hero?.hint ?? ""} title={data?.hero?.title ?? ""}
                             desc={data?.hero?.desc ?? ""}
@@ -163,7 +161,7 @@ const Service = ()=>{
                 <div className="sticky top-50 flex justify-center"><img className="max-h-[300px] xs:max-h-[400px] md:max-h-[500px] object-contain" src={data?.sections[2].img? data?.sections[2].img:img_2} alt="Image" /></div>
             </div>
         </div>
-        <StepsCard type={cat?.category || ""} data={dataWhyUs ?? []} hint="Why Us" title={`Why Choose WINDSOR DENTAL`} />
+        {  dataWhyUs && dataWhyUs.length> 0 && <StepsCard type={link || ""} data={dataWhyUs||[]} hint="Why Us" title={`Why Choose WINDSOR DENTAL`} />}
         <div className="flex flex-col gap-5 container-layout">
             <Heading hint="Ask Away" desc="Find answers to the most common questions"
                 title="FREQUENTLY ASKED QUESTIONS" isfullDescriptionWidth={true} isCenter={true}

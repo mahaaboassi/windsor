@@ -586,17 +586,17 @@ export const categories = [
                 <p>You may need a mouthguard if you experience:</p>
             </div>,
             service: [{
-                icon: "Playing contact sports like football, basketball, or martial arts",
-                desc: ""
+                icon: "",
+                desc: "Playing contact sports like football, basketball, or martial arts"
             },{
-                icon: "Teeth grinding or clenching at night",
-                desc: ""
+                icon: "",
+                desc: "Teeth grinding or clenching at night"
             },{
-                icon: "Jaw pain, headaches, or worn teeth due to bruxism",
-                desc: ""
+                icon: "",
+                desc: "Jaw pain, headaches, or worn teeth due to bruxism"
             },{
-                icon: "A desire to prevent dental injuries or fractures",
-                desc: ""
+                icon: "",
+                desc: "A desire to prevent dental injuries or fractures"
             },]
         },{
             img: service_20_sec_2,
