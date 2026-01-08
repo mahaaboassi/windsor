@@ -78,7 +78,6 @@ import method_1 from "./assets/images/method_1.webp";
 import method_2 from "./assets/images/method_2.webp";
 import method_3 from "./assets/images/method_3.webp";
 import method_4 from "./assets/images/method_4.webp";
-import method_5 from "./assets/images/method_5.webp";
 import method_6 from "./assets/images/method_6.webp";
 import method_7 from "./assets/images/method_7.webp";
 
