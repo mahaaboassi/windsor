@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import video from "../assets/videos/video.mp4"
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [hideOnScroll, setHideOnScroll] = useState(false);
