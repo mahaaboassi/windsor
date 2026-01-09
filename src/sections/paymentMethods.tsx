@@ -1,21 +1,8 @@
 import { useRef, useEffect, useState } from "react";
 import Heading from "../components/heading";
 import { motion } from "framer-motion";
+import { paymentMethodsData } from "../data";
 
-// Images
-import method_1 from "../assets/images/method_1.webp";
-import method_2 from "../assets/images/method_2.webp";
-import method_3 from "../assets/images/method_3.webp";
-import method_5 from "../assets/images/method_4.webp";
-import method_6 from "../assets/images/method_5.webp";
-
-const data = [
-    { img: method_1 },
-    { img: method_2 },
-    { img: method_3 },
-    { img: method_5 },
-    { img: method_6 }
-];
 const PaymentMethods = () => {
     const sliderRef = useRef<HTMLDivElement>(null);
     const [width, setWidth] = useState(0);
@@ -47,12 +34,12 @@ const PaymentMethods = () => {
                     animate={{ x: [-0, -width] }}
                     transition={{
                         ease: "linear",
-                        duration: 15,
+                        duration: 10,
                         repeat: Infinity
                     }}
                 >
                     {/* Duplicate items to create seamless loop */}
-                    {[...data, ...data].map((e, idx) => (
+                    {[...paymentMethodsData, ...paymentMethodsData].map((e, idx) => (
                         <motion.div
                             key={idx}
                             className="min-w-[200px] md:min-w-[260px] bg-white rounded-xl shadow p-5 flex flex-col gap-2 border border-[var(--main)]"
