@@ -95,7 +95,7 @@ import img_4 from "./assets/images/logo_4.webp"
 import img_5 from "./assets/images/logo_5.webp"
 import img_6 from "./assets/images/logo_6.webp"
 
-
+export const bookLink = "https://appointments.praktika.net.au/online-booking/step1?Apikey=0d6cbe87-8f4d-4fa9-94a9-a54f847c5751"
 export const categories = [
     // category => General Dentistry
     {

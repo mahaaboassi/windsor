@@ -4,6 +4,8 @@ import img_1 from "../assets/images/doc_1.png"
 import img_2 from "../assets/images/doc_2.png"
 import Heading from "../components/heading"
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom"
+import { bookLink } from "../data"
 
 type ItemContact = {
     img: string,
@@ -64,9 +66,11 @@ const Team = ()=>{
                         </span>
                     </div>
 
-                    <button className="btn !w-full !text-sm">
-                        BOOK AN APPOINTMENT
-                    </button>
+                    <Link target="_blank" to={bookLink}>
+                        <button className="btn !w-full !text-sm">
+                            BOOK AN APPOINTMENT
+                        </button>
+                    </Link>
                     </motion.div>
                 </div>
                 
@@ -119,9 +123,11 @@ const Team = ()=>{
                     </div>
 
                     <div className="w-full">
-                        <button className="btn mt-4 !text-sm !w-full">
-                            BOOK AN APPOINTMENT
-                        </button>
+                        <Link target="_blank" to={bookLink}>
+                            <button className="btn mt-4 !text-sm !w-full">
+                                BOOK AN APPOINTMENT
+                            </button>
+                        </Link>
                     </div>
                     </div>
                 </motion.div>
